@@ -1,0 +1,21 @@
+T-Spice - Tanner SPICE
+Version 13.00
+Standalone hardware lock
+Product Release ID: T-Spice Win32 13.00.20080321.01:01:33
+Copyright © 1993-2008 Tanner EDA
+
+	Opening output file "C:\Users\i140420\Desktop\Kamran_VLSI_5\NOR.out"
+	Parsing "C:\Users\i140420\Desktop\Kamran_VLSI_5\NOR.spc"
+	Including "SpecialDevices.md"
+	Reading library entry "TT" from "C:\Users\i140420\Desktop\Kamran_VLSI_5\Generic_025_2.lib"
+	Reading library entry "TT_NMOS_PARAMETERS" from "Generic_025.lib"
+Fatal Error : Library entry "TT_NMOS_PARAMETERS" not found in file "C:\Users\i140420\Desktop\Kamran_VLSI_5\Generic_025.lib"
+
+
+
+Parsing                      0.01 seconds
+Overhead                     0.66 seconds
+-----------------------------------------
+Total                        0.67 seconds
+
+Simulation failed	with  1 Fatal Error

@@ -1,0 +1,12 @@
+workspace loadfrom -path .
+cell open -design SpiceOutput -cell INV -type schematic -newwindow
+window move -left 132 -top 174 -width 692 -height 464 -undock -max 
+window fit -x0 1242 -y0 1668 -x1 9017 -y1 5140 -units iu
+cell open -design SpiceOutput -cell Inverters -type schematic -newwindow
+window move -left 132 -top 174 -width 916 -height 469 -undock -normal 
+window fit -x0 1042 -y0 3447 -x1 4681 -y1 5165 -units iu
+cell open -design SpiceOutput -cell Subcircuits -type schematic -newwindow
+window move -left 154 -top 203 -width 916 -height 469 -undock -normal 
+window fit -x0 501 -y0 3353 -x1 5065 -y1 5508 -units iu
+source open.design -relativeto user
+source open.design -relativeto design

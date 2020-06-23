@@ -1,0 +1,6 @@
+workspace loadfrom -path .
+cell open -design ADC8 -cell ADC8 -type schematic -newwindow
+window move -left 81 -top 105 -width 1700 -height 601 -undock -max 
+window fit -x0 -3419 -y0 -536 -x1 3952 -y1 4144 -units iu
+source open.design -relativeto user
+source open.design -relativeto design

@@ -1,0 +1,1 @@
+setup schematicpage set -host design -units iu -width 3584 -height 2560 -leftmargin 256 -rightmargin 256 -topmargin 256 -bottommargin 256 -framestyle none

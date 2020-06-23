@@ -1,0 +1,74 @@
+T-Spice - Tanner SPICE
+Version 13.00
+Standalone hardware lock
+Product Release ID: T-Spice Win32 13.00.20080321.01:01:33
+Copyright © 1993-2008 Tanner EDA
+
+	Opening output file "C:\Users\i140420\Desktop\Kamran_VLSI_7_13-3\XOR.out"
+	Parsing "C:\Users\i140420\Desktop\Kamran_VLSI_7_13-3\XOR.spc"
+	Including "SpecialDevices.md"
+	Reading library entry "TT" from "C:\Users\i140420\Desktop\Kamran_VLSI_7_13-3\Generic_025.lib"
+	Reading library entry "TT_NMOS_PARAMETERS" from "Generic_025.lib"
+	Reading library entry "TT_PMOS_PARAMETERS" from "Generic_025.lib"
+	Reading library entry "MOS_BIN_MODEL" from "Generic_025.lib"
+	Reading library entry "Typ" from "Generic_025.lib"
+	Reading library entry "RES_CAP" from "Generic_025.lib"
+Warning : Node 10 is attached to only one device (M1)
+Warning : Node 11 is attached to only one device (M2)
+Warning : Node 12 is attached to only one device (M3)
+Warning : Node 13 is attached to only one device (M4)
+Warning : Node 14 is attached to only one device (M5)
+
+Warning : Disabling printout of duplicate warning messages.
+        : 	Use '.options maxmsg=0' to view all warnings,
+        : 	or increase maxmsg from 5 to view more messages.
+
+
+Accuracy and Convergence options:
+numndset|dchold = 100
+
+Timestep and Integration options:
+ relq|relchgtol = 0.0005
+
+Model Evaluation options:
+           dcap = 2                    defnrb = 0 [sq]               defnrd = 0 [sq]
+         defnrs = 0 [sq]                 tnom = 25 [deg C]
+
+General options:
+           temp = 25 [deg C]          threads = 4
+
+Output options:
+          acout = 1                    ingold = 0
+
+
+
+ Device and node counts:
+            MOSFETs - 14                MOSFET geometries - 8       
+               BJTs - 0                             JFETs - 0       
+            MESFETs - 0                            Diodes - 0       
+         Capacitors - 0                         Resistors - 0       
+          Inductors - 0                  Mutual inductors - 0       
+ Transmission lines - 0        Coupled transmission lines - 0       
+    Voltage sources - 3                   Current sources - 0       
+               VCVS - 0                              VCCS - 0       
+               CCVS - 0                              CCCS - 0       
+   V-control switch - 0                  I-control switch - 0       
+      Macro devices - 0        External C model instances - 0       
+        HDL devices - 0       
+        Subcircuits - 0              Subcircuit instances - 0       
+  Independent nodes - 15                   Boundary nodes - 4       
+        Total nodes - 19      
+
+*** 6 WARNING MESSAGES GENERATED DURING SETUP
+
+
+
+Parsing                      0.01 seconds
+Setup                        0.00 seconds
+DC operating point           0.20 seconds
+Transient Analysis           0.06 seconds
+Overhead                     0.95 seconds
+-----------------------------------------
+Total                        1.22 seconds
+
+Simulation completed	with  6 Warnings

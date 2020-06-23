@@ -1,0 +1,6 @@
+﻿workspace loadfrom -path .
+cell open -design RingVCO -cell RingVCO_TestBench -type schematic -newwindow
+window move -left 224 -top 224 -width 1630 -height 573 -undock -max 
+window fit -x0 -4424 -y0 -677 -x1 14095 -y1 7595 -units iu
+source open.design -relativeto user
+source open.design -relativeto design

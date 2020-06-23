@@ -1,0 +1,24 @@
+// DSCH 2.6c
+// 1/6/2003 4:11:50 PM
+// C:\Documents and Settings\Bear\Desktop\BOOK Ex\Dsch\Logic FA.sch
+
+module Logic FA( a,c_in,b,sum,c_out);
+ input a,c_in,b;
+ output sum,c_out;
+ and #(16) and2(w3,w1,c_in);
+ xor #(23) xor2(w1,b,a);
+ xor #(16) xor2(sum,c_in,w1);
+ and #(16) and2(w7,b,a);
+ or #(16) or2(c_out,w3,w7);
+endmodule
+
+// Simulation parameters in Verilog Format
+always
+#1000 a=~a;
+#2000 c_in=~c_in;
+#3000 b=~b;
+
+// Simulation parameters
+// a CLK 10 10
+// c_in CLK 20 20
+// b CLK 30 30

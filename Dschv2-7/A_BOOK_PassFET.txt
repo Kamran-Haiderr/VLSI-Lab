@@ -1,0 +1,23 @@
+// DSCH 2.6c
+// 1/6/2003 12:35:36 PM
+// C:\Documents and Settings\Bear\Desktop\BOOK Ex\Dsch\A_BOOK_PassFET.sch
+
+module A_BOOK_PassFET( IN1,Control2,IN2,Control1,out1,out2);
+ input IN1,Control2,IN2,Control1;
+ output out1,out2;
+ nmos #(10) nmos(out1,IN1,w2); // 1.0u 0.12u
+ nmos #(10) nmos(IN2,out2,Control2); // 1.0u 0.12u
+endmodule
+
+// Simulation parameters in Verilog Format
+always
+#1000 IN1=~IN1;
+#2000 Control2=~Control2;
+#3000 IN2=~IN2;
+#4000 Control1=~Control1;
+
+// Simulation parameters
+// IN1 CLK 10 10
+// Control2 CLK 20 20
+// IN2 CLK 30 30
+// Control1 CLK 40 40

@@ -1,0 +1,6 @@
+workspace loadfrom -path .
+cell open -design Globals5 -cell ToplevelChip -type schematic -newwindow
+window move -left 66 -top 87 -width 680 -height 369 -undock -max 
+window fit -x0 3916 -y0 3115 -x1 5487 -y1 4287 -units iu
+source open.design -relativeto user
+source open.design -relativeto design

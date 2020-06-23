@@ -1,0 +1,171 @@
+File written by LVS 11.20 as a result of: "samples\lvs\ex3\ex3_1.vdb" on Wed Sep 21 11:29:54 2005
+
+Command line:
+lvs samples\lvs\ex3\ex3_1.spc samples\lvs\ex3\ex3_2.spc -o samples\lvs\ex3\ex3_1.lvs -l samples\lvs\ex3\ex3_1.lst -TTSPICE -nrcl -vfar -fafr 
+
+Engine configuration report:
+Layout netlist file.............................................. samples\lvs\ex3\ex3_1.spc
+Layout netlist file format....................................... T-Spice
+Schematic netlist file........................................... samples\lvs\ex3\ex3_2.spc
+Schematic netlist file format.................................... T-Spice
+Consider Bulk nodes.............................................. ON
+Consider Resistors as polarized elements......................... OFF
+Consider Capacitors as polarized elements........................ OFF
+Consider Inductors as polarized elements......................... OFF
+Merge series and parallel R...................................... OFF
+Merge series and parallel C...................................... OFF
+Merge series and parallel L...................................... OFF
+Merge parallel M................................................. OFF
+Merge stacked M.................................................. OFF
+Merge parallel D................................................. OFF
+Merge parallel B................................................. OFF
+Merge parallel J................................................. OFF
+Merge parallel Z................................................. OFF
+Merge parallel Q................................................. OFF
+Merge series MOSFETs............................................. OFF
+Find series MOSFETs that differ in order or parameter value...... OFF
+Remove shorted devices........................................... OFF
+Remove disconnected devices...................................... OFF
+Fast Iteration................................................... OFF
+
+
+Parsing file samples\lvs\ex3\ex3_1.spc...
+Including file samples\lvs\ex3\MODELS.SPC
+Warning: ex3_1.spc(18) Node GND aliased to GROUND
+Flattening netlist...
+
+Parsing file samples\lvs\ex3\ex3_2.spc...
+Including file samples\lvs\ex3\MODELS.SPC
+Warning: ex3_2.spc(9) Node 0 aliased to GROUND
+Flattening netlist...
+
+Device                       ex3_1.spc         ex3_2.spc   Status            
+---------------        ---------------   ---------------   ---------------     
+C                                    4                 4
+M_NSS                               20                20
+M_PSS                               24                24
+                          ------------      ------------
+Total elements                      48                48
+Total nodes                         20                20
+
+
+****************** DETAILED PROCESSING INFORMATION ******************
+
+**************************** ITERATING ******************************
+
+Iterating...
+  5% done.
+ 10% done.
+ 15% done.
+ 20% done.
+ 25% done.
+ 30% done.
+ 35% done.
+ 40% done.
+ 45% done.
+ 50% done.
+ 55% done.
+ 60% done.
+ 65% done.
+ 70% done.
+ 75% done.
+ 80% done.
+ 85% done.
+********************* REPORTING  AUTOMORPHISM ***********************
+
+Report of elements:
+*******************
+
+1: Automorph class of elements
+1.1:    ex3_1.spc     M1(XSUBA/X34)_2      fanout: BULK = 41   D/S (  3,   7)   G =  7   
+1.2:    ex3_1.spc     M1(XSUBA/X34)_1      fanout: BULK = 41   D/S (  3,   7)   G =  7   
+1.1:    ex3_2.spc     M350                 fanout: BULK = 41   D/S (  3,   7)   G =  7   
+1.2:    ex3_2.spc     M341                 fanout: BULK = 41   D/S (  3,   7)   G =  7   
+---------------------------------------------------
+
+2: Automorph class of elements
+2.1:    ex3_1.spc     M19(XSUBA/X34)_2     fanout: BULK = 35   D/S (  7,  35)   G =  7   
+2.2:    ex3_1.spc     M19(XSUBA/X34)_1     fanout: BULK = 35   D/S (  7,  35)   G =  7   
+2.1:    ex3_2.spc     M352                 fanout: BULK = 35   D/S (  7,  35)   G =  7   
+2.2:    ex3_2.spc     M3419                fanout: BULK = 35   D/S (  7,  35)   G =  7   
+---------------------------------------------------
+
+3: Automorph class of elements
+3.1:    ex3_1.spc     M1(XSUBA/X33)_2      fanout: BULK = 41   D/S (  3,   7)   G =  7   
+3.2:    ex3_1.spc     M1(XSUBA/X33)_1      fanout: BULK = 41   D/S (  3,   7)   G =  7   
+3.1:    ex3_2.spc     M3                   fanout: BULK = 41   D/S (  3,   7)   G =  7   
+3.2:    ex3_2.spc     M1                   fanout: BULK = 41   D/S (  3,   7)   G =  7   
+---------------------------------------------------
+
+4: Automorph class of elements
+4.1:    ex3_1.spc     M19(XSUBA/X33)_2     fanout: BULK = 35   D/S (  7,  35)   G =  7   
+4.2:    ex3_1.spc     M19(XSUBA/X33)_1     fanout: BULK = 35   D/S (  7,  35)   G =  7   
+4.1:    ex3_2.spc     M22                  fanout: BULK = 35   D/S (  7,  35)   G =  7   
+4.2:    ex3_2.spc     M19                  fanout: BULK = 35   D/S (  7,  35)   G =  7   
+---------------------------------------------------
+
+5: Automorph class of elements
+5.1:    ex3_1.spc     M10(XSUBA/X33)_1     fanout: BULK = 41   D/S (  3,  41)   G =  8   
+5.2:    ex3_1.spc     M10(XSUBA/X33)_2     fanout: BULK = 41   D/S (  3,  41)   G =  8   
+5.1:    ex3_2.spc     M10                  fanout: BULK = 41   D/S (  3,  41)   G =  8   
+5.2:    ex3_2.spc     M21                  fanout: BULK = 41   D/S (  3,  41)   G =  8   
+---------------------------------------------------
+
+6: Automorph class of elements
+6.1:    ex3_1.spc     M10(XSUBA/X34)_2     fanout: BULK = 41   D/S ( 10,  41)   G = 10   
+6.2:    ex3_1.spc     M10(XSUBA/X34)_1     fanout: BULK = 41   D/S ( 10,  41)   G = 10   
+6.1:    ex3_2.spc     M351                 fanout: BULK = 41   D/S ( 10,  41)   G = 10   
+6.2:    ex3_2.spc     M3410                fanout: BULK = 41   D/S ( 10,  41)   G = 10   
+---------------------------------------------------
+
+7: Automorph class of elements
+ex3_1.spc: 4 element(s)
+ex3_2.spc: 4 element(s)
+7.1:    ex3_1.spc     C1(XSUBA/X34)_2      fanout: POS/NEG ( 35,  41)   
+7.2:    ex3_1.spc     C1(XSUBA/X34)_1      fanout: POS/NEG ( 35,  41)   
+7.3:    ex3_1.spc     C1(XSUBA/X33)_2      fanout: POS/NEG ( 35,  41)   
+7.4:    ex3_1.spc     C1(XSUBA/X33)_1      fanout: POS/NEG ( 35,  41)   
+7.1:    ex3_2.spc     C1_4                 fanout: POS/NEG ( 35,  41)   
+7.2:    ex3_2.spc     C1_3                 fanout: POS/NEG ( 35,  41)   
+7.3:    ex3_2.spc     C1_2                 fanout: POS/NEG ( 35,  41)   
+7.4:    ex3_2.spc     C1_1                 fanout: POS/NEG ( 35,  41)   
+---------------------------------------------------
+
+************************ ITERATION SUMMARY **************************
+
+32 perfectly matched element classes (out of a possible 48).
+7 automorphic element classes.
+20 perfectly matched node classes (out of a possible 20).
+
+
+********************* POST ITERATION MATCHING ***********************
+Doing detailed trial matching... Step 1 (Match by parameters)
+**************************** ITERATING ******************************
+Doing detailed trial matching... Step 2 (Random matches)
+Matched Elements C1(XSUBA/X34)_1 and C1_3
+Matched Elements C1(XSUBA/X33)_2 and C1_2
+Matched Elements C1(XSUBA/X33)_1 and C1_1
+Matched Elements C1(XSUBA/X34)_2 and C1_4
+ 90% done.
+Matched Elements M10(XSUBA/X34)_1 and M3410
+Matched Elements M10(XSUBA/X34)_2 and M351
+Matched Elements M10(XSUBA/X33)_2 and M21
+Matched Elements M10(XSUBA/X33)_1 and M10
+Matched Elements M19(XSUBA/X33)_1 and M19
+Matched Elements M19(XSUBA/X33)_2 and M22
+ 95% done.
+Matched Elements M1(XSUBA/X33)_1 and M1
+Matched Elements M1(XSUBA/X33)_2 and M3
+Matched Elements M19(XSUBA/X34)_1 and M3419
+Matched Elements M19(XSUBA/X34)_2 and M352
+Matched Elements M1(XSUBA/X34)_1 and M341
+Matched Elements M1(XSUBA/X34)_2 and M350
+100% done.
+
+************************** FINAL RESULT *****************************
+
+Circuits are equal.
+Run time: 0:02 (min:sec)
+
+0 errors, 2 warnings
+

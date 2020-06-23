@@ -1,0 +1,26 @@
+USER SYMBOL by DSCH 2.7a
+DATE 1/25/2005 10:12:34 PM
+SYM  #sym4
+BB(0,0,40,30)
+TITLE 10 -2  #sym4
+MODEL 6000
+REC(5,5,30,20)
+PIN(0,20,0.00,0.00)in1
+PIN(0,10,0.00,0.00)in2
+PIN(40,20,2.00,1.00)out1
+PIN(40,10,2.00,1.00)out2
+LIG(0,20,5,20)
+LIG(0,10,5,10)
+LIG(35,20,40,20)
+LIG(35,10,40,10)
+LIG(5,5,5,25)
+LIG(5,5,35,5)
+LIG(35,5,35,25)
+LIG(35,25,5,25)
+VLG module sym4( in1,in2,out1,out2);
+VLG  input in1,in2;
+VLG  output out1,out2;
+VLG  xor #(16) xor(out1,in1,in2);
+VLG  and #(16) and(out2,in2,in1);
+VLG endmodule
+FSYM

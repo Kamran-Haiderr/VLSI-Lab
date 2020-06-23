@@ -1,0 +1,6 @@
+workspace loadfrom -path .
+cell open -design Bargraph -cell BargraphTop -type schematic -newwindow
+window move -left 162 -top 210 -width 1698 -height 577 -undock -max 
+window fit -x0 -4407 -y0 -500 -x1 13507 -y1 7500 -units iu
+source open.design -relativeto user
+source open.design -relativeto design

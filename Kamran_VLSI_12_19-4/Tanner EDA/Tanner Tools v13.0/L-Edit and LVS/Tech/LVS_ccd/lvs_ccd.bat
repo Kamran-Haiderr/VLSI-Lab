@@ -1,0 +1,1 @@
+start /w ../../../lvs morb20cc.spc morb20cc.cir -o morb20cc.lvs -e morb20cc.elm -nrcl -y2 -fafpr

@@ -1,0 +1,172 @@
+* T-Spice 13.00 Simulation	Wed Apr 10 09:59:47 2019	C:\Users\i150524\Desktop\lab10\Cell0.spc
+* Command line: tspice -o C:\Users\i150524\Desktop\lab10\Cell0.out C:\Users\i150524\Desktop\lab10\Cell0.spc 
+* T-Spice Win32 13.00.20080321.01:01:33
+* Warning : Node 5 is attached to only one device (M1)
+* Warning : Node 4 is attached to only one device (M2)
+
+*SEDIT: Alter blocks = 0
+
+* Accuracy and Convergence options:
+* numndset|dchold = 100
+* 
+* Timestep and Integration options:
+*  relq|relchgtol = 0.0005
+* 
+* Model Evaluation options:
+*            dcap = 2                    defnrb = 0 [sq]               defnrd = 0 [sq]
+*          defnrs = 0 [sq]                 tnom = 25 [deg C]
+* 
+* General options:
+*            temp = 25 [deg C]          threads = 4
+* 
+* Output options:
+*           acout = 1                    ingold = 0
+* 
+
+
+*  Device and node counts:
+*             MOSFETs - 2                 MOSFET geometries - 4       
+*                BJTs - 0                             JFETs - 0       
+*             MESFETs - 0                            Diodes - 0       
+*          Capacitors - 0                         Resistors - 0       
+*           Inductors - 0                  Mutual inductors - 0       
+*  Transmission lines - 0        Coupled transmission lines - 0       
+*     Voltage sources - 2                   Current sources - 0       
+*                VCVS - 0                              VCCS - 0       
+*                CCVS - 0                              CCCS - 0       
+*    V-control switch - 0                  I-control switch - 0       
+*       Macro devices - 0        External C model instances - 0       
+*         HDL devices - 0       
+*         Subcircuits - 0              Subcircuit instances - 0       
+*   Independent nodes - 3                    Boundary nodes - 3       
+*         Total nodes - 6       
+
+* *** 2 WARNING MESSAGES GENERATED DURING SETUP
+
+
+*SEDIT: Alter=0
+*SEDIT: Analysis types DCOP 1 ACMODEL 1 AC 0 TRANSIENT 1 TRANSFER 0 NOISE 0 
+
+* BEGIN NON-GRAPHICAL DATA
+
+DC ANALYSIS - temperature=25.0  
+v(4) =   2.4999e+000
+v(5) =   4.9999e+000
+v(B) =   0.0000e+000
+v(F) =   4.9999e+000
+v(VDD) =   5.0000e+000
+i1(v1) =  -0.0000e+000
+i2(v1) =   0.0000e+000
+i1(v2) =  -2.8829e-008
+i2(v2) =   2.8829e-008
+
+* END NON-GRAPHICAL DATA
+
+* BEGIN NON-GRAPHICAL DATA
+
+AC SMALL-SIGNAL MODELS - temperature=25.0  
+
+              0             1          
+              M1            M2           
+MODEL         PMOS          NMOS         
+TYPE          PMOS          NMOS         
+REGION        Linear        Cutoff       
+ID             -28.82927n     28.82177n
+IBS              0.            0.      
+IBD              0.            0.      
+VGS             -5.00000       0.      
+VDS           -117.48037u      4.99988 
+VBS            -58.74018u      2.49994 
+VTH           -490.80586m     97.41644m
+VDSAT           -3.06923      29.08051m
+BETA            85.86348u    360.27776u
+RS               0.            0.      
+RD               0.            0.      
+GM               1.79712n    574.76204n
+GDS            245.39355u      7.69257n
+GMB              2.10388n     21.97529n
+GBD              0.            0.      
+GBS              0.            0.      
+CDTOT            5.78294f      2.70830f
+CGTOT            5.43542f      3.50968f
+CSTOT            4.94108f      7.41842f
+CBTOT            8.41413f      9.31027f
+CGS              2.55853f      2.56880f
+CGD              2.56669f    536.86309a
+CGB            310.21086a    404.01442a
+CBD              3.44175f      2.17060f
+CBS              3.44192f      6.71755f
+
+
+* VOLTAGE SOURCES
+
+              2             3          
+              v1            v2           
+VOLTAGE          0.            5.00000 
+CURRENT          0.          -28.82927n
+POWER            0.         -144.14636n
+
+
+Element name cross-reference:
+      0 : M1
+      1 : M2
+      2 : v1
+      3 : v2
+
+* END NON-GRAPHICAL DATA
+
+*WEDIT: .tran   1e-008   1e-007
+TRANSIENT ANALYSIS
+Time<s>        v(F,GND)<V>  v(B,GND)<V>
+ 0.000000e+000  4.9999e+000  0.0000e+000
+ 6.250000e-010  2.2521e-001  3.1250e+000
+ 9.375000e-010  4.1014e-002  4.6875e+000
+ 1.000000e-009  2.3701e-002  5.0000e+000
+ 1.125716e-009  1.5617e-003  5.0000e+000
+ 2.382883e-009  1.2143e-005  5.0000e+000
+ 1.100000e-008 -9.6423e-006  5.0000e+000
+ 1.200000e-008  4.7968e+000  0.0000e+000
+ 1.250000e-008  4.9910e+000  0.0000e+000
+ 1.654759e-008  4.9998e+000  0.0000e+000
+ 2.000000e-008  4.9999e+000  0.0000e+000
+ 2.250000e-008  2.9218e-002  5.0000e+000
+ 2.375000e-008  2.0686e-004  5.0000e+000
+ 3.100000e-008 -2.0341e-004  5.0000e+000
+ 3.350000e-008  4.9182e+000  0.0000e+000
+ 3.475000e-008  4.9984e+000  0.0000e+000
+ 4.000000e-008  5.0013e+000  0.0000e+000
+ 4.100000e-008  7.3098e-002  5.0000e+000
+ 4.150000e-008  1.2747e-003  5.0000e+000
+ 4.463268e-008  4.6033e-006  5.0000e+000
+ 5.100000e-008 -2.1326e-006  5.0000e+000
+ 5.350000e-008  4.9182e+000  0.0000e+000
+ 5.475000e-008  4.9984e+000  0.0000e+000
+ 6.000000e-008  5.0013e+000  3.3087e-014
+ 6.100000e-008  7.3098e-002  5.0000e+000
+ 6.150000e-008  1.2747e-003  5.0000e+000
+ 6.463269e-008  4.6033e-006  5.0000e+000
+ 7.100000e-008 -2.1326e-006  5.0000e+000
+ 7.350000e-008  4.9182e+000  0.0000e+000
+ 7.475000e-008  4.9984e+000  0.0000e+000
+ 8.000000e-008  5.0013e+000  0.0000e+000
+ 8.100000e-008  7.3098e-002  5.0000e+000
+ 8.150000e-008  1.2747e-003  5.0000e+000
+ 8.463269e-008  4.6033e-006  5.0000e+000
+ 9.100000e-008 -2.1326e-006  5.0000e+000
+ 9.200000e-008  4.7968e+000  0.0000e+000
+ 9.250000e-008  4.9910e+000  0.0000e+000
+ 9.654760e-008  4.9998e+000  0.0000e+000
+ 1.000000e-007  4.9999e+000  3.3087e-014
+*
+
+* Parsing                      0.04 seconds
+* Setup                        0.00 seconds
+* DC operating point           0.10 seconds
+* Transient Analysis           0.00 seconds
+* Overhead                     1.37 seconds
+* -----------------------------------------
+* Total                        1.51 seconds
+
+* Simulation completed	with  2 Warnings
+
+* End of T-Spice output file

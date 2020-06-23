@@ -1,0 +1,117 @@
+* T-Spice 13.00 Simulation	Wed Feb 27 09:56:36 2019	C:\Users\i140420\Desktop\Kamran_VLSI_4\K_L4.spc
+* Command line: tspice -o C:\Users\i140420\Desktop\Kamran_VLSI_4\K_L4.out C:\Users\i140420\Desktop\Kamran_VLSI_4\K_L4.spc 
+* T-Spice Win32 13.00.20080321.01:01:33
+* Warning : "K_L4.spc" line 1 First line is a title and is ignored -> 
+*		".INCLUDE SpecialDevices.md"
+
+*SEDIT: Alter blocks = 0
+
+* Accuracy and Convergence options:
+* numndset|dchold = 100
+* 
+* Timestep and Integration options:
+*  relq|relchgtol = 0.0005
+* 
+* Model Evaluation options:
+*            dcap = 2                    defnrb = 0 [sq]               defnrd = 0 [sq]
+*          defnrs = 0 [sq]                 tnom = 25 [deg C]
+* 
+* General options:
+*            temp = 25 [deg C]          threads = 4
+* 
+* Output options:
+*           acout = 1                    ingold = 0
+* 
+
+
+*  Device and node counts:
+*             MOSFETs - 2                 MOSFET geometries - 4       
+*                BJTs - 0                             JFETs - 0       
+*             MESFETs - 0                            Diodes - 0       
+*          Capacitors - 0                         Resistors - 0       
+*           Inductors - 0                  Mutual inductors - 0       
+*  Transmission lines - 0        Coupled transmission lines - 0       
+*     Voltage sources - 2                   Current sources - 0       
+*                VCVS - 0                              VCCS - 0       
+*                CCVS - 0                              CCCS - 0       
+*    V-control switch - 0                  I-control switch - 0       
+*       Macro devices - 0        External C model instances - 0       
+*         HDL devices - 0       
+*         Subcircuits - 0              Subcircuit instances - 0       
+*   Independent nodes - 1                    Boundary nodes - 3       
+*         Total nodes - 4       
+
+* *** 1 WARNING MESSAGE GENERATED DURING SETUP
+
+
+*SEDIT: Alter=0
+*SEDIT: Analysis types DCOP 0 ACMODEL 0 AC 0 TRANSIENT 1 TRANSFER 0 NOISE 0 
+
+*WEDIT: .tran   1e-008   1e-007
+TRANSIENT ANALYSIS
+Time<s>        v(Inp_A,Gnd)<V>  v(Out_Z,Gnd)<V>
+ 0.000000e+000  0.0000e+000  5.0000e+000
+ 3.186257e-011  1.5931e-001  5.0139e+000
+ 1.218625e-010  6.0931e-001  4.9321e+000
+ 2.118625e-010  1.0593e+000  4.6349e+000
+ 2.925006e-010  1.4625e+000  4.1387e+000
+ 3.697307e-010  1.8487e+000  3.4907e+000
+ 4.547053e-010  2.2735e+000  1.6834e+000
+ 4.812758e-010  2.4064e+000  8.1988e-001
+ 4.963066e-010  2.4815e+000  4.7516e-001
+ 5.116936e-010  2.5585e+000  3.4267e-001
+ 5.371016e-010  2.6855e+000  2.9040e-001
+ 5.958460e-010  2.9792e+000  2.1867e-001
+ 6.899273e-010  3.4496e+000  1.3020e-001
+ 8.180441e-010  4.0902e+000  4.6577e-002
+ 9.808404e-010  4.9042e+000  7.1920e-003
+ 1.000000e-009  5.0000e+000  7.7417e-003
+ 1.069605e-009  5.0000e+000  6.3959e-004
+ 1.765664e-009  5.0000e+000  5.6846e-006
+ 8.726254e-009  5.0000e+000 -5.5380e-006
+ 1.100000e-008  5.0000e+000  5.6073e-006
+ 1.200000e-008  0.0000e+000  4.8860e+000
+ 1.231500e-008  0.0000e+000  4.9929e+000
+ 1.546500e-008  0.0000e+000  5.0000e+000
+ 2.000000e-008  0.0000e+000  5.0000e+000
+ 2.250000e-008  5.0000e+000  1.4146e-002
+ 2.375000e-008  5.0000e+000  7.0592e-005
+ 3.100000e-008  5.0000e+000 -7.0231e-005
+ 3.350000e-008  0.0000e+000  4.9541e+000
+ 3.428748e-008  0.0000e+000  4.9988e+000
+ 4.000000e-008  0.0000e+000  5.0012e+000
+ 4.100000e-008  5.0000e+000  3.5405e-002
+ 4.150000e-008  5.0000e+000  4.3728e-004
+ 4.650000e-008  5.0000e+000  5.6841e-007
+ 5.100000e-008  5.0000e+000 -3.9806e-007
+ 5.350000e-008  0.0000e+000  4.9541e+000
+ 5.428749e-008  0.0000e+000  4.9988e+000
+ 6.000000e-008  3.3087e-014  5.0012e+000
+ 6.100000e-008  5.0000e+000  3.5405e-002
+ 6.150000e-008  5.0000e+000  4.3728e-004
+ 6.649999e-008  5.0000e+000  5.6841e-007
+ 7.100000e-008  5.0000e+000 -3.9806e-007
+ 7.350000e-008  0.0000e+000  4.9541e+000
+ 7.428749e-008  0.0000e+000  4.9988e+000
+ 8.000000e-008  0.0000e+000  5.0012e+000
+ 8.100000e-008  5.0000e+000  3.5405e-002
+ 8.150000e-008  5.0000e+000  4.3728e-004
+ 8.649999e-008  5.0000e+000  5.6841e-007
+ 9.100000e-008  5.0000e+000 -3.9806e-007
+ 9.200000e-008  0.0000e+000  4.8860e+000
+ 9.231499e-008  0.0000e+000  4.9929e+000
+ 9.546499e-008  0.0000e+000  5.0000e+000
+ 1.000000e-007  3.3087e-014  5.0000e+000
+*
+
+* Parsing                      0.01 seconds
+* Setup                        0.00 seconds
+* DC operating point           0.00 seconds
+* Transient Analysis           0.00 seconds
+* Overhead                     0.53 seconds
+* -----------------------------------------
+* Total                        0.55 seconds
+
+* Simulation completed	with  1 Warning
+
+* End of T-Spice output file

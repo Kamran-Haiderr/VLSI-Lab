@@ -1,0 +1,32 @@
+# File: TwoIDLayers.ext
+# For: Extract definition file
+# Vendor: Generic
+# Technology: 0.25 um N-well
+# Technology Setup and Test/Demo Suite: in file generic_025.tdb
+# Copyright ©  1999-2003
+# Tanner Research, Inc.  All rights reserved
+#
+# This file will work only with L-EDIT Version 7 and greater.
+# ****************************************************************************
+
+connect(Metal1Wire, Metal2Wire, Via1)
+connect(Metal2Wire, Metal3Wire, Via2)
+connect(Metal3Wire, Metal4Wire, Via3)
+connect(Metal3IndConnection, Metal3Wire, Via3)
+
+# Thin Inductor
+device = SUBCKT(
+               RLAYER=Inductor_ID-Thin, LW;
+               Plus=Metal3IndConnection;
+               Minus=Metal4Wire, DEVICEWIDTH;
+               MODEL=IND_Thin;
+               )
+
+# Thick Inductor
+device = SUBCKT(
+               RLAYER=Inductor_ID-Thick, LW;
+               Plus=Metal3IndConnection;
+               Minus=Metal4Wire, DEVICEWIDTH;
+               MODEL=IND_Thick;
+               )
+

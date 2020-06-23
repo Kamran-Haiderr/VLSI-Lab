@@ -1,0 +1,1 @@
+start /w ../../../lvs ex3_1.spc ex3_2.spc -p ex3_2.pre -o ex3_3.lvs -nrcl -vfar -fafr

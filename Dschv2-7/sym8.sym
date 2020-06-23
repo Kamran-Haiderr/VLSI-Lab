@@ -1,0 +1,25 @@
+USER SYMBOL by DSCH 2.7a
+DATE 3/27/2007 11:47:36 AM
+SYM  #sym8
+BB(0,0,40,40)
+TITLE 10 -2  #sym8
+MODEL 6000
+REC(5,5,30,30)
+PIN(0,10,0.00,0.00)clk3
+PIN(0,30,0.00,0.00)clk1
+PIN(0,20,0.00,0.00)clk2
+PIN(40,10,2.00,1.00)out1
+LIG(0,10,5,10)
+LIG(0,30,5,30)
+LIG(0,20,5,20)
+LIG(35,10,40,10)
+LIG(5,5,5,35)
+LIG(5,5,35,5)
+LIG(35,5,35,35)
+LIG(35,35,5,35)
+VLG module sym8( clk3,clk1,clk2,out1);
+VLG  input clk3,clk1,clk2;
+VLG  output out1;
+VLG  assign s=clk1|clk2|clk3;
+VLG endmodule
+FSYM

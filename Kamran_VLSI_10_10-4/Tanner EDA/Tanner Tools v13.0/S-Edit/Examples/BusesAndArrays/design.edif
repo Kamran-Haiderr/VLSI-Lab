@@ -1,0 +1,9222 @@
+(edif BusesAndArrays
+	(edifVersion 2 0 0)
+	(edifLevel 0)
+	(keywordMap
+		(keywordLevel 0)
+	)
+	(status
+		(written
+			(timestamp 2008 02 15 23 02 50)
+			(author "williams")
+			(program "Tanner S-Edit"
+				(version "13.00 Beta 3 build 3749")
+			)
+			(property TannerEdifVersion
+				(integer 10)
+			)
+		)
+	)
+	(external Misc
+		(edifLevel 0)
+		(technology
+			(numberDefinition
+				(scale 1
+					(e 1 -12)
+					(unit CAPACITANCE)
+				)
+			(scale (e 5000000 0) (e 1270000 -4) (unit DISTANCE))
+			)
+			(figureGroup background
+				(visible
+					(true)
+				)
+				(color 0 0 0)
+				(pathWidth 0)
+			)
+			(figureGroup device
+				(visible
+					(true)
+				)
+				(color 0 80 40)
+				(pathWidth 0)
+			)
+			(figureGroup wire
+				(visible
+					(true)
+				)
+				(color 23 75 100)
+				(pathWidth 0)
+			)
+			(figureGroup netlabel
+				(visible
+					(true)
+				)
+				(color 23 75 100)
+				(pathWidth 0)
+			)
+			(figureGroup text
+				(visible
+					(true)
+				)
+				(color 100 0 0)
+				(pathWidth 0)
+			)
+			(figureGroup portshape
+				(visible
+					(true)
+				)
+				(color 100 0 100)
+				(pathWidth 0)
+			)
+			(figureGroup pin
+				(visible
+					(true)
+				)
+				(color 100 0 100)
+				(pathWidth 0)
+			)
+			(figureGroup instance
+				(visible
+					(false)
+				)
+				(color 85 80 0)
+				(pathWidth 0)
+			)
+			(figureGroup instance_with_name_visible
+				(visible
+					(true)
+				)
+				(color 85 80 0)
+				(pathWidth 0)
+			)
+			(figureGroup cellname
+				(visible
+					(false)
+				)
+				(color 0 80 40)
+				(pathWidth 0)
+			)
+			(figureGroup cellname_with_name_visible
+				(visible
+					(true)
+				)
+				(color 0 80 40)
+				(pathWidth 0)
+			)
+			(figureGroup property
+				(visible
+					(true)
+				)
+				(color 75 75 75)
+				(pathWidth 0)
+			)
+		)
+		
+		(cell Vdd
+			(cellType GENERIC)
+			(view Main
+				(viewType SCHEMATIC)
+				(interface
+					(port Vdd
+						(property GLOBAL
+							(boolean
+								(true)
+							)
+						)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 05 38 12")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell PageID_Tanner
+			(cellType GENERIC)
+			(view Main
+				(viewType SCHEMATIC)
+				(interface
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1998 11 21 00 36 12")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell Gnd
+			(cellType GENERIC)
+			(view Main
+				(viewType SCHEMATIC)
+				(interface
+					(port Gnd
+						(property GLOBAL
+							(boolean
+								(true)
+							)
+						)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 06 38 12")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell Vss
+			(cellType GENERIC)
+			(view Main
+				(viewType SCHEMATIC)
+				(interface
+					(port Vss
+						(property GLOBAL
+							(boolean
+								(true)
+							)
+						)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 05 38 12")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell Vee
+			(cellType GENERIC)
+			(view Main
+				(viewType SCHEMATIC)
+				(interface
+					(port Vee
+						(property GLOBAL
+							(boolean
+								(true)
+							)
+						)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 05 38 12")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell PageID
+			(cellType GENERIC)
+			(view Main
+				(viewType SCHEMATIC)
+				(interface
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1998 07 24 17 29 48")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell NoConnection
+			(cellType GENERIC)
+			(view Main
+				(viewType SCHEMATIC)
+				(interface
+					(port NC)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 05 38 12")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+	)
+	(external Devices
+		(edifLevel 0)
+		(technology
+			(numberDefinition
+				(scale 1
+					(e 1 -12)
+					(unit CAPACITANCE)
+				)
+			(scale (e 5000000 0) (e 1270000 -4) (unit DISTANCE))
+			)
+			(figureGroup background
+				(visible
+					(true)
+				)
+				(color 0 0 0)
+				(pathWidth 0)
+			)
+			(figureGroup device
+				(visible
+					(true)
+				)
+				(color 0 80 40)
+				(pathWidth 0)
+			)
+			(figureGroup wire
+				(visible
+					(true)
+				)
+				(color 23 75 100)
+				(pathWidth 0)
+			)
+			(figureGroup netlabel
+				(visible
+					(true)
+				)
+				(color 23 75 100)
+				(pathWidth 0)
+			)
+			(figureGroup text
+				(visible
+					(true)
+				)
+				(color 100 0 0)
+				(pathWidth 0)
+			)
+			(figureGroup portshape
+				(visible
+					(true)
+				)
+				(color 100 0 100)
+				(pathWidth 0)
+			)
+			(figureGroup pin
+				(visible
+					(true)
+				)
+				(color 100 0 100)
+				(pathWidth 0)
+			)
+			(figureGroup instance
+				(visible
+					(false)
+				)
+				(color 85 80 0)
+				(pathWidth 0)
+			)
+			(figureGroup instance_with_name_visible
+				(visible
+					(true)
+				)
+				(color 85 80 0)
+				(pathWidth 0)
+			)
+			(figureGroup cellname
+				(visible
+					(false)
+				)
+				(color 0 80 40)
+				(pathWidth 0)
+			)
+			(figureGroup cellname_with_name_visible
+				(visible
+					(true)
+				)
+				(color 0 80 40)
+				(pathWidth 0)
+			)
+			(figureGroup property
+				(visible
+					(true)
+				)
+				(color 75 75 75)
+				(pathWidth 0)
+			)
+		)
+		
+		(cell PMOS
+			(cellType GENERIC)
+			(view PMOS4
+				(viewType SCHEMATIC)
+				(interface
+					(port B)
+					(port D)
+					(port G
+						(direction INPUT)
+					)
+					(port S)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 11 41 55")
+						)
+						(property Author
+							(string "")
+						)
+						(property Organization
+							(string "")
+						)
+						(property Info
+							(string "")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+			(view PMOS3
+				(viewType SCHEMATIC)
+				(interface
+					(port D)
+					(port G
+						(direction INPUT)
+					)
+					(port S)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 11 41 55")
+						)
+						(property Author
+							(string "")
+						)
+						(property Organization
+							(string "")
+						)
+						(property Info
+							(string "")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell NMOS
+			(cellType GENERIC)
+			(view NMOS4
+				(viewType SCHEMATIC)
+				(interface
+					(port B)
+					(port D)
+					(port G
+						(direction INPUT)
+					)
+					(port S)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 11 41 55")
+						)
+						(property Author
+							(string "")
+						)
+						(property Organization
+							(string "")
+						)
+						(property Info
+							(string "")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+			(view NMOS3
+				(viewType SCHEMATIC)
+				(interface
+					(port D)
+					(port G
+						(direction INPUT)
+					)
+					(port S)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 11 41 55")
+						)
+						(property Author
+							(string "")
+						)
+						(property Organization
+							(string "")
+						)
+						(property Info
+							(string "")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell pMesfet
+			(cellType GENERIC)
+			(view pMesfet4
+				(viewType SCHEMATIC)
+				(interface
+					(port B)
+					(port D)
+					(port G
+						(direction INPUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1997 08 28 03 47 31")
+						)
+						(property Author
+							(string "S-Edit")
+						)
+						(property Organization
+							(string "Tanner Research")
+						)
+						(property Info
+							(string "")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+			(view pMesfet3
+				(viewType SCHEMATIC)
+				(interface
+					(port D)
+					(port G
+						(direction INPUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1997 08 28 03 47 31")
+						)
+						(property Author
+							(string "S-Edit")
+						)
+						(property Organization
+							(string "Tanner Research")
+						)
+						(property Info
+							(string "")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell pFET
+			(cellType GENERIC)
+			(view Main
+				(viewType SCHEMATIC)
+				(interface
+					(port D)
+					(port G
+						(direction INPUT)
+					)
+					(port S)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1997 08 29 07 15 57")
+						)
+						(property Author
+							(string "S-Edit")
+						)
+						(property Organization
+							(string "Tanner Research")
+						)
+						(property Info
+							(string "")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell nMesfet
+			(cellType GENERIC)
+			(view nMesfet4
+				(viewType SCHEMATIC)
+				(interface
+					(port B)
+					(port D)
+					(port G
+						(direction INPUT)
+					)
+					(port S)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1997 08 28 03 47 31")
+						)
+						(property Author
+							(string "S-Edit")
+						)
+						(property Organization
+							(string "Tanner Research")
+						)
+						(property Info
+							(string "")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+			(view nMesfet3
+				(viewType SCHEMATIC)
+				(interface
+					(port D)
+					(port G
+						(direction INPUT)
+					)
+					(port S)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1997 08 28 03 47 31")
+						)
+						(property Author
+							(string "S-Edit")
+						)
+						(property Organization
+							(string "Tanner Research")
+						)
+						(property Info
+							(string "")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell nFET
+			(cellType GENERIC)
+			(view Main
+				(viewType SCHEMATIC)
+				(interface
+					(port D)
+					(port G
+						(direction INPUT)
+					)
+					(port S)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1997 08 29 07 15 09")
+						)
+						(property Author
+							(string "S-Edit")
+						)
+						(property Organization
+							(string "Tanner Research")
+						)
+						(property Info
+							(string "")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell Resistor
+			(cellType GENERIC)
+			(view VResistor
+				(viewType SCHEMATIC)
+				(interface
+					(port Neg)
+					(port Pos)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 11 41 55")
+						)
+						(property Author
+							(string "")
+						)
+						(property Organization
+							(string "")
+						)
+						(property Info
+							(string "")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(property TannerViewName
+						(string "Res")
+						(owner "Tanner Research Inc.")
+					)
+					(symbol
+						(property TannerViewName
+							(string "VResistor")
+							(owner "Tanner Research Inc.")
+						)
+					)
+				)
+			)
+			(view HResistor
+				(viewType SCHEMATIC)
+				(interface
+					(port Neg)
+					(port Pos)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 11 41 55")
+						)
+						(property Author
+							(string "")
+						)
+						(property Organization
+							(string "")
+						)
+						(property Info
+							(string "")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(property TannerViewName
+						(string "Res")
+						(owner "Tanner Research Inc.")
+					)
+					(symbol
+						(property TannerViewName
+							(string "HResistor")
+							(owner "Tanner Research Inc.")
+						)
+					)
+				)
+			)
+			(view Res_IC
+				(viewType SCHEMATIC)
+				(interface
+					(port Body)
+					(port Neg)
+					(port Pos)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 11 41 55")
+						)
+						(property Author
+							(string "")
+						)
+						(property Organization
+							(string "")
+						)
+						(property Info
+							(string "")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell PNP
+			(cellType GENERIC)
+			(view PNP4
+				(viewType SCHEMATIC)
+				(interface
+					(port B
+						(direction INPUT)
+					)
+					(port C)
+					(port E)
+					(port S)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 11 41 55")
+						)
+						(property Author
+							(string "")
+						)
+						(property Organization
+							(string "")
+						)
+						(property Info
+							(string "")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+			(view PNP3
+				(viewType SCHEMATIC)
+				(interface
+					(port B
+						(direction INPUT)
+					)
+					(port C)
+					(port E)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 11 41 55")
+						)
+						(property Author
+							(string "")
+						)
+						(property Organization
+							(string "")
+						)
+						(property Info
+							(string "")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+			(view VBIC5
+				(viewType SCHEMATIC)
+				(interface
+					(port B
+						(direction INPUT)
+					)
+					(port C)
+					(port E)
+					(port S)
+					(port ThermalNode
+						(direction INPUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 11 41 55")
+						)
+						(property Author
+							(string "")
+						)
+						(property Organization
+							(string "")
+						)
+						(property Info
+							(string "")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+			(view VBIC4
+				(viewType SCHEMATIC)
+				(interface
+					(port B
+						(direction INPUT)
+					)
+					(port C)
+					(port E)
+					(port S)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 11 41 55")
+						)
+						(property Author
+							(string "")
+						)
+						(property Organization
+							(string "")
+						)
+						(property Info
+							(string "")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+			(view VBIC3
+				(viewType SCHEMATIC)
+				(interface
+					(port B
+						(direction INPUT)
+					)
+					(port C)
+					(port E)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 11 41 55")
+						)
+						(property Author
+							(string "")
+						)
+						(property Organization
+							(string "")
+						)
+						(property Info
+							(string "")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell NPN
+			(cellType GENERIC)
+			(view NPN4
+				(viewType SCHEMATIC)
+				(interface
+					(port B
+						(direction INPUT)
+					)
+					(port C)
+					(port E)
+					(port S)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 11 41 55")
+						)
+						(property Author
+							(string "")
+						)
+						(property Organization
+							(string "")
+						)
+						(property Info
+							(string "")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+			(view NPN3
+				(viewType SCHEMATIC)
+				(interface
+					(port B
+						(direction INPUT)
+					)
+					(port C)
+					(port E)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 11 41 55")
+						)
+						(property Author
+							(string "")
+						)
+						(property Organization
+							(string "")
+						)
+						(property Info
+							(string "")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+			(view VBIC5
+				(viewType SCHEMATIC)
+				(interface
+					(port B
+						(direction INPUT)
+					)
+					(port C)
+					(port E)
+					(port S)
+					(port ThermalNode
+						(direction INPUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 11 41 55")
+						)
+						(property Author
+							(string "")
+						)
+						(property Organization
+							(string "")
+						)
+						(property Info
+							(string "")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+			(view VBIC4
+				(viewType SCHEMATIC)
+				(interface
+					(port B
+						(direction INPUT)
+					)
+					(port C)
+					(port E)
+					(port S)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 11 41 55")
+						)
+						(property Author
+							(string "")
+						)
+						(property Organization
+							(string "")
+						)
+						(property Info
+							(string "")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+			(view VBIC3
+				(viewType SCHEMATIC)
+				(interface
+					(port B
+						(direction INPUT)
+					)
+					(port C)
+					(port E)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 11 41 55")
+						)
+						(property Author
+							(string "")
+						)
+						(property Organization
+							(string "")
+						)
+						(property Info
+							(string "")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell Inductor
+			(cellType GENERIC)
+			(view VInductor
+				(viewType SCHEMATIC)
+				(interface
+					(port Neg)
+					(port Pos)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 11 41 55")
+						)
+						(property Author
+							(string "")
+						)
+						(property Organization
+							(string "")
+						)
+						(property Info
+							(string "")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(property TannerViewName
+						(string "Main")
+						(owner "Tanner Research Inc.")
+					)
+					(symbol
+						(property TannerViewName
+							(string "VInductor")
+							(owner "Tanner Research Inc.")
+						)
+					)
+				)
+			)
+			(view HInductor
+				(viewType SCHEMATIC)
+				(interface
+					(port Neg)
+					(port Pos)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 11 41 55")
+						)
+						(property Author
+							(string "")
+						)
+						(property Organization
+							(string "")
+						)
+						(property Info
+							(string "")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(property TannerViewName
+						(string "Main")
+						(owner "Tanner Research Inc.")
+					)
+					(symbol
+						(property TannerViewName
+							(string "HInductor")
+							(owner "Tanner Research Inc.")
+						)
+					)
+				)
+			)
+			(view Polynomial
+				(viewType SCHEMATIC)
+				(interface
+					(port Neg)
+					(port Pos)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 11 41 55")
+						)
+						(property Author
+							(string "")
+						)
+						(property Organization
+							(string "")
+						)
+						(property Info
+							(string "")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell Diode
+			(cellType GENERIC)
+			(view dio
+				(viewType SCHEMATIC)
+				(interface
+					(port Anode)
+					(port Cathode)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 11 41 55")
+						)
+						(property Author
+							(string "")
+						)
+						(property Organization
+							(string "")
+						)
+						(property Info
+							(string "")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell Capacitor
+			(cellType GENERIC)
+			(view VLinear
+				(viewType SCHEMATIC)
+				(interface
+					(port Neg)
+					(port Pos)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 11 41 55")
+						)
+						(property Author
+							(string "")
+						)
+						(property Organization
+							(string "")
+						)
+						(property Info
+							(string "")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(property TannerViewName
+						(string "Linear")
+						(owner "Tanner Research Inc.")
+					)
+					(symbol
+						(property TannerViewName
+							(string "VLinear")
+							(owner "Tanner Research Inc.")
+						)
+					)
+				)
+			)
+			(view HLinear
+				(viewType SCHEMATIC)
+				(interface
+					(port Neg)
+					(port Pos)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 11 41 55")
+						)
+						(property Author
+							(string "")
+						)
+						(property Organization
+							(string "")
+						)
+						(property Info
+							(string "")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(property TannerViewName
+						(string "Linear")
+						(owner "Tanner Research Inc.")
+					)
+					(symbol
+						(property TannerViewName
+							(string "HLinear")
+							(owner "Tanner Research Inc.")
+						)
+					)
+				)
+			)
+			(view Polynomial
+				(viewType SCHEMATIC)
+				(interface
+					(port Neg)
+					(port Pos)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 11 41 55")
+						)
+						(property Author
+							(string "")
+						)
+						(property Organization
+							(string "")
+						)
+						(property Info
+							(string "")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+	)
+	(external LogicGates
+		(edifLevel 0)
+		(technology
+			(numberDefinition
+				(scale 1
+					(e 1 -12)
+					(unit CAPACITANCE)
+				)
+			(scale (e 5000000 0) (e 1270000 -4) (unit DISTANCE))
+			)
+			(figureGroup background
+				(visible
+					(true)
+				)
+				(color 0 0 0)
+				(pathWidth 0)
+			)
+			(figureGroup device
+				(visible
+					(true)
+				)
+				(color 0 80 40)
+				(pathWidth 0)
+			)
+			(figureGroup wire
+				(visible
+					(true)
+				)
+				(color 23 75 100)
+				(pathWidth 0)
+			)
+			(figureGroup netlabel
+				(visible
+					(true)
+				)
+				(color 23 75 100)
+				(pathWidth 0)
+			)
+			(figureGroup text
+				(visible
+					(true)
+				)
+				(color 100 0 0)
+				(pathWidth 0)
+			)
+			(figureGroup portshape
+				(visible
+					(true)
+				)
+				(color 100 0 100)
+				(pathWidth 0)
+			)
+			(figureGroup pin
+				(visible
+					(true)
+				)
+				(color 100 0 100)
+				(pathWidth 0)
+			)
+			(figureGroup instance
+				(visible
+					(false)
+				)
+				(color 85 80 0)
+				(pathWidth 0)
+			)
+			(figureGroup instance_with_name_visible
+				(visible
+					(true)
+				)
+				(color 85 80 0)
+				(pathWidth 0)
+			)
+			(figureGroup cellname
+				(visible
+					(false)
+				)
+				(color 0 80 40)
+				(pathWidth 0)
+			)
+			(figureGroup cellname_with_name_visible
+				(visible
+					(true)
+				)
+				(color 0 80 40)
+				(pathWidth 0)
+			)
+			(figureGroup property
+				(visible
+					(true)
+				)
+				(color 75 75 75)
+				(pathWidth 0)
+			)
+		)
+		
+		(cell INV
+			(cellType GENERIC)
+			(view Main
+				(viewType SCHEMATIC)
+				(interface
+					(port A
+						(direction INPUT)
+					)
+					(port Out
+						(direction OUTPUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1998 07 23 23 51 34")
+						)
+						(property Author
+							(string "Consulting & Engineering Services")
+						)
+						(property Organization
+							(string "Tanner Research, Pasadena")
+						)
+						(property Info
+							(string "Bargraph Shift Register Example")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+				(status
+					(written
+						(timeStamp 2007 06 13 19 17 11)
+						(author "Tanner EDA Library Development Team")
+						(dataOrigin "Tanner EDA - Tanner Research, Inc.")
+					)
+				)
+				(property TannerStandard
+					(boolean
+						(true)
+					)
+					(property Info
+						(string "Inverter")
+					)
+					(property RevisionCount
+						(string "64")
+					)
+				)
+			)
+		)
+		(cell Buf1
+			(cellType GENERIC)
+			(view Main
+				(viewType SCHEMATIC)
+				(interface
+					(port In
+						(direction INPUT)
+					)
+					(port Out
+						(direction OUTPUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1998 07 23 23 50 39")
+						)
+						(property Author
+							(string "Consulting & Engineering Services")
+						)
+						(property Organization
+							(string "Tanner Research, Pasadena")
+						)
+						(property Info
+							(string "Bargraph Shift Register Example")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+				(status
+					(written
+						(timeStamp 2007 06 13 19 17 11)
+						(author "Tanner EDA Library Development Team")
+						(dataOrigin "Tanner EDA - Tanner Research, Inc.")
+					)
+				)
+				(property TannerStandard
+					(boolean
+						(true)
+					)
+					(property Info
+						(string "1x Buffer")
+					)
+					(property RevisionCount
+						(string "33")
+					)
+				)
+			)
+		)
+		(cell NOR3C
+			(cellType GENERIC)
+			(view Main
+				(viewType SCHEMATIC)
+				(interface
+					(port A
+						(direction INPUT)
+					)
+					(port B
+						(direction INPUT)
+					)
+					(port C
+						(direction INPUT)
+					)
+					(port Out1
+						(direction OUTPUT)
+					)
+					(port Out2
+						(direction OUTPUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2006 03 24 14 28 44")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+				(status
+					(written
+						(timeStamp 2007 07 12 18 24 48)
+					)
+				)
+				(property TannerStandard
+					(boolean
+						(true)
+					)
+					(property RevisionCount
+						(string "80")
+					)
+				)
+			)
+		)
+		(cell NOR2C
+			(cellType GENERIC)
+			(view Main
+				(viewType SCHEMATIC)
+				(interface
+					(port A
+						(direction INPUT)
+					)
+					(port B
+						(direction INPUT)
+					)
+					(port Out1
+						(direction OUTPUT)
+					)
+					(port Out2
+						(direction OUTPUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2006 03 24 14 28 44")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+				(status
+					(written
+						(timeStamp 2007 07 12 18 44 17)
+					)
+				)
+				(property TannerStandard
+					(boolean
+						(true)
+					)
+					(property RevisionCount
+						(string "16")
+					)
+				)
+			)
+		)
+		(cell NOR2
+			(cellType GENERIC)
+			(view Main
+				(viewType SCHEMATIC)
+				(interface
+					(port A
+						(direction INPUT)
+					)
+					(port B
+						(direction INPUT)
+					)
+					(port Out
+						(direction OUTPUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1998 07 23 23 52 40")
+						)
+						(property Author
+							(string "Consulting & Engineering Services")
+						)
+						(property Organization
+							(string "Tanner Research, Pasadena")
+						)
+						(property Info
+							(string "Bargraph Shift Register Example")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+				(status
+					(written
+						(timeStamp 2007 07 12 18 24 48)
+						(author "Tanner EDA Library Development Team")
+						(dataOrigin "Tanner EDA - Tanner Research, Inc.")
+					)
+				)
+				(property TannerStandard
+					(boolean
+						(true)
+					)
+					(property Info
+						(string "2 Input NOR")
+					)
+					(property RevisionCount
+						(string "33")
+					)
+				)
+			)
+		)
+		(cell NAND3C
+			(cellType GENERIC)
+			(view Main
+				(viewType SCHEMATIC)
+				(interface
+					(port A
+						(direction INPUT)
+					)
+					(port B
+						(direction INPUT)
+					)
+					(port C
+						(direction INPUT)
+					)
+					(port Out1
+						(direction OUTPUT)
+					)
+					(port Out2
+						(direction OUTPUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2006 03 24 14 28 44")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+				(status
+					(written
+						(timeStamp 2007 06 13 19 17 11)
+					)
+				)
+				(property TannerStandard
+					(boolean
+						(true)
+					)
+					(property RevisionCount
+						(string "39")
+					)
+				)
+			)
+		)
+		(cell NAND2C
+			(cellType GENERIC)
+			(view Main
+				(viewType SCHEMATIC)
+				(interface
+					(port A
+						(direction INPUT)
+					)
+					(port B
+						(direction INPUT)
+					)
+					(port Out1
+						(direction OUTPUT)
+					)
+					(port Out2
+						(direction OUTPUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1998 07 23 23 52 18")
+						)
+						(property Author
+							(string "Consulting & Engineering Services")
+						)
+						(property Organization
+							(string "Tanner Research, Pasadena")
+						)
+						(property Info
+							(string "Bargraph Shift Register Example")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+				(status
+					(written
+						(timeStamp 2007 06 13 19 17 11)
+						(author "Tanner EDA Library Development Team")
+						(dataOrigin "Tanner EDA - Tanner Research, Inc.")
+					)
+				)
+				(property TannerStandard
+					(boolean
+						(true)
+					)
+					(property Info
+						(string "2 Input NAND with complementary output.")
+					)
+					(property RevisionCount
+						(string "62")
+					)
+				)
+			)
+		)
+		(cell Mux2
+			(cellType GENERIC)
+			(view Main
+				(viewType SCHEMATIC)
+				(interface
+					(port A
+						(direction INPUT)
+					)
+					(port B
+						(direction INPUT)
+					)
+					(port Out
+						(direction OUTPUT)
+					)
+					(port Sel
+						(direction INPUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1998 07 23 23 51 58")
+						)
+						(property Author
+							(string "Consulting & Engineering Services")
+						)
+						(property Organization
+							(string "Tanner Research, Pasadena")
+						)
+						(property Info
+							(string "Bargraph Shift Register Example")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+				(status
+					(written
+						(timeStamp 2007 05 21 17 43 54)
+						(author "Tanner EDA Library Development Team")
+						(dataOrigin "Tanner EDA - Tanner Research, Inc.")
+					)
+				)
+				(property TannerStandard
+					(boolean
+						(true)
+					)
+					(property Info
+						(string "2 Input Multiplexer")
+					)
+					(property RevisionCount
+						(string "37")
+					)
+				)
+			)
+		)
+		(cell DFFC
+			(cellType GENERIC)
+			(view Main
+				(viewType SCHEMATIC)
+				(interface
+					(port ClB
+						(direction INPUT)
+					)
+					(port Clk
+						(direction INPUT)
+					)
+					(port Data
+						(direction INPUT)
+					)
+					(port Q
+						(direction OUTPUT)
+					)
+					(port QB
+						(direction OUTPUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1998 07 23 23 51 02")
+						)
+						(property Author
+							(string "Consulting & Engineering Services")
+						)
+						(property Organization
+							(string "Tanner Research, Pasadena")
+						)
+						(property Info
+							(string "Bargraph Shift Register Example")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+				(status
+					(written
+						(timeStamp 2007 06 11 18 39 34)
+						(author "Tanner EDA Library Development Team")
+						(dataOrigin "Tanner EDA - Tanner Research, Inc.")
+					)
+				)
+				(property TannerStandard
+					(boolean
+						(true)
+					)
+					(property Info
+						(string "D Flip-Flop with Clear")
+					)
+					(property RevisionCount
+						(string "43")
+					)
+				)
+			)
+		)
+		(cell Buf2
+			(cellType GENERIC)
+			(view Main
+				(viewType SCHEMATIC)
+				(interface
+					(port In
+						(direction INPUT)
+					)
+					(port Out
+						(direction OUTPUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1997 11 07 23 53 02")
+						)
+						(property Author
+							(string "Consulting & Engineering Services")
+						)
+						(property Organization
+							(string "Tanner Research, Pasadena")
+						)
+						(property Info
+							(string "Bargraph Shift Register Example")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+				(status
+					(written
+						(timeStamp 2007 06 13 19 17 11)
+						(author "Tanner EDA Library Development Team")
+						(dataOrigin "Tanner EDA - Tanner Research, Inc.")
+					)
+				)
+				(property TannerStandard
+					(boolean
+						(true)
+					)
+					(property Info
+						(string "2x Buffer")
+					)
+					(property RevisionCount
+						(string "33")
+					)
+				)
+			)
+		)
+	)
+	(library BusesAndArrays
+		(edifLevel 0)
+		(technology
+			(numberDefinition
+				(scale 1
+					(e 1 -12)
+					(unit CAPACITANCE)
+				)
+			(scale (e 5000000 0) (e 1270000 -4) (unit DISTANCE))
+			)
+			(figureGroup background
+				(visible
+					(true)
+				)
+				(color 0 0 0)
+				(pathWidth 0)
+			)
+			(figureGroup device
+				(visible
+					(true)
+				)
+				(color 0 80 40)
+				(pathWidth 0)
+			)
+			(figureGroup wire
+				(visible
+					(true)
+				)
+				(color 23 75 100)
+				(pathWidth 0)
+			)
+			(figureGroup netlabel
+				(visible
+					(true)
+				)
+				(color 23 75 100)
+				(pathWidth 0)
+			)
+			(figureGroup text
+				(visible
+					(true)
+				)
+				(color 100 0 0)
+				(pathWidth 0)
+			)
+			(figureGroup portshape
+				(visible
+					(true)
+				)
+				(color 100 0 100)
+				(pathWidth 0)
+			)
+			(figureGroup pin
+				(visible
+					(true)
+				)
+				(color 100 0 100)
+				(pathWidth 0)
+			)
+			(figureGroup instance
+				(visible
+					(false)
+				)
+				(color 85 80 0)
+				(pathWidth 0)
+			)
+			(figureGroup instance_with_name_visible
+				(visible
+					(true)
+				)
+				(color 85 80 0)
+				(pathWidth 0)
+			)
+			(figureGroup cellname
+				(visible
+					(false)
+				)
+				(color 0 80 40)
+				(pathWidth 0)
+			)
+			(figureGroup cellname_with_name_visible
+				(visible
+					(true)
+				)
+				(color 0 80 40)
+				(pathWidth 0)
+			)
+			(figureGroup property
+				(visible
+					(true)
+				)
+				(color 75 75 75)
+				(pathWidth 0)
+			)
+		)
+		(cell Ripper
+			(cellType RIPPER)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port
+						(array dst 16)
+					)
+					(port
+						(array src 16)
+					)
+					(joined
+						(portRef dst)
+						(portRef src)
+					)
+					(symbol
+						(figure device
+							(circle
+								(pt -5 0)
+								(pt 5 0)
+							)
+						)
+						(portImplementation dst
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 0 0)
+									)
+								)
+							)
+						)
+						(portImplementation src
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 0 0)
+									)
+								)
+							)
+						)
+					)
+				)
+			)
+		)
+		(cell Top
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port In
+						(direction INPUT)
+					)
+					(port Out
+						(direction OUTPUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2006 03 01 16 00 00")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol
+						(property TannerStandard
+							(boolean
+								(true)
+							)
+							(property Timestamp
+								(string "2008 01 23 22 50 15")
+							)
+							(property RevisionCount
+								(string "22")
+							)
+						)
+						(boundingBox
+							(rectangle
+								(pt -300 -800)
+								(pt 300 0)
+							)
+						)
+						(keywordDisplay cell
+							(display
+								(figureGroupOverride cellname
+									(textHeight 42)
+								)
+								(origin
+									(pt -300 -800)
+								)
+							)
+						)
+						(keywordDisplay instance
+							(display
+								(figureGroupOverride instance
+									(visible
+										(true)
+									)
+									(textHeight 97)
+								)
+								(justify CENTERLEFT)
+								(origin
+									(pt 400 -400)
+								)
+							)
+						)
+						(portImplementation
+							(name Out
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 0 -800)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 0 -800)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -4 -804)
+									(pt 4 -796)
+								)
+							)
+						)
+						(portImplementation
+							(name In
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 0 0)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -4 -4)
+									(pt 4 4)
+								)
+							)
+						)
+						(figure device
+							(rectangle
+								(pt -300 -600)
+								(pt 300 -200)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 0 -200)
+									(pt 0 0)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 0 -600)
+									(pt 0 -800)
+								)
+							)
+						)
+					)
+				)
+			)
+		)
+		(cell Right
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port In
+						(direction INPUT)
+					)
+					(port Out
+						(direction OUTPUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2006 03 01 16 00 00")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol
+						(property TannerStandard
+							(boolean
+								(true)
+							)
+							(property Timestamp
+								(string "2008 01 23 22 50 15")
+							)
+							(property RevisionCount
+								(string "14")
+							)
+						)
+						(boundingBox
+							(rectangle
+								(pt 0 -200)
+								(pt 1000 200)
+							)
+						)
+						(keywordDisplay cell
+							(display
+								(figureGroupOverride cellname
+									(textHeight 42)
+								)
+								(origin
+									(pt 200 -400)
+								)
+							)
+						)
+						(keywordDisplay instance
+							(display
+								(figureGroupOverride instance
+									(visible
+										(true)
+									)
+									(textHeight 97)
+								)
+								(justify CENTERLEFT)
+								(origin
+									(pt 200 -300)
+								)
+							)
+						)
+						(portImplementation
+							(name Out
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 1000 0)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 1000 0)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 996 -4)
+									(pt 1004 4)
+								)
+							)
+						)
+						(portImplementation
+							(name In
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 0 0)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -4 -4)
+									(pt 4 4)
+								)
+							)
+						)
+						(figure device
+							(rectangle
+								(pt 200 -200)
+								(pt 800 200)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 0 0)
+									(pt 200 0)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 1000 0)
+									(pt 800 0)
+								)
+							)
+						)
+					)
+				)
+			)
+		)
+		(cell Left
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port In
+						(direction INPUT)
+					)
+					(port Out
+						(direction OUTPUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2006 03 01 16 00 00")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol
+						(property TannerStandard
+							(boolean
+								(true)
+							)
+							(property Timestamp
+								(string "2008 01 23 22 50 15")
+							)
+							(property RevisionCount
+								(string "14")
+							)
+						)
+						(boundingBox
+							(rectangle
+								(pt 0 -200)
+								(pt 1000 200)
+							)
+						)
+						(keywordDisplay cell
+							(display
+								(figureGroupOverride cellname
+									(textHeight 42)
+								)
+								(origin
+									(pt 200 -400)
+								)
+							)
+						)
+						(keywordDisplay instance
+							(display
+								(figureGroupOverride instance
+									(visible
+										(true)
+									)
+									(textHeight 97)
+								)
+								(justify CENTERLEFT)
+								(origin
+									(pt 200 -300)
+								)
+							)
+						)
+						(portImplementation
+							(name In
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 0 0)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -4 -4)
+									(pt 4 4)
+								)
+							)
+						)
+						(portImplementation
+							(name Out
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 1000 0)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 1000 0)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 996 -4)
+									(pt 1004 4)
+								)
+							)
+						)
+						(figure device
+							(rectangle
+								(pt 200 -200)
+								(pt 800 200)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 1000 0)
+									(pt 800 0)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 0 0)
+									(pt 200 0)
+								)
+							)
+						)
+					)
+				)
+			)
+		)
+		(cell Inv8
+			(cellType GENERIC)
+			(view schematic
+				(viewType SCHEMATIC)
+				(interface
+					(port
+						(array
+							(rename A_LESS_0_COLON_7_GREATER_ "A<0:7>")
+						8
+						)
+						(direction INPUT)
+					)
+					(port
+						(array
+							(rename Out_LESS_0_COLON_7_GREATER_ "Out<0:7>")
+						8
+						)
+						(direction OUTPUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2006 05 09 06 15 46")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol
+						(property TannerStandard
+							(boolean
+								(true)
+							)
+							(property Timestamp
+								(string "2008 01 23 21 55 37")
+							)
+							(property RevisionCount
+								(string "11")
+							)
+						)
+						(boundingBox
+							(rectangle
+								(pt -200 -200)
+								(pt 1500 200)
+							)
+						)
+						(keywordDisplay cell
+							(display
+								(figureGroupOverride cellname
+									(textHeight 42)
+								)
+								(origin
+									(pt 0 -400)
+								)
+							)
+						)
+						(keywordDisplay instance
+							(display
+								(figureGroupOverride instance
+									(visible
+										(true)
+									)
+									(textHeight 97)
+								)
+								(justify LOWERRIGHT)
+								(origin
+									(pt 1300 -300)
+								)
+							)
+						)
+						(annotate
+							(stringDisplay "A<0:7>"
+								(display
+									(figureGroupOverride text
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 0 0)
+									)
+								)
+							)
+						)
+						(annotate
+							(stringDisplay "Out<0:7>"
+								(display
+									(figureGroupOverride text
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt 1300 0)
+									)
+								)
+							)
+						)
+						(portImplementation
+							(name A_LESS_0_COLON_7_GREATER_
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt -200 0)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt -200 0)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -204 -4)
+									(pt -196 4)
+								)
+							)
+						)
+						(portImplementation
+							(name Out_LESS_0_COLON_7_GREATER_
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 1500 0)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 1500 0)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 1496 -4)
+									(pt 1504 4)
+								)
+							)
+						)
+						(figure device
+							(rectangle
+								(pt 0 -200)
+								(pt 1300 200)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt -200 0)
+									(pt 0 0)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 1500 0)
+									(pt 1300 0)
+								)
+							)
+						)
+					)
+				)
+				(status
+					(written
+						(timeStamp 2008 01 23 21 55 37)
+					)
+				)
+				(property TannerStandard
+					(boolean
+						(true)
+					)
+					(property RevisionCount
+						(string "69")
+					)
+				)
+				(contents
+					(page Page0
+						(portImplementation
+							(name A_LESS_0_COLON_7_GREATER_
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt 3700 6300)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 3700 6300)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 3696 6296)
+									(pt 3704 6304)
+								)
+							)
+						)
+						(portImplementation
+							(name Out_LESS_0_COLON_7_GREATER_
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 7600 6300)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 7600 6300)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 7596 6296)
+									(pt 7604 6304)
+								)
+							)
+						)
+						(instance Buf1
+							(viewRef Main
+								(cellRef Buf1
+									(libraryRef LogicGates)
+								)
+							)
+							(transform
+								(origin
+									(pt 4800 6300)
+								)
+							)
+						)
+						(instance Buf2
+							(viewRef Main
+								(cellRef Buf1
+									(libraryRef LogicGates)
+								)
+							)
+							(transform
+								(origin
+									(pt 4800 4900)
+								)
+							)
+						)
+						(instance Buf3
+							(viewRef Main
+								(cellRef Buf1
+									(libraryRef LogicGates)
+								)
+							)
+							(transform
+								(origin
+									(pt 4800 3500)
+								)
+							)
+						)
+						(instance Buf4
+							(viewRef Main
+								(cellRef Buf1
+									(libraryRef LogicGates)
+								)
+							)
+							(transform
+								(origin
+									(pt 4800 2100)
+								)
+							)
+						)
+						(instance INV1
+							(viewRef Main
+								(cellRef INV
+									(libraryRef LogicGates)
+								)
+							)
+							(transform
+								(origin
+									(pt 4800 5600)
+								)
+							)
+						)
+						(instance INV2
+							(viewRef Main
+								(cellRef INV
+									(libraryRef LogicGates)
+								)
+							)
+							(transform
+								(origin
+									(pt 4800 4200)
+								)
+							)
+						)
+						(instance INV3
+							(viewRef Main
+								(cellRef INV
+									(libraryRef LogicGates)
+								)
+							)
+							(transform
+								(origin
+									(pt 4800 2800)
+								)
+							)
+						)
+						(instance INV4
+							(viewRef Main
+								(cellRef INV
+									(libraryRef LogicGates)
+								)
+							)
+							(transform
+								(origin
+									(pt 4800 1400)
+								)
+							)
+						)
+						(instance Ripper_0
+							(viewRef view_1
+								(cellRef Ripper)
+							)
+							(transform
+								(origin
+									(pt 4400 2100)
+								)
+							)
+						)
+						(instance Ripper_1
+							(viewRef view_1
+								(cellRef Ripper)
+							)
+							(transform
+								(origin
+									(pt 4400 2800)
+								)
+							)
+						)
+						(instance Ripper_2
+							(viewRef view_1
+								(cellRef Ripper)
+							)
+							(transform
+								(origin
+									(pt 4400 3500)
+								)
+							)
+						)
+						(instance Ripper_3
+							(viewRef view_1
+								(cellRef Ripper)
+							)
+							(transform
+								(origin
+									(pt 4400 4200)
+								)
+							)
+						)
+						(instance Ripper_4
+							(viewRef view_1
+								(cellRef Ripper)
+							)
+							(transform
+								(origin
+									(pt 4400 4900)
+								)
+							)
+						)
+						(instance Ripper_5
+							(viewRef view_1
+								(cellRef Ripper)
+							)
+							(transform
+								(origin
+									(pt 4400 5600)
+								)
+							)
+						)
+						(instance Ripper_6
+							(viewRef view_1
+								(cellRef Ripper)
+							)
+							(transform
+								(origin
+									(pt 4400 6300)
+								)
+							)
+						)
+						(instance Ripper_7
+							(viewRef view_1
+								(cellRef Ripper)
+							)
+							(transform
+								(origin
+									(pt 6300 2100)
+								)
+							)
+						)
+						(instance Ripper_8
+							(viewRef view_1
+								(cellRef Ripper)
+							)
+							(transform
+								(origin
+									(pt 6300 2800)
+								)
+							)
+						)
+						(instance Ripper_9
+							(viewRef view_1
+								(cellRef Ripper)
+							)
+							(transform
+								(origin
+									(pt 6300 3500)
+								)
+							)
+						)
+						(instance Ripper_10
+							(viewRef view_1
+								(cellRef Ripper)
+							)
+							(transform
+								(origin
+									(pt 6300 4200)
+								)
+							)
+						)
+						(instance Ripper_11
+							(viewRef view_1
+								(cellRef Ripper)
+							)
+							(transform
+								(origin
+									(pt 6300 4900)
+								)
+							)
+						)
+						(instance Ripper_12
+							(viewRef view_1
+								(cellRef Ripper)
+							)
+							(transform
+								(origin
+									(pt 6300 5600)
+								)
+							)
+						)
+						(instance Ripper_13
+							(viewRef view_1
+								(cellRef Ripper)
+							)
+							(transform
+								(origin
+									(pt 6300 6300)
+								)
+							)
+						)
+						(netBundle
+							(rename A_LESS_0_COLON_7_GREATER_ "A<0:7>")
+							(listOfNets
+								(net
+									(rename A_LESS_0_GREATER_ "A<0>")
+									(joined
+										(portRef (member A_LESS_0_COLON_7_GREATER_ 0))
+										(portRef
+											(member src 0)
+											(instanceRef Ripper_6)
+										)
+									)
+								)
+								(net
+									(rename A_LESS_1_GREATER_ "A<1>")
+									(joined
+										(portRef (member A_LESS_0_COLON_7_GREATER_ 1))
+										(portRef
+											(member src 1)
+											(instanceRef Ripper_5)
+										)
+									)
+								)
+								(net
+									(rename A_LESS_2_GREATER_ "A<2>")
+									(joined
+										(portRef (member A_LESS_0_COLON_7_GREATER_ 2))
+										(portRef
+											(member src 2)
+											(instanceRef Ripper_4)
+										)
+									)
+								)
+								(net
+									(rename A_LESS_3_GREATER_ "A<3>")
+									(joined
+										(portRef (member A_LESS_0_COLON_7_GREATER_ 3))
+										(portRef
+											(member src 3)
+											(instanceRef Ripper_3)
+										)
+									)
+								)
+								(net
+									(rename A_LESS_4_GREATER_ "A<4>")
+									(joined
+										(portRef (member A_LESS_0_COLON_7_GREATER_ 4))
+										(portRef
+											(member src 4)
+											(instanceRef Ripper_2)
+										)
+									)
+								)
+								(net
+									(rename A_LESS_5_GREATER_ "A<5>")
+									(joined
+										(portRef (member A_LESS_0_COLON_7_GREATER_ 5))
+										(portRef
+											(member src 5)
+											(instanceRef Ripper_1)
+										)
+									)
+								)
+								(net
+									(rename A_LESS_6_GREATER_ "A<6>")
+									(joined
+										(portRef (member A_LESS_0_COLON_7_GREATER_ 6))
+										(portRef
+											(member src 6)
+											(instanceRef Ripper_0)
+										)
+									)
+								)
+								(net
+									(rename A_LESS_7_GREATER_ "A<7>")
+									(joined
+										(portRef (member A_LESS_0_COLON_7_GREATER_ 7))
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 3700 6300)
+										(pt 3900 6300)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4400 6300)
+										(pt 4400 5600)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 3900 6300)
+										(pt 4400 6300)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4400 2800)
+										(pt 4400 2100)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4400 3500)
+										(pt 4400 2800)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4400 3500)
+										(pt 4400 4200)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4400 4200)
+										(pt 4400 4900)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4400 4900)
+										(pt 4400 5600)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "A<0:7>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 3900 6300)
+											)
+										)
+									)
+								)
+							)
+						)
+						(net
+							(rename A_LESS_0_GREATER_ "A<0>")
+							(joined
+								(portRef
+									(member dst 0)
+									(instanceRef Ripper_6)
+								)
+								(portRef In
+									(instanceRef Buf1)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4800 6300)
+										(pt 4600 6300)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4400 6300)
+										(pt 4600 6300)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "A<0>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 4600 6300)
+											)
+										)
+									)
+								)
+							)
+						)
+						(net
+							(rename A_LESS_1_GREATER_ "A<1>")
+							(joined
+								(portRef
+									(member dst 1)
+									(instanceRef Ripper_5)
+								)
+								(portRef A
+									(instanceRef INV1)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4800 5600)
+										(pt 4600 5600)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4400 5600)
+										(pt 4600 5600)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "A<1>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 4600 5600)
+											)
+										)
+									)
+								)
+							)
+						)
+						(net
+							(rename A_LESS_2_GREATER_ "A<2>")
+							(joined
+								(portRef
+									(member dst 2)
+									(instanceRef Ripper_4)
+								)
+								(portRef In
+									(instanceRef Buf2)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4400 4900)
+										(pt 4600 4900)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4800 4900)
+										(pt 4600 4900)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "A<2>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 4600 4900)
+											)
+										)
+									)
+								)
+							)
+						)
+						(net
+							(rename A_LESS_3_GREATER_ "A<3>")
+							(joined
+								(portRef
+									(member dst 3)
+									(instanceRef Ripper_3)
+								)
+								(portRef A
+									(instanceRef INV2)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4800 4200)
+										(pt 4600 4200)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4400 4200)
+										(pt 4600 4200)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "A<3>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 4600 4200)
+											)
+										)
+									)
+								)
+							)
+						)
+						(net
+							(rename A_LESS_4_GREATER_ "A<4>")
+							(joined
+								(portRef
+									(member dst 4)
+									(instanceRef Ripper_2)
+								)
+								(portRef In
+									(instanceRef Buf3)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4400 3500)
+										(pt 4600 3500)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4800 3500)
+										(pt 4600 3500)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "A<4>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 4600 3500)
+											)
+										)
+									)
+								)
+							)
+						)
+						(net
+							(rename A_LESS_5_GREATER_ "A<5>")
+							(joined
+								(portRef
+									(member dst 5)
+									(instanceRef Ripper_1)
+								)
+								(portRef A
+									(instanceRef INV3)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4400 2800)
+										(pt 4600 2800)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4800 2800)
+										(pt 4600 2800)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "A<5>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 4600 2800)
+											)
+										)
+									)
+								)
+							)
+						)
+						(net
+							(rename A_LESS_6_GREATER_ "A<6>")
+							(joined
+								(portRef
+									(member dst 6)
+									(instanceRef Ripper_0)
+								)
+								(portRef In
+									(instanceRef Buf4)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4400 2100)
+										(pt 4600 2100)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4800 2100)
+										(pt 4600 2100)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "A<6>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 4600 2100)
+											)
+										)
+									)
+								)
+							)
+						)
+						(net
+							(rename A_LESS_7_GREATER_ "A<7>")
+							(joined
+								(portRef A
+									(instanceRef INV4)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4600 1400)
+										(pt 4800 1400)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4400 2100)
+										(pt 4400 1400)
+										(pt 4600 1400)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "A<7>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 4600 1400)
+											)
+										)
+									)
+								)
+							)
+						)
+						(netBundle
+							(rename Out_LESS_0_COLON_7_GREATER_ "Out<0:7>")
+							(listOfNets
+								(net
+									(rename Out_LESS_0_GREATER_ "Out<0>")
+									(joined
+										(portRef (member Out_LESS_0_COLON_7_GREATER_ 0))
+										(portRef
+											(member src 0)
+											(instanceRef Ripper_13)
+										)
+									)
+								)
+								(net
+									(rename Out_LESS_1_GREATER_ "Out<1>")
+									(joined
+										(portRef (member Out_LESS_0_COLON_7_GREATER_ 1))
+										(portRef
+											(member src 1)
+											(instanceRef Ripper_12)
+										)
+									)
+								)
+								(net
+									(rename Out_LESS_2_GREATER_ "Out<2>")
+									(joined
+										(portRef (member Out_LESS_0_COLON_7_GREATER_ 2))
+										(portRef
+											(member src 2)
+											(instanceRef Ripper_11)
+										)
+									)
+								)
+								(net
+									(rename Out_LESS_3_GREATER_ "Out<3>")
+									(joined
+										(portRef (member Out_LESS_0_COLON_7_GREATER_ 3))
+										(portRef
+											(member src 3)
+											(instanceRef Ripper_10)
+										)
+									)
+								)
+								(net
+									(rename Out_LESS_4_GREATER_ "Out<4>")
+									(joined
+										(portRef (member Out_LESS_0_COLON_7_GREATER_ 4))
+										(portRef
+											(member src 4)
+											(instanceRef Ripper_9)
+										)
+									)
+								)
+								(net
+									(rename Out_LESS_5_GREATER_ "Out<5>")
+									(joined
+										(portRef (member Out_LESS_0_COLON_7_GREATER_ 5))
+										(portRef
+											(member src 5)
+											(instanceRef Ripper_8)
+										)
+									)
+								)
+								(net
+									(rename Out_LESS_6_GREATER_ "Out<6>")
+									(joined
+										(portRef (member Out_LESS_0_COLON_7_GREATER_ 6))
+										(portRef
+											(member src 6)
+											(instanceRef Ripper_7)
+										)
+									)
+								)
+								(net
+									(rename Out_LESS_7_GREATER_ "Out<7>")
+									(joined
+										(portRef (member Out_LESS_0_COLON_7_GREATER_ 7))
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 7600 6300)
+										(pt 6900 6300)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 6900 6300)
+										(pt 6300 6300)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 6300 6300)
+										(pt 6300 5600)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 6300 2800)
+										(pt 6300 2100)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 6300 3500)
+										(pt 6300 2800)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 6300 4200)
+										(pt 6300 3500)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 6300 4900)
+										(pt 6300 4200)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 6300 5600)
+										(pt 6300 4900)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "Out<0:7>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 6900 6300)
+											)
+										)
+									)
+								)
+							)
+						)
+						(net
+							(rename Out_LESS_0_GREATER_ "Out<0>")
+							(joined
+								(portRef
+									(member dst 0)
+									(instanceRef Ripper_13)
+								)
+								(portRef Out
+									(instanceRef Buf1)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5900 6300)
+										(pt 5700 6300)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 6300 6300)
+										(pt 5900 6300)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "Out<0>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 5900 6300)
+											)
+										)
+									)
+								)
+							)
+						)
+						(net
+							(rename Out_LESS_1_GREATER_ "Out<1>")
+							(joined
+								(portRef
+									(member dst 1)
+									(instanceRef Ripper_12)
+								)
+								(portRef Out
+									(instanceRef INV1)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5700 5600)
+										(pt 5900 5600)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5900 5600)
+										(pt 6300 5600)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "Out<1>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 5900 5600)
+											)
+										)
+									)
+								)
+							)
+						)
+						(net
+							(rename Out_LESS_2_GREATER_ "Out<2>")
+							(joined
+								(portRef
+									(member dst 2)
+									(instanceRef Ripper_11)
+								)
+								(portRef Out
+									(instanceRef Buf2)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5700 4900)
+										(pt 5900 4900)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5900 4900)
+										(pt 6300 4900)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "Out<2>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 5900 4900)
+											)
+										)
+									)
+								)
+							)
+						)
+						(net
+							(rename Out_LESS_3_GREATER_ "Out<3>")
+							(joined
+								(portRef
+									(member dst 3)
+									(instanceRef Ripper_10)
+								)
+								(portRef Out
+									(instanceRef INV2)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5700 4200)
+										(pt 5900 4200)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5900 4200)
+										(pt 6300 4200)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "Out<3>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 5900 4200)
+											)
+										)
+									)
+								)
+							)
+						)
+						(net
+							(rename Out_LESS_4_GREATER_ "Out<4>")
+							(joined
+								(portRef
+									(member dst 4)
+									(instanceRef Ripper_9)
+								)
+								(portRef Out
+									(instanceRef Buf3)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5700 3500)
+										(pt 5900 3500)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5900 3500)
+										(pt 6300 3500)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "Out<4>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 5900 3500)
+											)
+										)
+									)
+								)
+							)
+						)
+						(net
+							(rename Out_LESS_5_GREATER_ "Out<5>")
+							(joined
+								(portRef
+									(member dst 5)
+									(instanceRef Ripper_8)
+								)
+								(portRef Out
+									(instanceRef INV3)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5700 2800)
+										(pt 5900 2800)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5900 2800)
+										(pt 6300 2800)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "Out<5>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 5900 2800)
+											)
+										)
+									)
+								)
+							)
+						)
+						(net
+							(rename Out_LESS_6_GREATER_ "Out<6>")
+							(joined
+								(portRef
+									(member dst 6)
+									(instanceRef Ripper_7)
+								)
+								(portRef Out
+									(instanceRef Buf4)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5700 2100)
+										(pt 5900 2100)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5900 2100)
+										(pt 6300 2100)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "Out<6>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 5900 2100)
+											)
+										)
+									)
+								)
+							)
+						)
+						(net
+							(rename Out_LESS_7_GREATER_ "Out<7>")
+							(joined
+								(portRef Out
+									(instanceRef INV4)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5900 1400)
+										(pt 5700 1400)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 6300 2100)
+										(pt 6300 1400)
+										(pt 5900 1400)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "Out<7>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 5900 1400)
+											)
+										)
+									)
+								)
+							)
+						)
+						(commentGraphics)
+					)
+				)
+			)
+		)
+		(cell Bottom
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port In
+						(direction INPUT)
+					)
+					(port Out
+						(direction OUTPUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2006 03 01 16 00 00")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol
+						(property TannerStandard
+							(boolean
+								(true)
+							)
+							(property Timestamp
+								(string "2008 01 23 22 50 15")
+							)
+							(property RevisionCount
+								(string "17")
+							)
+						)
+						(boundingBox
+							(rectangle
+								(pt -300 -800)
+								(pt 300 0)
+							)
+						)
+						(keywordDisplay cell
+							(display
+								(figureGroupOverride cellname
+									(textHeight 42)
+								)
+								(origin
+									(pt -300 -800)
+								)
+							)
+						)
+						(keywordDisplay instance
+							(display
+								(figureGroupOverride instance
+									(visible
+										(true)
+									)
+									(textHeight 97)
+								)
+								(justify CENTERLEFT)
+								(origin
+									(pt 400 -400)
+								)
+							)
+						)
+						(portImplementation
+							(name In
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 0 0)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -4 -4)
+									(pt 4 4)
+								)
+							)
+						)
+						(portImplementation
+							(name Out
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 0 -800)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 0 -800)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -4 -804)
+									(pt 4 -796)
+								)
+							)
+						)
+						(figure device
+							(rectangle
+								(pt -300 -600)
+								(pt 300 -200)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 0 -600)
+									(pt 0 -800)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 0 -200)
+									(pt 0 0)
+								)
+							)
+						)
+					)
+				)
+			)
+		)
+		(cell A
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port InX
+						(direction INPUT)
+					)
+					(port InY
+						(direction INPUT)
+					)
+					(port OutX
+						(direction OUTPUT)
+					)
+					(port OutY
+						(direction OUTPUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2006 03 01 16 00 00")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol
+						(property TannerStandard
+							(boolean
+								(true)
+							)
+							(property Timestamp
+								(string "2008 01 23 22 50 15")
+							)
+							(property RevisionCount
+								(string "12")
+							)
+						)
+						(boundingBox
+							(rectangle
+								(pt 0 -400)
+								(pt 800 400)
+							)
+						)
+						(keywordDisplay cell
+							(display
+								(figureGroupOverride cellname
+									(textHeight 42)
+								)
+								(origin
+									(pt 200 -400)
+								)
+							)
+						)
+						(keywordDisplay instance
+							(display
+								(figureGroupOverride instance
+									(visible
+										(true)
+									)
+									(textHeight 97)
+								)
+								(justify CENTERLEFT)
+								(origin
+									(pt 700 -200)
+								)
+							)
+						)
+						(portImplementation
+							(name InX
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 0 0)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -4 -4)
+									(pt 4 4)
+								)
+							)
+						)
+						(portImplementation
+							(name OutX
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 800 0)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 800 0)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 796 -4)
+									(pt 804 4)
+								)
+							)
+						)
+						(portImplementation
+							(name InY
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt 400 400)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 400 400)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 396 396)
+									(pt 404 404)
+								)
+							)
+						)
+						(portImplementation
+							(name OutY
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 400 -400)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 400 -400)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 396 -404)
+									(pt 404 -396)
+								)
+							)
+						)
+						(figure device
+							(rectangle
+								(pt 200 -200)
+								(pt 600 200)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 400 400)
+									(pt 400 200)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 0 0)
+									(pt 200 0)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 600 0)
+									(pt 800 0)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 400 400)
+									(pt 400 200)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 400 -200)
+									(pt 400 -400)
+								)
+							)
+						)
+					)
+				)
+			)
+		)
+		(cell Example5
+			(cellType GENERIC)
+			(view view_array
+				(viewType SCHEMATIC)
+				(interface
+					(port
+						(array
+							(rename InX_LESS_0_COLON_3_GREATER_ "InX<0:3>")
+						4
+						)
+						(direction INPUT)
+					)
+					(port
+						(array
+							(rename InY_LESS_0_COLON_3_GREATER_ "InY<0:3>")
+						4
+						)
+						(direction INPUT)
+					)
+					(port
+						(array
+							(rename OutX_LESS_0_COLON_3_GREATER_ "OutX<0:3>")
+						4
+						)
+						(direction OUTPUT)
+					)
+					(port
+						(array
+							(rename OutY_LESS_0_COLON_3_GREATER_ "OutY<0:3>")
+						4
+						)
+						(direction OUTPUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2006 03 01 16 00 00")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+				)
+				(status
+					(written
+						(timeStamp 2008 01 23 22 50 15)
+					)
+				)
+				(property TannerStandard
+					(boolean
+						(true)
+					)
+					(property RevisionCount
+						(string "37")
+					)
+				)
+				(contents
+					(page Page0
+						(portImplementation
+							(name InX_LESS_0_COLON_3_GREATER_
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt 1900 4000)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 1900 4000)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 1896 3996)
+									(pt 1904 4004)
+								)
+							)
+						)
+						(portImplementation
+							(name InY_LESS_0_COLON_3_GREATER_
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt 4600 5900)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 4600 5900)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 4596 5896)
+									(pt 4604 5904)
+								)
+							)
+						)
+						(portImplementation
+							(name OutX_LESS_0_COLON_3_GREATER_
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 7300 4000)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 7300 4000)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 7296 3996)
+									(pt 7304 4004)
+								)
+							)
+						)
+						(portImplementation
+							(name OutY_LESS_0_COLON_3_GREATER_
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 4600 2100)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 4600 2100)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 4596 2096)
+									(pt 4604 2104)
+								)
+							)
+						)
+						(instance
+							(array
+								(rename Bottom_LESS_0_COLON_3_GREATER_ "Bottom<0:3>")
+							4
+							)
+							(viewRef view_1
+								(cellRef Bottom)
+							)
+							(transform
+								(origin
+									(pt 4600 3000)
+								)
+							)
+						)
+						(instance
+							(array
+								(rename Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ "Cen<0:3><0:3>")
+							16
+							)
+							(viewRef view_1
+								(cellRef A)
+							)
+							(transform
+								(origin
+									(pt 4200 4000)
+								)
+							)
+						)
+						(instance
+							(array
+								(rename Left_LESS_0_COLON_3_GREATER_ "Left<0:3>")
+							4
+							)
+							(viewRef view_1
+								(cellRef Left)
+							)
+							(transform
+								(origin
+									(pt 2000 4000)
+								)
+							)
+						)
+						(instance
+							(array
+								(rename Right_LESS_0_COLON_3_GREATER_ "Right<0:3>")
+							4
+							)
+							(viewRef view_1
+								(cellRef Right)
+							)
+							(transform
+								(origin
+									(pt 6200 4000)
+								)
+							)
+						)
+						(instance
+							(array
+								(rename Top_LESS_0_COLON_3_GREATER_ "Top<0:3>")
+							4
+							)
+							(viewRef view_1
+								(cellRef Top)
+							)
+							(transform
+								(origin
+									(pt 4600 5800)
+								)
+							)
+						)
+						(netBundle
+							(rename InX_LESS_0_COLON_3_GREATER_ "InX<0:3>")
+							(listOfNets
+								(net
+									(rename InX_LESS_0_GREATER_ "InX<0>")
+									(joined
+										(portRef (member InX_LESS_0_COLON_3_GREATER_ 0))
+										(portRef In
+											(instanceRef
+												(member Left_LESS_0_COLON_3_GREATER_ 0)
+											)
+										)
+									)
+								)
+								(net
+									(rename InX_LESS_1_GREATER_ "InX<1>")
+									(joined
+										(portRef (member InX_LESS_0_COLON_3_GREATER_ 1))
+										(portRef In
+											(instanceRef
+												(member Left_LESS_0_COLON_3_GREATER_ 1)
+											)
+										)
+									)
+								)
+								(net
+									(rename InX_LESS_2_GREATER_ "InX<2>")
+									(joined
+										(portRef (member InX_LESS_0_COLON_3_GREATER_ 2))
+										(portRef In
+											(instanceRef
+												(member Left_LESS_0_COLON_3_GREATER_ 2)
+											)
+										)
+									)
+								)
+								(net
+									(rename InX_LESS_3_GREATER_ "InX<3>")
+									(joined
+										(portRef (member InX_LESS_0_COLON_3_GREATER_ 3))
+										(portRef In
+											(instanceRef
+												(member Left_LESS_0_COLON_3_GREATER_ 3)
+											)
+										)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 1900 4000)
+										(pt 2000 4000)
+									)
+								)
+							)
+						)
+						(netBundle
+							(rename InY_LESS_0_COLON_3_GREATER_ "InY<0:3>")
+							(listOfNets
+								(net
+									(rename InY_LESS_0_GREATER_ "InY<0>")
+									(joined
+										(portRef (member InY_LESS_0_COLON_3_GREATER_ 0))
+										(portRef In
+											(instanceRef
+												(member Top_LESS_0_COLON_3_GREATER_ 0)
+											)
+										)
+									)
+								)
+								(net
+									(rename InY_LESS_1_GREATER_ "InY<1>")
+									(joined
+										(portRef (member InY_LESS_0_COLON_3_GREATER_ 1))
+										(portRef In
+											(instanceRef
+												(member Top_LESS_0_COLON_3_GREATER_ 1)
+											)
+										)
+									)
+								)
+								(net
+									(rename InY_LESS_2_GREATER_ "InY<2>")
+									(joined
+										(portRef (member InY_LESS_0_COLON_3_GREATER_ 2))
+										(portRef In
+											(instanceRef
+												(member Top_LESS_0_COLON_3_GREATER_ 2)
+											)
+										)
+									)
+								)
+								(net
+									(rename InY_LESS_3_GREATER_ "InY<3>")
+									(joined
+										(portRef (member InY_LESS_0_COLON_3_GREATER_ 3))
+										(portRef In
+											(instanceRef
+												(member Top_LESS_0_COLON_3_GREATER_ 3)
+											)
+										)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4600 5900)
+										(pt 4600 5800)
+									)
+								)
+							)
+						)
+						(netBundle
+							(rename OutX_LESS_0_COLON_3_GREATER_ "OutX<0:3>")
+							(listOfNets
+								(net
+									(rename OutX_LESS_0_GREATER_ "OutX<0>")
+									(joined
+										(portRef (member OutX_LESS_0_COLON_3_GREATER_ 0))
+										(portRef Out
+											(instanceRef
+												(member Right_LESS_0_COLON_3_GREATER_ 0)
+											)
+										)
+									)
+								)
+								(net
+									(rename OutX_LESS_1_GREATER_ "OutX<1>")
+									(joined
+										(portRef (member OutX_LESS_0_COLON_3_GREATER_ 1))
+										(portRef Out
+											(instanceRef
+												(member Right_LESS_0_COLON_3_GREATER_ 1)
+											)
+										)
+									)
+								)
+								(net
+									(rename OutX_LESS_2_GREATER_ "OutX<2>")
+									(joined
+										(portRef (member OutX_LESS_0_COLON_3_GREATER_ 2))
+										(portRef Out
+											(instanceRef
+												(member Right_LESS_0_COLON_3_GREATER_ 2)
+											)
+										)
+									)
+								)
+								(net
+									(rename OutX_LESS_3_GREATER_ "OutX<3>")
+									(joined
+										(portRef (member OutX_LESS_0_COLON_3_GREATER_ 3))
+										(portRef Out
+											(instanceRef
+												(member Right_LESS_0_COLON_3_GREATER_ 3)
+											)
+										)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 7300 4000)
+										(pt 7200 4000)
+									)
+								)
+							)
+						)
+						(netBundle
+							(rename OutY_LESS_0_COLON_3_GREATER_ "OutY<0:3>")
+							(listOfNets
+								(net
+									(rename OutY_LESS_0_GREATER_ "OutY<0>")
+									(joined
+										(portRef (member OutY_LESS_0_COLON_3_GREATER_ 0))
+										(portRef Out
+											(instanceRef
+												(member Bottom_LESS_0_COLON_3_GREATER_ 0)
+											)
+										)
+									)
+								)
+								(net
+									(rename OutY_LESS_1_GREATER_ "OutY<1>")
+									(joined
+										(portRef (member OutY_LESS_0_COLON_3_GREATER_ 1))
+										(portRef Out
+											(instanceRef
+												(member Bottom_LESS_0_COLON_3_GREATER_ 1)
+											)
+										)
+									)
+								)
+								(net
+									(rename OutY_LESS_2_GREATER_ "OutY<2>")
+									(joined
+										(portRef (member OutY_LESS_0_COLON_3_GREATER_ 2))
+										(portRef Out
+											(instanceRef
+												(member Bottom_LESS_0_COLON_3_GREATER_ 2)
+											)
+										)
+									)
+								)
+								(net
+									(rename OutY_LESS_3_GREATER_ "OutY<3>")
+									(joined
+										(portRef (member OutY_LESS_0_COLON_3_GREATER_ 3))
+										(portRef Out
+											(instanceRef
+												(member Bottom_LESS_0_COLON_3_GREATER_ 3)
+											)
+										)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4600 2100)
+										(pt 4600 2200)
+									)
+								)
+							)
+						)
+						(netBundle
+							(rename P_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ "P<0:3><0:3>")
+							(listOfNets
+								(net
+									(rename P_LESS_0_GREATER__LESS_0_GREATER_ "P<0><0>")
+									(joined
+										(portRef InY
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 0)
+											)
+										)
+									)
+								)
+								(net
+									(rename P_LESS_0_GREATER__LESS_1_GREATER_ "P<0><1>")
+									(joined
+										(portRef InY
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 1)
+											)
+										)
+									)
+								)
+								(net
+									(rename P_LESS_0_GREATER__LESS_2_GREATER_ "P<0><2>")
+									(joined
+										(portRef InY
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 2)
+											)
+										)
+									)
+								)
+								(net
+									(rename P_LESS_0_GREATER__LESS_3_GREATER_ "P<0><3>")
+									(joined
+										(portRef InY
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 3)
+											)
+										)
+									)
+								)
+								(net
+									(rename P_LESS_1_GREATER__LESS_0_GREATER_ "P<1><0>")
+									(joined
+										(portRef InY
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 4)
+											)
+										)
+									)
+								)
+								(net
+									(rename P_LESS_1_GREATER__LESS_1_GREATER_ "P<1><1>")
+									(joined
+										(portRef InY
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 5)
+											)
+										)
+									)
+								)
+								(net
+									(rename P_LESS_1_GREATER__LESS_2_GREATER_ "P<1><2>")
+									(joined
+										(portRef InY
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 6)
+											)
+										)
+									)
+								)
+								(net
+									(rename P_LESS_1_GREATER__LESS_3_GREATER_ "P<1><3>")
+									(joined
+										(portRef InY
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 7)
+											)
+										)
+									)
+								)
+								(net
+									(rename P_LESS_2_GREATER__LESS_0_GREATER_ "P<2><0>")
+									(joined
+										(portRef InY
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 8)
+											)
+										)
+									)
+								)
+								(net
+									(rename P_LESS_2_GREATER__LESS_1_GREATER_ "P<2><1>")
+									(joined
+										(portRef InY
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 9)
+											)
+										)
+									)
+								)
+								(net
+									(rename P_LESS_2_GREATER__LESS_2_GREATER_ "P<2><2>")
+									(joined
+										(portRef InY
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 10)
+											)
+										)
+									)
+								)
+								(net
+									(rename P_LESS_2_GREATER__LESS_3_GREATER_ "P<2><3>")
+									(joined
+										(portRef InY
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 11)
+											)
+										)
+									)
+								)
+								(net
+									(rename P_LESS_3_GREATER__LESS_0_GREATER_ "P<3><0>")
+									(joined
+										(portRef InY
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 12)
+											)
+										)
+									)
+								)
+								(net
+									(rename P_LESS_3_GREATER__LESS_1_GREATER_ "P<3><1>")
+									(joined
+										(portRef InY
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 13)
+											)
+										)
+									)
+								)
+								(net
+									(rename P_LESS_3_GREATER__LESS_2_GREATER_ "P<3><2>")
+									(joined
+										(portRef InY
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 14)
+											)
+										)
+									)
+								)
+								(net
+									(rename P_LESS_3_GREATER__LESS_3_GREATER_ "P<3><3>")
+									(joined
+										(portRef InY
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 15)
+											)
+										)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4600 4600)
+										(pt 4600 4400)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "P<0:3><0:3>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(justify UPPERLEFT)
+											(origin
+												(pt 4600 4600)
+											)
+										)
+									)
+								)
+							)
+						)
+						(netBundle
+							(rename P_LESS_0_COLON_3_GREATER__LESS_0_GREATER_ "P<0:3><0>")
+							(listOfNets
+								(net
+									(rename P_LESS_0_GREATER__LESS_0_GREATER_ "P<0><0>")
+									(joined
+										(portRef Out
+											(instanceRef
+												(member Top_LESS_0_COLON_3_GREATER_ 0)
+											)
+										)
+									)
+								)
+								(net
+									(rename P_LESS_1_GREATER__LESS_0_GREATER_ "P<1><0>")
+									(joined
+										(portRef Out
+											(instanceRef
+												(member Top_LESS_0_COLON_3_GREATER_ 1)
+											)
+										)
+									)
+								)
+								(net
+									(rename P_LESS_2_GREATER__LESS_0_GREATER_ "P<2><0>")
+									(joined
+										(portRef Out
+											(instanceRef
+												(member Top_LESS_0_COLON_3_GREATER_ 2)
+											)
+										)
+									)
+								)
+								(net
+									(rename P_LESS_3_GREATER__LESS_0_GREATER_ "P<3><0>")
+									(joined
+										(portRef Out
+											(instanceRef
+												(member Top_LESS_0_COLON_3_GREATER_ 3)
+											)
+										)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4600 5000)
+										(pt 4600 4800)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "P<0:3><0>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 4600 4800)
+											)
+										)
+									)
+								)
+							)
+						)
+						(netBundle
+							(rename P_LESS_0_COLON_3_GREATER__LESS_1_COLON_4_GREATER_ "P<0:3><1:4>")
+							(listOfNets
+								(net
+									(rename P_LESS_0_GREATER__LESS_1_GREATER_ "P<0><1>")
+									(joined
+										(portRef OutY
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 0)
+											)
+										)
+									)
+								)
+								(net
+									(rename P_LESS_0_GREATER__LESS_2_GREATER_ "P<0><2>")
+									(joined
+										(portRef OutY
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 1)
+											)
+										)
+									)
+								)
+								(net
+									(rename P_LESS_0_GREATER__LESS_3_GREATER_ "P<0><3>")
+									(joined
+										(portRef OutY
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 2)
+											)
+										)
+									)
+								)
+								(net
+									(rename P_LESS_0_GREATER__LESS_4_GREATER_ "P<0><4>")
+									(joined
+										(portRef OutY
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 3)
+											)
+										)
+									)
+								)
+								(net
+									(rename P_LESS_1_GREATER__LESS_1_GREATER_ "P<1><1>")
+									(joined
+										(portRef OutY
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 4)
+											)
+										)
+									)
+								)
+								(net
+									(rename P_LESS_1_GREATER__LESS_2_GREATER_ "P<1><2>")
+									(joined
+										(portRef OutY
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 5)
+											)
+										)
+									)
+								)
+								(net
+									(rename P_LESS_1_GREATER__LESS_3_GREATER_ "P<1><3>")
+									(joined
+										(portRef OutY
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 6)
+											)
+										)
+									)
+								)
+								(net
+									(rename P_LESS_1_GREATER__LESS_4_GREATER_ "P<1><4>")
+									(joined
+										(portRef OutY
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 7)
+											)
+										)
+									)
+								)
+								(net
+									(rename P_LESS_2_GREATER__LESS_1_GREATER_ "P<2><1>")
+									(joined
+										(portRef OutY
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 8)
+											)
+										)
+									)
+								)
+								(net
+									(rename P_LESS_2_GREATER__LESS_2_GREATER_ "P<2><2>")
+									(joined
+										(portRef OutY
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 9)
+											)
+										)
+									)
+								)
+								(net
+									(rename P_LESS_2_GREATER__LESS_3_GREATER_ "P<2><3>")
+									(joined
+										(portRef OutY
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 10)
+											)
+										)
+									)
+								)
+								(net
+									(rename P_LESS_2_GREATER__LESS_4_GREATER_ "P<2><4>")
+									(joined
+										(portRef OutY
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 11)
+											)
+										)
+									)
+								)
+								(net
+									(rename P_LESS_3_GREATER__LESS_1_GREATER_ "P<3><1>")
+									(joined
+										(portRef OutY
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 12)
+											)
+										)
+									)
+								)
+								(net
+									(rename P_LESS_3_GREATER__LESS_2_GREATER_ "P<3><2>")
+									(joined
+										(portRef OutY
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 13)
+											)
+										)
+									)
+								)
+								(net
+									(rename P_LESS_3_GREATER__LESS_3_GREATER_ "P<3><3>")
+									(joined
+										(portRef OutY
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 14)
+											)
+										)
+									)
+								)
+								(net
+									(rename P_LESS_3_GREATER__LESS_4_GREATER_ "P<3><4>")
+									(joined
+										(portRef OutY
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 15)
+											)
+										)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4600 3400)
+										(pt 4600 3600)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "P<0:3><1:4>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 4600 3400)
+											)
+										)
+									)
+								)
+							)
+						)
+						(netBundle
+							(rename P_LESS_0_COLON_3_GREATER__LESS_4_GREATER_ "P<0:3><4>")
+							(listOfNets
+								(net
+									(rename P_LESS_0_GREATER__LESS_4_GREATER_ "P<0><4>")
+									(joined
+										(portRef In
+											(instanceRef
+												(member Bottom_LESS_0_COLON_3_GREATER_ 0)
+											)
+										)
+									)
+								)
+								(net
+									(rename P_LESS_1_GREATER__LESS_4_GREATER_ "P<1><4>")
+									(joined
+										(portRef In
+											(instanceRef
+												(member Bottom_LESS_0_COLON_3_GREATER_ 1)
+											)
+										)
+									)
+								)
+								(net
+									(rename P_LESS_2_GREATER__LESS_4_GREATER_ "P<2><4>")
+									(joined
+										(portRef In
+											(instanceRef
+												(member Bottom_LESS_0_COLON_3_GREATER_ 2)
+											)
+										)
+									)
+								)
+								(net
+									(rename P_LESS_3_GREATER__LESS_4_GREATER_ "P<3><4>")
+									(joined
+										(portRef In
+											(instanceRef
+												(member Bottom_LESS_0_COLON_3_GREATER_ 3)
+											)
+										)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4600 3000)
+										(pt 4600 3200)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "P<0:3><4>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(justify UPPERLEFT)
+											(origin
+												(pt 4600 3200)
+											)
+										)
+									)
+								)
+							)
+						)
+						(netBundle
+							(rename Q_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ "Q<0:3><0:3>")
+							(listOfNets
+								(net
+									(rename Q_LESS_0_GREATER__LESS_0_GREATER_ "Q<0><0>")
+									(joined
+										(portRef InX
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 0)
+											)
+										)
+									)
+								)
+								(net
+									(rename Q_LESS_0_GREATER__LESS_1_GREATER_ "Q<0><1>")
+									(joined
+										(portRef InX
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 1)
+											)
+										)
+									)
+								)
+								(net
+									(rename Q_LESS_0_GREATER__LESS_2_GREATER_ "Q<0><2>")
+									(joined
+										(portRef InX
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 2)
+											)
+										)
+									)
+								)
+								(net
+									(rename Q_LESS_0_GREATER__LESS_3_GREATER_ "Q<0><3>")
+									(joined
+										(portRef InX
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 3)
+											)
+										)
+									)
+								)
+								(net
+									(rename Q_LESS_1_GREATER__LESS_0_GREATER_ "Q<1><0>")
+									(joined
+										(portRef InX
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 4)
+											)
+										)
+									)
+								)
+								(net
+									(rename Q_LESS_1_GREATER__LESS_1_GREATER_ "Q<1><1>")
+									(joined
+										(portRef InX
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 5)
+											)
+										)
+									)
+								)
+								(net
+									(rename Q_LESS_1_GREATER__LESS_2_GREATER_ "Q<1><2>")
+									(joined
+										(portRef InX
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 6)
+											)
+										)
+									)
+								)
+								(net
+									(rename Q_LESS_1_GREATER__LESS_3_GREATER_ "Q<1><3>")
+									(joined
+										(portRef InX
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 7)
+											)
+										)
+									)
+								)
+								(net
+									(rename Q_LESS_2_GREATER__LESS_0_GREATER_ "Q<2><0>")
+									(joined
+										(portRef InX
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 8)
+											)
+										)
+									)
+								)
+								(net
+									(rename Q_LESS_2_GREATER__LESS_1_GREATER_ "Q<2><1>")
+									(joined
+										(portRef InX
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 9)
+											)
+										)
+									)
+								)
+								(net
+									(rename Q_LESS_2_GREATER__LESS_2_GREATER_ "Q<2><2>")
+									(joined
+										(portRef InX
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 10)
+											)
+										)
+									)
+								)
+								(net
+									(rename Q_LESS_2_GREATER__LESS_3_GREATER_ "Q<2><3>")
+									(joined
+										(portRef InX
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 11)
+											)
+										)
+									)
+								)
+								(net
+									(rename Q_LESS_3_GREATER__LESS_0_GREATER_ "Q<3><0>")
+									(joined
+										(portRef InX
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 12)
+											)
+										)
+									)
+								)
+								(net
+									(rename Q_LESS_3_GREATER__LESS_1_GREATER_ "Q<3><1>")
+									(joined
+										(portRef InX
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 13)
+											)
+										)
+									)
+								)
+								(net
+									(rename Q_LESS_3_GREATER__LESS_2_GREATER_ "Q<3><2>")
+									(joined
+										(portRef InX
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 14)
+											)
+										)
+									)
+								)
+								(net
+									(rename Q_LESS_3_GREATER__LESS_3_GREATER_ "Q<3><3>")
+									(joined
+										(portRef InX
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 15)
+											)
+										)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 3600 4000)
+										(pt 4200 4000)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "Q<0:3><0:3>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 3600 4000)
+											)
+										)
+									)
+								)
+							)
+						)
+						(netBundle
+							(rename Q_LESS_0_GREATER__LESS_0_COLON_3_GREATER_ "Q<0><0:3>")
+							(listOfNets
+								(net
+									(rename Q_LESS_0_GREATER__LESS_0_GREATER_ "Q<0><0>")
+									(joined
+										(portRef Out
+											(instanceRef
+												(member Left_LESS_0_COLON_3_GREATER_ 0)
+											)
+										)
+									)
+								)
+								(net
+									(rename Q_LESS_0_GREATER__LESS_1_GREATER_ "Q<0><1>")
+									(joined
+										(portRef Out
+											(instanceRef
+												(member Left_LESS_0_COLON_3_GREATER_ 1)
+											)
+										)
+									)
+								)
+								(net
+									(rename Q_LESS_0_GREATER__LESS_2_GREATER_ "Q<0><2>")
+									(joined
+										(portRef Out
+											(instanceRef
+												(member Left_LESS_0_COLON_3_GREATER_ 2)
+											)
+										)
+									)
+								)
+								(net
+									(rename Q_LESS_0_GREATER__LESS_3_GREATER_ "Q<0><3>")
+									(joined
+										(portRef Out
+											(instanceRef
+												(member Left_LESS_0_COLON_3_GREATER_ 3)
+											)
+										)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 3000 4000)
+										(pt 3400 4000)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "Q<0><0:3>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(justify LOWERRIGHT)
+											(origin
+												(pt 3400 4000)
+											)
+										)
+									)
+								)
+							)
+						)
+						(netBundle
+							(rename Q_LESS_1_COLON_4_GREATER__LESS_0_COLON_3_GREATER_ "Q<1:4><0:3>")
+							(listOfNets
+								(net
+									(rename Q_LESS_1_GREATER__LESS_0_GREATER_ "Q<1><0>")
+									(joined
+										(portRef OutX
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 0)
+											)
+										)
+									)
+								)
+								(net
+									(rename Q_LESS_1_GREATER__LESS_1_GREATER_ "Q<1><1>")
+									(joined
+										(portRef OutX
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 1)
+											)
+										)
+									)
+								)
+								(net
+									(rename Q_LESS_1_GREATER__LESS_2_GREATER_ "Q<1><2>")
+									(joined
+										(portRef OutX
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 2)
+											)
+										)
+									)
+								)
+								(net
+									(rename Q_LESS_1_GREATER__LESS_3_GREATER_ "Q<1><3>")
+									(joined
+										(portRef OutX
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 3)
+											)
+										)
+									)
+								)
+								(net
+									(rename Q_LESS_2_GREATER__LESS_0_GREATER_ "Q<2><0>")
+									(joined
+										(portRef OutX
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 4)
+											)
+										)
+									)
+								)
+								(net
+									(rename Q_LESS_2_GREATER__LESS_1_GREATER_ "Q<2><1>")
+									(joined
+										(portRef OutX
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 5)
+											)
+										)
+									)
+								)
+								(net
+									(rename Q_LESS_2_GREATER__LESS_2_GREATER_ "Q<2><2>")
+									(joined
+										(portRef OutX
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 6)
+											)
+										)
+									)
+								)
+								(net
+									(rename Q_LESS_2_GREATER__LESS_3_GREATER_ "Q<2><3>")
+									(joined
+										(portRef OutX
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 7)
+											)
+										)
+									)
+								)
+								(net
+									(rename Q_LESS_3_GREATER__LESS_0_GREATER_ "Q<3><0>")
+									(joined
+										(portRef OutX
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 8)
+											)
+										)
+									)
+								)
+								(net
+									(rename Q_LESS_3_GREATER__LESS_1_GREATER_ "Q<3><1>")
+									(joined
+										(portRef OutX
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 9)
+											)
+										)
+									)
+								)
+								(net
+									(rename Q_LESS_3_GREATER__LESS_2_GREATER_ "Q<3><2>")
+									(joined
+										(portRef OutX
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 10)
+											)
+										)
+									)
+								)
+								(net
+									(rename Q_LESS_3_GREATER__LESS_3_GREATER_ "Q<3><3>")
+									(joined
+										(portRef OutX
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 11)
+											)
+										)
+									)
+								)
+								(net
+									(rename Q_LESS_4_GREATER__LESS_0_GREATER_ "Q<4><0>")
+									(joined
+										(portRef OutX
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 12)
+											)
+										)
+									)
+								)
+								(net
+									(rename Q_LESS_4_GREATER__LESS_1_GREATER_ "Q<4><1>")
+									(joined
+										(portRef OutX
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 13)
+											)
+										)
+									)
+								)
+								(net
+									(rename Q_LESS_4_GREATER__LESS_2_GREATER_ "Q<4><2>")
+									(joined
+										(portRef OutX
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 14)
+											)
+										)
+									)
+								)
+								(net
+									(rename Q_LESS_4_GREATER__LESS_3_GREATER_ "Q<4><3>")
+									(joined
+										(portRef OutX
+											(instanceRef
+												(member Cen_LESS_0_COLON_3_GREATER__LESS_0_COLON_3_GREATER_ 15)
+											)
+										)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5600 4000)
+										(pt 5000 4000)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "Q<1:4><0:3>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(justify LOWERRIGHT)
+											(origin
+												(pt 5600 4000)
+											)
+										)
+									)
+								)
+							)
+						)
+						(netBundle
+							(rename Q_LESS_4_GREATER__LESS_0_COLON_3_GREATER_ "Q<4><0:3>")
+							(listOfNets
+								(net
+									(rename Q_LESS_4_GREATER__LESS_0_GREATER_ "Q<4><0>")
+									(joined
+										(portRef In
+											(instanceRef
+												(member Right_LESS_0_COLON_3_GREATER_ 0)
+											)
+										)
+									)
+								)
+								(net
+									(rename Q_LESS_4_GREATER__LESS_1_GREATER_ "Q<4><1>")
+									(joined
+										(portRef In
+											(instanceRef
+												(member Right_LESS_0_COLON_3_GREATER_ 1)
+											)
+										)
+									)
+								)
+								(net
+									(rename Q_LESS_4_GREATER__LESS_2_GREATER_ "Q<4><2>")
+									(joined
+										(portRef In
+											(instanceRef
+												(member Right_LESS_0_COLON_3_GREATER_ 2)
+											)
+										)
+									)
+								)
+								(net
+									(rename Q_LESS_4_GREATER__LESS_3_GREATER_ "Q<4><3>")
+									(joined
+										(portRef In
+											(instanceRef
+												(member Right_LESS_0_COLON_3_GREATER_ 3)
+											)
+										)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5800 4000)
+										(pt 6200 4000)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "Q<4><0:3>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 5800 4000)
+											)
+										)
+									)
+								)
+							)
+						)
+						(commentGraphics)
+					)
+				)
+			)
+		)
+		(cell Example4
+			(cellType GENERIC)
+			(view schematic
+				(viewType SCHEMATIC)
+				(interface
+					(port In
+						(direction INPUT)
+					)
+					(port Out
+						(direction OUTPUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2006 05 09 05 43 59")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+				)
+				(status
+					(written
+						(timeStamp 2008 01 23 22 08 09)
+					)
+				)
+				(property TannerStandard
+					(boolean
+						(true)
+					)
+					(property RevisionCount
+						(string "45")
+					)
+				)
+				(contents
+					(page Page0
+						(portImplementation
+							(name In
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt 3700 4000)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 3700 4000)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 3696 3996)
+									(pt 3704 4004)
+								)
+							)
+						)
+						(portImplementation
+							(name Out
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 6400 4000)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 6400 4000)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 6396 3996)
+									(pt 6404 4004)
+								)
+							)
+						)
+						(instance
+							(array
+								(rename INV1_LESS_0_COLON_4_GREATER_ "INV1<0:4>")
+							5
+							)
+							(viewRef Main
+								(cellRef INV
+									(libraryRef LogicGates)
+								)
+							)
+							(transform
+								(origin
+									(pt 4500 4000)
+								)
+							)
+						)
+						(instance Ripper_0
+							(viewRef view_1
+								(cellRef Ripper)
+							)
+							(transform
+								(origin
+									(pt 6000 4000)
+								)
+							)
+						)
+						(net In
+							(joined
+								(portRef In)
+							)
+						)
+						(netBundle
+							(rename In_COMMA_N_LESS_0_COLON_3_GREATER_ "In,N<0:3>")
+							(listOfNets
+								(net In
+									(joined
+										(portRef A
+											(instanceRef
+												(member INV1_LESS_0_COLON_4_GREATER_ 0)
+											)
+										)
+									)
+								)
+								(net
+									(rename N_LESS_0_GREATER_ "N<0>")
+									(joined
+										(portRef A
+											(instanceRef
+												(member INV1_LESS_0_COLON_4_GREATER_ 1)
+											)
+										)
+									)
+								)
+								(net
+									(rename N_LESS_1_GREATER_ "N<1>")
+									(joined
+										(portRef A
+											(instanceRef
+												(member INV1_LESS_0_COLON_4_GREATER_ 2)
+											)
+										)
+									)
+								)
+								(net
+									(rename N_LESS_2_GREATER_ "N<2>")
+									(joined
+										(portRef A
+											(instanceRef
+												(member INV1_LESS_0_COLON_4_GREATER_ 3)
+											)
+										)
+									)
+								)
+								(net
+									(rename N_LESS_3_GREATER_ "N<3>")
+									(joined
+										(portRef A
+											(instanceRef
+												(member INV1_LESS_0_COLON_4_GREATER_ 4)
+											)
+										)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4500 4000)
+										(pt 3900 4000)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "In,N<0:3>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 3900 4000)
+											)
+										)
+									)
+								)
+							)
+						)
+						(netBundle
+							(rename N_LESS_0_COLON_3_GREATER__COMMA_Out "N<0:3>,Out")
+							(listOfNets
+								(net
+									(rename N_LESS_0_GREATER_ "N<0>")
+									(joined
+										(portRef Out
+											(instanceRef
+												(member INV1_LESS_0_COLON_4_GREATER_ 0)
+											)
+										)
+									)
+								)
+								(net
+									(rename N_LESS_1_GREATER_ "N<1>")
+									(joined
+										(portRef Out
+											(instanceRef
+												(member INV1_LESS_0_COLON_4_GREATER_ 1)
+											)
+										)
+									)
+								)
+								(net
+									(rename N_LESS_2_GREATER_ "N<2>")
+									(joined
+										(portRef Out
+											(instanceRef
+												(member INV1_LESS_0_COLON_4_GREATER_ 2)
+											)
+										)
+									)
+								)
+								(net
+									(rename N_LESS_3_GREATER_ "N<3>")
+									(joined
+										(portRef Out
+											(instanceRef
+												(member INV1_LESS_0_COLON_4_GREATER_ 3)
+											)
+										)
+									)
+								)
+								(net Out
+									(joined
+										(portRef
+											(member src 4)
+											(instanceRef Ripper_0)
+										)
+										(portRef Out
+											(instanceRef
+												(member INV1_LESS_0_COLON_4_GREATER_ 4)
+											)
+										)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5400 4000)
+										(pt 6000 4000)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "N<0:3>,Out"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(justify LOWERRIGHT)
+											(origin
+												(pt 6000 4000)
+											)
+										)
+									)
+								)
+							)
+						)
+						(net Out
+							(joined
+								(portRef Out)
+								(portRef
+									(member dst 4)
+									(instanceRef Ripper_0)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 6200 4000)
+										(pt 6000 4000)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 6400 4000)
+										(pt 6200 4000)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "Out"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 6200 4000)
+											)
+										)
+									)
+								)
+							)
+						)
+						(commentGraphics)
+					)
+				)
+			)
+			(view schematic_flat
+				(viewType SCHEMATIC)
+				(interface
+					(port In
+						(direction INPUT)
+					)
+					(port Out
+						(direction OUTPUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1970 1 1 0 0 0")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+				)
+				(status
+					(written
+						(timeStamp 2008 01 23 22 11 02)
+					)
+				)
+				(property TannerStandard
+					(boolean
+						(true)
+					)
+					(property RevisionCount
+						(string "1")
+					)
+				)
+				(contents
+					(page Page0
+						(portImplementation
+							(name In
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt 2000 4400)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 2000 4400)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 1996 4396)
+									(pt 2004 4404)
+								)
+							)
+						)
+						(portImplementation
+							(name Out
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 8300 4400)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 8300 4400)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 8296 4396)
+									(pt 8304 4404)
+								)
+							)
+						)
+						(instance
+							(rename INV1_LESS_0_GREATER_ "INV1<0>")
+							(viewRef Main
+								(cellRef INV
+									(libraryRef LogicGates)
+								)
+							)
+							(transform
+								(origin
+									(pt 2200 4400)
+								)
+							)
+						)
+						(instance
+							(rename INV1_LESS_1_GREATER_ "INV1<1>")
+							(viewRef Main
+								(cellRef INV
+									(libraryRef LogicGates)
+								)
+							)
+							(transform
+								(origin
+									(pt 3600 4400)
+								)
+							)
+						)
+						(instance
+							(rename INV1_LESS_2_GREATER_ "INV1<2>")
+							(viewRef Main
+								(cellRef INV
+									(libraryRef LogicGates)
+								)
+							)
+							(transform
+								(origin
+									(pt 4800 4400)
+								)
+							)
+						)
+						(instance
+							(rename INV1_LESS_3_GREATER_ "INV1<3>")
+							(viewRef Main
+								(cellRef INV
+									(libraryRef LogicGates)
+								)
+							)
+							(transform
+								(origin
+									(pt 6000 4400)
+								)
+							)
+						)
+						(instance
+							(rename INV1_LESS_4_GREATER_ "INV1<4>")
+							(viewRef Main
+								(cellRef INV
+									(libraryRef LogicGates)
+								)
+							)
+							(transform
+								(origin
+									(pt 7200 4400)
+								)
+							)
+						)
+						(net In
+							(joined
+								(portRef In)
+								(portRef A
+									(instanceRef INV1_LESS_0_GREATER_)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 2000 4400)
+										(pt 2200 4400)
+									)
+								)
+							)
+						)
+						(net
+							(rename N_LESS_0_GREATER_ "N<0>")
+							(joined
+								(portRef A
+									(instanceRef INV1_LESS_1_GREATER_)
+								)
+								(portRef Out
+									(instanceRef INV1_LESS_0_GREATER_)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 3100 4400)
+										(pt 3200 4400)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 3200 4400)
+										(pt 3600 4400)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "N<0>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 3200 4400)
+											)
+										)
+									)
+								)
+							)
+						)
+						(net
+							(rename N_LESS_1_GREATER_ "N<1>")
+							(joined
+								(portRef A
+									(instanceRef INV1_LESS_2_GREATER_)
+								)
+								(portRef Out
+									(instanceRef INV1_LESS_1_GREATER_)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4500 4400)
+										(pt 4600 4400)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4600 4400)
+										(pt 4800 4400)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "N<1>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 4600 4400)
+											)
+										)
+									)
+								)
+							)
+						)
+						(net
+							(rename N_LESS_2_GREATER_ "N<2>")
+							(joined
+								(portRef A
+									(instanceRef INV1_LESS_3_GREATER_)
+								)
+								(portRef Out
+									(instanceRef INV1_LESS_2_GREATER_)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5700 4400)
+										(pt 5800 4400)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5800 4400)
+										(pt 6000 4400)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "N<2>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 5800 4400)
+											)
+										)
+									)
+								)
+							)
+						)
+						(net
+							(rename N_LESS_3_GREATER_ "N<3>")
+							(joined
+								(portRef A
+									(instanceRef INV1_LESS_4_GREATER_)
+								)
+								(portRef Out
+									(instanceRef INV1_LESS_3_GREATER_)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 6900 4400)
+										(pt 7000 4400)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 7000 4400)
+										(pt 7200 4400)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "N<3>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 7000 4400)
+											)
+										)
+									)
+								)
+							)
+						)
+						(net Out
+							(joined
+								(portRef Out)
+								(portRef Out
+									(instanceRef INV1_LESS_4_GREATER_)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 8300 4400)
+										(pt 8100 4400)
+									)
+								)
+							)
+						)
+						(commentGraphics)
+					)
+				)
+			)
+		)
+		(cell Example3
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port
+						(array
+							(rename E_LESS_0_COLON_4_GREATER_ "E<0:4>")
+						5
+						)
+						(direction OUTPUT)
+					)
+					(port
+						(array
+							(rename In_LESS_0_COLON_7_GREATER_ "In<0:7>")
+						8
+						)
+						(direction INPUT)
+					)
+					(port Q
+						(direction OUTPUT)
+					)
+					(port R
+						(direction OUTPUT)
+					)
+					(port S
+						(direction OUTPUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2006 03 01 16 00 00")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+				)
+				(status
+					(written
+						(timeStamp 2008 01 23 21 55 37)
+					)
+				)
+				(property TannerStandard
+					(boolean
+						(true)
+					)
+					(property RevisionCount
+						(string "24")
+					)
+				)
+				(contents
+					(page Page0
+						(portImplementation
+							(name In_LESS_0_COLON_7_GREATER_
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt 2100 5700)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 2100 5700)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 2096 5696)
+									(pt 2104 5704)
+								)
+							)
+						)
+						(portImplementation
+							(name E_LESS_0_COLON_4_GREATER_
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 6700 5700)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 6700 5700)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 6696 5696)
+									(pt 6704 5704)
+								)
+							)
+						)
+						(portImplementation
+							(name S
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 6700 3600)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 6700 3600)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 6696 3596)
+									(pt 6704 3604)
+								)
+							)
+						)
+						(portImplementation
+							(name R
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 6700 4300)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 6700 4300)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 6696 4296)
+									(pt 6704 4304)
+								)
+							)
+						)
+						(portImplementation
+							(name Q
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 6700 5000)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 6700 5000)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 6696 4996)
+									(pt 6704 5004)
+								)
+							)
+						)
+						(instance Buf3
+							(viewRef Main
+								(cellRef Buf1
+									(libraryRef LogicGates)
+								)
+							)
+							(transform
+								(origin
+									(pt 5600 5000)
+								)
+							)
+						)
+						(instance Buf4
+							(viewRef Main
+								(cellRef Buf1
+									(libraryRef LogicGates)
+								)
+							)
+							(transform
+								(origin
+									(pt 5600 3600)
+								)
+							)
+						)
+						(instance
+							(array
+								(rename INV2_LESS_0_COLON_4_GREATER_ "INV2<0:4>")
+							5
+							)
+							(viewRef Main
+								(cellRef INV
+									(libraryRef LogicGates)
+								)
+							)
+							(transform
+								(origin
+									(pt 5600 5700)
+								)
+							)
+						)
+						(instance INV3
+							(viewRef Main
+								(cellRef INV
+									(libraryRef LogicGates)
+								)
+							)
+							(transform
+								(origin
+									(pt 5600 4300)
+								)
+							)
+						)
+						(instance Inv8a
+							(viewRef schematic
+								(cellRef Inv8)
+							)
+							(transform
+								(origin
+									(pt 2500 5700)
+								)
+							)
+						)
+						(instance Ripper_0
+							(viewRef view_1
+								(cellRef Ripper)
+							)
+							(transform
+								(origin
+									(pt 4800 4300)
+								)
+							)
+						)
+						(instance Ripper_1
+							(viewRef view_1
+								(cellRef Ripper)
+							)
+							(transform
+								(origin
+									(pt 4800 5000)
+								)
+							)
+						)
+						(instance Ripper_2
+							(viewRef view_1
+								(cellRef Ripper)
+							)
+							(transform
+								(origin
+									(pt 4800 5700)
+								)
+							)
+						)
+						(instance Ripper_3
+							(viewRef view_1
+								(cellRef Ripper)
+							)
+							(transform
+								(origin
+									(pt 4800 5700)
+								)
+							)
+						)
+						(netBundle
+							(rename D_LESS_3_COLON_7_GREATER_ "D<3:7>")
+							(listOfNets
+								(net
+									(rename D_LESS_3_GREATER_ "D<3>")
+									(joined
+										(portRef
+											(member dst 0)
+											(instanceRef Ripper_2)
+										)
+										(portRef A
+											(instanceRef
+												(member INV2_LESS_0_COLON_4_GREATER_ 0)
+											)
+										)
+									)
+								)
+								(net
+									(rename D_LESS_4_GREATER_ "D<4>")
+									(joined
+										(portRef
+											(member dst 1)
+											(instanceRef Ripper_2)
+										)
+										(portRef A
+											(instanceRef
+												(member INV2_LESS_0_COLON_4_GREATER_ 1)
+											)
+										)
+									)
+								)
+								(net
+									(rename D_LESS_5_GREATER_ "D<5>")
+									(joined
+										(portRef
+											(member dst 2)
+											(instanceRef Ripper_2)
+										)
+										(portRef A
+											(instanceRef
+												(member INV2_LESS_0_COLON_4_GREATER_ 2)
+											)
+										)
+									)
+								)
+								(net
+									(rename D_LESS_6_GREATER_ "D<6>")
+									(joined
+										(portRef
+											(member dst 3)
+											(instanceRef Ripper_2)
+										)
+										(portRef A
+											(instanceRef
+												(member INV2_LESS_0_COLON_4_GREATER_ 3)
+											)
+										)
+									)
+								)
+								(net
+									(rename D_LESS_7_GREATER_ "D<7>")
+									(joined
+										(portRef
+											(member dst 4)
+											(instanceRef Ripper_2)
+										)
+										(portRef A
+											(instanceRef
+												(member INV2_LESS_0_COLON_4_GREATER_ 4)
+											)
+										)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4800 5700)
+										(pt 5300 5700)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5300 5700)
+										(pt 5600 5700)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "D<3:7>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 5300 5700)
+											)
+										)
+									)
+								)
+							)
+						)
+						(netBundle
+							(rename D_LESS_3_COLON_7_GREATER__COMMA_Qu_COMMA_Rb_COMMA_Su "D<3:7>,Qu,Rb,Su")
+							(listOfNets
+								(net
+									(rename D_LESS_3_GREATER_ "D<3>")
+									(joined
+										(portRef
+											(member src 0)
+											(instanceRef Ripper_2)
+										)
+										(portRef (member Out_LESS_0_COLON_7_GREATER_ 0)
+											(instanceRef Inv8a)
+										)
+									)
+								)
+								(net
+									(rename D_LESS_4_GREATER_ "D<4>")
+									(joined
+										(portRef
+											(member src 1)
+											(instanceRef Ripper_2)
+										)
+										(portRef (member Out_LESS_0_COLON_7_GREATER_ 1)
+											(instanceRef Inv8a)
+										)
+									)
+								)
+								(net
+									(rename D_LESS_5_GREATER_ "D<5>")
+									(joined
+										(portRef
+											(member src 2)
+											(instanceRef Ripper_2)
+										)
+										(portRef (member Out_LESS_0_COLON_7_GREATER_ 2)
+											(instanceRef Inv8a)
+										)
+									)
+								)
+								(net
+									(rename D_LESS_6_GREATER_ "D<6>")
+									(joined
+										(portRef
+											(member src 3)
+											(instanceRef Ripper_2)
+										)
+										(portRef (member Out_LESS_0_COLON_7_GREATER_ 3)
+											(instanceRef Inv8a)
+										)
+									)
+								)
+								(net
+									(rename D_LESS_7_GREATER_ "D<7>")
+									(joined
+										(portRef
+											(member src 4)
+											(instanceRef Ripper_2)
+										)
+										(portRef (member Out_LESS_0_COLON_7_GREATER_ 4)
+											(instanceRef Inv8a)
+										)
+									)
+								)
+								(net Qu
+									(joined
+										(portRef
+											(member src 5)
+											(instanceRef Ripper_3)
+										)
+										(portRef (member Out_LESS_0_COLON_7_GREATER_ 5)
+											(instanceRef Inv8a)
+										)
+									)
+								)
+								(net Rb
+									(joined
+										(portRef
+											(member src 6)
+											(instanceRef Ripper_3)
+										)
+										(portRef (member Out_LESS_0_COLON_7_GREATER_ 6)
+											(instanceRef Inv8a)
+										)
+									)
+								)
+								(net Su
+									(joined
+										(portRef
+											(member src 7)
+											(instanceRef Ripper_3)
+										)
+										(portRef (member Out_LESS_0_COLON_7_GREATER_ 7)
+											(instanceRef Inv8a)
+										)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4000 5700)
+										(pt 4100 5700)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4100 5700)
+										(pt 4800 5700)
+									)
+								)
+							)
+						)
+						(netBundle
+							(rename E_LESS_0_COLON_4_GREATER_ "E<0:4>")
+							(listOfNets
+								(net
+									(rename E_LESS_0_GREATER_ "E<0>")
+									(joined
+										(portRef (member E_LESS_0_COLON_4_GREATER_ 0))
+										(portRef Out
+											(instanceRef
+												(member INV2_LESS_0_COLON_4_GREATER_ 0)
+											)
+										)
+									)
+								)
+								(net
+									(rename E_LESS_1_GREATER_ "E<1>")
+									(joined
+										(portRef (member E_LESS_0_COLON_4_GREATER_ 1))
+										(portRef Out
+											(instanceRef
+												(member INV2_LESS_0_COLON_4_GREATER_ 1)
+											)
+										)
+									)
+								)
+								(net
+									(rename E_LESS_2_GREATER_ "E<2>")
+									(joined
+										(portRef (member E_LESS_0_COLON_4_GREATER_ 2))
+										(portRef Out
+											(instanceRef
+												(member INV2_LESS_0_COLON_4_GREATER_ 2)
+											)
+										)
+									)
+								)
+								(net
+									(rename E_LESS_3_GREATER_ "E<3>")
+									(joined
+										(portRef (member E_LESS_0_COLON_4_GREATER_ 3))
+										(portRef Out
+											(instanceRef
+												(member INV2_LESS_0_COLON_4_GREATER_ 3)
+											)
+										)
+									)
+								)
+								(net
+									(rename E_LESS_4_GREATER_ "E<4>")
+									(joined
+										(portRef (member E_LESS_0_COLON_4_GREATER_ 4))
+										(portRef Out
+											(instanceRef
+												(member INV2_LESS_0_COLON_4_GREATER_ 4)
+											)
+										)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 6700 5700)
+										(pt 6500 5700)
+									)
+								)
+							)
+						)
+						(netBundle
+							(rename In_LESS_0_COLON_7_GREATER_ "In<0:7>")
+							(listOfNets
+								(net
+									(rename In_LESS_0_GREATER_ "In<0>")
+									(joined
+										(portRef (member In_LESS_0_COLON_7_GREATER_ 0))
+										(portRef (member A_LESS_0_COLON_7_GREATER_ 0)
+											(instanceRef Inv8a)
+										)
+									)
+								)
+								(net
+									(rename In_LESS_1_GREATER_ "In<1>")
+									(joined
+										(portRef (member In_LESS_0_COLON_7_GREATER_ 1))
+										(portRef (member A_LESS_0_COLON_7_GREATER_ 1)
+											(instanceRef Inv8a)
+										)
+									)
+								)
+								(net
+									(rename In_LESS_2_GREATER_ "In<2>")
+									(joined
+										(portRef (member In_LESS_0_COLON_7_GREATER_ 2))
+										(portRef (member A_LESS_0_COLON_7_GREATER_ 2)
+											(instanceRef Inv8a)
+										)
+									)
+								)
+								(net
+									(rename In_LESS_3_GREATER_ "In<3>")
+									(joined
+										(portRef (member In_LESS_0_COLON_7_GREATER_ 3))
+										(portRef (member A_LESS_0_COLON_7_GREATER_ 3)
+											(instanceRef Inv8a)
+										)
+									)
+								)
+								(net
+									(rename In_LESS_4_GREATER_ "In<4>")
+									(joined
+										(portRef (member In_LESS_0_COLON_7_GREATER_ 4))
+										(portRef (member A_LESS_0_COLON_7_GREATER_ 4)
+											(instanceRef Inv8a)
+										)
+									)
+								)
+								(net
+									(rename In_LESS_5_GREATER_ "In<5>")
+									(joined
+										(portRef (member In_LESS_0_COLON_7_GREATER_ 5))
+										(portRef (member A_LESS_0_COLON_7_GREATER_ 5)
+											(instanceRef Inv8a)
+										)
+									)
+								)
+								(net
+									(rename In_LESS_6_GREATER_ "In<6>")
+									(joined
+										(portRef (member In_LESS_0_COLON_7_GREATER_ 6))
+										(portRef (member A_LESS_0_COLON_7_GREATER_ 6)
+											(instanceRef Inv8a)
+										)
+									)
+								)
+								(net
+									(rename In_LESS_7_GREATER_ "In<7>")
+									(joined
+										(portRef (member In_LESS_0_COLON_7_GREATER_ 7))
+										(portRef (member A_LESS_0_COLON_7_GREATER_ 7)
+											(instanceRef Inv8a)
+										)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 2100 5700)
+										(pt 2300 5700)
+									)
+								)
+							)
+						)
+						(net Q
+							(joined
+								(portRef Q)
+								(portRef Out
+									(instanceRef Buf3)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 6700 5000)
+										(pt 6500 5000)
+									)
+								)
+							)
+						)
+						(net Qu
+							(joined
+								(portRef
+									(member dst 0)
+									(instanceRef Ripper_1)
+								)
+								(portRef In
+									(instanceRef Buf3)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5600 5000)
+										(pt 5300 5000)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5300 5000)
+										(pt 4800 5000)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "Qu"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 5300 5000)
+											)
+										)
+									)
+								)
+							)
+						)
+						(netBundle
+							(rename Qu_COMMA_Rb_COMMA_Su "Qu,Rb,Su")
+							(listOfNets
+								(net Qu
+									(joined
+										(portRef
+											(member dst 5)
+											(instanceRef Ripper_3)
+										)
+										(portRef
+											(member src 0)
+											(instanceRef Ripper_1)
+										)
+									)
+								)
+								(net Rb
+									(joined
+										(portRef
+											(member dst 6)
+											(instanceRef Ripper_3)
+										)
+										(portRef
+											(member src 1)
+											(instanceRef Ripper_0)
+										)
+									)
+								)
+								(net Su
+									(joined
+										(portRef
+											(member dst 7)
+											(instanceRef Ripper_3)
+										)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4800 5700)
+										(pt 4800 5300)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4800 5000)
+										(pt 4800 4300)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4800 5300)
+										(pt 4800 5000)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "Qu,Rb,Su"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 4800 5300)
+											)
+										)
+									)
+								)
+							)
+						)
+						(netBundle
+							(rename Qu_COMMA_Rb_COMMA_Su_COMMA_D_LESS_3_COLON_7_GREATER_ "Qu,Rb,Su,D<3:7>")
+							(listOfNets
+								(net Qu
+									(joined)
+								)
+								(net Rb
+									(joined)
+								)
+								(net Su
+									(joined)
+								)
+								(net
+									(rename D_LESS_3_GREATER_ "D<3>")
+									(joined)
+								)
+								(net
+									(rename D_LESS_4_GREATER_ "D<4>")
+									(joined)
+								)
+								(net
+									(rename D_LESS_5_GREATER_ "D<5>")
+									(joined)
+								)
+								(net
+									(rename D_LESS_6_GREATER_ "D<6>")
+									(joined)
+								)
+								(net
+									(rename D_LESS_7_GREATER_ "D<7>")
+									(joined)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "Qu,Rb,Su,D<3:7>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 4100 5700)
+											)
+										)
+									)
+								)
+							)
+						)
+						(net R
+							(joined
+								(portRef R)
+								(portRef Out
+									(instanceRef INV3)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 6700 4300)
+										(pt 6500 4300)
+									)
+								)
+							)
+						)
+						(net Rb
+							(joined
+								(portRef
+									(member dst 1)
+									(instanceRef Ripper_0)
+								)
+								(portRef A
+									(instanceRef INV3)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5600 4300)
+										(pt 5300 4300)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5300 4300)
+										(pt 4800 4300)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "Rb"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 5300 4300)
+											)
+										)
+									)
+								)
+							)
+						)
+						(net S
+							(joined
+								(portRef S)
+								(portRef Out
+									(instanceRef Buf4)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 6700 3600)
+										(pt 6500 3600)
+									)
+								)
+							)
+						)
+						(net Su
+							(joined
+								(portRef In
+									(instanceRef Buf4)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4800 4300)
+										(pt 4800 3600)
+										(pt 5300 3600)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5300 3600)
+										(pt 5600 3600)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "Su"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 5300 3600)
+											)
+										)
+									)
+								)
+							)
+						)
+						(commentGraphics)
+					)
+				)
+			)
+		)
+		(cell Example2
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port
+						(array
+							(rename E_LESS_0_COLON_4_GREATER_ "E<0:4>")
+						5
+						)
+						(direction OUTPUT)
+					)
+					(port
+						(array
+							(rename In_LESS_0_COLON_7_GREATER_ "In<0:7>")
+						8
+						)
+						(direction INPUT)
+					)
+					(port Q
+						(direction OUTPUT)
+					)
+					(port R
+						(direction OUTPUT)
+					)
+					(port S
+						(direction OUTPUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2006 03 01 16 00 00")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+				)
+				(status
+					(written
+						(timeStamp 2008 01 23 21 29 10)
+					)
+				)
+				(property TannerStandard
+					(boolean
+						(true)
+					)
+					(property RevisionCount
+						(string "17")
+					)
+				)
+				(contents
+					(page Page0
+						(portImplementation
+							(name In_LESS_0_COLON_7_GREATER_
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt 4100 5200)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 4100 5200)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 4096 5196)
+									(pt 4104 5204)
+								)
+							)
+						)
+						(portImplementation
+							(name E_LESS_0_COLON_4_GREATER_
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 7600 5200)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 7600 5200)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 7596 5196)
+									(pt 7604 5204)
+								)
+							)
+						)
+						(portImplementation
+							(name Q
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 7600 4500)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 7600 4500)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 7596 4496)
+									(pt 7604 4504)
+								)
+							)
+						)
+						(portImplementation
+							(name R
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 7600 3800)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 7600 3800)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 7596 3796)
+									(pt 7604 3804)
+								)
+							)
+						)
+						(portImplementation
+							(name S
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 7600 3100)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 7600 3100)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 7596 3096)
+									(pt 7604 3104)
+								)
+							)
+						)
+						(instance Buf1
+							(viewRef Main
+								(cellRef Buf1
+									(libraryRef LogicGates)
+								)
+							)
+							(transform
+								(origin
+									(pt 6500 4500)
+								)
+							)
+						)
+						(instance Buf2
+							(viewRef Main
+								(cellRef Buf1
+									(libraryRef LogicGates)
+								)
+							)
+							(transform
+								(origin
+									(pt 6500 3100)
+								)
+							)
+						)
+						(instance
+							(array
+								(rename INV1_LESS_0_COLON_7_GREATER_ "INV1<0:7>")
+							8
+							)
+							(viewRef Main
+								(cellRef INV
+									(libraryRef LogicGates)
+								)
+							)
+							(transform
+								(origin
+									(pt 4300 5200)
+								)
+							)
+						)
+						(instance
+							(array
+								(rename INV2_LESS_0_COLON_4_GREATER_ "INV2<0:4>")
+							5
+							)
+							(viewRef Main
+								(cellRef INV
+									(libraryRef LogicGates)
+								)
+							)
+							(transform
+								(origin
+									(pt 6500 5200)
+								)
+							)
+						)
+						(instance INV3
+							(viewRef Main
+								(cellRef INV
+									(libraryRef LogicGates)
+								)
+							)
+							(transform
+								(origin
+									(pt 6500 3800)
+								)
+							)
+						)
+						(instance Ripper_0
+							(viewRef view_1
+								(cellRef Ripper)
+							)
+							(transform
+								(origin
+									(pt 5800 3800)
+								)
+							)
+						)
+						(instance Ripper_1
+							(viewRef view_1
+								(cellRef Ripper)
+							)
+							(transform
+								(origin
+									(pt 5800 4500)
+								)
+							)
+						)
+						(instance Ripper_2
+							(viewRef view_1
+								(cellRef Ripper)
+							)
+							(transform
+								(origin
+									(pt 5800 5200)
+								)
+							)
+						)
+						(instance Ripper_3
+							(viewRef view_1
+								(cellRef Ripper)
+							)
+							(transform
+								(origin
+									(pt 5800 5200)
+								)
+							)
+						)
+						(netBundle
+							(rename D_LESS_0_COLON_2_GREATER_ "D<0:2>")
+							(listOfNets
+								(net
+									(rename D_LESS_0_GREATER_ "D<0>")
+									(joined
+										(portRef
+											(member dst 0)
+											(instanceRef Ripper_3)
+										)
+										(portRef
+											(member src 0)
+											(instanceRef Ripper_0)
+										)
+									)
+								)
+								(net
+									(rename D_LESS_1_GREATER_ "D<1>")
+									(joined
+										(portRef
+											(member dst 1)
+											(instanceRef Ripper_3)
+										)
+									)
+								)
+								(net
+									(rename D_LESS_2_GREATER_ "D<2>")
+									(joined
+										(portRef
+											(member dst 2)
+											(instanceRef Ripper_3)
+										)
+										(portRef
+											(member src 2)
+											(instanceRef Ripper_1)
+										)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5800 5200)
+										(pt 5800 4800)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5800 4500)
+										(pt 5800 3800)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5800 4800)
+										(pt 5800 4500)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "D<0:2>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 5800 4800)
+											)
+										)
+									)
+								)
+							)
+						)
+						(netBundle
+							(rename D_LESS_0_COLON_7_GREATER_ "D<0:7>")
+							(listOfNets
+								(net
+									(rename D_LESS_0_GREATER_ "D<0>")
+									(joined
+										(portRef
+											(member src 0)
+											(instanceRef Ripper_3)
+										)
+										(portRef Out
+											(instanceRef
+												(member INV1_LESS_0_COLON_7_GREATER_ 0)
+											)
+										)
+									)
+								)
+								(net
+									(rename D_LESS_1_GREATER_ "D<1>")
+									(joined
+										(portRef
+											(member src 1)
+											(instanceRef Ripper_3)
+										)
+										(portRef Out
+											(instanceRef
+												(member INV1_LESS_0_COLON_7_GREATER_ 1)
+											)
+										)
+									)
+								)
+								(net
+									(rename D_LESS_2_GREATER_ "D<2>")
+									(joined
+										(portRef
+											(member src 2)
+											(instanceRef Ripper_3)
+										)
+										(portRef Out
+											(instanceRef
+												(member INV1_LESS_0_COLON_7_GREATER_ 2)
+											)
+										)
+									)
+								)
+								(net
+									(rename D_LESS_3_GREATER_ "D<3>")
+									(joined
+										(portRef
+											(member src 3)
+											(instanceRef Ripper_2)
+										)
+										(portRef Out
+											(instanceRef
+												(member INV1_LESS_0_COLON_7_GREATER_ 3)
+											)
+										)
+									)
+								)
+								(net
+									(rename D_LESS_4_GREATER_ "D<4>")
+									(joined
+										(portRef
+											(member src 4)
+											(instanceRef Ripper_2)
+										)
+										(portRef Out
+											(instanceRef
+												(member INV1_LESS_0_COLON_7_GREATER_ 4)
+											)
+										)
+									)
+								)
+								(net
+									(rename D_LESS_5_GREATER_ "D<5>")
+									(joined
+										(portRef
+											(member src 5)
+											(instanceRef Ripper_2)
+										)
+										(portRef Out
+											(instanceRef
+												(member INV1_LESS_0_COLON_7_GREATER_ 5)
+											)
+										)
+									)
+								)
+								(net
+									(rename D_LESS_6_GREATER_ "D<6>")
+									(joined
+										(portRef
+											(member src 6)
+											(instanceRef Ripper_2)
+										)
+										(portRef Out
+											(instanceRef
+												(member INV1_LESS_0_COLON_7_GREATER_ 6)
+											)
+										)
+									)
+								)
+								(net
+									(rename D_LESS_7_GREATER_ "D<7>")
+									(joined
+										(portRef
+											(member src 7)
+											(instanceRef Ripper_2)
+										)
+										(portRef Out
+											(instanceRef
+												(member INV1_LESS_0_COLON_7_GREATER_ 7)
+											)
+										)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5200 5200)
+										(pt 5300 5200)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5300 5200)
+										(pt 5800 5200)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "D<0:7>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 5300 5200)
+											)
+										)
+									)
+								)
+							)
+						)
+						(net
+							(rename D_LESS_0_GREATER_ "D<0>")
+							(joined
+								(portRef
+									(member dst 0)
+									(instanceRef Ripper_0)
+								)
+								(portRef In
+									(instanceRef Buf2)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5800 3800)
+										(pt 5800 3100)
+										(pt 6100 3100)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 6100 3100)
+										(pt 6500 3100)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "D<0>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 6100 3100)
+											)
+										)
+									)
+								)
+							)
+						)
+						(net
+							(rename D_LESS_1_GREATER_ "D<1>")
+							(joined
+								(portRef A
+									(instanceRef INV3)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 6500 3800)
+										(pt 6100 3800)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 6100 3800)
+										(pt 5800 3800)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "D<1>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 6100 3800)
+											)
+										)
+									)
+								)
+							)
+						)
+						(net
+							(rename D_LESS_2_GREATER_ "D<2>")
+							(joined
+								(portRef
+									(member dst 2)
+									(instanceRef Ripper_1)
+								)
+								(portRef In
+									(instanceRef Buf1)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 6500 4500)
+										(pt 6100 4500)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 6100 4500)
+										(pt 5800 4500)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "D<2>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 6100 4500)
+											)
+										)
+									)
+								)
+							)
+						)
+						(netBundle
+							(rename D_LESS_3_COLON_7_GREATER_ "D<3:7>")
+							(listOfNets
+								(net
+									(rename D_LESS_3_GREATER_ "D<3>")
+									(joined
+										(portRef
+											(member dst 3)
+											(instanceRef Ripper_2)
+										)
+										(portRef A
+											(instanceRef
+												(member INV2_LESS_0_COLON_4_GREATER_ 0)
+											)
+										)
+									)
+								)
+								(net
+									(rename D_LESS_4_GREATER_ "D<4>")
+									(joined
+										(portRef
+											(member dst 4)
+											(instanceRef Ripper_2)
+										)
+										(portRef A
+											(instanceRef
+												(member INV2_LESS_0_COLON_4_GREATER_ 1)
+											)
+										)
+									)
+								)
+								(net
+									(rename D_LESS_5_GREATER_ "D<5>")
+									(joined
+										(portRef
+											(member dst 5)
+											(instanceRef Ripper_2)
+										)
+										(portRef A
+											(instanceRef
+												(member INV2_LESS_0_COLON_4_GREATER_ 2)
+											)
+										)
+									)
+								)
+								(net
+									(rename D_LESS_6_GREATER_ "D<6>")
+									(joined
+										(portRef
+											(member dst 6)
+											(instanceRef Ripper_2)
+										)
+										(portRef A
+											(instanceRef
+												(member INV2_LESS_0_COLON_4_GREATER_ 3)
+											)
+										)
+									)
+								)
+								(net
+									(rename D_LESS_7_GREATER_ "D<7>")
+									(joined
+										(portRef
+											(member dst 7)
+											(instanceRef Ripper_2)
+										)
+										(portRef A
+											(instanceRef
+												(member INV2_LESS_0_COLON_4_GREATER_ 4)
+											)
+										)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5800 5200)
+										(pt 6000 5200)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 6000 5200)
+										(pt 6500 5200)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "D<3:7>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 6000 5200)
+											)
+										)
+									)
+								)
+							)
+						)
+						(netBundle
+							(rename E_LESS_0_COLON_4_GREATER_ "E<0:4>")
+							(listOfNets
+								(net
+									(rename E_LESS_0_GREATER_ "E<0>")
+									(joined
+										(portRef (member E_LESS_0_COLON_4_GREATER_ 0))
+										(portRef Out
+											(instanceRef
+												(member INV2_LESS_0_COLON_4_GREATER_ 0)
+											)
+										)
+									)
+								)
+								(net
+									(rename E_LESS_1_GREATER_ "E<1>")
+									(joined
+										(portRef (member E_LESS_0_COLON_4_GREATER_ 1))
+										(portRef Out
+											(instanceRef
+												(member INV2_LESS_0_COLON_4_GREATER_ 1)
+											)
+										)
+									)
+								)
+								(net
+									(rename E_LESS_2_GREATER_ "E<2>")
+									(joined
+										(portRef (member E_LESS_0_COLON_4_GREATER_ 2))
+										(portRef Out
+											(instanceRef
+												(member INV2_LESS_0_COLON_4_GREATER_ 2)
+											)
+										)
+									)
+								)
+								(net
+									(rename E_LESS_3_GREATER_ "E<3>")
+									(joined
+										(portRef (member E_LESS_0_COLON_4_GREATER_ 3))
+										(portRef Out
+											(instanceRef
+												(member INV2_LESS_0_COLON_4_GREATER_ 3)
+											)
+										)
+									)
+								)
+								(net
+									(rename E_LESS_4_GREATER_ "E<4>")
+									(joined
+										(portRef (member E_LESS_0_COLON_4_GREATER_ 4))
+										(portRef Out
+											(instanceRef
+												(member INV2_LESS_0_COLON_4_GREATER_ 4)
+											)
+										)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 7600 5200)
+										(pt 7400 5200)
+									)
+								)
+							)
+						)
+						(netBundle
+							(rename In_LESS_0_COLON_7_GREATER_ "In<0:7>")
+							(listOfNets
+								(net
+									(rename In_LESS_0_GREATER_ "In<0>")
+									(joined
+										(portRef (member In_LESS_0_COLON_7_GREATER_ 0))
+										(portRef A
+											(instanceRef
+												(member INV1_LESS_0_COLON_7_GREATER_ 0)
+											)
+										)
+									)
+								)
+								(net
+									(rename In_LESS_1_GREATER_ "In<1>")
+									(joined
+										(portRef (member In_LESS_0_COLON_7_GREATER_ 1))
+										(portRef A
+											(instanceRef
+												(member INV1_LESS_0_COLON_7_GREATER_ 1)
+											)
+										)
+									)
+								)
+								(net
+									(rename In_LESS_2_GREATER_ "In<2>")
+									(joined
+										(portRef (member In_LESS_0_COLON_7_GREATER_ 2))
+										(portRef A
+											(instanceRef
+												(member INV1_LESS_0_COLON_7_GREATER_ 2)
+											)
+										)
+									)
+								)
+								(net
+									(rename In_LESS_3_GREATER_ "In<3>")
+									(joined
+										(portRef (member In_LESS_0_COLON_7_GREATER_ 3))
+										(portRef A
+											(instanceRef
+												(member INV1_LESS_0_COLON_7_GREATER_ 3)
+											)
+										)
+									)
+								)
+								(net
+									(rename In_LESS_4_GREATER_ "In<4>")
+									(joined
+										(portRef (member In_LESS_0_COLON_7_GREATER_ 4))
+										(portRef A
+											(instanceRef
+												(member INV1_LESS_0_COLON_7_GREATER_ 4)
+											)
+										)
+									)
+								)
+								(net
+									(rename In_LESS_5_GREATER_ "In<5>")
+									(joined
+										(portRef (member In_LESS_0_COLON_7_GREATER_ 5))
+										(portRef A
+											(instanceRef
+												(member INV1_LESS_0_COLON_7_GREATER_ 5)
+											)
+										)
+									)
+								)
+								(net
+									(rename In_LESS_6_GREATER_ "In<6>")
+									(joined
+										(portRef (member In_LESS_0_COLON_7_GREATER_ 6))
+										(portRef A
+											(instanceRef
+												(member INV1_LESS_0_COLON_7_GREATER_ 6)
+											)
+										)
+									)
+								)
+								(net
+									(rename In_LESS_7_GREATER_ "In<7>")
+									(joined
+										(portRef (member In_LESS_0_COLON_7_GREATER_ 7))
+										(portRef A
+											(instanceRef
+												(member INV1_LESS_0_COLON_7_GREATER_ 7)
+											)
+										)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4300 5200)
+										(pt 4100 5200)
+									)
+								)
+							)
+						)
+						(net Q
+							(joined
+								(portRef Q)
+								(portRef Out
+									(instanceRef Buf1)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 7600 4500)
+										(pt 7400 4500)
+									)
+								)
+							)
+						)
+						(net R
+							(joined
+								(portRef R)
+								(portRef Out
+									(instanceRef INV3)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 7600 3800)
+										(pt 7400 3800)
+									)
+								)
+							)
+						)
+						(net S
+							(joined
+								(portRef S)
+								(portRef Out
+									(instanceRef Buf2)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 7600 3100)
+										(pt 7400 3100)
+									)
+								)
+							)
+						)
+						(commentGraphics)
+					)
+				)
+			)
+		)
+		(cell Example1
+			(cellType GENERIC)
+			(view schematic
+				(viewType SCHEMATIC)
+				(interface
+					(port
+						(array
+							(rename In_LESS_1_COLON_8_GREATER_ "In<1:8>")
+						8
+						)
+						(direction INPUT)
+					)
+					(port
+						(array
+							(rename Out_LESS_1_COLON_8_GREATER_ "Out<1:8>")
+						8
+						)
+						(direction OUTPUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2006 03 01 16 00 00")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+				)
+				(status
+					(written
+						(timeStamp 2008 01 23 21 16 46)
+					)
+				)
+				(property TannerStandard
+					(boolean
+						(true)
+					)
+					(property RevisionCount
+						(string "319")
+					)
+				)
+				(contents
+					(page Page0
+						(portImplementation
+							(name In_LESS_1_COLON_8_GREATER_
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt 2400 3900)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 2400 3900)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 2396 3896)
+									(pt 2404 3904)
+								)
+							)
+						)
+						(portImplementation
+							(name Out_LESS_1_COLON_8_GREATER_
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 6100 3900)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 6100 3900)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 6096 3896)
+									(pt 6104 3904)
+								)
+							)
+						)
+						(instance
+							(array
+								(rename Buf1_LESS_1_COLON_4_GREATER_ "Buf1<1:4>")
+							4
+							)
+							(viewRef Main
+								(cellRef Buf1
+									(libraryRef LogicGates)
+								)
+							)
+							(transform
+								(origin
+									(pt 3900 3400)
+								)
+							)
+						)
+						(instance
+							(array
+								(rename INV1_LESS_1_COLON_4_GREATER_ "INV1<1:4>")
+							4
+							)
+							(viewRef Main
+								(cellRef INV
+									(libraryRef LogicGates)
+								)
+							)
+							(transform
+								(origin
+									(pt 3900 4400)
+								)
+							)
+						)
+						(instance Ripper_0
+							(viewRef view_1
+								(cellRef Ripper)
+							)
+							(transform
+								(origin
+									(pt 3100 3900)
+								)
+							)
+						)
+						(instance Ripper_1
+							(viewRef view_1
+								(cellRef Ripper)
+							)
+							(transform
+								(origin
+									(pt 5400 3900)
+								)
+							)
+						)
+						(netBundle
+							(rename In_LESS_1_COLON_7_COLON_2_GREATER_ "In<1:7:2>")
+							(listOfNets
+								(net
+									(rename In_LESS_1_GREATER_ "In<1>")
+									(joined
+										(portRef
+											(member dst 0)
+											(instanceRef Ripper_0)
+										)
+										(portRef In
+											(instanceRef
+												(member Buf1_LESS_1_COLON_4_GREATER_ 0)
+											)
+										)
+									)
+								)
+								(net
+									(rename In_LESS_3_GREATER_ "In<3>")
+									(joined
+										(portRef
+											(member dst 2)
+											(instanceRef Ripper_0)
+										)
+										(portRef In
+											(instanceRef
+												(member Buf1_LESS_1_COLON_4_GREATER_ 1)
+											)
+										)
+									)
+								)
+								(net
+									(rename In_LESS_5_GREATER_ "In<5>")
+									(joined
+										(portRef
+											(member dst 4)
+											(instanceRef Ripper_0)
+										)
+										(portRef In
+											(instanceRef
+												(member Buf1_LESS_1_COLON_4_GREATER_ 2)
+											)
+										)
+									)
+								)
+								(net
+									(rename In_LESS_7_GREATER_ "In<7>")
+									(joined
+										(portRef
+											(member dst 6)
+											(instanceRef Ripper_0)
+										)
+										(portRef In
+											(instanceRef
+												(member Buf1_LESS_1_COLON_4_GREATER_ 3)
+											)
+										)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 3600 3400)
+										(pt 3100 3400)
+										(pt 3100 3900)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 3600 3400)
+										(pt 3900 3400)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "In<1:7:2>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(justify UPPERRIGHT)
+											(origin
+												(pt 3600 3400)
+											)
+										)
+									)
+								)
+							)
+						)
+						(netBundle
+							(rename In_LESS_1_COLON_8_GREATER_ "In<1:8>")
+							(listOfNets
+								(net
+									(rename In_LESS_1_GREATER_ "In<1>")
+									(joined
+										(portRef (member In_LESS_1_COLON_8_GREATER_ 0))
+										(portRef
+											(member src 0)
+											(instanceRef Ripper_0)
+										)
+									)
+								)
+								(net
+									(rename In_LESS_2_GREATER_ "In<2>")
+									(joined
+										(portRef (member In_LESS_1_COLON_8_GREATER_ 1))
+									)
+								)
+								(net
+									(rename In_LESS_3_GREATER_ "In<3>")
+									(joined
+										(portRef (member In_LESS_1_COLON_8_GREATER_ 2))
+										(portRef
+											(member src 2)
+											(instanceRef Ripper_0)
+										)
+									)
+								)
+								(net
+									(rename In_LESS_4_GREATER_ "In<4>")
+									(joined
+										(portRef (member In_LESS_1_COLON_8_GREATER_ 3))
+									)
+								)
+								(net
+									(rename In_LESS_5_GREATER_ "In<5>")
+									(joined
+										(portRef (member In_LESS_1_COLON_8_GREATER_ 4))
+										(portRef
+											(member src 4)
+											(instanceRef Ripper_0)
+										)
+									)
+								)
+								(net
+									(rename In_LESS_6_GREATER_ "In<6>")
+									(joined
+										(portRef (member In_LESS_1_COLON_8_GREATER_ 5))
+									)
+								)
+								(net
+									(rename In_LESS_7_GREATER_ "In<7>")
+									(joined
+										(portRef (member In_LESS_1_COLON_8_GREATER_ 6))
+										(portRef
+											(member src 6)
+											(instanceRef Ripper_0)
+										)
+									)
+								)
+								(net
+									(rename In_LESS_8_GREATER_ "In<8>")
+									(joined
+										(portRef (member In_LESS_1_COLON_8_GREATER_ 7))
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 3100 3900)
+										(pt 2600 3900)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 2400 3900)
+										(pt 2600 3900)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "In<1:8>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 2600 3900)
+											)
+										)
+									)
+								)
+							)
+						)
+						(netBundle
+							(rename In_LESS_2_COLON_8_COLON_2_GREATER_ "In<2:8:2>")
+							(listOfNets
+								(net
+									(rename In_LESS_2_GREATER_ "In<2>")
+									(joined
+										(portRef A
+											(instanceRef
+												(member INV1_LESS_1_COLON_4_GREATER_ 0)
+											)
+										)
+									)
+								)
+								(net
+									(rename In_LESS_4_GREATER_ "In<4>")
+									(joined
+										(portRef A
+											(instanceRef
+												(member INV1_LESS_1_COLON_4_GREATER_ 1)
+											)
+										)
+									)
+								)
+								(net
+									(rename In_LESS_6_GREATER_ "In<6>")
+									(joined
+										(portRef A
+											(instanceRef
+												(member INV1_LESS_1_COLON_4_GREATER_ 2)
+											)
+										)
+									)
+								)
+								(net
+									(rename In_LESS_8_GREATER_ "In<8>")
+									(joined
+										(portRef A
+											(instanceRef
+												(member INV1_LESS_1_COLON_4_GREATER_ 3)
+											)
+										)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 3600 4400)
+										(pt 3900 4400)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 3600 4400)
+										(pt 3100 4400)
+										(pt 3100 3900)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "In<2:8:2>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(justify LOWERRIGHT)
+											(origin
+												(pt 3600 4400)
+											)
+										)
+									)
+								)
+							)
+						)
+						(netBundle
+							(rename Out_LESS_1_COLON_7_COLON_2_GREATER_ "Out<1:7:2>")
+							(listOfNets
+								(net
+									(rename Out_LESS_1_GREATER_ "Out<1>")
+									(joined
+										(portRef
+											(member dst 0)
+											(instanceRef Ripper_1)
+										)
+										(portRef Out
+											(instanceRef
+												(member Buf1_LESS_1_COLON_4_GREATER_ 0)
+											)
+										)
+									)
+								)
+								(net
+									(rename Out_LESS_3_GREATER_ "Out<3>")
+									(joined
+										(portRef
+											(member dst 2)
+											(instanceRef Ripper_1)
+										)
+										(portRef Out
+											(instanceRef
+												(member Buf1_LESS_1_COLON_4_GREATER_ 1)
+											)
+										)
+									)
+								)
+								(net
+									(rename Out_LESS_5_GREATER_ "Out<5>")
+									(joined
+										(portRef
+											(member dst 4)
+											(instanceRef Ripper_1)
+										)
+										(portRef Out
+											(instanceRef
+												(member Buf1_LESS_1_COLON_4_GREATER_ 2)
+											)
+										)
+									)
+								)
+								(net
+									(rename Out_LESS_7_GREATER_ "Out<7>")
+									(joined
+										(portRef
+											(member dst 6)
+											(instanceRef Ripper_1)
+										)
+										(portRef Out
+											(instanceRef
+												(member Buf1_LESS_1_COLON_4_GREATER_ 3)
+											)
+										)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5400 3900)
+										(pt 5400 3400)
+										(pt 5100 3400)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5100 3400)
+										(pt 4800 3400)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "Out<1:7:2>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(justify UPPERLEFT)
+											(origin
+												(pt 5100 3400)
+											)
+										)
+									)
+								)
+							)
+						)
+						(netBundle
+							(rename Out_LESS_1_COLON_8_GREATER_ "Out<1:8>")
+							(listOfNets
+								(net
+									(rename Out_LESS_1_GREATER_ "Out<1>")
+									(joined
+										(portRef (member Out_LESS_1_COLON_8_GREATER_ 0))
+										(portRef
+											(member src 0)
+											(instanceRef Ripper_1)
+										)
+									)
+								)
+								(net
+									(rename Out_LESS_2_GREATER_ "Out<2>")
+									(joined
+										(portRef (member Out_LESS_1_COLON_8_GREATER_ 1))
+									)
+								)
+								(net
+									(rename Out_LESS_3_GREATER_ "Out<3>")
+									(joined
+										(portRef (member Out_LESS_1_COLON_8_GREATER_ 2))
+										(portRef
+											(member src 2)
+											(instanceRef Ripper_1)
+										)
+									)
+								)
+								(net
+									(rename Out_LESS_4_GREATER_ "Out<4>")
+									(joined
+										(portRef (member Out_LESS_1_COLON_8_GREATER_ 3))
+									)
+								)
+								(net
+									(rename Out_LESS_5_GREATER_ "Out<5>")
+									(joined
+										(portRef (member Out_LESS_1_COLON_8_GREATER_ 4))
+										(portRef
+											(member src 4)
+											(instanceRef Ripper_1)
+										)
+									)
+								)
+								(net
+									(rename Out_LESS_6_GREATER_ "Out<6>")
+									(joined
+										(portRef (member Out_LESS_1_COLON_8_GREATER_ 5))
+									)
+								)
+								(net
+									(rename Out_LESS_7_GREATER_ "Out<7>")
+									(joined
+										(portRef (member Out_LESS_1_COLON_8_GREATER_ 6))
+										(portRef
+											(member src 6)
+											(instanceRef Ripper_1)
+										)
+									)
+								)
+								(net
+									(rename Out_LESS_8_GREATER_ "Out<8>")
+									(joined
+										(portRef (member Out_LESS_1_COLON_8_GREATER_ 7))
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 6100 3900)
+										(pt 5600 3900)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5600 3900)
+										(pt 5400 3900)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "Out<1:8>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 5600 3900)
+											)
+										)
+									)
+								)
+							)
+						)
+						(netBundle
+							(rename Out_LESS_2_COLON_8_COLON_2_GREATER_ "Out<2:8:2>")
+							(listOfNets
+								(net
+									(rename Out_LESS_2_GREATER_ "Out<2>")
+									(joined
+										(portRef Out
+											(instanceRef
+												(member INV1_LESS_1_COLON_4_GREATER_ 0)
+											)
+										)
+									)
+								)
+								(net
+									(rename Out_LESS_4_GREATER_ "Out<4>")
+									(joined
+										(portRef Out
+											(instanceRef
+												(member INV1_LESS_1_COLON_4_GREATER_ 1)
+											)
+										)
+									)
+								)
+								(net
+									(rename Out_LESS_6_GREATER_ "Out<6>")
+									(joined
+										(portRef Out
+											(instanceRef
+												(member INV1_LESS_1_COLON_4_GREATER_ 2)
+											)
+										)
+									)
+								)
+								(net
+									(rename Out_LESS_8_GREATER_ "Out<8>")
+									(joined
+										(portRef Out
+											(instanceRef
+												(member INV1_LESS_1_COLON_4_GREATER_ 3)
+											)
+										)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5100 4400)
+										(pt 4800 4400)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5400 3900)
+										(pt 5400 4400)
+										(pt 5100 4400)
+									)
+								)
+							)
+							(commentGraphics
+								(annotate
+									(stringDisplay "Out<2:8:2>"
+										(display
+											(figureGroupOverride netlabel
+												(textHeight 97)
+											)
+											(origin
+												(pt 5100 4400)
+											)
+										)
+									)
+								)
+							)
+						)
+						(commentGraphics)
+					)
+				)
+			)
+		)
+	)
+)

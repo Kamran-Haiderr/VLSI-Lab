@@ -1,0 +1,13 @@
+* T-Spice 13.00 Simulation	Fri Mar 01 16:03:28 2019	C:\Users\i140420\Desktop\Kamran_VLSI_5\NOR.spc
+* Command line: tspice -o C:\Users\i140420\Desktop\Kamran_VLSI_5\NOR.out C:\Users\i140420\Desktop\Kamran_VLSI_5\NOR.spc 
+* T-Spice Win32 13.00.20080321.01:01:33
+* Fatal Error : Library entry "TT_NMOS_PARAMETERS" not found in file "C:\Users\i140420\Desktop\Kamran_VLSI_5\Generic_025.lib"
+
+*
+
+* Parsing                      0.01 seconds
+* Overhead                     0.66 seconds
+* -----------------------------------------
+* Total                        0.67 seconds
+
+* Simulation failed	with  1 Fatal Error

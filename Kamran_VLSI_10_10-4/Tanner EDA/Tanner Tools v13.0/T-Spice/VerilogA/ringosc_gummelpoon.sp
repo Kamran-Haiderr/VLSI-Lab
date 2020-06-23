@@ -1,0 +1,125 @@
+* BJT Ring Oscillator
+
+.hdl bjt.va bjt_va type=bipolar
+
+
+*  Definition for project DEL2
+.SUBCKT DEL2 IN  INN OUT OUTN VC  VCN
+R7       N1N100 VEE  500
+Q1I238   ON  N1N367 N1N49  VEE MOD3
+Q1I243   O   N1N26 N1N49  VEE MOD3
+R8       IN  N1N367  500
+R9       INN N1N26  500
+Q1I37    N1N46 VB  N1N100  VEE MOD3
+Q1I372   VCC O   OUT  VEE MOD3
+Q1I373   VCC ON  OUTN  VEE MOD3
+RH1      OUT VEE  4K TC=125E-6
+RH2      OUTN VEE  4K TC=125E-6
+R6       N1N39 N1N46  500
+CPAR     ON  O    8F
+Q1I406   VB  VB  N1N408  VEE MOD3
+RBX      N1N408 VEE  500
+R5       N1N46 N1N38  500
+RSET     VCC VB   3K
+Q1I42    N1N49 VCN N1N39  VEE MOD3
+Q1I43    ON  IN  N1N35  VEE MOD3
+Q1I44    O   INN N1N35  VEE MOD3
+Q1I45    N1N35 VC  N1N38  VEE MOD3
+R1       VCC ON   200
+R2       VCC O    200
+.ENDS
+
+*  Definition for project VCO2
+.SUBCKT VCO2 I   IN  Q   QN  VC  VCN
+X1       QN  Q   I   IN  VC  VCN DEL2
+X2       I   IN  Q   QN  VC  VCN DEL2
+C1I474   IN  VCC  .01P
+C1I483   I   VCC  .01P
+C1I490   Q   VCC  .01P
+C1I491   QN  VCC  .01P
+.ENDS
+
+*  Definition for project RUHRBUF
+.SUBCKT RUHRBUF IN  INN OUT OUTN
+Q1I10    N1N1 IN  A    VEE MOD2
+Q1I11    A   VB  N1N15  VEE MOD2
+RL3      N1N15 VEE  500 TC=-195E-6
+RL6      N1N21 VEE  500 TC=-195E-6
+Q1I23    VCC N1N1 OUTN  VEE MOD2
+Q1I26    OUTN VB  N1N21  VEE MOD2
+RL2      VCC N1N1  500 TC=-195E-6
+Q1I31    OUT VB  N1N34  VEE MOD2
+R1I32    N1N34 VEE  500 TC=-195E-6
+Q1I37    VCC N1N2 OUT  VEE MOD2
+RL1      VCC N1N2  500 TC=-195E-6
+Q1I46    VB  VB  N1N45  VEE MOD2
+RLBIAS   N1N45 VEE  500 TC=-195E-6
+RLX      VCC VB   4K TC=-195E-6
+Q1I9     N1N2 INN A    VEE MOD2
+.ENDS
+
+
+X3       Q   QN  Q2  Q2N VC  VCN VCO2
+VEE      0   VEE  DC 5
+VC       VC  VEE  DC XVT
+IIN      VEE X3.Q  PWL ( 0 0 100P 1M 200P 0 )
+VCC      VCC 0    DC 0
+X1I494   Q   QN  OUT OUTN RUHRBUF
+X1I508   Q2  Q2N OUTQ OUTQN RUHRBUF
+VCN      VCN VEE  DC 2.5
+
+
+.MODEL MOD2 NPN
++ IS =1.36E-17              NF =  1.01
++ VAF =  50   IKF = 1.70E-02
++ ISE = 1.68E-14             NE =  2
++ BF = 300
++ BR = 50
++ IKR = 8.50E-06            NR =  1.01
++ RE = 52.94   RC = 23.35
++ RB = 148.97  RBM = 87.80  	
++ CJE = 6.38E-15             MJE = 0.38    VJE = 0.75
++ CJC = 4.86E-15             MJC = 0.33    VJC = 0.70
++ CJS = 1.76E-14             MJS = 0.30    VJS = 0.50
++ XCJC = 0.36
++ FC = 0.7
++ TF = 1.5E-12              XTF =  10
++ VTF = 1.50  ITF = 1.7E-02  PTF =  30
++ TR = 2.00E-11
++ XTI =  3    XTB = 2.2    EG = 1.014
++ KF = 2.0E-14              AF =  1
+
+.MODEL MOD3 NPN
++ IS =2.16E-17              NF =  1.01
++ VAF =  50   IKF = 2.70E-02
++ ISE = 2.28E-14             NE =  2
++ BF = 300
++ BR = 50
++ IKR = 1.35E-05            NR =  1.01
++ RE = 33.33   RC = 17.51
++ RB = 105.49  RBM = 63.73
++ CJE = 9.68E-15             MJE = 0.38    VJE = 0.75
++ CJC = 6.43E-15             MJC = 0.34    VJC = 0.70
++ CJS = 1.99E-14             MJS = 0.30    VJS = 0.50
++ XCJC = 0.40
++ FC = 0.7
++ TF = 1.5E-12              XTF =  10
++ VTF = 1.50  ITF = 2.7E-02  PTF =  30
++ TR = 2.00E-11
++ XTI =  3    XTB = 2.2    EG = 1.014
++ KF = 2.0E-14              AF =  1
+
+.MEASURE  TRAN PERIOD TRIG V(Q,QN) VAL=0 TD=1N RISE=1 TARG V(Q,QN) VAL=0 RISE=2
+.MEASURE TRAN FREQUENCY PARAM='1/period'
+
+.OP
+.TRAN 5P 2N
+.PARAM XVT=2.5
+.TEMP 25
+
+.GLOBAL VCC
+.GLOBAL VEE
+
+.print tran V(Q,QN)
+
+.END

@@ -1,0 +1,6 @@
+workspace loadfrom -path .
+cell open -design MultipleViews -cell Toplevel -type schematic -newwindow
+window move -left 22 -top 29 -width 714 -height 467 -undock -max 
+window fit -x0 -140 -y0 308 -x1 9562 -y1 7535 -units iu
+source open.design -relativeto user
+source open.design -relativeto design

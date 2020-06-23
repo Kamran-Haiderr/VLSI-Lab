@@ -1,0 +1,24 @@
+# File: ICResistor.ext
+# For: Extract definition file
+# Vendor: Generic
+# Technology: 0.25 um N-well
+# Technology Setup and Test/Demo Suite: in file generic_025.tdb
+# Copyright ©  1999-2003
+# Tanner Research, Inc.  All rights reserved
+#
+# This file will work only with L-EDIT Version 7 and greater.
+# ****************************************************************************
+
+connect(PolyWire, Metal1, Poly Contact)
+connect(Metal1, Metal2, Via1)
+connect(Metal2, Metal3, Via2)
+connect(Metal3, Metal4, Via3)
+
+# IC Poly Resistor
+device = SUBCKT(
+               RLAYER=PolyResistor, LW;
+               Plus=PolyWire, DEVICEWIDTH;
+               Minus=PolyWire, DEVICEWIDTH;
+               Bulk=Substrate;
+               MODEL=ICResPoly;
+               )

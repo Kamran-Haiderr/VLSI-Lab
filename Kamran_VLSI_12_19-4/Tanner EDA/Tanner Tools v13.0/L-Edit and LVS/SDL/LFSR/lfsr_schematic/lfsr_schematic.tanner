@@ -1,0 +1,7 @@
+workspace loadfrom -path .
+cell open -design lfsr_schematic -cell lfsr_eco -view view_1 -type schematic -interface view_1 -newwindow
+window activate -design lfsr_schematic -cell lfsr_eco -view view_1 -type schematic -interface view_1
+window move -left 0 -top 20 -width 762 -height 559 -undock -normal 
+window fit -x0 523 -y0 187 -x1 4895 -y1 3225 -units iu
+workspace dockinglayout load -file {.\dockinglayout.xml}
+source open.design

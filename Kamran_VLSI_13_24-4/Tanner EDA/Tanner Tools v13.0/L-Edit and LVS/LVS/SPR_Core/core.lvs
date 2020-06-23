@@ -1,0 +1,106 @@
+File written by LVS 11.20 as a result of: "samples\lvs\SPR_Core\core.vdb" on Wed Sep 21 10:12:36 2005
+
+Command line:
+lvs samples\lvs\SPR_Core\core.sp samples\lvs\SPR_Core\core.spc -o samples\lvs\SPR_Core\core.out -mr ALL -ml ALL -mc ALL -mb ALL -md ALL -mj ALL -mm ALL -ms ALL -mq ALL -mz ALL -x -TTSPICE -nrcl -c12 -dv5.000 -dg5.000 -y2 -faf 
+
+Engine configuration report:
+Layout netlist file.............................................. samples\lvs\SPR_Core\core.sp
+Layout netlist file format....................................... T-Spice
+Schematic netlist file........................................... samples\lvs\SPR_Core\core.spc
+Schematic netlist file format.................................... T-Spice
+Consider Bulk nodes.............................................. ON
+Consider Resistors as polarized elements......................... OFF
+Consider Capacitors as polarized elements........................ OFF
+Consider Inductors as polarized elements......................... OFF
+Merge series and parallel R...................................... ALL
+Merge series and parallel C...................................... ALL
+Merge series and parallel L...................................... ALL
+Merge parallel M................................................. ALL
+Merge stacked M.................................................. ALL
+Merge parallel D................................................. ALL
+Merge parallel B................................................. ALL
+Merge parallel J................................................. ALL
+Merge parallel Z................................................. ALL
+Merge parallel Q................................................. ALL
+Merge series MOSFETs............................................. OFF
+Find series MOSFETs that differ in order or parameter value...... OFF
+Remove shorted devices........................................... ON
+Remove disconnected devices...................................... OFF
+Fast Iteration................................................... OFF
+Parameter comparison threshold for CAPACITORS.................... 5%
+Parameter comparison threshold for INDUCTORS..................... 5%
+Parameter comparison threshold for RESISTORS..................... 5%
+Parameter comparison threshold for MOSFET GATE LENGTHS........... 5%
+Parameter comparison threshold for MOSFET GATE WIDTHS............ 5%
+
+
+Parsing file samples\lvs\SPR_Core\core.sp...
+Including file samples\lvs\SPR_Core\hp05.md
+Warning: core.sp(15) Node Gnd aliased to GROUND
+Flattening netlist...
+
+Parsing file samples\lvs\SPR_Core\core.spc...
+Including file samples\lvs\SPR_Core\hp05.md
+Flattening netlist...
+
+Device                         core.sp          core.spc   Status            
+---------------        ---------------   ---------------   ---------------     
+R                                   18                18
+M_PMOS                             524               540   MISMATCH (-16)
+M_NMOS                             504               520   MISMATCH (-16)
+                          ------------      ------------
+Total elements                    1046              1078   MISMATCH (-32)
+Total nodes                        584               584
+Single-pin nodes                     2                 2
+
+
+Merging devices...
+Eliminated from core.sp:
+     1 series resistor(s)
+     1 node(s)
+Eliminated from core.spc:
+    32 parallel MOSFET(s)
+     1 series resistor(s)
+     1 node(s)
+
+Device                         core.sp          core.spc   Status            
+---------------        ---------------   ---------------   ---------------     
+R                                   17                17
+M_PMOS                             524               524
+M_NMOS                             504               504
+                          ------------      ------------
+Total elements                    1045              1045
+Total nodes                        583               583
+Single-pin nodes                     2                 2
+
+
+Iterating...
+  5% done.
+ 10% done.
+ 15% done.
+ 20% done.
+ 25% done.
+ 30% done.
+ 35% done.
+ 40% done.
+ 45% done.
+ 50% done.
+ 55% done.
+ 60% done.
+ 65% done.
+ 70% done.
+ 75% done.
+ 80% done.
+ 85% done.
+ 90% done.
+ 95% done.
+100% done.
+
+************************** FINAL RESULT *****************************
+
+Note: Devices have been merged.
+Circuits are equal.
+Run time: 0:00 (min:sec)
+
+0 errors, 1 warning
+

@@ -1,0 +1,55 @@
+File is written by LVS v11.20 on 9/21/2005 11:51:46 AM.
+Node and elements after first round of iterations.
+
+Perfectly matched nodes
+=======================
+
+File: layout_resonator.spc      <==>  schematic_resonator.spc       
+========================
+2_m                             <==>  N5                            
+4_m                             <==>  N7                            
+2_e                             <==>  N8                            
+4_e                             <==>  N6                            
+20_m                            <==>  N2                            
+1_m                             <==>  N4                            
+20_e                            <==>  N3                            
+1_e                             <==>  N1                            
+7_e                             <==>  tope                          
+7_m                             <==>  topm                          
+6_e                             <==>  bote                          
+6_m                             <==>  botm                          
+8_e                             <==>  rte                           
+8_m                             <==>  rtm                           
+5_e                             <==>  lte                           
+5_m                             <==>  ltm                           
+-----------------------
+
+Other nodes
+=======================
+
+-----------------------
+
+-----------------------
+
+
+Perfectly matched elements
+=======================
+
+File: layout_resonator.spc      <==>  schematic_resonator.spc       
+=======================
+XPlateInst                      <==>  XMass5                        
+XSpring_Top                     <==>  XFSpring4                     
+XSpring_Bottom                  <==>  XFSpring3                     
+XComb_Right                     <==>  XComb2                        
+XComb_Left                      <==>  XComb1                        
+-----------------------
+
+Other elements
+=======================
+
+-----------------------
+
+-----------------------
+
+==============================================================================
+

@@ -1,0 +1,74 @@
+`include "disciplines.vams"
+`include "constants.vams"
+ 
+// Voltage Controlled Oscillator
+module vco(in, out);
+   inout in, out;
+   electrical in, out;
+   parameter real gain = 1, fc = 1;
+   analog 
+     V(out) <+ sin(2*`M_PI*(fc*$realtime + idt(gain*V(in))));
+   
+endmodule
+
+// Phase Detector
+module phaseDetector(lo, rf, if_);
+   inout lo, rf, if_;
+   electrical lo, rf, if_;
+   parameter real gain=1;
+
+   analog function real chopper;
+      input sw, in;
+      real sw, in;
+      chopper =in*tanh(20 * sw);
+   endfunction // chopper
+
+   analog
+     V(if_) <+ gain*chopper(V(lo),V(rf));
+
+endmodule 
+
+// Phase Locked Loop
+module pll(rf, out, ref, if_); 
+   inout rf, out, ref, if_;
+   electrical rf, out, ref, if_;
+   electrical lo;
+   parameter real tau = 1m from (0:inf);
+   parameter real loopGain = 1 from (0:inf);
+   parameter real fc = 2.0k from (0:inf);
+   real cap, res;
+
+   phaseDetector #(.gain(2)) pd1(lo, rf, if_);
+   vco #(.gain(loopGain/2), .fc(fc) ) vco1(out, lo);
+   
+   analog begin
+      cap = 150e-9;
+      res = tau/cap;
+      
+      V(out, if_) <+ I(out, if_)*res;
+      I(out, ref) <+ ddt(cap*V(out,ref));
+   end 
+endmodule 
+
+// swept frequancy sinusoidal source used as input to the PLL
+module sinRampSrc(p,n);
+   inout p,n;
+   electrical p,n;
+   parameter real fStart = 1, hzPerSec = 1;
+
+   analog
+     V(p,n) <+ sin(2*`M_PI*(fStart+hzPerSec/2*$realtime)*$realtime);
+
+endmodule
+
+// Test module combining the PLL and the swept source
+module testPLL(rf, out, ref,if_);
+   inout rf, out, ref, if_;
+   electrical rf, out, ref, if_;
+   parameter real tStop=1e-3, fStart=0, fStop=0;
+   ground gnd;
+   
+   sinRampSrc #(.fStart(fStart), .hzPerSec((fStop - fStart)/tStop)) vsrc1(rf, gnd);
+   pll #(.tau(0.5e-3), .loopGain(2e3), .fc(2.0e3)) pll1(rf, out, ref, if_);
+endmodule 
+

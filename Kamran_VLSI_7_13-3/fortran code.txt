@@ -1,0 +1,9 @@
+.INCLUDE SpecialDevices.md
+.lib "D:\Kamran\Study\FAST NUCES\Mad Max 19\VLSI Lab\Kamran_VLSI_7_13-3\Generic_025.lib" TT
+
+.tran 10n 100n
+
+v1 A GND PULSE (0 5 0 1n 1n 10n 20n)
+v3 B GND PULSE (0 5 5n 1n 1n 10n 20n)
+v4 Vdd GND 5
+.print tran v(A,GND) v(B,GND) v(Y,GND)

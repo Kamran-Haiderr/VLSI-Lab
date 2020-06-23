@@ -1,0 +1,1 @@
+start /w ../../../lvs XOR2_Short_Open.spc xor2.sp -o xor2_Short_Open.lvs -l xor2_Short_Open.lst -nrcl -c2 -dg5.000 -y12 -vfa -faf

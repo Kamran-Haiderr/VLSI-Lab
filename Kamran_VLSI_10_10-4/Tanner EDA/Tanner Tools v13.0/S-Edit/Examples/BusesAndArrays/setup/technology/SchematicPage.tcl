@@ -1,0 +1,1 @@
+setup schematicpage set -host design -units iu -width 11000 -height 8500 -leftmargin 256 -rightmargin 256 -topmargin 256 -bottommargin 256 -framestyle grid

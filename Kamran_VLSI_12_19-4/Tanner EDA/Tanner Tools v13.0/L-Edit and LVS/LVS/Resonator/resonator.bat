@@ -1,0 +1,1 @@
+start /w ..\..\..\lvs layout_resonator.spc schematic_resonator.spc -o resonator.lvs -l resonator.lst -e resonator.elm -nrcl -vfa -faf

@@ -1,0 +1,361 @@
+TITLE	"Generic 0.25 um Process"
+
+//	Setup Info
+PRECISION	1000
+RESOLUTION	60
+UNIT LENGTH	u
+FLAG SKEW YES
+FLAG OFFGRID YES
+
+//	Input Layers
+LAYER	Active	2 
+LAYER	ActiveContact	8 
+LAYER	DeepNWell	18 
+LAYER	Metal1	10 
+LAYER	Metal2	12 
+LAYER	Metal3	14 
+LAYER	Metal4	16 
+LAYER	NSelect	5 
+LAYER	NWell	1 
+LAYER	Overglass	17 
+LAYER	Poly	4 
+LAYER	PolyContact	9 
+LAYER	PSelect	6 
+LAYER	PWell	19 
+LAYER	ResistorID	20 
+LAYER	SilicideBlock	7 
+LAYER	ThickActive	3 
+LAYER	Via1	11 
+LAYER	Via2	13 
+LAYER	Via3	15 
+
+// Derived Layers
+FieldActive = Active NOT Poly
+Diff = FieldActive NOT ResistorID
+NDiff = Diff AND NSelect 
+PDiff = Diff AND PSelect 
+NActive = Active AND NSelect
+PActive = Active AND PSelect
+
+SubstrateTie = PActive NOT INSIDE  NWell
+NWellTie = NActive INTERACT NWell
+
+Gate = Poly AND Active
+NGate = Gate AND NSelect
+PGate = Gate AND PSelect
+AllSelect = NSelect OR PSelect
+
+PadMetal = Metal4 ENCLOSE Overglass 
+
+UnSilicidePoly = Poly AND SilicideBlock
+PolyResistor = UnSilicidePoly AND ResistorID
+
+//	Well Rules
+NWL1 { @ N Well Minimum Width < 1.44 Microns
+	INT NWell < 1.44 ABUT <90 SINGULAR  
+}
+NWL2 { @ N Well to N Well Spacing < 0.72 Microns
+	EXT NWell < 0.72 ABUT <90 SINGULAR  
+}
+DNW1 { @ Deep N Well Minimum Width < 4 Microns
+	INT DeepNWell < 4 ABUT <90 SINGULAR  
+}
+DNW2 { @ Deep N Well to Deep N Well Spacing < 6.5 Microns
+	EXT DeepNWell < 6.5 ABUT <90 SINGULAR  
+}
+DNW3 { @ Deep N Well to N Well Spacing < 4.75 Microns
+	EXT NWell DeepNWell < 4.75 ABUT <90 SINGULAR  
+}
+DNW4 { @ N Well Overlap Deep N Well < 1.74 Microns
+	ENC DeepNWell NWell < 1.74 ABUT <90 SINGULAR OUTSIDE ALSO REGION
+}
+DNW5 { @ N Well Extension beyond Deep N Well < 1.5 Microns
+	ENC NWell DeepNWell < 1.5 ABUT <90 SINGULAR  
+}
+PWL1 { @ P Well Minimum Width < 1.44 Microns
+	INT PWell < 1.44 ABUT <90 SINGULAR  
+}
+PWL2 { @ P Well to P Well Spacing < 0.72 Microns
+	EXT PWell < 0.72 ABUT <90 SINGULAR  
+}
+
+//	Active Rules
+ACT1 { @ Active Minimum Width < 0.36 Microns
+	INT Active < 0.36 ABUT <90 SINGULAR  
+}
+ACT2 { @ Active to Active Spacing < 0.36 Microns
+	EXT Active < 0.36 ABUT <90 SINGULAR  
+}
+ACT3 { @ Diffusion spacing to Well Edge < 0.72 Microns
+	ENC PDiff NWell < 0.72 ABUT <90 SINGULAR INSIDE ALSO REGION
+	EXT NDiff NWell < 0.72 ABUT <90 SINGULAR OVERLAP
+}
+ACT4 { @ Substrate/Well tie to well edge < 0.36 Microns
+	ENC NWellTie NWell < 0.36 ABUT <90 SINGULAR INSIDE ALSO REGION
+	EXT SubstrateTie NWell < 0.36 ABUT <90 SINGULAR OVERLAP 
+}
+TAC1 { @ Thick Active Minimum Width < 0.48 Microns
+	INT ThickActive < 0.48 SINGULAR
+}
+TAC2 { @ Thick Active to Thick Active Spacing < 0.48 Microns
+	EXT ThickActive < 0.48 SINGULAR  
+}
+TAC3 { @ Thick Active Overlap of Active < 0.48 Microns
+	ENC Active ThickActive < 0.48 ABUT <90 SINGULAR INSIDE ALSO REGION
+	ThickActive OUTSIDE Active 
+}
+TAC4 { @ Thick Active to Active Spacing < 0.48 Microns
+	EXT ThickActive Active < 0.48 ABUT ==0 SINGULAR  
+}
+TAC5 { @ Poly Width in HV gate < 0.36 Microns
+	HVGate = Gate AND ThickActive
+	INT HVGate < 0.36 SINGULAR
+}
+
+// Poly Rules
+POL1 { @ Poly Minimum Width < 0.24 Microns
+	INT Poly < 0.24 ABUT <90 SINGULAR  
+}
+POL2 { @ Poly to Poly Spacing < 0.36 Microns
+	EXT Poly < 0.36 ABUT <90 SINGULAR  
+}
+POL3 { @ Poly to Poly Spacing Over Active < 0.48 Microns
+	EXT Gate < 0.48 SINGULAR
+}
+POL4 { @ Gate Extension out of Active @ < 0.3 Microns
+	ENC Active Poly < 0.3 ABUT <90 SINGULAR  
+}
+POL5 { @ Minimum active extension of poly < 0.48 Microns
+	ENC Poly Active < 0.48 ABUT <90 SINGULAR  
+}
+POL6 { @ Poly to Active Spacing < 0.12 Microns
+	EXT Poly Active < 0.12 ABUT <90 SINGULAR  
+}
+POL7 { @ Poly Density < 15%
+	DENSITY Poly < 0.15
+}
+
+// Implant Rules
+SEL1 { @ Minimum select overlap of active < 0.24 Microns
+	ENC Active NSelect < 0.24 ABUT <90 SINGULAR
+	ENC Active PSelect < 0.24 ABUT <90 SINGULAR
+}
+SEL2 { @ Minimum Select overlap of contact < 0.18 Microns
+	ENC ActiveContact NSelect < 0.18 ABUT <90 SINGULAR INSIDE ALSO REGION
+	ENC ActiveContact PSelect < 0.18 ABUT <90 SINGULAR INSIDE ALSO REGION
+}
+SEL3 { @ Minimum Select width < 0.48 Microns
+	INT PSelect < 0.48 ABUT <90 SINGULAR
+	INT NSelect < 0.48 ABUT <90 SINGULAR
+}
+SEL4 { @ Minimum Select spacing < 0.48 Microns
+	EXT NSelect < 0.48 ABUT <90 SINGULAR 
+	EXT PSelect < 0.48 ABUT <90 SINGULAR
+}
+SEL5 { @ P Select and N Select cannot overlap
+	PSelect AND NSelect
+}
+SEL6 { @ Minimum Select spacing to channel of transistor < 0.36 Microns
+	EXT NGate PSelect < 0.36 ABUT <90 SINGULAR
+	EXT PGate NSelect < 0.36 ABUT <90 SINGULAR
+}
+SEL7 { @ Active without Select is not allowed
+	Active NOT INSIDE AllSelect
+}
+
+// Contact Rules
+CNT1 { @ Poly contact exact size == 0.24 Microns
+	NOT RECTANGLE PolyContact == 0.24 by == 0.24 
+}
+CNT2{ @ Minimum poly overlap of poly contact < 0.18 Microns
+	ENC PolyContact Poly < 0.18 ABUT <90 SINGULAR OUTSIDE ALSO REGION
+}
+CNT3 { @ Minimum poly contact spacing < 0.48 Microns
+	EXT PolyContact < 0.48 ABUT <90 SINGULAR  
+}
+CNT4 { @ Minimum poly contact spacing to gate of transistor < 0.24 Microns
+	EXT PolyContact Gate < 0.24 ABUT ==0 SINGULAR INSIDE ALSO REGION
+}
+CNT5 { @ Active contact exact size = 0.24 Microns
+	NOT RECTANGLE ActiveContact == 0.24 by == 0.24 
+}
+CNT6 { @ Minimum active overlap of active contact < 0.18 Microns
+	ENC ActiveContact FieldActive < 0.18 ABUT <90 SINGULAR OUTSIDE ALSO REGION
+}
+CNT7 { @  Minimum active contact spacing < 0.48 Microns
+	EXT ActiveContact < 0.48 ABUT <90 SINGULAR  
+}
+CNT8 { @ Minimum active contact spacing to gate of transistor < 0.24 Microns
+	EXT ActiveContact Gate < 0.24 ABUT <90 SINGULAR INSIDE ALSO REGION
+}
+
+// Metal1 Rules
+ME1A { @ Metal1 minimum width < 0.36 Microns
+	INT Metal1 < 0.36 ABUT <90 SINGULAR  
+}
+ME1B { @ Minimum metal1 spacing < 0.36 Microns
+	EXT Metal1 < 0.36 ABUT <90 SINGULAR  
+}
+ME1C { @ Minimum metal1 overlap of any contact < 0.12 Microns
+	ENC PolyContact Metal1 < 0.12 ABUT <90 SINGULAR OUTSIDE ALSO REGION
+	ENC ActiveContact Metal1 < 0.12 ABUT <90 SINGULAR OUTSIDE ALSO REGION
+}
+ME1D { @ Minimum spacing when either metal1 line is wider than 1.2um < 0.72 Microns
+	WideMetal1 = SIZE Metal1 by 0.6 UNDEROVER
+	EXT Metal1 WideMetal1 < 0.72 SINGULAR
+}
+ME1E { @ Metal1 Density < 30%
+	DENSITY Metal1 < 0.3
+}
+
+// Via1 Rules
+VI1A { @ Via1 exact size = 0.36 Microns
+	NOT RECTANGLE Via1 == 0.36 by == 0.36 
+}
+VI1B { @ Minimum Via1 Spacing < 0.36 Microns
+	EXT Via1 < 0.36 ABUT <90 SINGULAR  
+}
+VI1C { @ 3  Minimum Via1 overlap by metal1 < 0.12 Microns
+	ENC Via1 Metal1 < 0.12 ABUT <90 SINGULAR OUTSIDE ALSO REGION
+}
+VI1D { @ Minimum Via1 spacing to poly or active edge < 0.24 Microns
+	EXT Via1 Poly < 0.24 ABUT <90 SINGULAR
+	EXT Via1 Active < 0.24 ABUT <90 SINGULAR 
+	ENC Via1 Poly < 0.24 ABUT <90 SINGULAR INSIDE ALSO REGION
+	ENC Via1 Active < 0.24 ABUT <90 SINGULAR INSIDE ALSO REGION
+}
+
+// Metal2 Rules
+ME2A { @ Metal2 minimum width < 0.36 Microns
+	INT Metal2 < 0.36 ABUT <90 SINGULAR  
+}
+ME2B { @ Minimum Metal2 spacing < 0.48 Microns
+	EXT Metal2 < 0.48 ABUT <90 SINGULAR  
+}
+ME2C { @ Minimum Metal2 overlap of Via1 < 0.12 Microns
+	ENC Via1 Metal2 < 0.12 ABUT <90 SINGULAR OUTSIDE ALSO REGION
+}
+ME2D { @ Minimum spacing when either Metal2 line is wider than 1.2um < 0.96 Microns
+	WideMetal2 = SIZE Metal2 by 0.6 UNDEROVER
+	EXT Metal2 WideMetal2 < 0.96 SINGULAR
+}
+ME2E { @ Metal2 Density < 30%
+	DENSITY Metal2 < 0.3
+} 	
+
+// Via2 Rules
+VI2A { @ Via2 exact size = 0.36 Microns
+	NOT RECTANGLE Via2 == 0.36 by == 0.36 
+}
+VI2B { @ Minimum Via2 Spacing < 0.36 Microns
+	EXT Via2 < 0.36 ABUT <90 SINGULAR  
+}
+VI2C { @ Minimum Via2 overlap by metal2 < 0.12 Microns
+	ENC Via2 Metal2 < 0.12 ABUT <90 SINGULAR OUTSIDE ALSO REGION
+}
+
+// Metal3 Rules
+ME3A { @ Metal3 minimum width < 0.36 Microns
+	INT Metal3 < 0.36 ABUT <90 SINGULAR  
+}
+ME3B { @ Minimum Metal3 spacing < 0.48 Microns
+	EXT Metal3 < 0.48 ABUT <90 SINGULAR  
+}
+ME3C { @ Minimum Metal3 overlap of Via2 < 0.12 Microns
+	ENC Via2 Metal3 < 0.12 ABUT <90 SINGULAR OUTSIDE ALSO REGION
+}
+ME3D { @ Minimum spacing when either Metal3 line is wider than 1.2um < 0.96 Microns
+	WideMetal3 = SIZE Metal3 by 0.6 UNDEROVER
+	EXT Metal3 WideMetal3 < 0.96 SINGULAR
+}
+ME3E { @ Metal3 Density < 30%
+	DENSITY Metal3 < 0.3
+}
+
+// Via3 Rules
+VI3A { @ Via3 exact size = 0.36 Microns
+	NOT RECTANGLE Via3 == 0.36 by == 0.36 
+}
+VI3B { @ Minimum Via3 Spacing < 0.36 Microns
+	EXT Via3 < 0.36 ABUT <90 SINGULAR  
+}
+VI3C { @ Minimum Via3 overlap by metal3 < 0.12 Microns
+	ENC Via3 Metal3 < 0.12 ABUT <90 SINGULAR OUTSIDE ALSO REGION
+}
+
+// Metal4 Rules
+ME4A { @ Metal4 minimum width < 0.48 Microns
+	INT Metal4 < 0.48 ABUT <90 SINGULAR
+}
+ME4B { @ Minimum Metal4 spacing < 0.48 Microns
+	EXT Metal4 < 0.48 ABUT <90 SINGULAR
+}
+ME4C { @ Minimum Metal4 overlap of Via3 < 0.24 Microns
+	ENC Via3 Metal4 < 0.24 ABUT <90 SINGULAR OUTSIDE ALSO REGION
+}
+ME4D { @ Minimum spacing when either Metal4 line is wider than 1.2um < 0.96 Microns
+	WideMetal4 = SIZE Metal4 by 0.6 UNDEROVER
+	EXT Metal4 WideMetal4 < 0.96 SINGULAR
+}
+ME4E { @ Metal4 Density < 30%
+	DENSITY Metal4 < 0.3
+}
+
+// Passivation opening
+OGL1 { @ Minimum bonding passivation opening = 60 Microns
+	INT Overglass < 60 ABUT <90 SINGULAR
+}
+OGL2 { @ Metal4 overlap of passivation < 6 Microns
+	ENC Overglass Metal4 < 6 ABUT ==0 SINGULAR OUTSIDE ALSO REGION
+}
+OGL3 { @ Minimum pad spacing to unrelated metal < 30 Microns
+	EXT PadMetal Metal4 < 30 ABUT <90 SINGULAR  
+	EXT PadMetal Metal3 < 30 ABUT <90 SINGULAR  
+	EXT PadMetal Metal2 < 30 ABUT <90 SINGULAR  
+	EXT PadMetal Metal1 < 30 ABUT <90 SINGULAR  
+}
+OGL4 { @ Minimum pad spacing to active, poly or poly2 < 15 microns
+	EXT PadMetal Poly < 15 ABUT <90 SINGULAR INSIDE ALSO REGION
+	EXT PadMetal Active < 15 ABUT <90 SINGULAR INSIDE ALSO REGION
+}
+
+SLB1 { @ Minimum Silicide Block width < 0.48 Microns
+	INT SilicideBlock < 0.48 SINGULAR  
+}
+SLB2 { @ Minimum Silicide Block spacing < 0.48 Microns
+	EXT SilicideBlock < 0.48 SINGULAR  
+}
+SLB3 { @ Minimum Silicide Block spacing to contact < 0.24 Microns
+	EXT SilicideBlock ActiveContact < 0.24 ABUT ==0 SINGULAR INSIDE ALSO REGION
+	EXT SilicideBlock PolyContact < 0.24 ABUT ==0 SINGULAR INSIDE ALSO REGION
+}
+SLB4 { @ Minimum Silicide Block spacing to external active < 0.24 Microns
+	EXT Active SilicideBlock < 0.24 ABUT ==0 SINGULAR
+}
+SLB5 { @ Minimum Silicide Block spacing to external poly < 0.24 Microns
+	EXT Poly SilicideBlock < 0.24 ABUT ==0 SINGULAR
+}
+SLB6 { @ Resistor is poly inside Silicide Block but poly ends stick out for contacts
+	Poly INSIDE SilicideBlock
+}
+SLB7 { @ The entire Poly resistor must be outside well and over field 
+	PolyResistor AND NWell
+	PolyResistor AND Active
+}
+SLB8 { @ Minimum poly width in resistor < 0.6 Microns
+	INT PolyResistor < 0.6 SINGULAR  
+}
+SLB9 { @ Minimum spacing of poly resistors (in a single SB region) < 0.84 Microns
+	EXT PolyResistor < 0.84 SINGULAR  
+}
+SLB10 { @ Minimum Silicide Block overlap of poly or active < 0.24 Microns
+	ENC Poly SilicideBlock < 0.24 ABUT <90 SINGULAR
+	ENC Active SilicideBlock < 0.24 ABUT <90 SINGULAR  
+}
+SLB11 { @ Minimum poly or active overlap of Silicide Block < 0.36 Microns
+	ENC SilicideBlock Poly < 0.36 ABUT <90 SINGULAR  
+	ENC SilicideBlock Active < 0.36 ABUT <90 SINGULAR  
+}
+SLB12 { @ Minimum Silicide Block spacing to poly < 0.6 Microns (in a single active region) 
+	EXT Gate SilicideBlock < 0.6 ABUT <90 SINGULAR INSIDE ALSO REGION
+}

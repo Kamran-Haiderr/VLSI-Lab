@@ -1,0 +1,133 @@
+File written by LVS 11.20 as a result of: "samples\lvs\ex3\ex3_2.vdb" on Wed Sep 21 10:08:52 2005
+
+Command line:
+lvs samples\lvs\ex3\ex3_1.spc samples\lvs\ex3\ex3_2.spc -o samples\lvs\ex3\ex3_2.lvs -p samples\lvs\ex3\ex3_1.pre -mm ALL -TTSPICE -nrcl -vfar -fafr 
+
+Engine configuration report:
+Layout netlist file.............................................. samples\lvs\ex3\ex3_1.spc
+Layout netlist file format....................................... T-Spice
+Schematic netlist file........................................... samples\lvs\ex3\ex3_2.spc
+Schematic netlist file format.................................... T-Spice
+Consider Bulk nodes.............................................. ON
+Consider Resistors as polarized elements......................... OFF
+Consider Capacitors as polarized elements........................ OFF
+Consider Inductors as polarized elements......................... OFF
+Merge series and parallel R...................................... OFF
+Merge series and parallel C...................................... OFF
+Merge series and parallel L...................................... OFF
+Merge parallel M................................................. ALL
+Merge stacked M.................................................. OFF
+Merge parallel D................................................. OFF
+Merge parallel B................................................. OFF
+Merge parallel J................................................. OFF
+Merge parallel Z................................................. OFF
+Merge parallel Q................................................. OFF
+Merge series MOSFETs............................................. OFF
+Find series MOSFETs that differ in order or parameter value...... OFF
+Remove shorted devices........................................... OFF
+Remove disconnected devices...................................... OFF
+Fast Iteration................................................... OFF
+
+
+Parsing file samples\lvs\ex3\ex3_1.spc...
+Including file samples\lvs\ex3\MODELS.SPC
+Warning: ex3_1.spc(18) Node GND aliased to GROUND
+Flattening netlist...
+
+Parsing file samples\lvs\ex3\ex3_2.spc...
+Including file samples\lvs\ex3\MODELS.SPC
+Warning: ex3_2.spc(9) Node 0 aliased to GROUND
+Flattening netlist...
+
+Device                       ex3_1.spc         ex3_2.spc   Status            
+---------------        ---------------   ---------------   ---------------     
+C                                    4                 4
+M_NSS                               18                20   MISMATCH (-2)
+M_PSS                               20                24   MISMATCH (-4)
+                          ------------      ------------
+Total elements                      42                48   MISMATCH (-6)
+Total nodes                         20                20
+
+
+Merging devices...
+Eliminated from ex3_2.spc:
+     6 parallel MOSFET(s)
+
+Device                       ex3_1.spc         ex3_2.spc   Status            
+---------------        ---------------   ---------------   ---------------     
+C                                    4                 4
+M_NSS                               18                18
+M_PSS                               20                20
+                          ------------      ------------
+Total elements                      42                42
+Total nodes                         20                20
+
+**************************** MERGED DEVICES *************************
+
+Merged devices in: ex3_1.spc
+
+Merged devices in: ex3_2.spc
+    M352_Merged_Elements = M352, M3419
+    M350_Merged_Elements = M350, M341
+    M21_Merged_Elements = M21, M10
+    M1_Merged_Elements = M1, M3
+    M3410_Merged_Elements = M3410, M351
+    M19_Merged_Elements = M19, M22
+
+
+****************** DETAILED PROCESSING INFORMATION ******************
+
+Processing file samples\lvs\ex3\ex3_1.pre of matched elements/nodes
+Warning: Ignoring match attempt between M1(XSUBA/X34)_2 and M350.
+         Did not recognize name M1(XSUBA/X34)_2 as an element or node
+         in file ex3_1.spc.
+Warning: Ignoring match attempt between M19(XSUBA/X34)_1 and M3419.
+         Did not recognize name M19(XSUBA/X34)_1 as an element or node
+         in file ex3_1.spc.
+Warning: Ignoring match attempt between M1(XSUBA/X33)_2 and M3.
+         Did not recognize name M1(XSUBA/X33)_2 as an element or node
+         in file ex3_1.spc.
+Warning: Ignoring match attempt between M19(XSUBA/X33)_1 and M19.
+         Did not recognize name M19(XSUBA/X33)_1 as an element or node
+         in file ex3_1.spc.
+Warning: Ignoring match attempt between M10(XSUBA/X33)_1 and M10.
+         Did not recognize name M10(XSUBA/X33)_1 as an element or node
+         in file ex3_1.spc.
+Warning: Ignoring match attempt between M10(XSUBA/X34)_1 and M3410.
+         Did not recognize name M10(XSUBA/X34)_1 as an element or node
+         in file ex3_1.spc.
+Matched Elements C1(XSUBA/X33)_1 and C1_1
+Matched Elements C1(XSUBA/X34)_1 and C1_3
+Matched Elements C1(XSUBA/X34)_2 and C1_4
+**************************** ITERATING ******************************
+
+Iterating...
+  5% done.
+ 10% done.
+ 15% done.
+ 20% done.
+ 25% done.
+ 30% done.
+ 35% done.
+ 40% done.
+ 45% done.
+ 50% done.
+ 55% done.
+ 60% done.
+ 65% done.
+ 70% done.
+ 75% done.
+ 80% done.
+ 85% done.
+ 90% done.
+ 95% done.
+100% done.
+
+************************** FINAL RESULT *****************************
+
+Note: Devices have been merged.
+Circuits are equal.
+Run time: 0:01 (min:sec)
+
+0 errors, 8 warnings
+

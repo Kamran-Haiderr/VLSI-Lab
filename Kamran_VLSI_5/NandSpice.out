@@ -1,0 +1,137 @@
+* T-Spice 13.00 Simulation	Fri Mar 01 09:00:56 2019	C:\Users\i140420\Desktop\Kamran_VLSI_5\NandSpice.spc
+* Command line: tspice -o C:\Users\i140420\Desktop\Kamran_VLSI_5\NandSpice.out C:\Users\i140420\Desktop\Kamran_VLSI_5\NandSpice.spc 
+* T-Spice Win32 13.00.20080321.01:01:33
+* Warning : Power supply node A is singularly attached to v1, and will be terminated with a Gmin conductance
+* Warning : Power supply node B is singularly attached to v2, and will be terminated with a Gmin conductance
+
+*SEDIT: Alter blocks = 0
+
+* Accuracy and Convergence options:
+* numndset|dchold = 100
+* 
+* Timestep and Integration options:
+*  relq|relchgtol = 0.0005
+* 
+* Model Evaluation options:
+*            dcap = 2                    defnrb = 0 [sq]               defnrd = 0 [sq]
+*          defnrs = 0 [sq]                 tnom = 25 [deg C]
+* 
+* General options:
+*            temp = 25 [deg C]          threads = 4
+* 
+* Output options:
+*           acout = 1                    ingold = 0
+* 
+
+
+*  Device and node counts:
+*             MOSFETs - 4                 MOSFET geometries - 8       
+*                BJTs - 0                             JFETs - 0       
+*             MESFETs - 0                            Diodes - 0       
+*          Capacitors - 0                         Resistors - 0       
+*           Inductors - 0                  Mutual inductors - 0       
+*  Transmission lines - 0        Coupled transmission lines - 0       
+*     Voltage sources - 3                   Current sources - 0       
+*                VCVS - 0                              VCCS - 0       
+*                CCVS - 0                              CCCS - 0       
+*    V-control switch - 0                  I-control switch - 0       
+*       Macro devices - 0        External C model instances - 0       
+*         HDL devices - 0       
+*         Subcircuits - 0              Subcircuit instances - 0       
+*   Independent nodes - 6                    Boundary nodes - 4       
+*         Total nodes - 10      
+
+* *** 2 WARNING MESSAGES GENERATED DURING SETUP
+
+
+*SEDIT: Alter=0
+*SEDIT: Analysis types DCOP 1 ACMODEL 1 AC 0 TRANSIENT 0 TRANSFER 0 NOISE 0 
+
+* BEGIN NON-GRAPHICAL DATA
+
+DC ANALYSIS - temperature=25.0  
+v(4) =   5.0000e+000
+v(5) =   1.2898e+000
+v(6) =   7.9568e-002
+v(7) =   0.0000e+000
+v(8) =  -1.8593e-005
+v(A) =   0.0000e+000
+v(B) =   0.0000e+000
+v(Vdd) =   5.0000e+000
+v(Vnand) =   5.0000e+000
+i1(v1) =  -0.0000e+000
+i2(v1) =   0.0000e+000
+i1(v2) =  -0.0000e+000
+i2(v2) =   0.0000e+000
+i1(v3) =  -1.3019e-009
+i2(v3) =   1.3019e-009
+
+* END NON-GRAPHICAL DATA
+
+* BEGIN NON-GRAPHICAL DATA
+
+AC SMALL-SIGNAL MODELS - temperature=25.0  
+
+              0             1             2             3          
+              M1            M2            M3            M4           
+MODEL         PMOS          PMOS          NMOS          NMOS         
+TYPE          PMOS          PMOS          NMOS          NMOS         
+REGION        Linear        Linear        Cutoff        Cutoff       
+ID             650.93717p   -650.93684p      1.29324n      1.30050n
+IBS              0.            0.            0.            0.      
+IBD              0.            0.            0.            0.      
+VGS             -5.00002      -5.00000     -79.58688m      0.      
+VDS              2.11996u     -2.11996u      4.92043      79.56829m
+VBS              1.05998u     -1.05998u      1.21022       1.28978 
+VTH           -482.99186m   -482.99186m    181.57409m    237.83512m
+VDSAT           -2.88090      -2.88089      32.67259m     32.32549m
+BETA           131.65130u    131.65142u    540.48236u    553.99507u
+RS               0.            0.            0.            0.      
+RD               0.            0.            0.            0.      
+GM             -17.86318p     17.86363p     31.99972n     31.67636n
+GDS           -307.05099u    307.05083u    517.85979p      2.16384n
+GMB            -28.07956p     28.07979p      3.37703n      3.05416n
+GBD              0.            0.            0.            0.      
+GBS              0.            0.            0.            0.      
+CDTOT            4.55420f      4.00027f      2.66408f      3.84402f
+CGTOT            3.74331f      3.74331f      2.35515f      2.34579f
+CSTOT            4.00027f      4.92062f      3.84539f      7.97874f
+CBTOT            6.71950f      7.08592f      5.86086f     11.16043f
+CGS              1.77530f      1.75497f      1.45428f      1.45753f
+CGD              1.75497f      1.77530f    516.12592a    516.15439a
+CGB            213.04244a    213.04245a    384.74460a    372.10136a
+CBD              3.49322f      2.29623f      2.14795f      3.32784f
+CBS              2.29623f      3.85963f      3.32784f      7.45991f
+
+
+* VOLTAGE SOURCES
+
+              4             5             6          
+              v1            v2            v3           
+VOLTAGE          0.            0.            5.00000 
+CURRENT          0.            0.           -1.30187n
+POWER            0.            0.           -6.50937n
+
+
+Element name cross-reference:
+      0 : M1
+      1 : M2
+      2 : M3
+      3 : M4
+      4 : v1
+      5 : v2
+      6 : v3
+
+* END NON-GRAPHICAL DATA
+*
+
+* Parsing                      0.01 seconds
+* Setup                        0.00 seconds
+* DC operating point           0.10 seconds
+* Overhead                     0.72 seconds
+* -----------------------------------------
+* Total                        0.83 seconds
+
+* Simulation completed	with  2 Warnings
+
+* End of T-Spice output file

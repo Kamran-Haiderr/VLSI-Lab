@@ -1,0 +1,18 @@
+workspace loadfrom -path .
+cell open -design BusesAndArrays -cell Example5 -type schematic -newwindow
+window move -left 0 -top 0 -width 678 -height 371 -undock -normal 
+window fit -x0 -172 -y0 4520 -x1 3132 -y1 6152 -units iu
+cell open -design BusesAndArrays -cell Example4 -view schematic -type schematic -interface schematic -newwindow
+window move -left 243 -top 238 -width 508 -height 371 -undock -normal 
+window fit -x0 3174 -y0 4205 -x1 4146 -y1 4854 -units iu
+cell open -design BusesAndArrays -cell Example3 -type schematic -newwindow
+window move -left 170 -top 171 -width 513 -height 373 -undock -normal 
+window fit -x0 1046 -y0 5003 -x1 2760 -y1 6141 -units iu
+cell open -design BusesAndArrays -cell Example2 -type schematic -newwindow
+window move -left 84 -top 84 -width 1634 -height 577 -undock -normal 
+window fit -x0 2495 -y0 3791 -x1 8120 -y1 5641 -units iu
+cell open -design BusesAndArrays -cell Example1 -type schematic -newwindow
+window move -left 22 -top 29 -width 678 -height 371 -undock -max 
+window fit -x0 1504 -y0 2660 -x1 7065 -y1 5144 -units iu
+source open.design -relativeto user
+source open.design -relativeto design

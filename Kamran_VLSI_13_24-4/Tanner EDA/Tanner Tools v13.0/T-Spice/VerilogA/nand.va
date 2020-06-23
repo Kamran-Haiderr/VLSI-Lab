@@ -1,0 +1,105 @@
+/* Test mnand gate in ring oscillator */
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module ring(in, out, out1, out2, out3, out4, d1, d1n, d2, d2n);
+   electrical out, in;
+   input in;
+   output  out;
+   electrical out1, out2, out3, out4, d1, d1n, d2, d2n;
+   inout out1, out2, out3, out4, d1, d1n;
+
+   mnand nand1 (in, out, out1);
+   mnand nand2 (out1, out1, out2);
+   mnand nand3 (out2, out2, out3);
+   mnand nand4 (out3, out3, out4);
+   mnand nand5 (out4, out4, out);
+
+   jkff jk1(in,in,out,d1,d1n);
+   jkff jk2(in,in,d1,d2,d2n);
+   
+endmodule 
+
+module mnand(in1, in2, out);
+    parameter VCC=3;
+
+input in1, in2;
+electrical in1, in2;
+output out;
+electrical out;
+
+real temp1;
+real rout, cout;
+
+analog function real mbuf;
+    input in;
+    real in;
+    mbuf = 0.5*(tanh(20*(in-0.5)) + 1);
+endfunction 
+
+analog begin
+    @(initial_step) begin
+        rout = 10;
+        cout = 1n;
+    end
+    temp1 = 1 - mbuf(V(in1)/VCC)*mbuf(V(in2)/VCC);
+    I(out) <+ (V(out) - VCC*temp1)/rout + ddt(V(out)*cout);
+
+//    V(out) <+ laplace_np(temp1,{1},{-2*`M_PI*1e7,0});
+    end
+endmodule
+
+module jkff(j,k,c,q,qb);
+    parameter VCC=3;
+
+    electrical j,k,c,q,qb;
+    input j,k,c;
+    output q;
+    electrical p, pb;
+
+    real jn, kn, cn, qn, qbn, p1, pb1, pd, pbd, qs, qbs;
+    real rout, cout;
+
+analog function real mbuf;
+    input in;
+    real in;
+    mbuf = 0.5*(tanh(200*(in-0.5)) + 1);
+endfunction 
+
+    analog begin
+        @(initial_step)
+        begin
+            rout = 10;
+            cout = 1n;
+        end
+        jn = mbuf(V(j)/VCC);
+        kn = mbuf(V(k)/VCC);
+        cn = mbuf(V(c)/VCC);
+        qn = mbuf(V(q)/VCC);
+        qbn = mbuf(V(qb)/VCC);
+        pd  = absdelay(V(p),10p);
+        pbd = absdelay(V(pb),10p);
+        p1 = mbuf(V(p));
+        pb1 = mbuf(V(pb));
+
+        if (analysis("ic") || $abstime == 0.0)
+        begin
+            V(p)  <+ 0;
+            V(pb) <+ 1;
+            qs  = 0;
+            qbs = 1;
+        end
+        else
+        begin
+            V(p)  <+ 1-(1-jn*cn*qbn)*pbd;
+            V(pb) <+ 1-(1-kn*cn*qn)*pd;
+            qs  = 1-(1-p1*(1-cn))*qbn;
+            qbs = 1-(1-pb1*(1-cn))*qn;
+        end
+        I(q)  <+ (V(q)  - VCC*qs)/rout + ddt(V(q)*cout);
+        I(qb) <+ (V(qb) - VCC*qbs)/rout+ ddt(V(qb)*cout);
+    end
+endmodule
+
+

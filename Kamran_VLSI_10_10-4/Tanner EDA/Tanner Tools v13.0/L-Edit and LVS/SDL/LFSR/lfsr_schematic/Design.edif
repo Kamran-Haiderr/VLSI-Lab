@@ -1,0 +1,5814 @@
+(edif lfsr_schematic
+	(edifVersion 2 0 0)
+	(edifLevel 0)
+	(keywordMap (keywordLevel 0))
+	(status 
+		(written 
+			(timestamp 2006 09 27 07 08 36)
+			(author "barry")
+			(program "Tanner S-Edit" (version "12.11 build 2801"))))
+	(library
+		lfsr_schematic
+		(edifLevel 0)
+		(technology 
+			(numberDefinition 
+				(scale 1 (e 1 -12) (unit CAPACITANCE))
+				(scale (e 1000000 -2) (e 2540000 -4) (unit DISTANCE)))
+			(figureGroup BACKGROUND 
+				(color 0 0 0))
+			(figureGroup GRAPHICS 
+				(color 0 80 40))
+			(figureGroup NET 
+				(color 22 75 100))
+			(figureGroup NETLABEL 
+				(color 22 75 100))
+			(figureGroup LABEL 
+				(color 100 0 0))
+			(figureGroup PORTSHAPE 
+				(color 100 0 100))
+			(figureGroup PORTTEXT 
+				(color 100 0 100))
+			(figureGroup INSTANCENAME 
+				(color 85 80 0))
+			(figureGroup CELLNAME 
+				(color 0 80 40))
+			(figureGroup PROPERTY 
+				(color 74 74 74)))
+		(cell (rename &_PERIOD_param ".param")
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface 
+					(property TannerStandard (boolean (true))
+						(property RevisionCount (string "0")))
+					(symbol 
+						(boundingBox 
+							(rectangle (pt -128 -160) (pt 672 224)))
+						(keywordDisplay cell
+							(display 
+								(figureGroupOverride CELLNAME 
+									(textHeight 32)
+									(visible (false)))
+								(origin (pt -128 -32)))
+							(display 
+								(figureGroupOverride CELLNAME 
+									(visible (false)))
+								(origin (pt -128 -32))))
+						(keywordDisplay instance
+							(display 
+								(figureGroupOverride INSTANCENAME 
+									(textHeight 32)
+									(visible (false)))
+								(origin (pt -128 -96)))
+							(display 
+								(figureGroupOverride INSTANCENAME 
+									(visible (false)))
+								(origin (pt -128 -96))))
+						(property (rename SPICE_PERIOD_OUTPUT "SPICE.OUTPUT") (string ".param l=0.35u"))
+						(property (rename SPICE_PERIOD_PRIMITIVE "SPICE.PRIMITIVE") (boolean (true)))
+						(propertyDisplay 
+							(name SPICE_PERIOD_OUTPUT
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 32)
+									(visible (false)))
+								
+							(origin (pt -128 32))))
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 32)
+									(visible (false)))
+								
+								(origin (pt -128 32)))
+						)
+						(propertyDisplay 
+							(name SPICE_PERIOD_PRIMITIVE
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 32)
+									(visible (false)))
+								
+							(origin (pt -128 -160))))
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 32)
+									(visible (false)))
+								
+								(origin (pt -128 -160)))
+						)
+						(annotate 
+							(stringDisplay "Parameter"
+								(display 
+									(figureGroupOverride LABEL 
+										(textHeight 64)
+										(visible (true)))
+									(justify UPPERLEFT)
+									(origin (pt 128 176)))
+							)
+						)
+						(figure GRAPHICS 							
+							(rectangle (pt -128 64) (pt 672 224)))
+					)
+				)
+				(status 
+					(written 
+						(timeStamp 2003 07 19 06 41 03)))
+				(property TannerStandard (boolean (true))
+					(property RevisionCount (string "2")))
+				(property Created (string "1994 7 21 22 38 26"))
+				(contents 
+					(page 
+						Page0
+						(commentGraphics )
+					)
+				)
+			)
+			(view (rename view_1_0 "view_1")
+				(viewType NETLIST)
+				(interface 
+					(property TannerStandard (boolean (true))
+						(property Timestamp (string "2003 07 19 06 41 03")))
+				)
+				(contents 
+				)
+				(property Created (string "1994 7 21 22 38 26"))
+			)
+		)
+		(cell Gnd
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface 
+					(port GROUND
+						(direction INOUT)
+						(property GLOBAL (boolean (true))))
+					(property TannerStandard (boolean (true))
+						(property RevisionCount (string "0")))
+					(symbol 
+						(boundingBox 
+							(rectangle (pt -32 -168) (pt 385 32)))
+						(keywordDisplay cell
+							(display 
+								(figureGroupOverride CELLNAME 
+									(textHeight 9)
+									(visible (false)))
+								(origin (pt -32 -114)))
+							(display 
+								(figureGroupOverride CELLNAME 
+									(visible (false)))
+								(origin (pt -32 -114))))
+						(keywordDisplay instance
+							(display 
+								(figureGroupOverride INSTANCENAME 
+									(textHeight 9)
+									(visible (false)))
+								(origin (pt -32 -132)))
+							(display 
+								(figureGroupOverride INSTANCENAME 
+									(visible (false)))
+								(origin (pt -32 -132))))
+						(property (rename SPICE_PERIOD_OUTPUT "SPICE.OUTPUT") (string "[]"))
+						(property (rename SPICE_PERIOD_PRIMITIVE "SPICE.PRIMITIVE") (boolean (true)))
+						(propertyDisplay 
+							(name SPICE_PERIOD_OUTPUT
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 9)
+									(visible (false)))
+								
+							(origin (pt -32 -168))))
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 9)
+									(visible (false)))
+								
+								(origin (pt -32 -168)))
+						)
+						(propertyDisplay 
+							(name SPICE_PERIOD_PRIMITIVE
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 9)
+									(visible (false)))
+								
+							(origin (pt -32 -150))))
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 9)
+									(visible (false)))
+								
+								(origin (pt -32 -150)))
+						)
+						(portImplementation 
+							(name GROUND
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 64)
+									(visible (false)))
+								(justify CENTERLEFT)
+								(origin (pt 0 0))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 0 0))))
+						)
+						(figure GRAPHICS 
+							(path  (pointList (pt -32 -64) (pt 0 -96) (pt 32 -64) (pt -32 -64))))
+						(figure GRAPHICS 
+							(path  (pointList (pt 0 -64) (pt 0 0))))
+					)
+				)
+				(status 
+					(written 
+						(timeStamp 2003 07 22 00 41 17)
+						(author "D.Gunawan, J.Luo")
+						(dataOrigin "Tanner Research, Pasadena, CA")))
+				(property TannerStandard (boolean (true))
+					(property Info (string "Output Pad"))
+					(property RevisionCount (string "2")))
+				(property Created (string "1995 9 13 18 15 23"))
+				(contents 
+					(page 
+						Page0
+						(commentGraphics )
+					)
+				)
+			)
+			(view (rename view_1_0 "view_1")
+				(viewType NETLIST)
+				(interface 
+					(port GROUND
+						(direction INOUT)
+						(property GLOBAL (boolean (true))))
+					(property TannerStandard (boolean (true))
+						(property Timestamp (string "2003 07 22 00 41 17"))
+						(property Author (string "D.Gunawan, J.Luo"))
+						(property Organization (string "Tanner Research, Pasadena, CA"))
+						(property Info (string "Output Pad")))
+				)
+				(contents 
+				)
+				(property Created (string "1995 9 13 18 15 23"))
+			)
+		)
+		(cell N_4
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface 
+					(port B
+						(direction INOUT))
+					(port D
+						(direction INOUT))
+					(port G
+						(direction INOUT))
+					(port S
+						(direction INOUT))
+					(property L (string "'2*l'"))
+					(property M (string "1"))
+					(property AS (string "'36*l*l'"))
+					(property T (string "0"))
+					(property PS (string "'24*l'"))
+					(property AD (string "'36*l*l'"))
+					(property W (string "'6*l'"))
+					(property PD (string "'24*l'"))
+					(property TannerStandard (boolean (true))
+						(property RevisionCount (string "0")))
+					(symbol 
+						(boundingBox 
+							(rectangle (pt -160 -304) (pt 860 176)))
+						(keywordDisplay cell
+							(display 
+								(figureGroupOverride CELLNAME 
+									(textHeight 32)
+									(visible (false)))
+								(origin (pt 0 -176)))
+							(display 
+								(figureGroupOverride CELLNAME 
+									(visible (false)))
+								(origin (pt 0 -176))))
+						(keywordDisplay instance
+							(display 
+								(figureGroupOverride INSTANCENAME 
+									(textHeight 32)
+									(visible (false)))
+								(origin (pt 0 -240)))
+							(display 
+								(figureGroupOverride INSTANCENAME 
+									(visible (false)))
+								(origin (pt 0 -240))))
+						(property (rename SPICE_PERIOD_OUTPUT "SPICE.OUTPUT") (string "M${T} %37%{D} %37%{G} %37%{S} %37%{B} NMOS W=${W} L=${L} AS=${AS} AD=${AD} PS=${PS} PD=${PD} M=${M}"))
+						(property (rename SPICE_PERIOD_PRIMITIVE "SPICE.PRIMITIVE") (boolean (true)))
+						(propertyDisplay 
+							(name SPICE_PERIOD_OUTPUT
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 16)
+									(visible (false)))
+								
+							(origin (pt -160 160))))
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 16)
+									(visible (false)))
+								
+								(origin (pt -160 160)))
+						)
+						(propertyDisplay 
+							(name SPICE_PERIOD_PRIMITIVE
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 32)
+									(visible (false)))
+								
+							(origin (pt 0 -304))))
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 32)
+									(visible (false)))
+								
+								(origin (pt 0 -304)))
+						)
+						(propertyDisplay 
+							(name L
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 16)
+									(visible (true)))
+								
+							(origin (pt 160 0))))
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 16)
+									(visible (true)))
+								
+								(origin (pt 160 0)))
+						)
+						(propertyDisplay 
+							(name M
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 16)
+									(visible (false)))
+								
+							(origin (pt 160 -32))))
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 16)
+									(visible (false)))
+								
+								(origin (pt 160 -32)))
+						)
+						(propertyDisplay 
+							(name AS
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 16)
+									(visible (false)))
+								
+							(origin (pt 160 -96))))
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 16)
+									(visible (false)))
+								
+								(origin (pt 160 -96)))
+						)
+						(propertyDisplay 
+							(name T
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 32)
+									(visible (true)))
+								
+							(origin (pt 0 16))))
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 32)
+									(visible (true)))
+								
+								(origin (pt 0 16)))
+						)
+						(propertyDisplay 
+							(name AD
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 16)
+									(visible (false)))
+								
+							(origin (pt 160 64))))
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 16)
+									(visible (false)))
+								
+								(origin (pt 160 64)))
+						)
+						(propertyDisplay 
+							(name PS
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 16)
+									(visible (false)))
+								
+							(origin (pt 160 -64))))
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 16)
+									(visible (false)))
+								
+								(origin (pt 160 -64)))
+						)
+						(propertyDisplay 
+							(name PD
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 16)
+									(visible (false)))
+								
+							(origin (pt 160 96))))
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 16)
+									(visible (false)))
+								
+								(origin (pt 160 96)))
+						)
+						(propertyDisplay 
+							(name W
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 16)
+									(visible (true)))
+								
+							(origin (pt 160 32))))
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 16)
+									(visible (true)))
+								
+								(origin (pt 160 32)))
+						)
+						(portImplementation 
+							(name B
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 32)
+									(visible (false)))
+								(justify CENTERLEFT)
+								(origin (pt 128 0))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 128 0))))
+						)
+						(portImplementation 
+							(name D
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 32)
+									(visible (false)))
+								(justify CENTERLEFT)
+								(origin (pt 96 96))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 96 96))))
+						)
+						(portImplementation 
+							(name G
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 32)
+									(visible (false)))
+								(justify CENTERRIGHT)
+								(origin (pt 0 0))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 0 0))))
+						)
+						(portImplementation 
+							(name S
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 32)
+									(visible (false)))
+								(justify CENTERLEFT)
+								(origin (pt 96 -96))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 96 -96))))
+						)
+						(figure GRAPHICS 
+							(polygon  (pointList (pt 104 -8) (pt 72 0) (pt 104 8))))
+						(figure GRAPHICS 
+							(path  (pointList (pt 72 0) (pt 128 0))))
+						(figure GRAPHICS 
+							(path  (pointList (pt 48 0) (pt 0 0))))
+						(figure GRAPHICS 
+							(path  (pointList (pt 96 -48) (pt 96 -96))))
+						(figure GRAPHICS 
+							(path  (pointList (pt 72 -48) (pt 96 -48))))
+						(figure GRAPHICS 
+							(path  (pointList (pt 96 48) (pt 96 96))))
+						(figure GRAPHICS 
+							(path  (pointList (pt 72 48) (pt 96 48))))
+						(figure GRAPHICS 
+							(path  (pointList (pt 72 48) (pt 72 -48))))
+						(figure GRAPHICS 
+							(path  (pointList (pt 48 48) (pt 48 -48))))
+					)
+				)
+				(status 
+					(written 
+						(timeStamp 2003 07 19 06 00 31)
+						(dataOrigin "Tanner Research, Pasadena, CA")))
+				(property TannerStandard (boolean (true))
+					(property RevisionCount (string "2")))
+				(property Created (string "1993 5 6 4 36 43"))
+				(contents 
+					(page 
+						Page0
+						(commentGraphics )
+					)
+				)
+			)
+			(view (rename view_1_0 "view_1")
+				(viewType NETLIST)
+				(interface 
+					(port B
+						(direction INOUT))
+					(port D
+						(direction INOUT))
+					(port G
+						(direction INOUT))
+					(port S
+						(direction INOUT))
+					(property L (string "'2*l'"))
+					(property M (string "1"))
+					(property AS (string "'36*l*l'"))
+					(property T (string "0"))
+					(property PS (string "'24*l'"))
+					(property AD (string "'36*l*l'"))
+					(property W (string "'6*l'"))
+					(property PD (string "'24*l'"))
+					(property TannerStandard (boolean (true))
+						(property Timestamp (string "2003 07 19 06 00 31"))
+						(property Organization (string "Tanner Research, Pasadena, CA")))
+				)
+				(contents 
+				)
+				(property Created (string "1993 5 6 4 36 43"))
+			)
+		)
+		(cell P_4
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface 
+					(port B
+						(direction INOUT))
+					(port D
+						(direction INOUT))
+					(port G
+						(direction INOUT))
+					(port S
+						(direction INOUT))
+					(property L (string "'2*l'"))
+					(property M (string "1"))
+					(property AS (string "'36*l*l'"))
+					(property T (string "0"))
+					(property PS (string "'24*l'"))
+					(property AD (string "'36*l*l'"))
+					(property W (string "'6*l'"))
+					(property PD (string "'24*l'"))
+					(property TannerStandard (boolean (true))
+						(property RevisionCount (string "0")))
+					(symbol 
+						(boundingBox 
+							(rectangle (pt -160 -304) (pt 860 176)))
+						(keywordDisplay cell
+							(display 
+								(figureGroupOverride CELLNAME 
+									(textHeight 32)
+									(visible (false)))
+								(origin (pt 0 -176)))
+							(display 
+								(figureGroupOverride CELLNAME 
+									(visible (false)))
+								(origin (pt 0 -176))))
+						(keywordDisplay instance
+							(display 
+								(figureGroupOverride INSTANCENAME 
+									(textHeight 32)
+									(visible (false)))
+								(origin (pt 0 -240)))
+							(display 
+								(figureGroupOverride INSTANCENAME 
+									(visible (false)))
+								(origin (pt 0 -240))))
+						(property (rename SPICE_PERIOD_OUTPUT "SPICE.OUTPUT") (string "M${T} %37%{D} %37%{G} %37%{S} %37%{B} PMOS W=${W} L=${L} AS=${AS} AD=${AD} PS=${PS} PD=${PD} M=${M}"))
+						(property (rename SPICE_PERIOD_PRIMITIVE "SPICE.PRIMITIVE") (boolean (true)))
+						(propertyDisplay 
+							(name SPICE_PERIOD_OUTPUT
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 16)
+									(visible (false)))
+								
+							(origin (pt -160 160))))
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 16)
+									(visible (false)))
+								
+								(origin (pt -160 160)))
+						)
+						(propertyDisplay 
+							(name SPICE_PERIOD_PRIMITIVE
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 32)
+									(visible (false)))
+								
+							(origin (pt 0 -304))))
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 32)
+									(visible (false)))
+								
+								(origin (pt 0 -304)))
+						)
+						(propertyDisplay 
+							(name L
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 16)
+									(visible (true)))
+								
+							(origin (pt 160 0))))
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 16)
+									(visible (true)))
+								
+								(origin (pt 160 0)))
+						)
+						(propertyDisplay 
+							(name M
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 16)
+									(visible (false)))
+								
+							(origin (pt 160 -32))))
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 16)
+									(visible (false)))
+								
+								(origin (pt 160 -32)))
+						)
+						(propertyDisplay 
+							(name AS
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 16)
+									(visible (false)))
+								
+							(origin (pt 160 96))))
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 16)
+									(visible (false)))
+								
+								(origin (pt 160 96)))
+						)
+						(propertyDisplay 
+							(name T
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 32)
+									(visible (true)))
+								
+							(origin (pt 0 16))))
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 32)
+									(visible (true)))
+								
+								(origin (pt 0 16)))
+						)
+						(propertyDisplay 
+							(name AD
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 16)
+									(visible (false)))
+								
+							(origin (pt 160 -64))))
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 16)
+									(visible (false)))
+								
+								(origin (pt 160 -64)))
+						)
+						(propertyDisplay 
+							(name PS
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 16)
+									(visible (false)))
+								
+							(origin (pt 160 64))))
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 16)
+									(visible (false)))
+								
+								(origin (pt 160 64)))
+						)
+						(propertyDisplay 
+							(name PD
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 16)
+									(visible (false)))
+								
+							(origin (pt 160 -96))))
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 16)
+									(visible (false)))
+								
+								(origin (pt 160 -96)))
+						)
+						(propertyDisplay 
+							(name W
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 16)
+									(visible (true)))
+								
+							(origin (pt 160 32))))
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 16)
+									(visible (true)))
+								
+								(origin (pt 160 32)))
+						)
+						(portImplementation 
+							(name B
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 32)
+									(visible (false)))
+								(justify CENTERLEFT)
+								(origin (pt 128 0))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 128 0))))
+						)
+						(portImplementation 
+							(name D
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 32)
+									(visible (false)))
+								(justify CENTERLEFT)
+								(origin (pt 96 -96))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 96 -96))))
+						)
+						(portImplementation 
+							(name G
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 32)
+									(visible (false)))
+								(justify CENTERRIGHT)
+								(origin (pt 0 0))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 0 0))))
+						)
+						(portImplementation 
+							(name S
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 32)
+									(visible (false)))
+								(justify CENTERLEFT)
+								(origin (pt 96 96))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 96 96))))
+						)
+						(figure GRAPHICS 
+							(polygon  (pointList (pt 88 -8) (pt 120 0) (pt 88 8))))
+						(figure GRAPHICS 
+							(path  (pointList (pt 72 0) (pt 128 0))))
+						(figure GRAPHICS 
+							(path  (pointList (pt 24 0) (pt 0 0))))
+						(figure GRAPHICS 
+							(path  (pointList (pt 96 -48) (pt 96 -96))))
+						(figure GRAPHICS 
+							(path  (pointList (pt 72 -48) (pt 96 -48))))
+						(figure GRAPHICS 
+							(path  (pointList (pt 96 48) (pt 96 96))))
+						(figure GRAPHICS 
+							(path  (pointList (pt 72 48) (pt 96 48))))
+						(figure GRAPHICS 
+							(path  (pointList (pt 72 48) (pt 72 -48))))
+						(figure GRAPHICS 
+							(path  (pointList (pt 48 48) (pt 48 -48))))
+						(figure GRAPHICS 							
+							(circle (pt 24 0) (pt 48 0)))
+					)
+				)
+				(status 
+					(written 
+						(timeStamp 2003 07 19 06 00 31)
+						(dataOrigin "Tanner Research, Pasadena, CA")))
+				(property TannerStandard (boolean (true))
+					(property RevisionCount (string "2")))
+				(property Created (string "1993 3 19 19 42 48"))
+				(contents 
+					(page 
+						Page0
+						(commentGraphics )
+					)
+				)
+			)
+			(view (rename view_1_0 "view_1")
+				(viewType NETLIST)
+				(interface 
+					(port B
+						(direction INOUT))
+					(port D
+						(direction INOUT))
+					(port G
+						(direction INOUT))
+					(port S
+						(direction INOUT))
+					(property L (string "'2*l'"))
+					(property M (string "1"))
+					(property AS (string "'36*l*l'"))
+					(property T (string "0"))
+					(property PS (string "'24*l'"))
+					(property AD (string "'36*l*l'"))
+					(property W (string "'6*l'"))
+					(property PD (string "'24*l'"))
+					(property TannerStandard (boolean (true))
+						(property Timestamp (string "2003 07 19 06 00 31"))
+						(property Organization (string "Tanner Research, Pasadena, CA")))
+				)
+				(contents 
+				)
+				(property Created (string "1993 3 19 19 42 48"))
+			)
+		)
+		(cell Vdd
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface 
+					(port Vdd
+						(direction INOUT)
+						(property GLOBAL (boolean (true))))
+					(property TannerStandard (boolean (true))
+						(property RevisionCount (string "0")))
+					(symbol 
+						(boundingBox 
+							(rectangle (pt -33 -96) (pt 271 82)))
+						(keywordDisplay cell
+							(display 
+								(figureGroupOverride CELLNAME 
+									(textHeight 8)
+									(visible (false)))
+								(origin (pt -33 -48)))
+							(display 
+								(figureGroupOverride CELLNAME 
+									(visible (false)))
+								(origin (pt -33 -48))))
+						(keywordDisplay instance
+							(display 
+								(figureGroupOverride INSTANCENAME 
+									(textHeight 8)
+									(visible (false)))
+								(origin (pt -33 -64)))
+							(display 
+								(figureGroupOverride INSTANCENAME 
+									(visible (false)))
+								(origin (pt -33 -64))))
+						(property (rename SPICE_PERIOD_OUTPUT "SPICE.OUTPUT") (string "[]"))
+						(property (rename SPICE_PERIOD_PRIMITIVE "SPICE.PRIMITIVE") (boolean (true)))
+						(propertyDisplay 
+							(name SPICE_PERIOD_OUTPUT
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 8)
+									(visible (false)))
+								
+							(origin (pt -33 -96))))
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 8)
+									(visible (false)))
+								
+								(origin (pt -33 -96)))
+						)
+						(propertyDisplay 
+							(name SPICE_PERIOD_PRIMITIVE
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 8)
+									(visible (false)))
+								
+							(origin (pt -33 -80))))
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 8)
+									(visible (false)))
+								
+								(origin (pt -33 -80)))
+						)
+						(portImplementation 
+							(name Vdd
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 64)
+									(visible (false)))
+								(justify CENTERLEFT)
+								(origin (pt 0 0))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 0 0))))
+						)
+						(figure GRAPHICS 
+							(path  (pointList (pt -33 50) (pt -31 46) (pt 33 78) (pt 31 82) (pt -33 50))))
+						(figure GRAPHICS 
+							(path  (pointList (pt 32 80) (pt -32 48))))
+						(figure GRAPHICS 
+							(path  (pointList (pt 0 0) (pt 0 64))))
+					)
+				)
+				(status 
+					(written 
+						(timeStamp 2003 07 19 06 00 31)
+						(author "D.Gunawan, J.Luo")
+						(dataOrigin "Tanner Research, Pasadena, CA")))
+				(property TannerStandard (boolean (true))
+					(property Info (string "Output Pad"))
+					(property RevisionCount (string "1")))
+				(property Created (string "1995 9 13 18 4 57"))
+				(contents 
+					(page 
+						Page0
+						(commentGraphics )
+					)
+				)
+			)
+			(view (rename view_1_0 "view_1")
+				(viewType NETLIST)
+				(interface 
+					(port Vdd
+						(direction INOUT)
+						(property GLOBAL (boolean (true))))
+					(property TannerStandard (boolean (true))
+						(property Timestamp (string "2003 07 19 06 00 31"))
+						(property Author (string "D.Gunawan, J.Luo"))
+						(property Organization (string "Tanner Research, Pasadena, CA"))
+						(property Info (string "Output Pad")))
+				)
+				(contents 
+				)
+				(property Created (string "1995 9 13 18 4 57"))
+			)
+		)
+		(cell DFFC
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface 
+					(port ClB
+						(direction INPUT))
+					(port Clk
+						(direction INPUT))
+					(port Data
+						(direction INPUT))
+					(port Q
+						(direction OUTPUT))
+					(port QB
+						(direction OUTPUT))
+					(property TannerStandard (boolean (true))
+						(property Timestamp (string "2003 07 19 06 00 31"))
+						(property RevisionCount (string "0")))
+					(symbol 
+						(boundingBox 
+							(rectangle (pt -154 -288) (pt 360 231)))
+						(keywordDisplay cell
+							(display 
+								(figureGroupOverride CELLNAME 
+									(textHeight 40)
+									(visible (false)))
+								(origin (pt 0 -208)))
+							(display 
+								(figureGroupOverride CELLNAME 
+									(visible (false)))
+								(origin (pt 0 -208))))
+						(keywordDisplay instance
+							(display 
+								(figureGroupOverride INSTANCENAME 
+									(textHeight 40)
+									(visible (false)))
+								(origin (pt 0 -288)))
+							(display 
+								(figureGroupOverride INSTANCENAME 
+									(visible (false)))
+								(origin (pt 0 -288))))
+						(annotate 
+							(stringDisplay "Cl"
+								(display 
+									(figureGroupOverride LABEL 
+										(textHeight 40)
+										(visible (true)))
+									(justify UPPERLEFT)
+									(origin (pt 80 64)))
+							)
+						)
+						(annotate 
+							(stringDisplay "D"
+								(display 
+									(figureGroupOverride LABEL 
+										(textHeight 40)
+										(visible (true)))
+									(justify UPPERLEFT)
+									(origin (pt 40 24)))
+							)
+						)
+						(annotate 
+							(stringDisplay "Q"
+								(display 
+									(figureGroupOverride LABEL 
+										(textHeight 40)
+										(visible (true)))
+									(justify UPPERRIGHT)
+									(origin (pt 152 24)))
+							)
+						)
+						(annotate 
+							(stringDisplay "Q"
+								(display 
+									(figureGroupOverride LABEL 
+										(textHeight 40)
+										(visible (true)))
+									(justify UPPERRIGHT)
+									(origin (pt 136 -48)))
+							)
+						)
+						(portImplementation 
+							(name ClB
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 32)
+									(visible (false)))
+								(justify CENTERLEFT)(orientation R90)
+								(origin (pt 96 96))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 96 96))))
+						)
+						(portImplementation 
+							(name Clk
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 32)
+									(visible (false)))
+								(justify CENTERRIGHT)
+								(origin (pt 0 -64))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 0 -64))))
+						)
+						(portImplementation 
+							(name Data
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 32)
+									(visible (false)))
+								(justify CENTERRIGHT)
+								(origin (pt 0 0))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 0 0))))
+						)
+						(portImplementation 
+							(name Q
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 32)
+									(visible (false)))
+								(justify CENTERLEFT)
+								(origin (pt 192 0))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 192 0))))
+						)
+						(portImplementation 
+							(name QB
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 32)
+									(visible (false)))
+								(justify CENTERLEFT)
+								(origin (pt 192 -64))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 192 -64))))
+						)
+						(figure GRAPHICS 
+							(polygon  (pointList (pt 32 -128) (pt 32 64) (pt 160 64) (pt 160 -128))))
+						(figure GRAPHICS 
+							(path  (pointList (pt 96 80) (pt 96 96))))
+						(figure GRAPHICS 
+							(path  (pointList (pt 32 -64) (pt 0 -64))))
+						(figure GRAPHICS 
+							(path  (pointList (pt 160 -64) (pt 192 -64))))
+						(figure GRAPHICS 
+							(path  (pointList (pt 160 0) (pt 192 0))))
+						(figure GRAPHICS 
+							(path  (pointList (pt 32 0) (pt 0 0))))
+						(figure GRAPHICS 
+							(path  (pointList (pt 48 -64) (pt 32 -72))))
+						(figure GRAPHICS 
+							(path  (pointList (pt 48 -64) (pt 32 -56))))
+						(figure GRAPHICS 							
+							(circle (pt 88 72) (pt 104 72)))
+					)
+				)
+				(status 
+					(written 
+						(timeStamp 2006 09 27 06 55 58)
+						(author "J. Luo")
+						(dataOrigin "Tanner Research, Pasadena, CA")))
+				(property TannerStandard (boolean (true))
+					(property Info (string "D Flip-Flop with Clear (TIB)"))
+					(property RevisionCount (string "3")))
+				(property Created (string "1993 5 6 4 36 41"))
+				(contents 
+					(page 
+						Page0
+						(instance 
+							(name Gnd_1)
+							(viewRef view_1 (cellRef Gnd))
+							(transform 
+								(origin (pt 2592 1024))))
+						(instance 
+							(name Gnd_2)
+							(viewRef view_1 (cellRef Gnd))
+							(transform 
+								(origin (pt 1696 2272))))
+						(instance 
+							(name N_4_1)
+							(viewRef view_1 (cellRef N_4))
+							(transform 
+								(origin (pt 1376 1312)))
+							(property AS (string "'15*l*l'")
+								(property Type (string "String"))
+							)
+							(property T (string "8")
+								(property Type (string "String"))
+							)
+							(property AD (string "'109.444*l*l'")
+								(property Type (string "String"))
+							)
+							(property PS (string "'17*l'")
+								(property Type (string "String"))
+							)
+							(property PD (string "'45.5556*l'")
+								(property Type (string "String"))
+							)
+							(property W (string "'15*l'")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name N_4_2)
+							(viewRef view_1 (cellRef N_4))
+							(transform 
+								(origin (pt 1376 1504)))
+							(property AS (string "'45*l*l'")
+								(property Type (string "String"))
+							)
+							(property T (string "7")
+								(property Type (string "String"))
+							)
+							(property AD (string "'15*l*l'")
+								(property Type (string "String"))
+							)
+							(property PS (string "'21*l'")
+								(property Type (string "String"))
+							)
+							(property PD (string "'17*l'")
+								(property Type (string "String"))
+							)
+							(property W (string "'15*l'")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name N_4_3)
+							(viewRef view_1 (cellRef N_4))
+							(transform 
+								(origin (pt 1696 1312)))
+							(property AS (string "'15*l*l'")
+								(property Type (string "String"))
+							)
+							(property T (string "12")
+								(property Type (string "String"))
+							)
+							(property AD (string "'45*l*l'")
+								(property Type (string "String"))
+							)
+							(property PS (string "'17*l'")
+								(property Type (string "String"))
+							)
+							(property PD (string "'21*l'")
+								(property Type (string "String"))
+							)
+							(property W (string "'15*l'")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name N_4_4)
+							(viewRef view_1 (cellRef N_4))
+							(transform 
+								(origin (pt 1696 1504)))
+							(property AS (string "'45*l*l'")
+								(property Type (string "String"))
+							)
+							(property T (string "11")
+								(property Type (string "String"))
+							)
+							(property AD (string "'45*l*l'")
+								(property Type (string "String"))
+							)
+							(property PS (string "'21*l'")
+								(property Type (string "String"))
+							)
+							(property PD (string "'21*l'")
+								(property Type (string "String"))
+							)
+							(property W (string "'15*l'")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name N_4_5)
+							(viewRef view_1 (cellRef N_4))
+							(transform 
+								(origin (pt 2592 1312)))
+							(property AS (string "'15*l*l'")
+								(property Type (string "String"))
+							)
+							(property T (string "21")
+								(property Type (string "String"))
+							)
+							(property AD (string "'123*l*l'")
+								(property Type (string "String"))
+							)
+							(property PS (string "'17*l'")
+								(property Type (string "String"))
+							)
+							(property PD (string "'50*l'")
+								(property Type (string "String"))
+							)
+							(property W (string "'15*l'")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name N_4_6)
+							(viewRef view_1 (cellRef N_4))
+							(transform 
+								(origin (pt 2592 1504)))
+							(property AS (string "'45*l*l'")
+								(property Type (string "String"))
+							)
+							(property T (string "20")
+								(property Type (string "String"))
+							)
+							(property AD (string "'15*l*l'")
+								(property Type (string "String"))
+							)
+							(property PS (string "'21*l'")
+								(property Type (string "String"))
+							)
+							(property PD (string "'17*l'")
+								(property Type (string "String"))
+							)
+							(property W (string "'15*l'")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name N_4_7)
+							(viewRef view_1 (cellRef N_4))
+							(transform 
+								(origin (pt 3200 1312)))
+							(property AS (string "'22*l*l'")
+								(property Type (string "String"))
+							)
+							(property T (string "26")
+								(property Type (string "String"))
+							)
+							(property AD (string "'87.4054*l*l'")
+								(property Type (string "String"))
+							)
+							(property PS (string "'24*l'")
+								(property Type (string "String"))
+							)
+							(property PD (string "'34.4865*l'")
+								(property Type (string "String"))
+							)
+							(property W (string "'22*l'")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name N_4_8)
+							(viewRef view_1 (cellRef N_4))
+							(transform 
+								(origin (pt 2912 1504)))
+							(property AS (string "'45*l*l'")
+								(property Type (string "String"))
+							)
+							(property T (string "24")
+								(property Type (string "String"))
+							)
+							(property AD (string "'59.5946*l*l'")
+								(property Type (string "String"))
+							)
+							(property PS (string "'21*l'")
+								(property Type (string "String"))
+							)
+							(property PD (string "'23.5135*l'")
+								(property Type (string "String"))
+							)
+							(property W (string "'15*l'")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name N_4_9)
+							(viewRef view_1 (cellRef N_4))
+							(transform 
+								(origin (pt 3552 1536)))
+							(property AS (string "'185*l*l'")
+								(property Type (string "String"))
+							)
+							(property T (string "29")
+								(property Type (string "String"))
+							)
+							(property PS (string "'64*l'")
+								(property Type (string "String"))
+							)
+							(property PD (string "'28*l'")
+								(property Type (string "String"))
+							)
+							(property W (string "'22*l'")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name N_4_10)
+							(viewRef view_1 (cellRef N_4))
+							(transform 
+								(origin (pt 3200 1120)))
+							(property T (string "27")
+								(property Type (string "String"))
+							)
+							(property AD (string "'22*l*l'")
+								(property Type (string "String"))
+							)
+							(property PS (string "'28*l'")
+								(property Type (string "String"))
+							)
+							(property W (string "'22*l'")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name N_4_11)
+							(viewRef view_1 (cellRef N_4))
+							(transform 
+								(origin (pt 1408 2368)))
+							(property AS (string "'43.7778*l*l'")
+								(property Type (string "String"))
+							)
+							(property T (string "2")
+								(property Type (string "String"))
+							)
+							(property AD (string "'42*l*l'")
+								(property Type (string "String"))
+							)
+							(property PS (string "'18.2222*l'")
+								(property Type (string "String"))
+							)
+							(property PD (string "'26*l'")
+								(property Type (string "String"))
+							)
+							(property W (string "'6*l'")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name N_4_12)
+							(viewRef view_1 (cellRef N_4))
+							(transform 
+								(origin (pt 1760 2368)))
+							(property AS (string "'43.7778*l*l'")
+								(property Type (string "String"))
+							)
+							(property T (string "4")
+								(property Type (string "String"))
+							)
+							(property AD (string "'36*l*l'")
+								(property Type (string "String"))
+							)
+							(property PS (string "'18.2222*l'")
+								(property Type (string "String"))
+							)
+							(property W (string "'6*l'")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name N_4_13)
+							(viewRef view_1 (cellRef N_4))
+							(transform 
+								(origin (pt 1696 1120)))
+							(property AS (string "'45*l*l'")
+								(property Type (string "String"))
+							)
+							(property T (string "13")
+								(property Type (string "String"))
+							)
+							(property AD (string "'15*l*l'")
+								(property Type (string "String"))
+							)
+							(property PS (string "'21*l'")
+								(property Type (string "String"))
+							)
+							(property PD (string "'17*l'")
+								(property Type (string "String"))
+							)
+							(property W (string "'15*l'")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name N_4_14)
+							(viewRef view_1 (cellRef N_4))
+							(transform 
+								(origin (pt 2272 1536)))
+							(property AS (string "'72*l*l'")
+								(property Type (string "String"))
+							)
+							(property T (string "17")
+								(property Type (string "String"))
+							)
+							(property AD (string "'45*l*l'")
+								(property Type (string "String"))
+							)
+							(property PS (string "'42*l'")
+								(property Type (string "String"))
+							)
+							(property PD (string "'21*l'")
+								(property Type (string "String"))
+							)
+							(property W (string "'15*l'")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name P_4_1)
+							(viewRef view_1 (cellRef P_4))
+							(transform 
+								(origin (pt 1376 1760)))
+							(property AS (string "'73.6667*l*l'")
+								(property Type (string "String"))
+							)
+							(property T (string "6")
+								(property Type (string "String"))
+							)
+							(property AD (string "'17*l*l'")
+								(property Type (string "String"))
+							)
+							(property PS (string "'29.1429*l'")
+								(property Type (string "String"))
+							)
+							(property PD (string "'19*l'")
+								(property Type (string "String"))
+							)
+							(property W (string "'17*l'")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name P_4_2)
+							(viewRef view_1 (cellRef P_4))
+							(transform 
+								(origin (pt 1376 1952)))
+							(property AS (string "'17*l*l'")
+								(property Type (string "String"))
+							)
+							(property T (string "5")
+								(property Type (string "String"))
+							)
+							(property AD (string "'124.276*l*l'")
+								(property Type (string "String"))
+							)
+							(property PS (string "'19*l'")
+								(property Type (string "String"))
+							)
+							(property PD (string "'48.069*l'")
+								(property Type (string "String"))
+							)
+							(property W (string "'17*l'")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name P_4_3)
+							(viewRef view_1 (cellRef P_4))
+							(transform 
+								(origin (pt 1696 1760)))
+							(property AS (string "'14*l*l'")
+								(property Type (string "String"))
+							)
+							(property T (string "10")
+								(property Type (string "String"))
+							)
+							(property AD (string "'60.6667*l*l'")
+								(property Type (string "String"))
+							)
+							(property PS (string "'16*l'")
+								(property Type (string "String"))
+							)
+							(property W (string "'14*l'")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name P_4_4)
+							(viewRef view_1 (cellRef P_4))
+							(transform 
+								(origin (pt 1696 1952)))
+							(property AS (string "'84*l*l'")
+								(property Type (string "String"))
+							)
+							(property T (string "9")
+								(property Type (string "String"))
+							)
+							(property AD (string "'14*l*l'")
+								(property Type (string "String"))
+							)
+							(property PS (string "'40*l'")
+								(property Type (string "String"))
+							)
+							(property PD (string "'16*l'")
+								(property Type (string "String"))
+							)
+							(property W (string "'14*l'")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name P_4_5)
+							(viewRef view_1 (cellRef P_4))
+							(transform 
+								(origin (pt 2592 1760)))
+							(property AS (string "'48*l*l'")
+								(property Type (string "String"))
+							)
+							(property T (string "19")
+								(property Type (string "String"))
+							)
+							(property AD (string "'16*l*l'")
+								(property Type (string "String"))
+							)
+							(property PS (string "'22*l'")
+								(property Type (string "String"))
+							)
+							(property PD (string "'18*l'")
+								(property Type (string "String"))
+							)
+							(property W (string "'16*l'")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name P_4_6)
+							(viewRef view_1 (cellRef P_4))
+							(transform 
+								(origin (pt 2592 1952)))
+							(property AS (string "'16*l*l'")
+								(property Type (string "String"))
+							)
+							(property T (string "18")
+								(property Type (string "String"))
+							)
+							(property AD (string "'96*l*l'")
+								(property Type (string "String"))
+							)
+							(property PS (string "'18*l'")
+								(property Type (string "String"))
+							)
+							(property PD (string "'44*l'")
+								(property Type (string "String"))
+							)
+							(property W (string "'16*l'")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name P_4_7)
+							(viewRef view_1 (cellRef P_4))
+							(transform 
+								(origin (pt 2912 1760)))
+							(property AS (string "'54.4*l*l'")
+								(property Type (string "String"))
+							)
+							(property T (string "23")
+								(property Type (string "String"))
+							)
+							(property AD (string "'48*l*l'")
+								(property Type (string "String"))
+							)
+							(property PD (string "'22*l'")
+								(property Type (string "String"))
+							)
+							(property W (string "'16*l'")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name P_4_8)
+							(viewRef view_1 (cellRef P_4))
+							(transform 
+								(origin (pt 2912 1952)))
+							(property AS (string "'72*l*l'")
+								(property Type (string "String"))
+							)
+							(property T (string "22")
+								(property Type (string "String"))
+							)
+							(property AD (string "'81.6*l*l'")
+								(property Type (string "String"))
+							)
+							(property PS (string "'30*l'")
+								(property Type (string "String"))
+							)
+							(property PD (string "'36*l'")
+								(property Type (string "String"))
+							)
+							(property W (string "'24*l'")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name P_4_9)
+							(viewRef view_1 (cellRef P_4))
+							(transform 
+								(origin (pt 2016 1920)))
+							(property AS (string "'51.75*l*l'")
+								(property Type (string "String"))
+							)
+							(property T (string "14")
+								(property Type (string "String"))
+							)
+							(property AD (string "'27.45*l*l'")
+								(property Type (string "String"))
+							)
+							(property PS (string "'23.25*l'")
+								(property Type (string "String"))
+							)
+							(property PD (string "'15.3*l'")
+								(property Type (string "String"))
+							)
+							(property W (string "'9*l'")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name P_4_10)
+							(viewRef view_1 (cellRef P_4))
+							(transform 
+								(origin (pt 3552 1728)))
+							(property AS (string "'143*l*l'")
+								(property Type (string "String"))
+							)
+							(property T (string "28")
+								(property Type (string "String"))
+							)
+							(property AD (string "'111*l*l'")
+								(property Type (string "String"))
+							)
+							(property PS (string "'66*l'")
+								(property Type (string "String"))
+							)
+							(property PD (string "'66*l'")
+								(property Type (string "String"))
+							)
+							(property W (string "'27*l'")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name P_4_11)
+							(viewRef view_1 (cellRef P_4))
+							(transform 
+								(origin (pt 1408 2560)))
+							(property AS (string "'36*l*l'")
+								(property Type (string "String"))
+							)
+							(property T (string "1")
+								(property Type (string "String"))
+							)
+							(property AD (string "'43.8621*l*l'")
+								(property Type (string "String"))
+							)
+							(property PS (string "'24*l'")
+								(property Type (string "String"))
+							)
+							(property PD (string "'16.9655*l'")
+								(property Type (string "String"))
+							)
+							(property W (string "'6*l'")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name P_4_12)
+							(viewRef view_1 (cellRef P_4))
+							(transform 
+								(origin (pt 1760 2560)))
+							(property AS (string "'36*l*l'")
+								(property Type (string "String"))
+							)
+							(property T (string "3")
+								(property Type (string "String"))
+							)
+							(property AD (string "'43.8621*l*l'")
+								(property Type (string "String"))
+							)
+							(property PS (string "'24*l'")
+								(property Type (string "String"))
+							)
+							(property PD (string "'16.9655*l'")
+								(property Type (string "String"))
+							)
+							(property W (string "'6*l'")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name P_4_13)
+							(viewRef view_1 (cellRef P_4))
+							(transform 
+								(origin (pt 2016 1728)))
+							(property AS (string "'33.55*l*l'")
+								(property Type (string "String"))
+							)
+							(property T (string "15")
+								(property Type (string "String"))
+							)
+							(property AD (string "'47.6667*l*l'")
+								(property Type (string "String"))
+							)
+							(property PS (string "'18.7*l'")
+								(property Type (string "String"))
+							)
+							(property PD (string "'18.8571*l'")
+								(property Type (string "String"))
+							)
+							(property W (string "'11*l'")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name P_4_14)
+							(viewRef view_1 (cellRef P_4))
+							(transform 
+								(origin (pt 2272 1728)))
+							(property AS (string "'90*l*l'")
+								(property Type (string "String"))
+							)
+							(property T (string "16")
+								(property Type (string "String"))
+							)
+							(property AD (string "'86.25*l*l'")
+								(property Type (string "String"))
+							)
+							(property PS (string "'42*l'")
+								(property Type (string "String"))
+							)
+							(property PD (string "'38.75*l'")
+								(property Type (string "String"))
+							)
+							(property W (string "'15*l'")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name P_4_15)
+							(viewRef view_1 (cellRef P_4))
+							(transform 
+								(origin (pt 3200 1952)))
+							(property AS (string "'114*l*l'")
+								(property Type (string "String"))
+							)
+							(property T (string "25")
+								(property Type (string "String"))
+							)
+							(property AD (string "'72*l*l'")
+								(property Type (string "String"))
+							)
+							(property PS (string "'60*l'")
+								(property Type (string "String"))
+							)
+							(property PD (string "'30*l'")
+								(property Type (string "String"))
+							)
+							(property W (string "'24*l'")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name Vdd_1)
+							(viewRef view_1 (cellRef Vdd))
+							(transform 
+								(origin (pt 2592 2080))))
+						(instance 
+							(name Vdd_2)
+							(viewRef view_1 (cellRef Vdd))
+							(transform 
+								(origin (pt 1696 2688))))
+						(portImplementation 
+							(name ClB
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 64)
+									(visible (false)))
+								(justify CENTERRIGHT)
+								(origin (pt 3200 1312))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 3200 1312))))
+						)
+						(portImplementation 
+							(name ClB
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 64)
+									(visible (false)))
+								(justify CENTERRIGHT)
+								(origin (pt 1696 1120))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 1696 1120))))
+						)
+						(portImplementation 
+							(name ClB
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 64)
+									(visible (false)))
+								(justify CENTERRIGHT)
+								(origin (pt 2016 1920))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 2016 1920))))
+						)
+						(portImplementation 
+							(name Clk
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 64)
+									(visible (false)))
+								(justify CENTERRIGHT)
+								(origin (pt 1312 2464))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 1312 2464))))
+						)
+						(portImplementation 
+							(name Data
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 64)
+									(visible (false)))
+								(justify CENTERRIGHT)
+								(origin (pt 1376 1312))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 1376 1312))))
+						)
+						(portImplementation 
+							(name Q
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 64)
+									(visible (false)))
+								(justify CENTERLEFT)
+								(origin (pt 3776 1632))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 3776 1632))))
+						)
+						(portImplementation 
+							(name QB
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 64)
+									(visible (false)))
+								(justify CENTERLEFT)
+								(origin (pt 3392 1856))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 3392 1856))))
+						)
+						(portImplementation 
+							(name ClB
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 64)
+									(visible (false)))
+								(justify CENTERRIGHT)
+								(origin (pt 2912 1952))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 2912 1952))))
+						)
+						(portImplementation 
+							(name Data
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 64)
+									(visible (false)))
+								(justify CENTERRIGHT)
+								(origin (pt 1376 1952))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 1376 1952))))
+						)
+						(net 
+							(rename &10
+								(stringDisplay "10"))
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 1696 1312) (pt 1600 1312))))
+							(figure NET 
+								(path  (pointList (pt 1600 1312) (pt 1600 1952) (pt 1696 1952))))
+							(figure NET 
+								(path  (pointList (pt 2432 1632) (pt 2368 1632))))
+							(figure NET 
+								(path  (pointList (pt 2432 1632) (pt 2496 1632))))
+							(figure NET 
+								(path  (pointList (pt 2496 1632) (pt 2496 1952) (pt 2592 1952))))
+							(figure NET 
+								(path  (pointList (pt 2496 1632) (pt 2496 1312))))
+							(figure NET 
+								(path  (pointList (pt 2496 1312) (pt 2496 928) (pt 1600 928) (pt 1600 1312))))
+							(figure NET 
+								(path  (pointList (pt 2496 1312) (pt 2592 1312))))
+							(commentGraphics 
+								(annotate 
+									(stringDisplay "10"
+										(display 
+											(figureGroupOverride NETLABEL 
+												(textHeight 32)
+												(visible (true)))
+											(justify LOWERCENTER)
+											(origin (pt 2432 1632)))
+									)
+								))
+						)
+						(net 
+							(rename &11
+								(stringDisplay "11"))
+							(joined )
+							(commentGraphics 
+								(annotate 
+									(stringDisplay "11"
+										(display 
+											(figureGroupOverride NETLABEL 
+												(textHeight 32)
+												(visible (true)))
+											(justify CENTERRIGHT)
+											(origin (pt 2688 1856)))
+									)
+								))
+						)
+						(net 
+							(rename &12
+								(stringDisplay "12"))
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 3552 1728) (pt 3552 1632))))
+							(figure NET 
+								(path  (pointList (pt 3552 1632) (pt 3552 1536))))
+							(figure NET 
+								(path  (pointList (pt 3552 1632) (pt 3008 1632))))
+							(figure NET 
+								(path  (pointList (pt 3008 1632) (pt 3008 1664))))
+							(figure NET 
+								(path  (pointList (pt 2688 1632) (pt 3008 1632))))
+							(figure NET 
+								(path  (pointList (pt 3008 1632) (pt 3008 1600))))
+							(figure NET 
+								(path  (pointList (pt 2688 1664) (pt 2688 1632))))
+							(figure NET 
+								(path  (pointList (pt 2688 1632) (pt 2688 1600))))
+							(commentGraphics 
+								(annotate 
+									(stringDisplay "12"
+										(display 
+											(figureGroupOverride NETLABEL 
+												(textHeight 32)
+												(visible (true)))
+											(justify CENTERRIGHT)
+											(origin (pt 2688 1632)))
+									)
+								))
+						)
+						(net 
+							(rename &13
+								(stringDisplay "13"))
+							(joined )
+							(commentGraphics 
+								(annotate 
+									(stringDisplay "13"
+										(display 
+											(figureGroupOverride NETLABEL 
+												(textHeight 32)
+												(visible (true)))
+											(justify CENTERRIGHT)
+											(origin (pt 2688 1408)))
+									)
+								))
+						)
+						(net 
+							(rename &14
+								(stringDisplay "14"))
+							(joined )
+							(commentGraphics 
+								(annotate 
+									(stringDisplay "14"
+										(display 
+											(figureGroupOverride NETLABEL 
+												(textHeight 32)
+												(visible (true)))
+											(justify CENTERRIGHT)
+											(origin (pt 3296 1216)))
+									)
+								))
+						)
+						(net 
+							(rename &3
+								(stringDisplay "3"))
+							(joined )
+							(commentGraphics 
+								(annotate 
+									(stringDisplay "3"
+										(display 
+											(figureGroupOverride NETLABEL 
+												(textHeight 32)
+												(visible (true)))
+											(justify CENTERRIGHT)
+											(origin (pt 1472 1856)))
+									)
+								))
+						)
+						(net 
+							(rename &4
+								(stringDisplay "4"))
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 2112 1632) (pt 2272 1632))))
+							(figure NET 
+								(path  (pointList (pt 2272 1632) (pt 2272 1728))))
+							(figure NET 
+								(path  (pointList (pt 2272 1632) (pt 2272 1536))))
+							(figure NET 
+								(path  (pointList (pt 2112 1632) (pt 1792 1632))))
+							(figure NET 
+								(path  (pointList (pt 1792 1632) (pt 1472 1632))))
+							(figure NET 
+								(path  (pointList (pt 1472 1600) (pt 1472 1632))))
+							(figure NET 
+								(path  (pointList (pt 1472 1632) (pt 1472 1664))))
+							(figure NET 
+								(path  (pointList (pt 1792 1664) (pt 1792 1632))))
+							(figure NET 
+								(path  (pointList (pt 1792 1632) (pt 1792 1600))))
+							(commentGraphics 
+								(annotate 
+									(stringDisplay "4"
+										(display 
+											(figureGroupOverride NETLABEL 
+												(textHeight 32)
+												(visible (true)))
+											(justify CENTERRIGHT)
+											(origin (pt 1472 1632)))
+									)
+								))
+						)
+						(net 
+							(rename &5
+								(stringDisplay "5"))
+							(joined )
+							(commentGraphics 
+								(annotate 
+									(stringDisplay "5"
+										(display 
+											(figureGroupOverride NETLABEL 
+												(textHeight 32)
+												(visible (true)))
+											(justify CENTERRIGHT)
+											(origin (pt 1472 1408)))
+									)
+								))
+						)
+						(net 
+							(rename &6
+								(stringDisplay "6"))
+							(joined )
+							(commentGraphics 
+								(annotate 
+									(stringDisplay "6"
+										(display 
+											(figureGroupOverride NETLABEL 
+												(textHeight 32)
+												(visible (true)))
+											(justify CENTERRIGHT)
+											(origin (pt 1792 1856)))
+									)
+								))
+						)
+						(net 
+							(rename &7
+								(stringDisplay "7"))
+							(joined )
+							(commentGraphics 
+								(annotate 
+									(stringDisplay "7"
+										(display 
+											(figureGroupOverride NETLABEL 
+												(textHeight 32)
+												(visible (true)))
+											(justify CENTERRIGHT)
+											(origin (pt 1792 1408)))
+									)
+								))
+						)
+						(net 
+							(rename &8
+								(stringDisplay "8"))
+							(joined )
+							(commentGraphics 
+								(annotate 
+									(stringDisplay "8"
+										(display 
+											(figureGroupOverride NETLABEL 
+												(textHeight 32)
+												(visible (true)))
+											(justify CENTERRIGHT)
+											(origin (pt 1792 1216)))
+									)
+								))
+						)
+						(net 
+							(rename &9
+								(stringDisplay "9"))
+							(joined )
+							(commentGraphics 
+								(annotate 
+									(stringDisplay "9"
+										(display 
+											(figureGroupOverride NETLABEL 
+												(textHeight 32)
+												(visible (true)))
+											(justify CENTERRIGHT)
+											(origin (pt 2112 1824)))
+									)
+								))
+						)
+						(net 
+							(name C)
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 1984 2464) (pt 1856 2464))))
+							(commentGraphics 
+								(annotate 
+									(stringDisplay "C"
+										(display 
+											(figureGroupOverride NETLABEL 
+												(textHeight 64)
+												(visible (true)))
+											(justify CENTERRIGHT)
+											(origin (pt 1376 1760)))
+									)
+								))
+							(commentGraphics 
+								(annotate 
+									(stringDisplay "C"
+										(display 
+											(figureGroupOverride NETLABEL 
+												(textHeight 64)
+												(visible (true)))
+											(justify CENTERRIGHT)
+											(origin (pt 1696 1504)))
+									)
+								))
+							(commentGraphics 
+								(annotate 
+									(stringDisplay "C"
+										(display 
+											(figureGroupOverride NETLABEL 
+												(textHeight 64)
+												(visible (true)))
+											(justify CENTERRIGHT)
+											(origin (pt 2592 1504)))
+									)
+								))
+							(commentGraphics 
+								(annotate 
+									(stringDisplay "C"
+										(display 
+											(figureGroupOverride NETLABEL 
+												(textHeight 64)
+												(visible (true)))
+											(justify CENTERRIGHT)
+											(origin (pt 2912 1760)))
+									)
+								))
+							(commentGraphics 
+								(annotate 
+									(stringDisplay "C"
+										(display 
+											(figureGroupOverride NETLABEL 
+												(textHeight 64)
+												(visible (true)))
+											(justify CENTERLEFT)
+											(origin (pt 1984 2464)))
+									)
+								))
+						)
+						(net 
+							(name CB)
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 1632 2464) (pt 1504 2464))))
+							(figure NET 
+								(path  (pointList (pt 1632 2464) (pt 1760 2464))))
+							(figure NET 
+								(path  (pointList (pt 1760 2464) (pt 1760 2560))))
+							(figure NET 
+								(path  (pointList (pt 1760 2464) (pt 1760 2368))))
+							(commentGraphics 
+								(annotate 
+									(stringDisplay "CB"
+										(display 
+											(figureGroupOverride NETLABEL 
+												(textHeight 64)
+												(visible (true)))
+											(justify CENTERRIGHT)
+											(origin (pt 1376 1504)))
+									)
+								))
+							(commentGraphics 
+								(annotate 
+									(stringDisplay "CB"
+										(display 
+											(figureGroupOverride NETLABEL 
+												(textHeight 64)
+												(visible (true)))
+											(justify CENTERRIGHT)
+											(origin (pt 1696 1760)))
+									)
+								))
+							(commentGraphics 
+								(annotate 
+									(stringDisplay "CB"
+										(display 
+											(figureGroupOverride NETLABEL 
+												(textHeight 64)
+												(visible (true)))
+											(justify CENTERRIGHT)
+											(origin (pt 2016 1728)))
+									)
+								))
+							(commentGraphics 
+								(annotate 
+									(stringDisplay "CB"
+										(display 
+											(figureGroupOverride NETLABEL 
+												(textHeight 64)
+												(visible (true)))
+											(justify CENTERRIGHT)
+											(origin (pt 2592 1760)))
+									)
+								))
+							(commentGraphics 
+								(annotate 
+									(stringDisplay "CB"
+										(display 
+											(figureGroupOverride NETLABEL 
+												(textHeight 64)
+												(visible (true)))
+											(justify CENTERRIGHT)
+											(origin (pt 2912 1504)))
+									)
+								))
+							(commentGraphics 
+								(annotate 
+									(stringDisplay "CB"
+										(display 
+											(figureGroupOverride NETLABEL 
+												(textHeight 64)
+												(visible (true)))
+											(justify LOWERCENTER)
+											(origin (pt 1632 2464)))
+									)
+								))
+						)
+						(net 
+							(name Clk)
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 1312 2464) (pt 1408 2464))))
+							(figure NET 
+								(path  (pointList (pt 1408 2464) (pt 1408 2368))))
+							(figure NET 
+								(path  (pointList (pt 1408 2464) (pt 1408 2560))))
+						)
+						(net 
+							(name Q)
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 3200 1952) (pt 3136 1952))))
+							(figure NET 
+								(path  (pointList (pt 3136 1952) (pt 3136 1120) (pt 3200 1120))))
+							(figure NET 
+								(path  (pointList (pt 3136 1952) (pt 3136 2112) (pt 3744 2112) (pt 3744 1632))))
+							(figure NET 
+								(path  (pointList (pt 3744 1632) (pt 3648 1632))))
+							(figure NET 
+								(path  (pointList (pt 3744 1632) (pt 3776 1632))))
+						)
+						(net 
+							(name QB)
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 3296 1856) (pt 3296 1408))))
+							(figure NET 
+								(path  (pointList (pt 3296 1408) (pt 3008 1408))))
+							(figure NET 
+								(path  (pointList (pt 3392 1856) (pt 3296 1856))))
+							(figure NET 
+								(path  (pointList (pt 3296 1856) (pt 3008 1856))))
+						)
+						(net 
+							(name GROUND)
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 3296 1024) (pt 3040 1024))))
+							(figure NET 
+								(path  (pointList (pt 3040 1024) (pt 3040 1504))))
+							(figure NET 
+								(path  (pointList (pt 1824 1120) (pt 1824 1312))))
+							(figure NET 
+								(path  (pointList (pt 1824 1312) (pt 1824 1504))))
+							(figure NET 
+								(path  (pointList (pt 3328 1312) (pt 3328 1120))))
+							(figure NET 
+								(path  (pointList (pt 3328 1120) (pt 3328 1024))))
+							(figure NET 
+								(path  (pointList (pt 3328 1024) (pt 3296 1024))))
+							(figure NET 
+								(path  (pointList (pt 2720 1504) (pt 2720 1312))))
+							(figure NET 
+								(path  (pointList (pt 3040 1024) (pt 2720 1024))))
+							(figure NET 
+								(path  (pointList (pt 2720 1024) (pt 2720 1312))))
+							(figure NET 
+								(path  (pointList (pt 3328 1024) (pt 3648 1024))))
+							(figure NET 
+								(path  (pointList (pt 3648 1024) (pt 3648 1440))))
+							(figure NET 
+								(path  (pointList (pt 3648 1024) (pt 3680 1024) (pt 3680 1536))))
+							(figure NET 
+								(path  (pointList (pt 1824 1120) (pt 1824 1024))))
+							(figure NET 
+								(path  (pointList (pt 1824 1024) (pt 1792 1024))))
+							(figure NET 
+								(path  (pointList (pt 1824 1024) (pt 2368 1024))))
+							(figure NET 
+								(path  (pointList (pt 2368 1024) (pt 2368 1440))))
+							(figure NET 
+								(path  (pointList (pt 2368 1024) (pt 2400 1024))))
+							(figure NET 
+								(path  (pointList (pt 2400 1024) (pt 2400 1536))))
+							(figure NET 
+								(path  (pointList (pt 2400 1024) (pt 2592 1024))))
+							(figure NET 
+								(path  (pointList (pt 2592 1024) (pt 2688 1024))))
+							(figure NET 
+								(path  (pointList (pt 2688 1024) (pt 2720 1024))))
+							(figure NET 
+								(path  (pointList (pt 2688 1024) (pt 2688 1216))))
+							(figure NET 
+								(path  (pointList (pt 1504 1504) (pt 1504 1312))))
+							(figure NET 
+								(path  (pointList (pt 1792 1024) (pt 1504 1024))))
+							(figure NET 
+								(path  (pointList (pt 1504 1024) (pt 1504 1312))))
+							(figure NET 
+								(path  (pointList (pt 1504 1024) (pt 1472 1024) (pt 1472 1216))))
+							(figure NET 
+								(path  (pointList (pt 1856 2272) (pt 1888 2272) (pt 1888 2368))))
+							(figure NET 
+								(path  (pointList (pt 1536 2272) (pt 1696 2272))))
+							(figure NET 
+								(path  (pointList (pt 1696 2272) (pt 1856 2272))))
+							(figure NET 
+								(path  (pointList (pt 1536 2272) (pt 1504 2272))))
+							(figure NET 
+								(path  (pointList (pt 1536 2272) (pt 1536 2368))))
+						)
+						(net 
+							(name Vdd)
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 3680 1728) (pt 3680 2048) (pt 3648 2048))))
+							(figure NET 
+								(path  (pointList (pt 3648 2048) (pt 3648 1824))))
+							(figure NET 
+								(path  (pointList (pt 3648 2048) (pt 3328 2048))))
+							(figure NET 
+								(path  (pointList (pt 3328 2048) (pt 3296 2048))))
+							(figure NET 
+								(path  (pointList (pt 3328 2048) (pt 3328 1952))))
+							(figure NET 
+								(path  (pointList (pt 2144 1728) (pt 2144 1920))))
+							(figure NET 
+								(path  (pointList (pt 1888 2560) (pt 1888 2656) (pt 1856 2656))))
+							(figure NET 
+								(path  (pointList (pt 1696 2688) (pt 1696 2656))))
+							(figure NET 
+								(path  (pointList (pt 1696 2656) (pt 1856 2656))))
+							(figure NET 
+								(path  (pointList (pt 1696 2656) (pt 1536 2656))))
+							(figure NET 
+								(path  (pointList (pt 1536 2656) (pt 1536 2560))))
+							(figure NET 
+								(path  (pointList (pt 1536 2656) (pt 1504 2656))))
+							(figure NET 
+								(path  (pointList (pt 3296 2048) (pt 3040 2048))))
+							(figure NET 
+								(path  (pointList (pt 3040 2048) (pt 3008 2048))))
+							(figure NET 
+								(path  (pointList (pt 3040 2048) (pt 3040 1952))))
+							(figure NET 
+								(path  (pointList (pt 3040 1952) (pt 3040 1760))))
+							(figure NET 
+								(path  (pointList (pt 2144 1920) (pt 2144 2048))))
+							(figure NET 
+								(path  (pointList (pt 2144 2048) (pt 2112 2048))))
+							(figure NET 
+								(path  (pointList (pt 2112 2048) (pt 2112 2016))))
+							(figure NET 
+								(path  (pointList (pt 2144 2048) (pt 2368 2048))))
+							(figure NET 
+								(path  (pointList (pt 2368 2048) (pt 2368 1824))))
+							(figure NET 
+								(path  (pointList (pt 2368 2048) (pt 2400 2048))))
+							(figure NET 
+								(path  (pointList (pt 2400 2048) (pt 2400 1728))))
+							(figure NET 
+								(path  (pointList (pt 2720 1760) (pt 2720 1952))))
+							(figure NET 
+								(path  (pointList (pt 3008 2048) (pt 2720 2048))))
+							(figure NET 
+								(path  (pointList (pt 2720 2048) (pt 2720 1952))))
+							(figure NET 
+								(path  (pointList (pt 2720 2048) (pt 2688 2048))))
+							(figure NET 
+								(path  (pointList (pt 2688 2048) (pt 2592 2048))))
+							(figure NET 
+								(path  (pointList (pt 2592 2048) (pt 2400 2048))))
+							(figure NET 
+								(path  (pointList (pt 2592 2048) (pt 2592 2080))))
+							(figure NET 
+								(path  (pointList (pt 2112 2048) (pt 1824 2048))))
+							(figure NET 
+								(path  (pointList (pt 1824 2048) (pt 1792 2048))))
+							(figure NET 
+								(path  (pointList (pt 1824 2048) (pt 1824 1952))))
+							(figure NET 
+								(path  (pointList (pt 1824 1952) (pt 1824 1760))))
+							(figure NET 
+								(path  (pointList (pt 1792 2048) (pt 1504 2048))))
+							(figure NET 
+								(path  (pointList (pt 1504 2048) (pt 1472 2048))))
+							(figure NET 
+								(path  (pointList (pt 1504 2048) (pt 1504 1952))))
+							(figure NET 
+								(path  (pointList (pt 1504 1952) (pt 1504 1760))))
+						)
+						(commentGraphics )
+					)
+				)
+			)
+			(view (rename view_1_0 "view_1")
+				(viewType NETLIST)
+				(interface 
+					(port ClB
+						(direction INPUT))
+					(port Clk
+						(direction INPUT))
+					(port Data
+						(direction INPUT))
+					(port Q
+						(direction OUTPUT))
+					(port QB
+						(direction OUTPUT))
+					(port Vdd
+						(direction INOUT)
+						(property GLOBAL (boolean (true))))
+					(port GROUND
+						(direction INOUT)
+						(property GLOBAL (boolean (true))))
+					(property TannerStandard (boolean (true))
+						(property Timestamp (string "2003 07 19 06 00 31"))
+						(property Author (string "J. Luo"))
+						(property Organization (string "Tanner Research, Pasadena, CA"))
+						(property Info (string "D Flip-Flop with Clear (TIB)")))
+				)
+				(contents 
+					(instance Vdd_1
+						(viewRef view_1_0 (cellRef Vdd) ))
+					(instance Vdd_2
+						(viewRef view_1_0 (cellRef Vdd) ))
+					(instance Gnd_1
+						(viewRef view_1_0 (cellRef Gnd) ))
+					(instance Gnd_2
+						(viewRef view_1_0 (cellRef Gnd) ))
+					(instance P_4_1
+						(viewRef view_1_0 (cellRef P_4) )
+						(property AS (string "'73.6667*l*l'")
+							(property Type (string "String"))
+						)
+						(property T (string "6")
+							(property Type (string "String"))
+						)
+						(property AD (string "'17*l*l'")
+							(property Type (string "String"))
+						)
+						(property PS (string "'29.1429*l'")
+							(property Type (string "String"))
+						)
+						(property PD (string "'19*l'")
+							(property Type (string "String"))
+						)
+						(property W (string "'17*l'")
+							(property Type (string "String"))
+						))
+					(instance P_4_2
+						(viewRef view_1_0 (cellRef P_4) )
+						(property AS (string "'17*l*l'")
+							(property Type (string "String"))
+						)
+						(property T (string "5")
+							(property Type (string "String"))
+						)
+						(property AD (string "'124.276*l*l'")
+							(property Type (string "String"))
+						)
+						(property PS (string "'19*l'")
+							(property Type (string "String"))
+						)
+						(property PD (string "'48.069*l'")
+							(property Type (string "String"))
+						)
+						(property W (string "'17*l'")
+							(property Type (string "String"))
+						))
+					(instance P_4_3
+						(viewRef view_1_0 (cellRef P_4) )
+						(property AS (string "'14*l*l'")
+							(property Type (string "String"))
+						)
+						(property T (string "10")
+							(property Type (string "String"))
+						)
+						(property AD (string "'60.6667*l*l'")
+							(property Type (string "String"))
+						)
+						(property PS (string "'16*l'")
+							(property Type (string "String"))
+						)
+						(property W (string "'14*l'")
+							(property Type (string "String"))
+						))
+					(instance P_4_4
+						(viewRef view_1_0 (cellRef P_4) )
+						(property AS (string "'84*l*l'")
+							(property Type (string "String"))
+						)
+						(property T (string "9")
+							(property Type (string "String"))
+						)
+						(property AD (string "'14*l*l'")
+							(property Type (string "String"))
+						)
+						(property PS (string "'40*l'")
+							(property Type (string "String"))
+						)
+						(property PD (string "'16*l'")
+							(property Type (string "String"))
+						)
+						(property W (string "'14*l'")
+							(property Type (string "String"))
+						))
+					(instance P_4_5
+						(viewRef view_1_0 (cellRef P_4) )
+						(property AS (string "'48*l*l'")
+							(property Type (string "String"))
+						)
+						(property T (string "19")
+							(property Type (string "String"))
+						)
+						(property AD (string "'16*l*l'")
+							(property Type (string "String"))
+						)
+						(property PS (string "'22*l'")
+							(property Type (string "String"))
+						)
+						(property PD (string "'18*l'")
+							(property Type (string "String"))
+						)
+						(property W (string "'16*l'")
+							(property Type (string "String"))
+						))
+					(instance P_4_6
+						(viewRef view_1_0 (cellRef P_4) )
+						(property AS (string "'16*l*l'")
+							(property Type (string "String"))
+						)
+						(property T (string "18")
+							(property Type (string "String"))
+						)
+						(property AD (string "'96*l*l'")
+							(property Type (string "String"))
+						)
+						(property PS (string "'18*l'")
+							(property Type (string "String"))
+						)
+						(property PD (string "'44*l'")
+							(property Type (string "String"))
+						)
+						(property W (string "'16*l'")
+							(property Type (string "String"))
+						))
+					(instance P_4_7
+						(viewRef view_1_0 (cellRef P_4) )
+						(property AS (string "'54.4*l*l'")
+							(property Type (string "String"))
+						)
+						(property T (string "23")
+							(property Type (string "String"))
+						)
+						(property AD (string "'48*l*l'")
+							(property Type (string "String"))
+						)
+						(property PD (string "'22*l'")
+							(property Type (string "String"))
+						)
+						(property W (string "'16*l'")
+							(property Type (string "String"))
+						))
+					(instance P_4_8
+						(viewRef view_1_0 (cellRef P_4) )
+						(property AS (string "'72*l*l'")
+							(property Type (string "String"))
+						)
+						(property T (string "22")
+							(property Type (string "String"))
+						)
+						(property AD (string "'81.6*l*l'")
+							(property Type (string "String"))
+						)
+						(property PS (string "'30*l'")
+							(property Type (string "String"))
+						)
+						(property PD (string "'36*l'")
+							(property Type (string "String"))
+						)
+						(property W (string "'24*l'")
+							(property Type (string "String"))
+						))
+					(instance P_4_9
+						(viewRef view_1_0 (cellRef P_4) )
+						(property AS (string "'51.75*l*l'")
+							(property Type (string "String"))
+						)
+						(property T (string "14")
+							(property Type (string "String"))
+						)
+						(property AD (string "'27.45*l*l'")
+							(property Type (string "String"))
+						)
+						(property PS (string "'23.25*l'")
+							(property Type (string "String"))
+						)
+						(property PD (string "'15.3*l'")
+							(property Type (string "String"))
+						)
+						(property W (string "'9*l'")
+							(property Type (string "String"))
+						))
+					(instance P_4_10
+						(viewRef view_1_0 (cellRef P_4) )
+						(property AS (string "'143*l*l'")
+							(property Type (string "String"))
+						)
+						(property T (string "28")
+							(property Type (string "String"))
+						)
+						(property AD (string "'111*l*l'")
+							(property Type (string "String"))
+						)
+						(property PS (string "'66*l'")
+							(property Type (string "String"))
+						)
+						(property PD (string "'66*l'")
+							(property Type (string "String"))
+						)
+						(property W (string "'27*l'")
+							(property Type (string "String"))
+						))
+					(instance N_4_1
+						(viewRef view_1_0 (cellRef N_4) )
+						(property AS (string "'15*l*l'")
+							(property Type (string "String"))
+						)
+						(property T (string "8")
+							(property Type (string "String"))
+						)
+						(property AD (string "'109.444*l*l'")
+							(property Type (string "String"))
+						)
+						(property PS (string "'17*l'")
+							(property Type (string "String"))
+						)
+						(property PD (string "'45.5556*l'")
+							(property Type (string "String"))
+						)
+						(property W (string "'15*l'")
+							(property Type (string "String"))
+						))
+					(instance P_4_11
+						(viewRef view_1_0 (cellRef P_4) )
+						(property AS (string "'36*l*l'")
+							(property Type (string "String"))
+						)
+						(property T (string "1")
+							(property Type (string "String"))
+						)
+						(property AD (string "'43.8621*l*l'")
+							(property Type (string "String"))
+						)
+						(property PS (string "'24*l'")
+							(property Type (string "String"))
+						)
+						(property PD (string "'16.9655*l'")
+							(property Type (string "String"))
+						)
+						(property W (string "'6*l'")
+							(property Type (string "String"))
+						))
+					(instance N_4_2
+						(viewRef view_1_0 (cellRef N_4) )
+						(property AS (string "'45*l*l'")
+							(property Type (string "String"))
+						)
+						(property T (string "7")
+							(property Type (string "String"))
+						)
+						(property AD (string "'15*l*l'")
+							(property Type (string "String"))
+						)
+						(property PS (string "'21*l'")
+							(property Type (string "String"))
+						)
+						(property PD (string "'17*l'")
+							(property Type (string "String"))
+						)
+						(property W (string "'15*l'")
+							(property Type (string "String"))
+						))
+					(instance P_4_12
+						(viewRef view_1_0 (cellRef P_4) )
+						(property AS (string "'36*l*l'")
+							(property Type (string "String"))
+						)
+						(property T (string "3")
+							(property Type (string "String"))
+						)
+						(property AD (string "'43.8621*l*l'")
+							(property Type (string "String"))
+						)
+						(property PS (string "'24*l'")
+							(property Type (string "String"))
+						)
+						(property PD (string "'16.9655*l'")
+							(property Type (string "String"))
+						)
+						(property W (string "'6*l'")
+							(property Type (string "String"))
+						))
+					(instance P_4_13
+						(viewRef view_1_0 (cellRef P_4) )
+						(property AS (string "'33.55*l*l'")
+							(property Type (string "String"))
+						)
+						(property T (string "15")
+							(property Type (string "String"))
+						)
+						(property AD (string "'47.6667*l*l'")
+							(property Type (string "String"))
+						)
+						(property PS (string "'18.7*l'")
+							(property Type (string "String"))
+						)
+						(property PD (string "'18.8571*l'")
+							(property Type (string "String"))
+						)
+						(property W (string "'11*l'")
+							(property Type (string "String"))
+						))
+					(instance N_4_3
+						(viewRef view_1_0 (cellRef N_4) )
+						(property AS (string "'15*l*l'")
+							(property Type (string "String"))
+						)
+						(property T (string "12")
+							(property Type (string "String"))
+						)
+						(property AD (string "'45*l*l'")
+							(property Type (string "String"))
+						)
+						(property PS (string "'17*l'")
+							(property Type (string "String"))
+						)
+						(property PD (string "'21*l'")
+							(property Type (string "String"))
+						)
+						(property W (string "'15*l'")
+							(property Type (string "String"))
+						))
+					(instance P_4_14
+						(viewRef view_1_0 (cellRef P_4) )
+						(property AS (string "'90*l*l'")
+							(property Type (string "String"))
+						)
+						(property T (string "16")
+							(property Type (string "String"))
+						)
+						(property AD (string "'86.25*l*l'")
+							(property Type (string "String"))
+						)
+						(property PS (string "'42*l'")
+							(property Type (string "String"))
+						)
+						(property PD (string "'38.75*l'")
+							(property Type (string "String"))
+						)
+						(property W (string "'15*l'")
+							(property Type (string "String"))
+						))
+					(instance N_4_4
+						(viewRef view_1_0 (cellRef N_4) )
+						(property AS (string "'45*l*l'")
+							(property Type (string "String"))
+						)
+						(property T (string "11")
+							(property Type (string "String"))
+						)
+						(property AD (string "'45*l*l'")
+							(property Type (string "String"))
+						)
+						(property PS (string "'21*l'")
+							(property Type (string "String"))
+						)
+						(property PD (string "'21*l'")
+							(property Type (string "String"))
+						)
+						(property W (string "'15*l'")
+							(property Type (string "String"))
+						))
+					(instance P_4_15
+						(viewRef view_1_0 (cellRef P_4) )
+						(property AS (string "'114*l*l'")
+							(property Type (string "String"))
+						)
+						(property T (string "25")
+							(property Type (string "String"))
+						)
+						(property AD (string "'72*l*l'")
+							(property Type (string "String"))
+						)
+						(property PS (string "'60*l'")
+							(property Type (string "String"))
+						)
+						(property PD (string "'30*l'")
+							(property Type (string "String"))
+						)
+						(property W (string "'24*l'")
+							(property Type (string "String"))
+						))
+					(instance N_4_5
+						(viewRef view_1_0 (cellRef N_4) )
+						(property AS (string "'15*l*l'")
+							(property Type (string "String"))
+						)
+						(property T (string "21")
+							(property Type (string "String"))
+						)
+						(property AD (string "'123*l*l'")
+							(property Type (string "String"))
+						)
+						(property PS (string "'17*l'")
+							(property Type (string "String"))
+						)
+						(property PD (string "'50*l'")
+							(property Type (string "String"))
+						)
+						(property W (string "'15*l'")
+							(property Type (string "String"))
+						))
+					(instance N_4_6
+						(viewRef view_1_0 (cellRef N_4) )
+						(property AS (string "'45*l*l'")
+							(property Type (string "String"))
+						)
+						(property T (string "20")
+							(property Type (string "String"))
+						)
+						(property AD (string "'15*l*l'")
+							(property Type (string "String"))
+						)
+						(property PS (string "'21*l'")
+							(property Type (string "String"))
+						)
+						(property PD (string "'17*l'")
+							(property Type (string "String"))
+						)
+						(property W (string "'15*l'")
+							(property Type (string "String"))
+						))
+					(instance N_4_7
+						(viewRef view_1_0 (cellRef N_4) )
+						(property AS (string "'22*l*l'")
+							(property Type (string "String"))
+						)
+						(property T (string "26")
+							(property Type (string "String"))
+						)
+						(property AD (string "'87.4054*l*l'")
+							(property Type (string "String"))
+						)
+						(property PS (string "'24*l'")
+							(property Type (string "String"))
+						)
+						(property PD (string "'34.4865*l'")
+							(property Type (string "String"))
+						)
+						(property W (string "'22*l'")
+							(property Type (string "String"))
+						))
+					(instance N_4_8
+						(viewRef view_1_0 (cellRef N_4) )
+						(property AS (string "'45*l*l'")
+							(property Type (string "String"))
+						)
+						(property T (string "24")
+							(property Type (string "String"))
+						)
+						(property AD (string "'59.5946*l*l'")
+							(property Type (string "String"))
+						)
+						(property PS (string "'21*l'")
+							(property Type (string "String"))
+						)
+						(property PD (string "'23.5135*l'")
+							(property Type (string "String"))
+						)
+						(property W (string "'15*l'")
+							(property Type (string "String"))
+						))
+					(instance N_4_9
+						(viewRef view_1_0 (cellRef N_4) )
+						(property AS (string "'185*l*l'")
+							(property Type (string "String"))
+						)
+						(property T (string "29")
+							(property Type (string "String"))
+						)
+						(property PS (string "'64*l'")
+							(property Type (string "String"))
+						)
+						(property PD (string "'28*l'")
+							(property Type (string "String"))
+						)
+						(property W (string "'22*l'")
+							(property Type (string "String"))
+						))
+					(instance N_4_10
+						(viewRef view_1_0 (cellRef N_4) )
+						(property T (string "27")
+							(property Type (string "String"))
+						)
+						(property AD (string "'22*l*l'")
+							(property Type (string "String"))
+						)
+						(property PS (string "'28*l'")
+							(property Type (string "String"))
+						)
+						(property W (string "'22*l'")
+							(property Type (string "String"))
+						))
+					(instance N_4_11
+						(viewRef view_1_0 (cellRef N_4) )
+						(property AS (string "'43.7778*l*l'")
+							(property Type (string "String"))
+						)
+						(property T (string "2")
+							(property Type (string "String"))
+						)
+						(property AD (string "'42*l*l'")
+							(property Type (string "String"))
+						)
+						(property PS (string "'18.2222*l'")
+							(property Type (string "String"))
+						)
+						(property PD (string "'26*l'")
+							(property Type (string "String"))
+						)
+						(property W (string "'6*l'")
+							(property Type (string "String"))
+						))
+					(instance N_4_12
+						(viewRef view_1_0 (cellRef N_4) )
+						(property AS (string "'43.7778*l*l'")
+							(property Type (string "String"))
+						)
+						(property T (string "4")
+							(property Type (string "String"))
+						)
+						(property AD (string "'36*l*l'")
+							(property Type (string "String"))
+						)
+						(property PS (string "'18.2222*l'")
+							(property Type (string "String"))
+						)
+						(property W (string "'6*l'")
+							(property Type (string "String"))
+						))
+					(instance N_4_13
+						(viewRef view_1_0 (cellRef N_4) )
+						(property AS (string "'45*l*l'")
+							(property Type (string "String"))
+						)
+						(property T (string "13")
+							(property Type (string "String"))
+						)
+						(property AD (string "'15*l*l'")
+							(property Type (string "String"))
+						)
+						(property PS (string "'21*l'")
+							(property Type (string "String"))
+						)
+						(property PD (string "'17*l'")
+							(property Type (string "String"))
+						)
+						(property W (string "'15*l'")
+							(property Type (string "String"))
+						))
+					(instance N_4_14
+						(viewRef view_1_0 (cellRef N_4) )
+						(property AS (string "'72*l*l'")
+							(property Type (string "String"))
+						)
+						(property T (string "17")
+							(property Type (string "String"))
+						)
+						(property AD (string "'45*l*l'")
+							(property Type (string "String"))
+						)
+						(property PS (string "'42*l'")
+							(property Type (string "String"))
+						)
+						(property PD (string "'21*l'")
+							(property Type (string "String"))
+						)
+						(property W (string "'15*l'")
+							(property Type (string "String"))
+						))
+					(net ClB
+						(joined 
+							(portRef ClB )
+							(portRef G (instanceRef N_4_13) )
+							(portRef G (instanceRef N_4_7) )
+							(portRef G (instanceRef P_4_8) )
+							(portRef G (instanceRef P_4_9) )))
+					(net Clk
+						(joined 
+							(portRef Clk )
+							(portRef G (instanceRef N_4_11) )
+							(portRef G (instanceRef P_4_11) )))
+					(net Data
+						(joined 
+							(portRef Data )
+							(portRef G (instanceRef N_4_1) )
+							(portRef G (instanceRef P_4_2) )))
+					(net Q
+						(joined 
+							(portRef D (instanceRef N_4_9) )
+							(portRef D (instanceRef P_4_10) )
+							(portRef G (instanceRef N_4_10) )
+							(portRef G (instanceRef P_4_15) )
+							(portRef Q )))
+					(net QB
+						(joined 
+							(portRef D (instanceRef N_4_7) )
+							(portRef D (instanceRef P_4_15) )
+							(portRef D (instanceRef P_4_8) )
+							(portRef QB )
+							(portRef S (instanceRef N_4_8) )
+							(portRef S (instanceRef P_4_7) )))
+					(net (rename &10 "10")
+						(joined 
+							(portRef D (instanceRef N_4_14) )
+							(portRef D (instanceRef P_4_14) )
+							(portRef G (instanceRef N_4_3) )
+							(portRef G (instanceRef N_4_5) )
+							(portRef G (instanceRef P_4_4) )
+							(portRef G (instanceRef P_4_6) )))
+					(net (rename &11 "11")
+						(joined 
+							(portRef D (instanceRef P_4_6) )
+							(portRef S (instanceRef P_4_5) )))
+					(net (rename &12 "12")
+						(joined 
+							(portRef D (instanceRef N_4_6) )
+							(portRef D (instanceRef N_4_8) )
+							(portRef D (instanceRef P_4_5) )
+							(portRef D (instanceRef P_4_7) )
+							(portRef G (instanceRef N_4_9) )
+							(portRef G (instanceRef P_4_10) )))
+					(net (rename &13 "13")
+						(joined 
+							(portRef D (instanceRef N_4_5) )
+							(portRef S (instanceRef N_4_6) )))
+					(net (rename &14 "14")
+						(joined 
+							(portRef D (instanceRef N_4_10) )
+							(portRef S (instanceRef N_4_7) )))
+					(net (rename &3 "3")
+						(joined 
+							(portRef D (instanceRef P_4_2) )
+							(portRef S (instanceRef P_4_1) )))
+					(net (rename &4 "4")
+						(joined 
+							(portRef D (instanceRef N_4_2) )
+							(portRef D (instanceRef N_4_4) )
+							(portRef D (instanceRef P_4_1) )
+							(portRef D (instanceRef P_4_13) )
+							(portRef D (instanceRef P_4_3) )
+							(portRef G (instanceRef N_4_14) )
+							(portRef G (instanceRef P_4_14) )))
+					(net (rename &5 "5")
+						(joined 
+							(portRef D (instanceRef N_4_1) )
+							(portRef S (instanceRef N_4_2) )))
+					(net (rename &6 "6")
+						(joined 
+							(portRef D (instanceRef P_4_4) )
+							(portRef S (instanceRef P_4_3) )))
+					(net (rename &7 "7")
+						(joined 
+							(portRef D (instanceRef N_4_3) )
+							(portRef S (instanceRef N_4_4) )))
+					(net (rename &8 "8")
+						(joined 
+							(portRef D (instanceRef N_4_13) )
+							(portRef S (instanceRef N_4_3) )))
+					(net (rename &9 "9")
+						(joined 
+							(portRef D (instanceRef P_4_9) )
+							(portRef S (instanceRef P_4_13) )))
+					(net C
+						(joined 
+							(portRef D (instanceRef N_4_12) )
+							(portRef D (instanceRef P_4_12) )
+							(portRef G (instanceRef N_4_4) )
+							(portRef G (instanceRef N_4_6) )
+							(portRef G (instanceRef P_4_1) )
+							(portRef G (instanceRef P_4_7) )))
+					(net CB
+						(joined 
+							(portRef D (instanceRef N_4_11) )
+							(portRef D (instanceRef P_4_11) )
+							(portRef G (instanceRef N_4_12) )
+							(portRef G (instanceRef N_4_2) )
+							(portRef G (instanceRef N_4_8) )
+							(portRef G (instanceRef P_4_12) )
+							(portRef G (instanceRef P_4_13) )
+							(portRef G (instanceRef P_4_3) )
+							(portRef G (instanceRef P_4_5) )))
+					(net GROUND
+						(joined 
+							(portRef B (instanceRef N_4_1) )
+							(portRef B (instanceRef N_4_10) )
+							(portRef B (instanceRef N_4_11) )
+							(portRef B (instanceRef N_4_12) )
+							(portRef B (instanceRef N_4_13) )
+							(portRef B (instanceRef N_4_14) )
+							(portRef B (instanceRef N_4_2) )
+							(portRef B (instanceRef N_4_3) )
+							(portRef B (instanceRef N_4_4) )
+							(portRef B (instanceRef N_4_5) )
+							(portRef B (instanceRef N_4_6) )
+							(portRef B (instanceRef N_4_7) )
+							(portRef B (instanceRef N_4_8) )
+							(portRef B (instanceRef N_4_9) )
+							(portRef GROUND )
+							(portRef GROUND (instanceRef Gnd_1) )
+							(portRef GROUND (instanceRef Gnd_2) )
+							(portRef S (instanceRef N_4_1) )
+							(portRef S (instanceRef N_4_10) )
+							(portRef S (instanceRef N_4_11) )
+							(portRef S (instanceRef N_4_12) )
+							(portRef S (instanceRef N_4_13) )
+							(portRef S (instanceRef N_4_14) )
+							(portRef S (instanceRef N_4_5) )
+							(portRef S (instanceRef N_4_9) )))
+					(net Vdd
+						(joined 
+							(portRef B (instanceRef P_4_1) )
+							(portRef B (instanceRef P_4_10) )
+							(portRef B (instanceRef P_4_11) )
+							(portRef B (instanceRef P_4_12) )
+							(portRef B (instanceRef P_4_13) )
+							(portRef B (instanceRef P_4_14) )
+							(portRef B (instanceRef P_4_15) )
+							(portRef B (instanceRef P_4_2) )
+							(portRef B (instanceRef P_4_3) )
+							(portRef B (instanceRef P_4_4) )
+							(portRef B (instanceRef P_4_5) )
+							(portRef B (instanceRef P_4_6) )
+							(portRef B (instanceRef P_4_7) )
+							(portRef B (instanceRef P_4_8) )
+							(portRef B (instanceRef P_4_9) )
+							(portRef S (instanceRef P_4_10) )
+							(portRef S (instanceRef P_4_11) )
+							(portRef S (instanceRef P_4_12) )
+							(portRef S (instanceRef P_4_14) )
+							(portRef S (instanceRef P_4_15) )
+							(portRef S (instanceRef P_4_2) )
+							(portRef S (instanceRef P_4_4) )
+							(portRef S (instanceRef P_4_6) )
+							(portRef S (instanceRef P_4_8) )
+							(portRef S (instanceRef P_4_9) )
+							(portRef Vdd )
+							(portRef Vdd (instanceRef Vdd_1) )
+							(portRef Vdd (instanceRef Vdd_2) )))
+				)
+				(property Created (string "1993 5 6 4 36 41"))
+			)
+		)
+		(cell Inv
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface 
+					(port A
+						(direction INPUT))
+					(port Out
+						(direction OUTPUT))
+					(property TannerStandard (boolean (true))
+						(property RevisionCount (string "0")))
+					(symbol 
+						(boundingBox 
+							(rectangle (pt -387 -256) (pt 271 64)))
+						(keywordDisplay cell
+							(display 
+								(figureGroupOverride CELLNAME 
+									(textHeight 32)
+									(visible (false)))
+								(origin (pt -192 -192)))
+							(display 
+								(figureGroupOverride CELLNAME 
+									(visible (false)))
+								(origin (pt -192 -192))))
+						(keywordDisplay instance
+							(display 
+								(figureGroupOverride INSTANCENAME 
+									(textHeight 32)
+									(visible (false)))
+								(origin (pt -192 -256)))
+							(display 
+								(figureGroupOverride INSTANCENAME 
+									(visible (false)))
+								(origin (pt -192 -256))))
+						(property (rename TPR_PERIOD_OUTPUT "TPR.OUTPUT") (string "C"))
+						(propertyDisplay 
+							(name TPR_PERIOD_OUTPUT
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 32)
+									(visible (false)))
+								
+							(origin (pt -160 -128))))
+							(display 
+								(figureGroupOverride PROPERTY 
+									(textHeight 32)
+									(visible (false)))
+								
+								(origin (pt -160 -128)))
+						)
+						(portImplementation 
+							(name A
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 64)
+									(visible (false)))
+								(justify CENTERRIGHT)
+								(origin (pt -192 0))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt -192 0))))
+						)
+						(portImplementation 
+							(name Out
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 64)
+									(visible (false)))
+								(justify CENTERLEFT)
+								(origin (pt 0 0))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 0 0))))
+						)
+						(figure GRAPHICS 
+							(path  (pointList (pt -32 0) (pt 0 0))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -160 0) (pt -192 0))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -64 0) (pt -160 -64))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -64 0) (pt -160 64))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -160 -64) (pt -160 64))))
+						(figure GRAPHICS 							
+							(circle (pt -64 0) (pt -32 0)))
+					)
+				)
+				(status 
+					(written 
+						(timeStamp 2003 07 22 00 52 22)
+						(author "J. Luo")
+						(dataOrigin "Tanner Research, Pasadena, CA")))
+				(property TannerStandard (boolean (true))
+					(property Info (string "Inverter (TIB)"))
+					(property RevisionCount (string "2")))
+				(property Created (string "1993 5 6 4 36 41"))
+				(contents 
+					(page 
+						Page0
+						(instance 
+							(name Gnd_1)
+							(viewRef view_1 (cellRef Gnd))
+							(transform 
+								(origin (pt 1568 1056))))
+						(instance 
+							(name N_4_1)
+							(viewRef view_1 (cellRef N_4))
+							(transform 
+								(origin (pt 1472 1152)))
+							(property L (string "2u")
+								(property Type (string "String"))
+							)
+							(property AS (string "'148*l*l'")
+								(property Type (string "String"))
+							)
+							(property T (string "2")
+								(property Type (string "String"))
+							)
+							(property AD (string "'144*l*l'")
+								(property Type (string "String"))
+							)
+							(property PS (string "'68*l'")
+								(property Type (string "String"))
+							)
+							(property PD (string "'68*l'")
+								(property Type (string "String"))
+							)
+							(property W (string "10u")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name P_4_1)
+							(viewRef view_1 (cellRef P_4))
+							(transform 
+								(origin (pt 1472 1472)))
+							(property L (string "2u")
+								(property Type (string "String"))
+							)
+							(property AS (string "'148*l*l'")
+								(property Type (string "String"))
+							)
+							(property T (string "1")
+								(property Type (string "String"))
+							)
+							(property AD (string "'144*l*l'")
+								(property Type (string "String"))
+							)
+							(property PS (string "'68*l'")
+								(property Type (string "String"))
+							)
+							(property PD (string "'68*l'")
+								(property Type (string "String"))
+							)
+							(property W (string "20u")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name Vdd_1)
+							(viewRef view_1 (cellRef Vdd))
+							(transform 
+								(origin (pt 1568 1568))))
+						(portImplementation 
+							(name A
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 32)
+									(visible (false)))
+								(justify CENTERRIGHT)
+								(origin (pt 1440 1312))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 1440 1312))))
+						)
+						(portImplementation 
+							(name Out
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 32)
+									(visible (false)))
+								(justify CENTERLEFT)
+								(origin (pt 1696 1312))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 1696 1312))))
+						)
+						(net 
+							(name A)
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 1440 1312) (pt 1472 1312))))
+							(figure NET 
+								(path  (pointList (pt 1472 1312) (pt 1472 1472))))
+							(figure NET 
+								(path  (pointList (pt 1472 1312) (pt 1472 1152))))
+						)
+						(net 
+							(name Out)
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 1696 1312) (pt 1568 1312))))
+							(figure NET 
+								(path  (pointList (pt 1568 1312) (pt 1568 1248))))
+							(figure NET 
+								(path  (pointList (pt 1568 1312) (pt 1568 1376))))
+						)
+						(net 
+							(name GROUND)
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 1600 1152) (pt 1600 1056) (pt 1568 1056))))
+						)
+						(net 
+							(name Vdd)
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 1600 1472) (pt 1600 1568) (pt 1568 1568))))
+						)
+						(commentGraphics )
+					)
+				)
+			)
+			(view (rename view_1_0 "view_1")
+				(viewType NETLIST)
+				(interface 
+					(port A
+						(direction INPUT))
+					(port Out
+						(direction OUTPUT))
+					(port Vdd
+						(direction INOUT)
+						(property GLOBAL (boolean (true))))
+					(port GROUND
+						(direction INOUT)
+						(property GLOBAL (boolean (true))))
+					(property TannerStandard (boolean (true))
+						(property Timestamp (string "2003 07 22 00 52 22"))
+						(property Author (string "J. Luo"))
+						(property Organization (string "Tanner Research, Pasadena, CA"))
+						(property Info (string "Inverter (TIB)")))
+				)
+				(contents 
+					(instance Vdd_1
+						(viewRef view_1_0 (cellRef Vdd) ))
+					(instance N_4_1
+						(viewRef view_1_0 (cellRef N_4) )
+						(property L (string "2u")
+							(property Type (string "String"))
+						)
+						(property AS (string "'148*l*l'")
+							(property Type (string "String"))
+						)
+						(property T (string "2")
+							(property Type (string "String"))
+						)
+						(property AD (string "'144*l*l'")
+							(property Type (string "String"))
+						)
+						(property PS (string "'68*l'")
+							(property Type (string "String"))
+						)
+						(property PD (string "'68*l'")
+							(property Type (string "String"))
+						)
+						(property W (string "10u")
+							(property Type (string "String"))
+						))
+					(instance P_4_1
+						(viewRef view_1_0 (cellRef P_4) )
+						(property L (string "2u")
+							(property Type (string "String"))
+						)
+						(property AS (string "'148*l*l'")
+							(property Type (string "String"))
+						)
+						(property T (string "1")
+							(property Type (string "String"))
+						)
+						(property AD (string "'144*l*l'")
+							(property Type (string "String"))
+						)
+						(property PS (string "'68*l'")
+							(property Type (string "String"))
+						)
+						(property PD (string "'68*l'")
+							(property Type (string "String"))
+						)
+						(property W (string "20u")
+							(property Type (string "String"))
+						))
+					(instance Gnd_1
+						(viewRef view_1_0 (cellRef Gnd) ))
+					(net A
+						(joined 
+							(portRef A )
+							(portRef G (instanceRef N_4_1) )
+							(portRef G (instanceRef P_4_1) )))
+					(net Out
+						(joined 
+							(portRef D (instanceRef N_4_1) )
+							(portRef D (instanceRef P_4_1) )
+							(portRef Out )))
+					(net GROUND
+						(joined 
+							(portRef B (instanceRef N_4_1) )
+							(portRef GROUND )
+							(portRef GROUND (instanceRef Gnd_1) )
+							(portRef S (instanceRef N_4_1) )))
+					(net Vdd
+						(joined 
+							(portRef B (instanceRef P_4_1) )
+							(portRef S (instanceRef P_4_1) )
+							(portRef Vdd )
+							(portRef Vdd (instanceRef Vdd_1) )))
+				)
+				(property Created (string "1993 5 6 4 36 41"))
+			)
+		)
+		(cell XNOR2
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface 
+					(port Out
+						(direction OUTPUT))
+					(port B
+						(direction INPUT))
+					(port A
+						(direction INPUT))
+					(property TannerStandard (boolean (true))
+						(property Timestamp (string "2003 07 19 06 01 22"))
+						(property RevisionCount (string "0")))
+					(symbol 
+						(boundingBox 
+							(rectangle (pt -385 -112) (pt 135 64)))
+						(keywordDisplay cell
+							(display 
+								(figureGroupOverride CELLNAME 
+									(textHeight 12)
+									(visible (false)))
+								(origin (pt -288 -88)))
+							(display 
+								(figureGroupOverride CELLNAME 
+									(visible (false)))
+								(origin (pt -288 -88))))
+						(keywordDisplay instance
+							(display 
+								(figureGroupOverride INSTANCENAME 
+									(textHeight 12)
+									(visible (false)))
+								(origin (pt -288 -112)))
+							(display 
+								(figureGroupOverride INSTANCENAME 
+									(visible (false)))
+								(origin (pt -288 -112))))
+						(portImplementation 
+							(name A
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 32)
+									(visible (false)))
+								(justify CENTERRIGHT)
+								(origin (pt -288 32))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt -288 32))))
+						)
+						(portImplementation 
+							(name B
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 32)
+									(visible (false)))
+								(justify CENTERRIGHT)
+								(origin (pt -288 -32))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt -288 -32))))
+						)
+						(portImplementation 
+							(name Out
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 32)
+									(visible (false)))
+								(justify CENTERLEFT)
+								(origin (pt 0 0))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 0 0))))
+						)
+						(figure GRAPHICS 
+							(path  (pointList (pt -256 -5) (pt -256 0))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -257 -16) (pt -256 -5))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -258 -23) (pt -257 -16))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -260 -32) (pt -258 -23))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -262 -39) (pt -260 -32))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -264 -45) (pt -262 -39))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -266 -50) (pt -264 -45))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -268 -54) (pt -266 -50))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -270 -58) (pt -268 -54))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -273 -64) (pt -270 -58))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -260 -32) (pt -288 -32))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -256 5) (pt -256 0))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -257 16) (pt -256 5))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -258 23) (pt -257 16))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -260 32) (pt -258 23))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -262 39) (pt -260 32))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -264 45) (pt -262 39))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -266 50) (pt -264 45))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -268 54) (pt -266 50))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -270 58) (pt -268 54))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -273 64) (pt -270 58))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -260 32) (pt -288 32))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -192 -64) (pt -186 -64))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -192 -64) (pt -257 -64))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -82 -3) (pt -80 0))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -90 -15) (pt -82 -3))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -97 -23) (pt -90 -15))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -105 -31) (pt -97 -23))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -113 -38) (pt -105 -31))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -123 -45) (pt -113 -38))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -132 -50) (pt -123 -45))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -141 -54) (pt -132 -50))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -152 -58) (pt -141 -54))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -164 -61) (pt -152 -58))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -176 -63) (pt -164 -61))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -186 -64) (pt -176 -63))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -82 3) (pt -80 0))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -90 15) (pt -82 3))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -97 23) (pt -90 15))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -105 31) (pt -97 23))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -113 38) (pt -105 31))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -123 45) (pt -113 38))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -132 50) (pt -123 45))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -141 54) (pt -132 50))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -152 58) (pt -141 54))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -164 61) (pt -152 58))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -176 63) (pt -164 61))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -186 64) (pt -176 63))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -192 64) (pt -186 64))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -191 64) (pt -185 64))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -240 -5) (pt -240 0))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -241 -16) (pt -240 -5))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -242 -23) (pt -241 -16))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -244 -32) (pt -242 -23))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -246 -39) (pt -244 -32))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -248 -45) (pt -246 -39))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -250 -50) (pt -248 -45))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -252 -54) (pt -250 -50))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -254 -58) (pt -252 -54))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -257 -64) (pt -254 -58))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -240 5) (pt -240 0))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -241 16) (pt -240 5))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -242 23) (pt -241 16))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -244 32) (pt -242 23))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -246 39) (pt -244 32))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -248 45) (pt -246 39))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -250 50) (pt -248 45))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -252 54) (pt -250 50))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -254 58) (pt -252 54))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -257 64) (pt -254 58))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -192 64) (pt -257 64))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -48 0) (pt 0 0))))
+						(figure GRAPHICS 							
+							(circle (pt -80 0) (pt -48 0)))
+					)
+				)
+				(status 
+					(written 
+						(timeStamp 2006 09 27 06 55 58)
+						(author "J. Luo")
+						(dataOrigin "Tanner Research, Pasadena, CA")))
+				(property TannerStandard (boolean (true))
+					(property Info (string "2-Input XNOR Gate (TIB)"))
+					(property RevisionCount (string "2")))
+				(property Created (string "1993 5 6 4 36 43"))
+				(contents 
+					(page 
+						Page0
+						(instance 
+							(name Gnd_1)
+							(viewRef view_1 (cellRef Gnd))
+							(transform 
+								(origin (pt 2656 1056))))
+						(instance 
+							(name N_4_1)
+							(viewRef view_1 (cellRef N_4))
+							(transform 
+								(origin (pt 2112 1536)))
+							(property T (string "3")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name N_4_2)
+							(viewRef view_1 (cellRef N_4))
+							(transform 
+								(orientation MY)
+								(origin (pt 2304 1248)))
+							(property T (string "4")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name N_4_3)
+							(viewRef view_1 (cellRef N_4))
+							(transform 
+								(origin (pt 2560 1344)))
+							(property T (string "10B")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name N_4_4)
+							(viewRef view_1 (cellRef N_4))
+							(transform 
+								(origin (pt 2560 1152)))
+							(property T (string "7")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name N_4_5)
+							(viewRef view_1 (cellRef N_4))
+							(transform 
+								(orientation MY)
+								(origin (pt 3008 1344)))
+							(property T (string "10")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name N_4_6)
+							(viewRef view_1 (cellRef N_4))
+							(transform 
+								(orientation MY)
+								(origin (pt 3008 1152)))
+							(property T (string "8")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name P_4_1)
+							(viewRef view_1 (cellRef P_4))
+							(transform 
+								(origin (pt 1984 1952)))
+							(property T (string "1")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name P_4_2)
+							(viewRef view_1 (cellRef P_4))
+							(transform 
+								(orientation MY)
+								(origin (pt 2432 1952)))
+							(property T (string "2")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name P_4_3)
+							(viewRef view_1 (cellRef P_4))
+							(transform 
+								(origin (pt 2688 1952)))
+							(property T (string "5")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name P_4_4)
+							(viewRef view_1 (cellRef P_4))
+							(transform 
+								(orientation MY)
+								(origin (pt 2880 1664)))
+							(property T (string "6")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name P_4_5)
+							(viewRef view_1 (cellRef P_4))
+							(transform 
+								(origin (pt 3200 1824)))
+							(property T (string "9")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name Vdd_1)
+							(viewRef view_1 (cellRef Vdd))
+							(transform 
+								(origin (pt 2624 2048))))
+						(portImplementation 
+							(name Out
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 96)
+									(visible (false)))
+								(justify CENTERLEFT)
+								(origin (pt 3456 1728))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 3456 1728))))
+						)
+						(portImplementation 
+							(name B
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 96)
+									(visible (false)))
+								(justify CENTERRIGHT)
+								(origin (pt 1856 1696))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 1856 1696))))
+						)
+						(portImplementation 
+							(name A
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 96)
+									(visible (false)))
+								(justify CENTERRIGHT)
+								(origin (pt 1856 1792))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 1856 1792))))
+						)
+						(net 
+							(rename &1
+								(stringDisplay "1"))
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 3200 1824) (pt 3200 1472) (pt 3008 1472))))
+							(figure NET 
+								(path  (pointList (pt 3008 1472) (pt 3008 1344))))
+							(figure NET 
+								(path  (pointList (pt 2368 1632) (pt 2208 1632))))
+							(figure NET 
+								(path  (pointList (pt 2368 1632) (pt 2560 1632) (pt 2560 1472))))
+							(figure NET 
+								(path  (pointList (pt 2560 1472) (pt 3008 1472))))
+							(figure NET 
+								(path  (pointList (pt 2560 1472) (pt 2560 1344))))
+							(figure NET 
+								(path  (pointList (pt 2208 1632) (pt 2208 1856))))
+							(figure NET 
+								(path  (pointList (pt 2208 1856) (pt 2336 1856))))
+							(figure NET 
+								(path  (pointList (pt 2208 1856) (pt 2080 1856))))
+							(commentGraphics 
+								(annotate 
+									(stringDisplay "1"
+										(display 
+											(figureGroupOverride NETLABEL 
+												(textHeight 32)
+												(visible (true)))
+											(justify UPPERCENTER)
+											(origin (pt 2368 1632)))
+									)
+								))
+						)
+						(net 
+							(rename &2
+								(stringDisplay "2"))
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 2208 1344) (pt 2208 1440))))
+							(commentGraphics 
+								(annotate 
+									(stringDisplay "2"
+										(display 
+											(figureGroupOverride NETLABEL 
+												(textHeight 32)
+												(visible (true)))
+											(justify CENTERLEFT)
+											(origin (pt 2208 1440)))
+									)
+								))
+						)
+						(net 
+							(rename &3
+								(stringDisplay "3"))
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 2784 1760) (pt 2784 1856))))
+							(commentGraphics 
+								(annotate 
+									(stringDisplay "3"
+										(display 
+											(figureGroupOverride NETLABEL 
+												(textHeight 32)
+												(visible (true)))
+											(justify CENTERLEFT)
+											(origin (pt 2784 1856)))
+									)
+								))
+						)
+						(net 
+							(rename &4
+								(stringDisplay "4"))
+							(joined )
+							(commentGraphics 
+								(annotate 
+									(stringDisplay "4"
+										(display 
+											(figureGroupOverride NETLABEL 
+												(textHeight 32)
+												(visible (true)))
+											(justify CENTERLEFT)
+											(origin (pt 2912 1248)))
+									)
+								))
+						)
+						(net 
+							(rename &4b
+								(stringDisplay "4b"))
+							(joined )
+							(commentGraphics 
+								(annotate 
+									(stringDisplay "4b"
+										(display 
+											(figureGroupOverride NETLABEL 
+												(textHeight 32)
+												(visible (true)))
+											(justify CENTERRIGHT)
+											(origin (pt 2656 1248)))
+									)
+								))
+						)
+						(net 
+							(name Out)
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 3456 1728) (pt 3296 1728))))
+							(figure NET 
+								(path  (pointList (pt 2784 1568) (pt 3296 1568) (pt 3296 1728))))
+							(figure NET 
+								(path  (pointList (pt 2784 1568) (pt 2784 1440))))
+							(figure NET 
+								(path  (pointList (pt 2784 1440) (pt 2912 1440))))
+							(figure NET 
+								(path  (pointList (pt 2784 1440) (pt 2656 1440))))
+						)
+						(net 
+							(name B)
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 1856 1696) (pt 2432 1696))))
+							(figure NET 
+								(path  (pointList (pt 2432 1696) (pt 2496 1696))))
+							(figure NET 
+								(path  (pointList (pt 2496 1696) (pt 2496 1952) (pt 2688 1952))))
+							(figure NET 
+								(path  (pointList (pt 2496 1696) (pt 2496 1152) (pt 2560 1152))))
+							(figure NET 
+								(path  (pointList (pt 2304 1248) (pt 2432 1248) (pt 2432 1696))))
+							(figure NET 
+								(path  (pointList (pt 2432 1696) (pt 2432 1952))))
+						)
+						(net 
+							(name A)
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 1856 1792) (pt 1984 1792))))
+							(figure NET 
+								(path  (pointList (pt 1984 1792) (pt 3072 1792) (pt 3072 1664))))
+							(figure NET 
+								(path  (pointList (pt 3072 1664) (pt 2880 1664))))
+							(figure NET 
+								(path  (pointList (pt 3072 1664) (pt 3072 1152) (pt 3008 1152))))
+							(figure NET 
+								(path  (pointList (pt 2112 1536) (pt 1984 1536) (pt 1984 1792))))
+							(figure NET 
+								(path  (pointList (pt 1984 1792) (pt 1984 1952))))
+						)
+						(net 
+							(name GROUND)
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 2912 1056) (pt 2880 1056))))
+							(figure NET 
+								(path  (pointList (pt 2880 1056) (pt 2880 1152))))
+							(figure NET 
+								(path  (pointList (pt 2880 1152) (pt 2880 1344))))
+							(figure NET 
+								(path  (pointList (pt 2240 1536) (pt 2240 1376) (pt 2176 1376) (pt 2176 1248))))
+							(figure NET 
+								(path  (pointList (pt 2176 1248) (pt 2176 1056) (pt 2208 1056))))
+							(figure NET 
+								(path  (pointList (pt 2208 1056) (pt 2208 1152))))
+							(figure NET 
+								(path  (pointList (pt 2208 1056) (pt 2656 1056))))
+							(figure NET 
+								(path  (pointList (pt 2656 1056) (pt 2688 1056))))
+							(figure NET 
+								(path  (pointList (pt 2688 1056) (pt 2880 1056))))
+							(figure NET 
+								(path  (pointList (pt 2688 1056) (pt 2688 1152))))
+							(figure NET 
+								(path  (pointList (pt 2688 1152) (pt 2688 1344))))
+						)
+						(net 
+							(name Vdd)
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 3296 1920) (pt 3296 2048))))
+							(figure NET 
+								(path  (pointList (pt 3296 2048) (pt 3328 2048) (pt 3328 1824))))
+							(figure NET 
+								(path  (pointList (pt 2336 2048) (pt 2624 2048))))
+							(figure NET 
+								(path  (pointList (pt 2624 2048) (pt 2784 2048))))
+							(figure NET 
+								(path  (pointList (pt 2784 2048) (pt 2816 2048))))
+							(figure NET 
+								(path  (pointList (pt 2816 2048) (pt 3296 2048))))
+							(figure NET 
+								(path  (pointList (pt 2816 2048) (pt 2816 1952))))
+							(figure NET 
+								(path  (pointList (pt 2816 1952) (pt 2816 1824) (pt 2752 1824) (pt 2752 1664))))
+							(figure NET 
+								(path  (pointList (pt 2336 2048) (pt 2304 2048))))
+							(figure NET 
+								(path  (pointList (pt 2304 2048) (pt 2304 1952))))
+							(figure NET 
+								(path  (pointList (pt 2304 2048) (pt 2112 2048))))
+							(figure NET 
+								(path  (pointList (pt 2112 2048) (pt 2080 2048))))
+							(figure NET 
+								(path  (pointList (pt 2112 2048) (pt 2112 1952))))
+						)
+						(commentGraphics )
+					)
+				)
+			)
+			(view (rename view_1_0 "view_1")
+				(viewType NETLIST)
+				(interface 
+					(port Out
+						(direction OUTPUT))
+					(port B
+						(direction INPUT))
+					(port A
+						(direction INPUT))
+					(port Vdd
+						(direction INOUT)
+						(property GLOBAL (boolean (true))))
+					(port GROUND
+						(direction INOUT)
+						(property GLOBAL (boolean (true))))
+					(property TannerStandard (boolean (true))
+						(property Timestamp (string "2003 07 19 06 01 22"))
+						(property Author (string "J. Luo"))
+						(property Organization (string "Tanner Research, Pasadena, CA"))
+						(property Info (string "2-Input XNOR Gate (TIB)")))
+				)
+				(contents 
+					(instance Vdd_1
+						(viewRef view_1_0 (cellRef Vdd) ))
+					(instance N_4_1
+						(viewRef view_1_0 (cellRef N_4) )
+						(property T (string "3")
+							(property Type (string "String"))
+						))
+					(instance N_4_2
+						(viewRef view_1_0 (cellRef N_4) )
+						(property T (string "4")
+							(property Type (string "String"))
+						))
+					(instance P_4_1
+						(viewRef view_1_0 (cellRef P_4) )
+						(property T (string "1")
+							(property Type (string "String"))
+						))
+					(instance N_4_3
+						(viewRef view_1_0 (cellRef N_4) )
+						(property T (string "10B")
+							(property Type (string "String"))
+						))
+					(instance P_4_2
+						(viewRef view_1_0 (cellRef P_4) )
+						(property T (string "2")
+							(property Type (string "String"))
+						))
+					(instance N_4_4
+						(viewRef view_1_0 (cellRef N_4) )
+						(property T (string "7")
+							(property Type (string "String"))
+						))
+					(instance P_4_3
+						(viewRef view_1_0 (cellRef P_4) )
+						(property T (string "5")
+							(property Type (string "String"))
+						))
+					(instance N_4_5
+						(viewRef view_1_0 (cellRef N_4) )
+						(property T (string "10")
+							(property Type (string "String"))
+						))
+					(instance P_4_4
+						(viewRef view_1_0 (cellRef P_4) )
+						(property T (string "6")
+							(property Type (string "String"))
+						))
+					(instance N_4_6
+						(viewRef view_1_0 (cellRef N_4) )
+						(property T (string "8")
+							(property Type (string "String"))
+						))
+					(instance P_4_5
+						(viewRef view_1_0 (cellRef P_4) )
+						(property T (string "9")
+							(property Type (string "String"))
+						))
+					(instance Gnd_1
+						(viewRef view_1_0 (cellRef Gnd) ))
+					(net Out
+						(joined 
+							(portRef D (instanceRef N_4_3) )
+							(portRef D (instanceRef N_4_5) )
+							(portRef D (instanceRef P_4_4) )
+							(portRef D (instanceRef P_4_5) )
+							(portRef Out )))
+					(net B
+						(joined 
+							(portRef B )
+							(portRef G (instanceRef N_4_2) )
+							(portRef G (instanceRef N_4_4) )
+							(portRef G (instanceRef P_4_2) )
+							(portRef G (instanceRef P_4_3) )))
+					(net A
+						(joined 
+							(portRef A )
+							(portRef G (instanceRef N_4_1) )
+							(portRef G (instanceRef N_4_6) )
+							(portRef G (instanceRef P_4_1) )
+							(portRef G (instanceRef P_4_4) )))
+					(net (rename &1 "1")
+						(joined 
+							(portRef D (instanceRef N_4_1) )
+							(portRef D (instanceRef P_4_1) )
+							(portRef D (instanceRef P_4_2) )
+							(portRef G (instanceRef N_4_3) )
+							(portRef G (instanceRef N_4_5) )
+							(portRef G (instanceRef P_4_5) )))
+					(net (rename &2 "2")
+						(joined 
+							(portRef D (instanceRef N_4_2) )
+							(portRef S (instanceRef N_4_1) )))
+					(net (rename &3 "3")
+						(joined 
+							(portRef D (instanceRef P_4_3) )
+							(portRef S (instanceRef P_4_4) )))
+					(net (rename &4 "4")
+						(joined 
+							(portRef D (instanceRef N_4_6) )
+							(portRef S (instanceRef N_4_5) )))
+					(net (rename &4b "4b")
+						(joined 
+							(portRef D (instanceRef N_4_4) )
+							(portRef S (instanceRef N_4_3) )))
+					(net GROUND
+						(joined 
+							(portRef B (instanceRef N_4_1) )
+							(portRef B (instanceRef N_4_2) )
+							(portRef B (instanceRef N_4_3) )
+							(portRef B (instanceRef N_4_4) )
+							(portRef B (instanceRef N_4_5) )
+							(portRef B (instanceRef N_4_6) )
+							(portRef GROUND )
+							(portRef GROUND (instanceRef Gnd_1) )
+							(portRef S (instanceRef N_4_2) )
+							(portRef S (instanceRef N_4_4) )
+							(portRef S (instanceRef N_4_6) )))
+					(net Vdd
+						(joined 
+							(portRef B (instanceRef P_4_1) )
+							(portRef B (instanceRef P_4_2) )
+							(portRef B (instanceRef P_4_3) )
+							(portRef B (instanceRef P_4_4) )
+							(portRef B (instanceRef P_4_5) )
+							(portRef S (instanceRef P_4_1) )
+							(portRef S (instanceRef P_4_2) )
+							(portRef S (instanceRef P_4_3) )
+							(portRef S (instanceRef P_4_5) )
+							(portRef Vdd )
+							(portRef Vdd (instanceRef Vdd_1) )))
+				)
+				(property Created (string "1993 5 6 4 36 43"))
+			)
+		)
+		(cell XOR
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface 
+					(port B
+						(direction INPUT))
+					(port A
+						(direction INPUT))
+					(port Out
+						(direction OUTPUT))
+					(property TannerStandard (boolean (true))
+						(property RevisionCount (string "0")))
+					(symbol 
+						(boundingBox 
+							(rectangle (pt -353 -112) (pt 135 64)))
+						(keywordDisplay cell
+							(display 
+								(figureGroupOverride CELLNAME 
+									(textHeight 12)
+									(visible (false)))
+								(origin (pt -256 -88)))
+							(display 
+								(figureGroupOverride CELLNAME 
+									(visible (false)))
+								(origin (pt -256 -88))))
+						(keywordDisplay instance
+							(display 
+								(figureGroupOverride INSTANCENAME 
+									(textHeight 12)
+									(visible (false)))
+								(origin (pt -256 -112)))
+							(display 
+								(figureGroupOverride INSTANCENAME 
+									(visible (false)))
+								(origin (pt -256 -112))))
+						(portImplementation 
+							(name A
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 32)
+									(visible (false)))
+								(justify CENTERRIGHT)
+								(origin (pt -256 32))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt -256 32))))
+						)
+						(portImplementation 
+							(name B
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 32)
+									(visible (false)))
+								(justify CENTERRIGHT)
+								(origin (pt -256 -32))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt -256 -32))))
+						)
+						(portImplementation 
+							(name Out
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 32)
+									(visible (false)))
+								(justify CENTERLEFT)
+								(origin (pt 0 0))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 0 0))))
+						)
+						(figure GRAPHICS 
+							(path  (pointList (pt -224 -5) (pt -224 0))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -225 -16) (pt -224 -5))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -226 -23) (pt -225 -16))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -228 -32) (pt -226 -23))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -230 -39) (pt -228 -32))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -232 -45) (pt -230 -39))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -234 -50) (pt -232 -45))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -236 -54) (pt -234 -50))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -238 -58) (pt -236 -54))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -241 -64) (pt -238 -58))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -228 -32) (pt -256 -32))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -224 5) (pt -224 0))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -225 16) (pt -224 5))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -226 23) (pt -225 16))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -228 32) (pt -226 23))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -230 39) (pt -228 32))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -232 45) (pt -230 39))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -234 50) (pt -232 45))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -236 54) (pt -234 50))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -238 58) (pt -236 54))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -241 64) (pt -238 58))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -228 32) (pt -256 32))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -160 -64) (pt -154 -64))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -160 -64) (pt -225 -64))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -50 -3) (pt -48 0))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -58 -15) (pt -50 -3))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -65 -23) (pt -58 -15))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -73 -31) (pt -65 -23))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -81 -38) (pt -73 -31))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -91 -45) (pt -81 -38))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -100 -50) (pt -91 -45))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -109 -54) (pt -100 -50))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -120 -58) (pt -109 -54))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -132 -61) (pt -120 -58))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -144 -63) (pt -132 -61))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -154 -64) (pt -144 -63))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -50 3) (pt -48 0))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -58 15) (pt -50 3))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -65 23) (pt -58 15))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -73 31) (pt -65 23))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -81 38) (pt -73 31))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -91 45) (pt -81 38))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -100 50) (pt -91 45))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -109 54) (pt -100 50))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -120 58) (pt -109 54))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -132 61) (pt -120 58))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -144 63) (pt -132 61))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -154 64) (pt -144 63))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -160 64) (pt -154 64))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -159 64) (pt -153 64))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -208 -5) (pt -208 0))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -209 -16) (pt -208 -5))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -210 -23) (pt -209 -16))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -212 -32) (pt -210 -23))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -214 -39) (pt -212 -32))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -216 -45) (pt -214 -39))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -218 -50) (pt -216 -45))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -220 -54) (pt -218 -50))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -222 -58) (pt -220 -54))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -225 -64) (pt -222 -58))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -208 5) (pt -208 0))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -209 16) (pt -208 5))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -210 23) (pt -209 16))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -212 32) (pt -210 23))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -214 39) (pt -212 32))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -216 45) (pt -214 39))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -218 50) (pt -216 45))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -220 54) (pt -218 50))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -222 58) (pt -220 54))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -225 64) (pt -222 58))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -160 64) (pt -225 64))))
+						(figure GRAPHICS 
+							(path  (pointList (pt -48 0) (pt 0 0))))
+					)
+				)
+				(status 
+					(written 
+						(timeStamp 2003 07 19 06 08 11)
+						(author "J. Luo")
+						(dataOrigin "Tanner Research, Pasadena, CA")))
+				(property TannerStandard (boolean (true))
+					(property Info (string "2-Input XOR Gate (TIB)"))
+					(property RevisionCount (string "1")))
+				(property Created (string "1993 5 6 4 36 43"))
+				(contents 
+					(page 
+						Page0
+						(instance 
+							(name Inv_1)
+							(viewRef view_1 (cellRef Inv))
+							(transform 
+								(origin (pt 2272 1408))))
+						(instance 
+							(name XNOR2_1)
+							(viewRef view_1 (cellRef XNOR2))
+							(transform 
+								(origin (pt 1984 1408))))
+						(portImplementation 
+							(name B
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 64)
+									(visible (false)))
+								(justify CENTERRIGHT)
+								(origin (pt 1696 1376))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 1696 1376))))
+						)
+						(portImplementation 
+							(name A
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 64)
+									(visible (false)))
+								(justify CENTERRIGHT)
+								(origin (pt 1696 1440))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 1696 1440))))
+						)
+						(portImplementation 
+							(name Out
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 64)
+									(visible (false)))
+								(justify CENTERLEFT)
+								(origin (pt 2336 1408))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 2336 1408))))
+						)
+						(net 
+							(name Out)
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 2336 1408) (pt 2272 1408))))
+						)
+						(net 
+							(name N5)
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 2080 1408) (pt 1984 1408))))
+						)
+						(commentGraphics )
+					)
+				)
+			)
+			(view (rename view_1_0 "view_1")
+				(viewType NETLIST)
+				(interface 
+					(port B
+						(direction INPUT))
+					(port A
+						(direction INPUT))
+					(port Out
+						(direction OUTPUT))
+					(port Vdd
+						(direction INOUT)
+						(property GLOBAL (boolean (true))))
+					(port GROUND
+						(direction INOUT)
+						(property GLOBAL (boolean (true))))
+					(property TannerStandard (boolean (true))
+						(property Timestamp (string "2003 07 19 06 08 11"))
+						(property Author (string "J. Luo"))
+						(property Organization (string "Tanner Research, Pasadena, CA"))
+						(property Info (string "2-Input XOR Gate (TIB)")))
+				)
+				(contents 
+					(instance XNOR2_1
+						(viewRef view_1_0 (cellRef XNOR2) ))
+					(instance Inv_1
+						(viewRef view_1_0 (cellRef Inv) ))
+					(net B
+						(joined 
+							(portRef B )
+							(portRef B (instanceRef XNOR2_1) )))
+					(net A
+						(joined 
+							(portRef A )
+							(portRef A (instanceRef XNOR2_1) )))
+					(net Out
+						(joined 
+							(portRef Out )
+							(portRef Out (instanceRef Inv_1) )))
+					(net N5
+						(joined 
+							(portRef A (instanceRef Inv_1) )
+							(portRef Out (instanceRef XNOR2_1) )))
+					(net Vdd
+						(joined 
+							(portRef Vdd )
+							(portRef Vdd (instanceRef Inv_1) )
+							(portRef Vdd (instanceRef XNOR2_1) )))
+					(net GROUND
+						(joined 
+							(portRef GROUND )
+							(portRef GROUND (instanceRef Inv_1) )
+							(portRef GROUND (instanceRef XNOR2_1) )))
+				)
+				(property Created (string "1993 5 6 4 36 43"))
+			)
+		)
+		(cell lfsr_eco
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface 
+					(port OUT)
+					(port Clk)
+					(port Cl)
+					(property TannerStandard (boolean (true))
+						(property Timestamp (string "2003 07 19 06 55 45"))
+						(property RevisionCount (string "0")))
+				)
+				(status 
+					(written 
+						(timeStamp 2006 09 27 06 55 58)))
+				(property TannerStandard (boolean (true))
+					(property RevisionCount (string "2")))
+				(property Created (string "2003 7 19 6 0 8"))
+				(contents 
+					(page 
+						Page0
+						(instance 
+							(rename &_PERIOD_param_1 ".param_1")
+							(viewRef view_1 (cellRef &_PERIOD_param))
+							(transform 
+								(origin (pt 2144 1248))))
+						(instance 
+							(name DFFC_1)
+							(viewRef view_1 (cellRef DFFC))
+							(transform 
+								(origin (pt 1376 1824))))
+						(instance 
+							(name DFFC_2)
+							(viewRef view_1 (cellRef DFFC))
+							(transform 
+								(origin (pt 1120 1824))))
+						(instance 
+							(name DFFC_3)
+							(viewRef view_1 (cellRef DFFC))
+							(transform 
+								(origin (pt 1824 1824))))
+						(instance 
+							(name DFFC_4)
+							(viewRef view_1 (cellRef DFFC))
+							(transform 
+								(origin (pt 2272 1824))))
+						(instance 
+							(name DFFC_5)
+							(viewRef view_1 (cellRef DFFC))
+							(transform 
+								(origin (pt 2976 1824))))
+						(instance 
+							(name DFFC_6)
+							(viewRef view_1 (cellRef DFFC))
+							(transform 
+								(origin (pt 2720 1824))))
+						(instance 
+							(name DFFC_7)
+							(viewRef view_1 (cellRef DFFC))
+							(transform 
+								(origin (pt 3488 1824))))
+						(instance 
+							(name DFFC_8)
+							(viewRef view_1 (cellRef DFFC))
+							(transform 
+								(origin (pt 3232 1824))))
+						(instance 
+							(name Gnd_1)
+							(viewRef view_1 (cellRef Gnd))
+							(transform 
+								(origin (pt 4192 1632))))
+						(instance 
+							(name N_4_1)
+							(viewRef view_1 (cellRef N_4))
+							(transform 
+								(origin (pt 4096 1728)))
+							(property L (string "2u")
+								(property Type (string "String"))
+							)
+							(property T (string "1")
+								(property Type (string "String"))
+							)
+							(property W (string "10u")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name P_4_1)
+							(viewRef view_1 (cellRef P_4))
+							(transform 
+								(origin (pt 4096 1920)))
+							(property L (string "2u")
+								(property Type (string "String"))
+							)
+							(property T (string "2")
+								(property Type (string "String"))
+							)
+							(property W (string "20u")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name Vdd_1)
+							(viewRef view_1 (cellRef Vdd))
+							(transform 
+								(origin (pt 4192 2016))))
+						(instance 
+							(name XOR_1)
+							(viewRef view_1 (cellRef XOR))
+							(transform 
+								(origin (pt 1824 1856))))
+						(instance 
+							(name XOR_2)
+							(viewRef view_1 (cellRef XOR))
+							(transform 
+								(origin (pt 2272 1856))))
+						(instance 
+							(name XOR_3)
+							(viewRef view_1 (cellRef XOR))
+							(transform 
+								(origin (pt 2720 1856))))
+						(portImplementation 
+							(name OUT
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 64)
+									(visible (false)))
+								(justify CENTERLEFT)
+								(origin (pt 4416 1824))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 4416 1824))))
+						)
+						(portImplementation 
+							(name Clk
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 64)
+									(visible (false)))
+								(justify CENTERRIGHT)
+								(origin (pt 992 1600))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 992 1600))))
+						)
+						(portImplementation 
+							(name Cl
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 32)
+									(visible (false)))
+								(justify CENTERLEFT)(orientation R90)
+								(origin (pt 3584 1920))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 3584 1920))))
+						)
+						(portImplementation 
+							(name Cl
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 32)
+									(visible (false)))
+								(justify CENTERLEFT)(orientation R90)
+								(origin (pt 3328 1920))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 3328 1920))))
+						)
+						(portImplementation 
+							(name Cl
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 32)
+									(visible (false)))
+								(justify CENTERLEFT)(orientation R90)
+								(origin (pt 3072 1920))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 3072 1920))))
+						)
+						(portImplementation 
+							(name Cl
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 32)
+									(visible (false)))
+								(justify CENTERLEFT)(orientation R90)
+								(origin (pt 2816 1920))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 2816 1920))))
+						)
+						(portImplementation 
+							(name Cl
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 32)
+									(visible (false)))
+								(justify CENTERLEFT)(orientation R90)
+								(origin (pt 2368 1920))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 2368 1920))))
+						)
+						(portImplementation 
+							(name Cl
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 32)
+									(visible (false)))
+								(justify CENTERLEFT)(orientation R90)
+								(origin (pt 1920 1920))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 1920 1920))))
+						)
+						(portImplementation 
+							(name Cl
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 32)
+									(visible (false)))
+								(justify CENTERLEFT)(orientation R90)
+								(origin (pt 1472 1920))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 1472 1920))))
+						)
+						(portImplementation 
+							(name Cl
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 32)
+									(visible (false)))
+								(justify CENTERLEFT)(orientation R90)
+								(origin (pt 1216 1920))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 1216 1920))))
+						)
+						(net 
+							(name OUT)
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 4416 1824) (pt 4192 1824))))
+						)
+						(net 
+							(name Clk)
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 3488 1760) (pt 3488 1600) (pt 3232 1600))))
+							(figure NET 
+								(path  (pointList (pt 3232 1600) (pt 2976 1600))))
+							(figure NET 
+								(path  (pointList (pt 2976 1600) (pt 2720 1600))))
+							(figure NET 
+								(path  (pointList (pt 2720 1600) (pt 2272 1600))))
+							(figure NET 
+								(path  (pointList (pt 2272 1600) (pt 1824 1600))))
+							(figure NET 
+								(path  (pointList (pt 1824 1600) (pt 1376 1600))))
+							(figure NET 
+								(path  (pointList (pt 1376 1600) (pt 1120 1600))))
+							(figure NET 
+								(path  (pointList (pt 1120 1600) (pt 992 1600))))
+							(figure NET 
+								(path  (pointList (pt 1120 1600) (pt 1120 1760))))
+							(figure NET 
+								(path  (pointList (pt 1376 1600) (pt 1376 1760))))
+							(figure NET 
+								(path  (pointList (pt 1824 1600) (pt 1824 1760))))
+							(figure NET 
+								(path  (pointList (pt 2272 1600) (pt 2272 1760))))
+							(figure NET 
+								(path  (pointList (pt 2720 1600) (pt 2720 1760))))
+							(figure NET 
+								(path  (pointList (pt 2976 1600) (pt 2976 1760))))
+							(figure NET 
+								(path  (pointList (pt 3232 1600) (pt 3232 1760))))
+						)
+						(net 
+							(name N3)
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 1376 1824) (pt 1312 1824))))
+						)
+						(net 
+							(name N35)
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 3744 1824) (pt 4096 1824))))
+							(figure NET 
+								(path  (pointList (pt 4096 1728) (pt 4096 1824))))
+							(figure NET 
+								(path  (pointList (pt 4096 1824) (pt 4096 1920))))
+							(figure NET 
+								(path  (pointList (pt 1120 1824) (pt 1024 1824) (pt 1024 2048) (pt 1568 2048))))
+							(figure NET 
+								(path  (pointList (pt 1568 2048) (pt 2016 2048))))
+							(figure NET 
+								(path  (pointList (pt 2016 2048) (pt 2464 2048))))
+							(figure NET 
+								(path  (pointList (pt 2464 2048) (pt 3744 2048) (pt 3744 1824))))
+							(figure NET 
+								(path  (pointList (pt 3744 1824) (pt 3680 1824))))
+							(figure NET 
+								(path  (pointList (pt 2464 2048) (pt 2464 1888))))
+							(figure NET 
+								(path  (pointList (pt 1568 1888) (pt 1568 2048))))
+							(figure NET 
+								(path  (pointList (pt 2016 2048) (pt 2016 1888))))
+						)
+						(net 
+							(name N15)
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 1824 1824) (pt 1824 1856))))
+						)
+						(net 
+							(name N22)
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 2272 1824) (pt 2272 1856))))
+						)
+						(net 
+							(name N29)
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 2976 1824) (pt 2912 1824))))
+						)
+						(net 
+							(name N44)
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 3232 1824) (pt 3168 1824))))
+						)
+						(net 
+							(name N34)
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 2720 1824) (pt 2720 1856))))
+						)
+						(net 
+							(name N39)
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 3488 1824) (pt 3424 1824))))
+						)
+						(net 
+							(name GROUND)
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 4192 1632) (pt 4224 1632) (pt 4224 1728))))
+						)
+						(net 
+							(name Vdd)
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 4192 2016) (pt 4224 2016) (pt 4224 1920))))
+						)
+						(commentGraphics )
+					)
+				)
+			)
+			(view (rename view_1_0 "view_1")
+				(viewType NETLIST)
+				(interface 
+					(port OUT)
+					(port Clk)
+					(port Cl)
+					(port Vdd
+						(direction INOUT)
+						(property GLOBAL (boolean (true))))
+					(port GROUND
+						(direction INOUT)
+						(property GLOBAL (boolean (true))))
+					(property TannerStandard (boolean (true))
+						(property Timestamp (string "2003 07 19 06 55 45")))
+				)
+				(contents 
+					(instance (rename &_PERIOD_param_1 ".param_1")
+						(viewRef view_1_0 (cellRef &_PERIOD_param) ))
+					(instance Gnd_1
+						(viewRef view_1_0 (cellRef Gnd) ))
+					(instance DFFC_1
+						(viewRef view_1_0 (cellRef DFFC) ))
+					(instance Vdd_1
+						(viewRef view_1_0 (cellRef Vdd) ))
+					(instance DFFC_2
+						(viewRef view_1_0 (cellRef DFFC) ))
+					(instance DFFC_3
+						(viewRef view_1_0 (cellRef DFFC) ))
+					(instance DFFC_4
+						(viewRef view_1_0 (cellRef DFFC) ))
+					(instance DFFC_5
+						(viewRef view_1_0 (cellRef DFFC) ))
+					(instance DFFC_6
+						(viewRef view_1_0 (cellRef DFFC) ))
+					(instance DFFC_7
+						(viewRef view_1_0 (cellRef DFFC) ))
+					(instance DFFC_8
+						(viewRef view_1_0 (cellRef DFFC) ))
+					(instance XOR_1
+						(viewRef view_1_0 (cellRef XOR) ))
+					(instance P_4_1
+						(viewRef view_1_0 (cellRef P_4) )
+						(property L (string "2u")
+							(property Type (string "String"))
+						)
+						(property T (string "2")
+							(property Type (string "String"))
+						)
+						(property W (string "20u")
+							(property Type (string "String"))
+						))
+					(instance XOR_2
+						(viewRef view_1_0 (cellRef XOR) ))
+					(instance XOR_3
+						(viewRef view_1_0 (cellRef XOR) ))
+					(instance N_4_1
+						(viewRef view_1_0 (cellRef N_4) )
+						(property L (string "2u")
+							(property Type (string "String"))
+						)
+						(property T (string "1")
+							(property Type (string "String"))
+						)
+						(property W (string "10u")
+							(property Type (string "String"))
+						))
+					(net OUT
+						(joined 
+							(portRef D (instanceRef N_4_1) )
+							(portRef D (instanceRef P_4_1) )
+							(portRef OUT )))
+					(net Clk
+						(joined 
+							(portRef Clk )
+							(portRef Clk (instanceRef DFFC_1) )
+							(portRef Clk (instanceRef DFFC_2) )
+							(portRef Clk (instanceRef DFFC_3) )
+							(portRef Clk (instanceRef DFFC_4) )
+							(portRef Clk (instanceRef DFFC_5) )
+							(portRef Clk (instanceRef DFFC_6) )
+							(portRef Clk (instanceRef DFFC_7) )
+							(portRef Clk (instanceRef DFFC_8) )))
+					(net Cl
+						(joined 
+							(portRef Cl )
+							(portRef ClB (instanceRef DFFC_1) )
+							(portRef ClB (instanceRef DFFC_2) )
+							(portRef ClB (instanceRef DFFC_3) )
+							(portRef ClB (instanceRef DFFC_4) )
+							(portRef ClB (instanceRef DFFC_5) )
+							(portRef ClB (instanceRef DFFC_6) )
+							(portRef ClB (instanceRef DFFC_7) )
+							(portRef ClB (instanceRef DFFC_8) )))
+					(net N3
+						(joined 
+							(portRef Data (instanceRef DFFC_1) )
+							(portRef Q (instanceRef DFFC_2) )))
+					(net N_1
+						(joined 
+							(portRef B (instanceRef XOR_1) )
+							(portRef Q (instanceRef DFFC_1) )))
+					(net N_2
+						(joined 
+							(portRef QB (instanceRef DFFC_1) )))
+					(net N35
+						(joined 
+							(portRef A (instanceRef XOR_1) )
+							(portRef A (instanceRef XOR_2) )
+							(portRef A (instanceRef XOR_3) )
+							(portRef Data (instanceRef DFFC_2) )
+							(portRef G (instanceRef N_4_1) )
+							(portRef G (instanceRef P_4_1) )
+							(portRef Q (instanceRef DFFC_7) )))
+					(net N_3
+						(joined 
+							(portRef QB (instanceRef DFFC_2) )))
+					(net N15
+						(joined 
+							(portRef Data (instanceRef DFFC_3) )
+							(portRef Out (instanceRef XOR_1) )))
+					(net N_4
+						(joined 
+							(portRef B (instanceRef XOR_2) )
+							(portRef Q (instanceRef DFFC_3) )))
+					(net N_5
+						(joined 
+							(portRef QB (instanceRef DFFC_3) )))
+					(net N22
+						(joined 
+							(portRef Data (instanceRef DFFC_4) )
+							(portRef Out (instanceRef XOR_2) )))
+					(net N_6
+						(joined 
+							(portRef B (instanceRef XOR_3) )
+							(portRef Q (instanceRef DFFC_4) )))
+					(net N_7
+						(joined 
+							(portRef QB (instanceRef DFFC_4) )))
+					(net N29
+						(joined 
+							(portRef Data (instanceRef DFFC_5) )
+							(portRef Q (instanceRef DFFC_6) )))
+					(net N44
+						(joined 
+							(portRef Data (instanceRef DFFC_8) )
+							(portRef Q (instanceRef DFFC_5) )))
+					(net N_8
+						(joined 
+							(portRef QB (instanceRef DFFC_5) )))
+					(net N34
+						(joined 
+							(portRef Data (instanceRef DFFC_6) )
+							(portRef Out (instanceRef XOR_3) )))
+					(net N_9
+						(joined 
+							(portRef QB (instanceRef DFFC_6) )))
+					(net N39
+						(joined 
+							(portRef Data (instanceRef DFFC_7) )
+							(portRef Q (instanceRef DFFC_8) )))
+					(net N_10
+						(joined 
+							(portRef QB (instanceRef DFFC_7) )))
+					(net N_11
+						(joined 
+							(portRef QB (instanceRef DFFC_8) )))
+					(net GROUND
+						(joined 
+							(portRef B (instanceRef N_4_1) )
+							(portRef GROUND )
+							(portRef GROUND (instanceRef DFFC_1) )
+							(portRef GROUND (instanceRef DFFC_2) )
+							(portRef GROUND (instanceRef DFFC_3) )
+							(portRef GROUND (instanceRef DFFC_4) )
+							(portRef GROUND (instanceRef DFFC_5) )
+							(portRef GROUND (instanceRef DFFC_6) )
+							(portRef GROUND (instanceRef DFFC_7) )
+							(portRef GROUND (instanceRef DFFC_8) )
+							(portRef GROUND (instanceRef Gnd_1) )
+							(portRef GROUND (instanceRef XOR_1) )
+							(portRef GROUND (instanceRef XOR_2) )
+							(portRef GROUND (instanceRef XOR_3) )
+							(portRef S (instanceRef N_4_1) )))
+					(net Vdd
+						(joined 
+							(portRef B (instanceRef P_4_1) )
+							(portRef S (instanceRef P_4_1) )
+							(portRef Vdd )
+							(portRef Vdd (instanceRef DFFC_1) )
+							(portRef Vdd (instanceRef DFFC_2) )
+							(portRef Vdd (instanceRef DFFC_3) )
+							(portRef Vdd (instanceRef DFFC_4) )
+							(portRef Vdd (instanceRef DFFC_5) )
+							(portRef Vdd (instanceRef DFFC_6) )
+							(portRef Vdd (instanceRef DFFC_7) )
+							(portRef Vdd (instanceRef DFFC_8) )
+							(portRef Vdd (instanceRef Vdd_1) )
+							(portRef Vdd (instanceRef XOR_1) )
+							(portRef Vdd (instanceRef XOR_2) )
+							(portRef Vdd (instanceRef XOR_3) )))
+				)
+				(property Created (string "2003 7 19 6 0 8"))
+			)
+		)
+		(cell lfsr
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface 
+					(port OUT)
+					(port Clk)
+					(port Cl)
+					(property TannerStandard (boolean (true))
+						(property Timestamp (string "2003 08 01 00 32 31"))
+						(property RevisionCount (string "0")))
+				)
+				(status 
+					(written 
+						(timeStamp 2006 09 27 06 55 58)))
+				(property TannerStandard (boolean (true))
+					(property RevisionCount (string "2")))
+				(property Created (string "2003 8 1 0 32 10"))
+				(contents 
+					(page 
+						Page0
+						(instance 
+							(rename &_PERIOD_param_1 ".param_1")
+							(viewRef view_1 (cellRef &_PERIOD_param))
+							(transform 
+								(origin (pt 2080 1312))))
+						(instance 
+							(name DFFC_1)
+							(viewRef view_1 (cellRef DFFC))
+							(transform 
+								(origin (pt 1312 1888))))
+						(instance 
+							(name DFFC_2)
+							(viewRef view_1 (cellRef DFFC))
+							(transform 
+								(origin (pt 1056 1888))))
+						(instance 
+							(name DFFC_3)
+							(viewRef view_1 (cellRef DFFC))
+							(transform 
+								(origin (pt 1760 1888))))
+						(instance 
+							(name DFFC_4)
+							(viewRef view_1 (cellRef DFFC))
+							(transform 
+								(origin (pt 2208 1888))))
+						(instance 
+							(name DFFC_5)
+							(viewRef view_1 (cellRef DFFC))
+							(transform 
+								(origin (pt 2912 1888))))
+						(instance 
+							(name DFFC_6)
+							(viewRef view_1 (cellRef DFFC))
+							(transform 
+								(origin (pt 2656 1888))))
+						(instance 
+							(name DFFC_7)
+							(viewRef view_1 (cellRef DFFC))
+							(transform 
+								(origin (pt 3424 1888))))
+						(instance 
+							(name DFFC_8)
+							(viewRef view_1 (cellRef DFFC))
+							(transform 
+								(origin (pt 3168 1888))))
+						(instance 
+							(name Gnd_1)
+							(viewRef view_1 (cellRef Gnd))
+							(transform 
+								(origin (pt 4128 1696))))
+						(instance 
+							(name N_4_1)
+							(viewRef view_1 (cellRef N_4))
+							(transform 
+								(origin (pt 4032 1792)))
+							(property L (string "2u")
+								(property Type (string "String"))
+							)
+							(property T (string "1")
+								(property Type (string "String"))
+							)
+							(property W (string "10u")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name P_4_1)
+							(viewRef view_1 (cellRef P_4))
+							(transform 
+								(origin (pt 4032 1984)))
+							(property L (string "2u")
+								(property Type (string "String"))
+							)
+							(property T (string "2")
+								(property Type (string "String"))
+							)
+							(property W (string "20u")
+								(property Type (string "String"))
+							))
+						(instance 
+							(name Vdd_1)
+							(viewRef view_1 (cellRef Vdd))
+							(transform 
+								(origin (pt 4128 2080))))
+						(instance 
+							(name XOR_1)
+							(viewRef view_1 (cellRef XOR))
+							(transform 
+								(origin (pt 1760 1920))))
+						(instance 
+							(name XOR_2)
+							(viewRef view_1 (cellRef XOR))
+							(transform 
+								(origin (pt 2208 1920))))
+						(instance 
+							(name XOR_3)
+							(viewRef view_1 (cellRef XOR))
+							(transform 
+								(origin (pt 2656 1920))))
+						(portImplementation 
+							(name OUT
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 64)
+									(visible (false)))
+								(justify CENTERLEFT)
+								(origin (pt 4352 1888))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 4352 1888))))
+						)
+						(portImplementation 
+							(name Clk
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 64)
+									(visible (false)))
+								(justify CENTERRIGHT)
+								(origin (pt 928 1664))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 928 1664))))
+						)
+						(portImplementation 
+							(name Cl
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 32)
+									(visible (false)))
+								(justify CENTERLEFT)(orientation R90)
+								(origin (pt 3520 1984))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 3520 1984))))
+						)
+						(portImplementation 
+							(name Cl
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 32)
+									(visible (false)))
+								(justify CENTERLEFT)(orientation R90)
+								(origin (pt 3264 1984))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 3264 1984))))
+						)
+						(portImplementation 
+							(name Cl
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 32)
+									(visible (false)))
+								(justify CENTERLEFT)(orientation R90)
+								(origin (pt 3008 1984))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 3008 1984))))
+						)
+						(portImplementation 
+							(name Cl
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 32)
+									(visible (false)))
+								(justify CENTERLEFT)(orientation R90)
+								(origin (pt 2752 1984))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 2752 1984))))
+						)
+						(portImplementation 
+							(name Cl
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 32)
+									(visible (false)))
+								(justify CENTERLEFT)(orientation R90)
+								(origin (pt 2304 1984))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 2304 1984))))
+						)
+						(portImplementation 
+							(name Cl
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 32)
+									(visible (false)))
+								(justify CENTERLEFT)(orientation R90)
+								(origin (pt 1856 1984))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 1856 1984))))
+						)
+						(portImplementation 
+							(name Cl
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 32)
+									(visible (false)))
+								(justify CENTERLEFT)(orientation R90)
+								(origin (pt 1408 1984))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 1408 1984))))
+						)
+						(portImplementation 
+							(name Cl
+							(display 
+								(figureGroupOverride PORTTEXT 
+									(textHeight 32)
+									(visible (false)))
+								(justify CENTERLEFT)(orientation R90)
+								(origin (pt 1152 1984))))
+							(connectLocation 
+								(figure PORTSHAPE 
+									(dot (pt 1152 1984))))
+						)
+						(net 
+							(name OUT)
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 4352 1888) (pt 4128 1888))))
+						)
+						(net 
+							(name Clk)
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 3424 1824) (pt 3424 1664) (pt 3168 1664))))
+							(figure NET 
+								(path  (pointList (pt 3168 1824) (pt 3168 1664))))
+							(figure NET 
+								(path  (pointList (pt 3168 1664) (pt 2912 1664))))
+							(figure NET 
+								(path  (pointList (pt 2912 1824) (pt 2912 1664))))
+							(figure NET 
+								(path  (pointList (pt 2912 1664) (pt 2656 1664))))
+							(figure NET 
+								(path  (pointList (pt 2656 1824) (pt 2656 1664))))
+							(figure NET 
+								(path  (pointList (pt 2656 1664) (pt 2208 1664))))
+							(figure NET 
+								(path  (pointList (pt 2208 1824) (pt 2208 1664))))
+							(figure NET 
+								(path  (pointList (pt 2208 1664) (pt 1760 1664))))
+							(figure NET 
+								(path  (pointList (pt 1760 1824) (pt 1760 1664))))
+							(figure NET 
+								(path  (pointList (pt 1760 1664) (pt 1312 1664))))
+							(figure NET 
+								(path  (pointList (pt 1312 1824) (pt 1312 1664))))
+							(figure NET 
+								(path  (pointList (pt 1312 1664) (pt 1056 1664))))
+							(figure NET 
+								(path  (pointList (pt 1056 1824) (pt 1056 1664))))
+							(figure NET 
+								(path  (pointList (pt 1056 1664) (pt 928 1664))))
+						)
+						(net 
+							(name N1)
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 1312 1888) (pt 1248 1888))))
+						)
+						(net 
+							(name N3)
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 1056 1888) (pt 960 1888) (pt 960 2112) (pt 1504 2112))))
+							(figure NET 
+								(path  (pointList (pt 1504 1952) (pt 1504 2112))))
+							(figure NET 
+								(path  (pointList (pt 1504 2112) (pt 1952 2112))))
+							(figure NET 
+								(path  (pointList (pt 1952 1952) (pt 1952 2112))))
+							(figure NET 
+								(path  (pointList (pt 2400 1952) (pt 2400 2112))))
+							(figure NET 
+								(path  (pointList (pt 2400 2112) (pt 1952 2112))))
+							(figure NET 
+								(path  (pointList (pt 2400 2112) (pt 3392 2112) (pt 3392 1888))))
+							(figure NET 
+								(path  (pointList (pt 3424 1888) (pt 3392 1888))))
+							(figure NET 
+								(path  (pointList (pt 3392 1888) (pt 3360 1888))))
+						)
+						(net 
+							(name N2)
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 1760 1888) (pt 1760 1920))))
+						)
+						(net 
+							(name N5)
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 2208 1888) (pt 2208 1920))))
+						)
+						(net 
+							(name N9)
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 2912 1888) (pt 2848 1888))))
+						)
+						(net 
+							(name N10)
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 3168 1888) (pt 3104 1888))))
+						)
+						(net 
+							(name N8)
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 2656 1888) (pt 2656 1920))))
+						)
+						(net 
+							(name N20)
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 4032 1984) (pt 4032 1888))))
+							(figure NET 
+								(path  (pointList (pt 4032 1888) (pt 4032 1792))))
+							(figure NET 
+								(path  (pointList (pt 3616 1888) (pt 4032 1888))))
+						)
+						(net 
+							(name GROUND)
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 4128 1696) (pt 4160 1696) (pt 4160 1792))))
+						)
+						(net 
+							(name Vdd)
+							(joined )
+							(figure NET 
+								(path  (pointList (pt 4128 2080) (pt 4160 2080) (pt 4160 1984))))
+						)
+						(commentGraphics )
+					)
+				)
+			)
+			(view (rename view_1_0 "view_1")
+				(viewType NETLIST)
+				(interface 
+					(port OUT)
+					(port Clk)
+					(port Cl)
+					(port Vdd
+						(direction INOUT)
+						(property GLOBAL (boolean (true))))
+					(port GROUND
+						(direction INOUT)
+						(property GLOBAL (boolean (true))))
+					(property TannerStandard (boolean (true))
+						(property Timestamp (string "2003 08 01 00 32 31")))
+				)
+				(contents 
+					(instance (rename &_PERIOD_param_1 ".param_1")
+						(viewRef view_1_0 (cellRef &_PERIOD_param) ))
+					(instance Gnd_1
+						(viewRef view_1_0 (cellRef Gnd) ))
+					(instance DFFC_1
+						(viewRef view_1_0 (cellRef DFFC) ))
+					(instance Vdd_1
+						(viewRef view_1_0 (cellRef Vdd) ))
+					(instance DFFC_2
+						(viewRef view_1_0 (cellRef DFFC) ))
+					(instance DFFC_3
+						(viewRef view_1_0 (cellRef DFFC) ))
+					(instance DFFC_4
+						(viewRef view_1_0 (cellRef DFFC) ))
+					(instance DFFC_5
+						(viewRef view_1_0 (cellRef DFFC) ))
+					(instance DFFC_6
+						(viewRef view_1_0 (cellRef DFFC) ))
+					(instance DFFC_7
+						(viewRef view_1_0 (cellRef DFFC) ))
+					(instance DFFC_8
+						(viewRef view_1_0 (cellRef DFFC) ))
+					(instance XOR_1
+						(viewRef view_1_0 (cellRef XOR) ))
+					(instance P_4_1
+						(viewRef view_1_0 (cellRef P_4) )
+						(property L (string "2u")
+							(property Type (string "String"))
+						)
+						(property T (string "2")
+							(property Type (string "String"))
+						)
+						(property W (string "20u")
+							(property Type (string "String"))
+						))
+					(instance XOR_2
+						(viewRef view_1_0 (cellRef XOR) ))
+					(instance XOR_3
+						(viewRef view_1_0 (cellRef XOR) ))
+					(instance N_4_1
+						(viewRef view_1_0 (cellRef N_4) )
+						(property L (string "2u")
+							(property Type (string "String"))
+						)
+						(property T (string "1")
+							(property Type (string "String"))
+						)
+						(property W (string "10u")
+							(property Type (string "String"))
+						))
+					(net OUT
+						(joined 
+							(portRef D (instanceRef N_4_1) )
+							(portRef D (instanceRef P_4_1) )
+							(portRef OUT )))
+					(net Clk
+						(joined 
+							(portRef Clk )
+							(portRef Clk (instanceRef DFFC_1) )
+							(portRef Clk (instanceRef DFFC_2) )
+							(portRef Clk (instanceRef DFFC_3) )
+							(portRef Clk (instanceRef DFFC_4) )
+							(portRef Clk (instanceRef DFFC_5) )
+							(portRef Clk (instanceRef DFFC_6) )
+							(portRef Clk (instanceRef DFFC_7) )
+							(portRef Clk (instanceRef DFFC_8) )))
+					(net Cl
+						(joined 
+							(portRef Cl )
+							(portRef ClB (instanceRef DFFC_1) )
+							(portRef ClB (instanceRef DFFC_2) )
+							(portRef ClB (instanceRef DFFC_3) )
+							(portRef ClB (instanceRef DFFC_4) )
+							(portRef ClB (instanceRef DFFC_5) )
+							(portRef ClB (instanceRef DFFC_6) )
+							(portRef ClB (instanceRef DFFC_7) )
+							(portRef ClB (instanceRef DFFC_8) )))
+					(net N1
+						(joined 
+							(portRef Data (instanceRef DFFC_1) )
+							(portRef Q (instanceRef DFFC_2) )))
+					(net N_1
+						(joined 
+							(portRef B (instanceRef XOR_1) )
+							(portRef Q (instanceRef DFFC_1) )))
+					(net N_2
+						(joined 
+							(portRef QB (instanceRef DFFC_1) )))
+					(net N3
+						(joined 
+							(portRef A (instanceRef XOR_1) )
+							(portRef A (instanceRef XOR_2) )
+							(portRef A (instanceRef XOR_3) )
+							(portRef Data (instanceRef DFFC_2) )
+							(portRef Data (instanceRef DFFC_7) )
+							(portRef Q (instanceRef DFFC_8) )))
+					(net N_3
+						(joined 
+							(portRef QB (instanceRef DFFC_2) )))
+					(net N2
+						(joined 
+							(portRef Data (instanceRef DFFC_3) )
+							(portRef Out (instanceRef XOR_1) )))
+					(net N_4
+						(joined 
+							(portRef B (instanceRef XOR_2) )
+							(portRef Q (instanceRef DFFC_3) )))
+					(net N_5
+						(joined 
+							(portRef QB (instanceRef DFFC_3) )))
+					(net N5
+						(joined 
+							(portRef Data (instanceRef DFFC_4) )
+							(portRef Out (instanceRef XOR_2) )))
+					(net N_6
+						(joined 
+							(portRef B (instanceRef XOR_3) )
+							(portRef Q (instanceRef DFFC_4) )))
+					(net N_7
+						(joined 
+							(portRef QB (instanceRef DFFC_4) )))
+					(net N9
+						(joined 
+							(portRef Data (instanceRef DFFC_5) )
+							(portRef Q (instanceRef DFFC_6) )))
+					(net N10
+						(joined 
+							(portRef Data (instanceRef DFFC_8) )
+							(portRef Q (instanceRef DFFC_5) )))
+					(net N_8
+						(joined 
+							(portRef QB (instanceRef DFFC_5) )))
+					(net N8
+						(joined 
+							(portRef Data (instanceRef DFFC_6) )
+							(portRef Out (instanceRef XOR_3) )))
+					(net N_9
+						(joined 
+							(portRef QB (instanceRef DFFC_6) )))
+					(net N20
+						(joined 
+							(portRef G (instanceRef N_4_1) )
+							(portRef G (instanceRef P_4_1) )
+							(portRef Q (instanceRef DFFC_7) )))
+					(net N_10
+						(joined 
+							(portRef QB (instanceRef DFFC_7) )))
+					(net N_11
+						(joined 
+							(portRef QB (instanceRef DFFC_8) )))
+					(net GROUND
+						(joined 
+							(portRef B (instanceRef N_4_1) )
+							(portRef GROUND )
+							(portRef GROUND (instanceRef DFFC_1) )
+							(portRef GROUND (instanceRef DFFC_2) )
+							(portRef GROUND (instanceRef DFFC_3) )
+							(portRef GROUND (instanceRef DFFC_4) )
+							(portRef GROUND (instanceRef DFFC_5) )
+							(portRef GROUND (instanceRef DFFC_6) )
+							(portRef GROUND (instanceRef DFFC_7) )
+							(portRef GROUND (instanceRef DFFC_8) )
+							(portRef GROUND (instanceRef Gnd_1) )
+							(portRef GROUND (instanceRef XOR_1) )
+							(portRef GROUND (instanceRef XOR_2) )
+							(portRef GROUND (instanceRef XOR_3) )
+							(portRef S (instanceRef N_4_1) )))
+					(net Vdd
+						(joined 
+							(portRef B (instanceRef P_4_1) )
+							(portRef S (instanceRef P_4_1) )
+							(portRef Vdd )
+							(portRef Vdd (instanceRef DFFC_1) )
+							(portRef Vdd (instanceRef DFFC_2) )
+							(portRef Vdd (instanceRef DFFC_3) )
+							(portRef Vdd (instanceRef DFFC_4) )
+							(portRef Vdd (instanceRef DFFC_5) )
+							(portRef Vdd (instanceRef DFFC_6) )
+							(portRef Vdd (instanceRef DFFC_7) )
+							(portRef Vdd (instanceRef DFFC_8) )
+							(portRef Vdd (instanceRef Vdd_1) )
+							(portRef Vdd (instanceRef XOR_1) )
+							(portRef Vdd (instanceRef XOR_2) )
+							(portRef Vdd (instanceRef XOR_3) )))
+				)
+				(property Created (string "2003 8 1 0 32 10"))
+			)
+		)
+	)
+)

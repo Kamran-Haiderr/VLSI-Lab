@@ -1,0 +1,7617 @@
+(edif SpiceOutput
+	(edifVersion 2 0 0)
+	(edifLevel 0)
+	(keywordMap
+		(keywordLevel 0)
+	)
+	(status
+		(written
+			(timestamp 2008 02 15 22 56 22)
+			(author "williams")
+			(program "Tanner S-Edit"
+				(version "13.00 Beta 3 build 3749")
+			)
+			(property TannerEdifVersion
+				(integer 10)
+			)
+		)
+	)
+	(external Misc
+		(edifLevel 0)
+		(technology
+			(numberDefinition
+				(scale 1
+					(e 1 -12)
+					(unit CAPACITANCE)
+				)
+			(scale (e 5000000 0) (e 1270000 -4) (unit DISTANCE))
+			)
+			(figureGroup background
+				(visible
+					(true)
+				)
+				(color 0 0 0)
+				(pathWidth 0)
+			)
+			(figureGroup device
+				(visible
+					(true)
+				)
+				(color 0 80 40)
+				(pathWidth 0)
+			)
+			(figureGroup wire
+				(visible
+					(true)
+				)
+				(color 23 75 100)
+				(pathWidth 0)
+			)
+			(figureGroup netlabel
+				(visible
+					(true)
+				)
+				(color 23 75 100)
+				(pathWidth 0)
+			)
+			(figureGroup text
+				(visible
+					(true)
+				)
+				(color 100 0 0)
+				(pathWidth 0)
+			)
+			(figureGroup portshape
+				(visible
+					(true)
+				)
+				(color 100 0 100)
+				(pathWidth 0)
+			)
+			(figureGroup pin
+				(visible
+					(true)
+				)
+				(color 100 0 100)
+				(pathWidth 0)
+			)
+			(figureGroup instance
+				(visible
+					(false)
+				)
+				(color 85 80 0)
+				(pathWidth 0)
+			)
+			(figureGroup instance_with_name_visible
+				(visible
+					(true)
+				)
+				(color 85 80 0)
+				(pathWidth 0)
+			)
+			(figureGroup cellname
+				(visible
+					(false)
+				)
+				(color 0 80 40)
+				(pathWidth 0)
+			)
+			(figureGroup cellname_with_name_visible
+				(visible
+					(true)
+				)
+				(color 0 80 40)
+				(pathWidth 0)
+			)
+			(figureGroup property
+				(visible
+					(true)
+				)
+				(color 75 75 75)
+				(pathWidth 0)
+			)
+		)
+		
+		(cell Vdd
+			(cellType GENERIC)
+			(view Main
+				(viewType SCHEMATIC)
+				(interface
+					(port Vdd
+						(property GLOBAL
+							(boolean
+								(true)
+							)
+						)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 05 38 12")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell Gnd
+			(cellType GENERIC)
+			(view Main
+				(viewType SCHEMATIC)
+				(interface
+					(port Gnd
+						(property GLOBAL
+							(boolean
+								(true)
+							)
+						)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 06 38 12")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell Vss
+			(cellType GENERIC)
+			(view Main
+				(viewType SCHEMATIC)
+				(interface
+					(port Vss
+						(property GLOBAL
+							(boolean
+								(true)
+							)
+						)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 05 38 12")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell Vee
+			(cellType GENERIC)
+			(view Main
+				(viewType SCHEMATIC)
+				(interface
+					(port Vee
+						(property GLOBAL
+							(boolean
+								(true)
+							)
+						)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 05 38 12")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell PageID_Tanner
+			(cellType GENERIC)
+			(view Main
+				(viewType SCHEMATIC)
+				(interface
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1998 11 21 00 36 12")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell PageID
+			(cellType GENERIC)
+			(view Main
+				(viewType SCHEMATIC)
+				(interface
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1998 07 24 17 29 48")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell NoConnection
+			(cellType GENERIC)
+			(view Main
+				(viewType SCHEMATIC)
+				(interface
+					(port NC)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 05 38 12")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+	)
+	(library SpiceOutput
+		(edifLevel 0)
+		(technology
+			(numberDefinition
+				(scale 1
+					(e 1 -12)
+					(unit CAPACITANCE)
+				)
+			(scale (e 5000000 0) (e 1270000 -4) (unit DISTANCE))
+			)
+			(figureGroup background
+				(visible
+					(true)
+				)
+				(color 0 0 0)
+				(pathWidth 0)
+			)
+			(figureGroup device
+				(visible
+					(true)
+				)
+				(color 0 80 40)
+				(pathWidth 0)
+			)
+			(figureGroup wire
+				(visible
+					(true)
+				)
+				(color 23 75 100)
+				(pathWidth 0)
+			)
+			(figureGroup netlabel
+				(visible
+					(true)
+				)
+				(color 23 75 100)
+				(pathWidth 0)
+			)
+			(figureGroup text
+				(visible
+					(true)
+				)
+				(color 100 0 0)
+				(pathWidth 0)
+			)
+			(figureGroup portshape
+				(visible
+					(true)
+				)
+				(color 100 0 100)
+				(pathWidth 0)
+			)
+			(figureGroup pin
+				(visible
+					(true)
+				)
+				(color 100 0 100)
+				(pathWidth 0)
+			)
+			(figureGroup instance
+				(visible
+					(false)
+				)
+				(color 85 80 0)
+				(pathWidth 0)
+			)
+			(figureGroup instance_with_name_visible
+				(visible
+					(true)
+				)
+				(color 85 80 0)
+				(pathWidth 0)
+			)
+			(figureGroup cellname
+				(visible
+					(false)
+				)
+				(color 0 80 40)
+				(pathWidth 0)
+			)
+			(figureGroup cellname_with_name_visible
+				(visible
+					(true)
+				)
+				(color 0 80 40)
+				(pathWidth 0)
+			)
+			(figureGroup property
+				(visible
+					(true)
+				)
+				(color 75 75 75)
+				(pathWidth 0)
+			)
+		)
+		(cell Ripper
+			(cellType RIPPER)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port
+						(array dst 4)
+					)
+					(port
+						(array src 4)
+					)
+					(joined
+						(portRef dst)
+						(portRef src)
+					)
+					(symbol
+						(figure device
+							(circle
+								(pt -5 0)
+								(pt 5 0)
+							)
+						)
+						(portImplementation dst
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 0 0)
+									)
+								)
+							)
+						)
+						(portImplementation src
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 0 0)
+									)
+								)
+							)
+						)
+					)
+				)
+			)
+		)
+		(cell PMOS4
+			(cellType GENERIC)
+			(view PMOS4_Expand
+				(viewType SCHEMATIC)
+				(interface
+					(port B)
+					(port D)
+					(port G
+						(direction INPUT)
+					)
+					(port S)
+					(property AD
+						(string "${W}*1.25u*${M}")
+						(property Type
+							(string "Double")
+						)
+						(comment "Area of the Drain.")
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Bulk "ANNOTATE.Bulk")
+						(string "[ annotate port B ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Drain "ANNOTATE.Drain")
+						(string "[ annotate port D ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Gate "ANNOTATE.Gate")
+						(string "[ annotate port G ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Source "ANNOTATE.Source")
+						(string "[ annotate port S ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property AS
+						(string "${W}*1.25u*${M}")
+						(property Type
+							(string "Double")
+						)
+						(comment "Area of the Source.")
+					)
+					(property L
+						(string "0.25u")
+						(property Type
+							(string "Double")
+						)
+						(comment "Channel length of the MOSFET.")
+					)
+					(property M
+						(integer 1)
+						(comment "Number of Fingers. Multiplicity%8212%the number of devices to be placed in parallel.")
+					)
+					(property Model
+						(string "PMOS")
+						(comment "MOSFET model name.")
+					)
+					(property NRD
+						(number (e 0000000 -6))
+						(comment "Number of squares of diffusion%8212%drain.")
+					)
+					(property NRS
+						(number (e 0000000 -6))
+						(comment "Number of squares of diffusion%8212%source.")
+					)
+					(property PD
+						(string "2*(${W}+1.25u)*${M}")
+						(property Type
+							(string "Double")
+						)
+						(comment "Perimeter of the Drain.")
+					)
+					(property PS
+						(string "2*(${W}+1.25u)*${M}")
+						(property Type
+							(string "Double")
+						)
+						(comment "Perimeter of the Source.")
+					)
+					(property RDC
+						(number (e 0000000 -6))
+						(comment "Additional contact resistance, which overrides the rdc model parameter value%8212%drain.")
+					)
+					(property RSC
+						(number (e 0000000 -6))
+						(comment "Additional contact resistance, which overrides the rsc model parameter value%8212%source.")
+					)
+					(property RSH
+						(number (e 0000000 -6))
+						(comment "Source-Drain sheet resistance, which overrides the rsh model parameter.")
+					)
+					(property
+						(rename SPICE_PERIOD_MODEL "SPICE.MODEL")
+						(string "$Model")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_PARAMETERS "SPICE.PARAMETERS")
+						(string "W= L= M~ AS= PS= AD= PD= NRD~ NRS~ RDC~ RSC~ RSH~")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_PINORDER "SPICE.PINORDER")
+						(string "D G S B")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_PREFIX "SPICE.PREFIX")
+						(string "M")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_PRIMITIVE "SPICE.PRIMITIVE")
+						(boolean (true))
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property W
+						(string "2.50u")
+						(property Type
+							(string "Double")
+						)
+						(comment "Channel width of each finger of the MOSFET.")
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1970 1 1 0 0 0")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol
+						(property TannerStandard
+							(boolean
+								(true)
+							)
+							(property Timestamp
+								(string "2008 01 24 22 04 06")
+							)
+							(property RevisionCount
+								(string "63")
+							)
+						)
+						(boundingBox
+							(rectangle
+								(pt -200 -300)
+								(pt 200 300)
+							)
+						)
+						(keywordDisplay cell
+							(display
+								(figureGroupOverride cellname
+									(textHeight 69)
+								)
+								(justify LOWERRIGHT)
+								(origin
+									(pt 125 -400)
+								)
+							)
+						)
+						(keywordDisplay instance
+							(display
+								(figureGroupOverride instance
+									(visible
+										(true)
+									)
+									(textHeight 97)
+								)
+								(justify CENTERRIGHT)
+								(origin
+									(pt -25 160)
+								)
+							)
+						)
+						(property
+							(rename ANNOTATE_PERIOD_Drain "ANNOTATE.Drain")
+							(string)
+							(property VisibilityWhenNotEvaluated
+								(string "Hidden")
+							)
+						)
+						(property
+							(rename ANNOTATE_PERIOD_Gate "ANNOTATE.Gate")
+							(string)
+							(property VisibilityWhenNotEvaluated
+								(string "Hidden")
+							)
+						)
+						(property
+							(rename ANNOTATE_PERIOD_Source "ANNOTATE.Source")
+							(string)
+							(property VisibilityWhenNotEvaluated
+								(string "Hidden")
+							)
+						)
+						(propertyDisplay
+							(name AD
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 -800)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 -800)
+								)
+							)
+						)
+						(propertyDisplay
+							(name ANNOTATE_PERIOD_Bulk
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify UPPERLEFT)
+									(origin
+										(pt 200 -25)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(justify UPPERLEFT)
+								(origin
+									(pt 200 -25)
+								)
+							)
+						)
+						(propertyDisplay
+							(name ANNOTATE_PERIOD_Drain
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify LOWERRIGHT)
+									(origin
+										(pt 175 -300)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(textHeight 97)
+								)
+								(justify LOWERRIGHT)
+								(origin
+									(pt 175 -300)
+								)
+							)
+						)
+						(propertyDisplay
+							(name ANNOTATE_PERIOD_Gate
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify LOWERRIGHT)
+									(origin
+										(pt -200 25)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(textHeight 97)
+								)
+								(justify LOWERRIGHT)
+								(origin
+									(pt -200 25)
+								)
+							)
+						)
+						(propertyDisplay
+							(name ANNOTATE_PERIOD_Source
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify UPPERRIGHT)
+									(origin
+										(pt 175 300)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(textHeight 97)
+								)
+								(justify UPPERRIGHT)
+								(origin
+									(pt 175 300)
+								)
+							)
+						)
+						(propertyDisplay
+							(name AS
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 -600)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 -600)
+								)
+							)
+						)
+						(propertyDisplay
+							(name L
+								(display
+									(figureGroupOverride property
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 0)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 0)
+								)
+							)
+						)
+						(propertyDisplay
+							(name M
+								(display
+									(figureGroupOverride property
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 200)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 200)
+								)
+							)
+						)
+						(propertyDisplay
+							(name Model
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 -400)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 -400)
+								)
+							)
+						)
+						(propertyDisplay
+							(name NRD
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 -900)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 -900)
+								)
+							)
+						)
+						(propertyDisplay
+							(name NRS
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 -1000)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 -1000)
+								)
+							)
+						)
+						(propertyDisplay
+							(name PD
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 -700)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 -700)
+								)
+							)
+						)
+						(propertyDisplay
+							(name PS
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 -500)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 -500)
+								)
+							)
+						)
+						(propertyDisplay
+							(name RDC
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 -1100)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 -1100)
+								)
+							)
+						)
+						(propertyDisplay
+							(name RSC
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 -1200)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 -1200)
+								)
+							)
+						)
+						(propertyDisplay
+							(name RSH
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 -1300)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 -1300)
+								)
+							)
+						)
+						(propertyDisplay
+							(name SPICE_PERIOD_MODEL
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 69)
+									)
+									(justify LOWERRIGHT)
+									(origin
+										(pt 125 -1000)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 69)
+								)
+								(justify LOWERRIGHT)
+								(origin
+									(pt 125 -1000)
+								)
+							)
+						)
+						(propertyDisplay
+							(name SPICE_PERIOD_PARAMETERS
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 69)
+									)
+									(justify LOWERRIGHT)
+									(origin
+										(pt 125 -1150)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 69)
+								)
+								(justify LOWERRIGHT)
+								(origin
+									(pt 125 -1150)
+								)
+							)
+						)
+						(propertyDisplay
+							(name SPICE_PERIOD_PINORDER
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 69)
+									)
+									(justify LOWERRIGHT)
+									(origin
+										(pt 125 -850)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 69)
+								)
+								(justify LOWERRIGHT)
+								(origin
+									(pt 125 -850)
+								)
+							)
+						)
+						(propertyDisplay
+							(name SPICE_PERIOD_PREFIX
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 69)
+									)
+									(justify LOWERRIGHT)
+									(origin
+										(pt 125 -700)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 69)
+								)
+								(justify LOWERRIGHT)
+								(origin
+									(pt 125 -700)
+								)
+							)
+						)
+						(propertyDisplay
+							(name SPICE_PERIOD_PRIMITIVE
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 69)
+									)
+									(justify LOWERRIGHT)
+									(origin
+										(pt 125 -550)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 69)
+								)
+								(justify LOWERRIGHT)
+								(origin
+									(pt 125 -550)
+								)
+							)
+						)
+						(propertyDisplay
+							(name W
+								(display
+									(figureGroupOverride property
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 100)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 100)
+								)
+							)
+						)
+						(portImplementation
+							(name D
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(orientation R270)
+									(origin
+										(pt 200 -300)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 200 -300)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 196 -304)
+									(pt 204 -296)
+								)
+							)
+						)
+						(portImplementation
+							(name G
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt -200 0)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt -200 0)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -204 -4)
+									(pt -196 4)
+								)
+							)
+						)
+						(portImplementation
+							(name S
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(orientation R270)
+									(origin
+										(pt 200 300)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 200 300)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 196 296)
+									(pt 204 304)
+								)
+							)
+						)
+						(portImplementation
+							(name B
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 200 0)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 200 0)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 196 -4)
+									(pt 204 4)
+								)
+							)
+						)
+						(figure device
+							(polygon
+								(pointList
+									(pt 75 150)
+									(pt 165 180)
+									(pt 165 120)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 75 150)
+									(pt 40 150)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 0 -150)
+									(pt 0 150)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 40 -150)
+									(pt 40 150)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 200 300)
+									(pt 200 150)
+									(pt 165 150)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt -200 0)
+									(pt -100 0)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 200 0)
+									(pt 40 0)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 200 -300)
+									(pt 200 -150)
+									(pt 40 -150)
+								)
+							)
+						)
+						(figure device
+							(circle
+								(pt -100 0)
+								(pt 0 0)
+							)
+						)
+					)
+				)
+			)
+			(view PMOS4
+				(viewType SCHEMATIC)
+				(interface
+					(port B)
+					(port D)
+					(port G
+						(direction INPUT)
+					)
+					(port S)
+					(property AD
+						(string "${W}*1.25u*${M}")
+						(property Type
+							(string "Double")
+						)
+						(comment "Area of the Drain.")
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Bulk "ANNOTATE.Bulk")
+						(string "[ annotate port B ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Drain "ANNOTATE.Drain")
+						(string "[ annotate port D ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Gate "ANNOTATE.Gate")
+						(string "[ annotate port G ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Source "ANNOTATE.Source")
+						(string "[ annotate port S ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property AS
+						(string "${W}*1.25u*${M}")
+						(property Type
+							(string "Double")
+						)
+						(comment "Area of the Source.")
+					)
+					(property L
+						(string "0.25u")
+						(property Type
+							(string "Double")
+						)
+						(comment "Channel length of the MOSFET.")
+					)
+					(property M
+						(integer 1)
+						(comment "Number of Fingers. Multiplicity%8212%the number of devices to be placed in parallel.")
+					)
+					(property Model
+						(string "PMOS")
+						(comment "MOSFET model name.")
+					)
+					(property NRD
+						(number (e 0000000 -6))
+						(comment "Number of squares of diffusion%8212%drain.")
+					)
+					(property NRS
+						(number (e 0000000 -6))
+						(comment "Number of squares of diffusion%8212%source.")
+					)
+					(property PD
+						(string "2*(${W}+1.25u)*${M}")
+						(property Type
+							(string "Double")
+						)
+						(comment "Perimeter of the Drain.")
+					)
+					(property PS
+						(string "2*(${W}+1.25u)*${M}")
+						(property Type
+							(string "Double")
+						)
+						(comment "Perimeter of the Source.")
+					)
+					(property RDC
+						(number (e 0000000 -6))
+						(comment "Additional contact resistance, which overrides the rdc model parameter value%8212%drain.")
+					)
+					(property RSC
+						(number (e 0000000 -6))
+						(comment "Additional contact resistance, which overrides the rsc model parameter value%8212%source.")
+					)
+					(property RSH
+						(number (e 0000000 -6))
+						(comment "Source-Drain sheet resistance, which overrides the rsh model parameter.")
+					)
+					(property
+						(rename SPICE_PERIOD_OUTPUT "SPICE.OUTPUT")
+						(string "M${Name} %37%{D} %37%{G} %37%{S} %37%{B} ${Model} W=${W} L=${L} M=${M} AS=${AS} PS=${PS} AD=${AD} PD=${PD}")
+					)
+					(property
+						(rename SPICE_PERIOD_PRIMITIVE "SPICE.PRIMITIVE")
+						(boolean (true))
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_BASIC_PERIOD_OUTPUT "SPICE_BASIC.OUTPUT")
+						(string "M${Name} %37%{D} %37%{G} %37%{S} %37%{B} ${Model} W=${W} L=${L}")
+					)
+					(property
+						(rename SPICE_DETAILED_PERIOD_OUTPUT "SPICE_DETAILED.OUTPUT")
+						(string "M${Name} %37%{D} %37%{G} %37%{S} %37%{B} ${Model} W=${W} L=${L} M=${M} AS=${AS} PS=${PS} AD=${AD} PD=${PD} NRD=${NRD} NRS=${NRS} RDC=${RDC} RSC=${RSC} RSH=${RSH}")
+					)
+					(property W
+						(string "2.50u")
+						(property Type
+							(string "Double")
+						)
+						(comment "Channel width of each finger of the MOSFET.")
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1970 1 1 0 0 0")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol
+						(property TannerStandard
+							(boolean
+								(true)
+							)
+							(property Timestamp
+								(string "2008 01 24 23 56 36")
+							)
+							(property RevisionCount
+								(string "15")
+							)
+						)
+						(boundingBox
+							(rectangle
+								(pt -200 -300)
+								(pt 200 300)
+							)
+						)
+						(keywordDisplay cell
+							(display
+								(figureGroupOverride cellname
+									(textHeight 69)
+								)
+								(justify LOWERRIGHT)
+								(origin
+									(pt 125 -400)
+								)
+							)
+						)
+						(keywordDisplay instance
+							(display
+								(figureGroupOverride instance
+									(visible
+										(true)
+									)
+									(textHeight 97)
+								)
+								(justify CENTERRIGHT)
+								(origin
+									(pt -25 160)
+								)
+							)
+						)
+						(property
+							(rename ANNOTATE_PERIOD_Drain "ANNOTATE.Drain")
+							(string)
+							(property VisibilityWhenNotEvaluated
+								(string "Hidden")
+							)
+						)
+						(property
+							(rename ANNOTATE_PERIOD_Gate "ANNOTATE.Gate")
+							(string)
+							(property VisibilityWhenNotEvaluated
+								(string "Hidden")
+							)
+						)
+						(property
+							(rename ANNOTATE_PERIOD_Source "ANNOTATE.Source")
+							(string)
+							(property VisibilityWhenNotEvaluated
+								(string "Hidden")
+							)
+						)
+						(propertyDisplay
+							(name AD
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 -800)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 -800)
+								)
+							)
+						)
+						(propertyDisplay
+							(name ANNOTATE_PERIOD_Bulk
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify UPPERLEFT)
+									(origin
+										(pt 200 -25)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(justify UPPERLEFT)
+								(origin
+									(pt 200 -25)
+								)
+							)
+						)
+						(propertyDisplay
+							(name ANNOTATE_PERIOD_Drain
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify LOWERRIGHT)
+									(origin
+										(pt 175 -300)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(textHeight 97)
+								)
+								(justify LOWERRIGHT)
+								(origin
+									(pt 175 -300)
+								)
+							)
+						)
+						(propertyDisplay
+							(name ANNOTATE_PERIOD_Gate
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify LOWERRIGHT)
+									(origin
+										(pt -200 25)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(textHeight 97)
+								)
+								(justify LOWERRIGHT)
+								(origin
+									(pt -200 25)
+								)
+							)
+						)
+						(propertyDisplay
+							(name ANNOTATE_PERIOD_Source
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify UPPERRIGHT)
+									(origin
+										(pt 175 300)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(textHeight 97)
+								)
+								(justify UPPERRIGHT)
+								(origin
+									(pt 175 300)
+								)
+							)
+						)
+						(propertyDisplay
+							(name AS
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 -600)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 -600)
+								)
+							)
+						)
+						(propertyDisplay
+							(name L
+								(display
+									(figureGroupOverride property
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 0)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 0)
+								)
+							)
+						)
+						(propertyDisplay
+							(name M
+								(display
+									(figureGroupOverride property
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 200)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 200)
+								)
+							)
+						)
+						(propertyDisplay
+							(name Model
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 -400)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 -400)
+								)
+							)
+						)
+						(propertyDisplay
+							(name NRD
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 -900)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 -900)
+								)
+							)
+						)
+						(propertyDisplay
+							(name NRS
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 -1000)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 -1000)
+								)
+							)
+						)
+						(propertyDisplay
+							(name PD
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 -700)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 -700)
+								)
+							)
+						)
+						(propertyDisplay
+							(name PS
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 -500)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 -500)
+								)
+							)
+						)
+						(propertyDisplay
+							(name RDC
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 -1100)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 -1100)
+								)
+							)
+						)
+						(propertyDisplay
+							(name RSC
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 -1200)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 -1200)
+								)
+							)
+						)
+						(propertyDisplay
+							(name RSH
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 -1300)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 -1300)
+								)
+							)
+						)
+						(propertyDisplay
+							(name SPICE_PERIOD_OUTPUT
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 69)
+									)
+									(justify LOWERRIGHT)
+									(origin
+										(pt 125 -750)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 69)
+								)
+								(justify LOWERRIGHT)
+								(origin
+									(pt 125 -750)
+								)
+							)
+						)
+						(propertyDisplay
+							(name SPICE_PERIOD_PRIMITIVE
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 69)
+									)
+									(justify LOWERRIGHT)
+									(origin
+										(pt 125 -550)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 69)
+								)
+								(justify LOWERRIGHT)
+								(origin
+									(pt 125 -550)
+								)
+							)
+						)
+						(propertyDisplay
+							(name SPICE_BASIC_PERIOD_OUTPUT
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 69)
+									)
+									(origin
+										(pt -4075 -1400)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 69)
+								)
+								(origin
+									(pt -4075 -1400)
+								)
+							)
+						)
+						(propertyDisplay
+							(name SPICE_DETAILED_PERIOD_OUTPUT
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 69)
+									)
+									(origin
+										(pt -4075 -1550)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 69)
+								)
+								(origin
+									(pt -4075 -1550)
+								)
+							)
+						)
+						(propertyDisplay
+							(name W
+								(display
+									(figureGroupOverride property
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 100)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 100)
+								)
+							)
+						)
+						(portImplementation
+							(name D
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(orientation R270)
+									(origin
+										(pt 200 -300)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 200 -300)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 196 -304)
+									(pt 204 -296)
+								)
+							)
+						)
+						(portImplementation
+							(name G
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt -200 0)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt -200 0)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -204 -4)
+									(pt -196 4)
+								)
+							)
+						)
+						(portImplementation
+							(name S
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(orientation R270)
+									(origin
+										(pt 200 300)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 200 300)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 196 296)
+									(pt 204 304)
+								)
+							)
+						)
+						(portImplementation
+							(name B
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 200 0)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 200 0)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 196 -4)
+									(pt 204 4)
+								)
+							)
+						)
+						(figure device
+							(polygon
+								(pointList
+									(pt 75 150)
+									(pt 165 180)
+									(pt 165 120)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 75 150)
+									(pt 40 150)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 0 -150)
+									(pt 0 150)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 40 -150)
+									(pt 40 150)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 200 300)
+									(pt 200 150)
+									(pt 165 150)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt -200 0)
+									(pt -100 0)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 200 0)
+									(pt 40 0)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 200 -300)
+									(pt 200 -150)
+									(pt 40 -150)
+								)
+							)
+						)
+						(figure device
+							(circle
+								(pt -100 0)
+								(pt 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(cell NMOS4
+			(cellType GENERIC)
+			(view NMOS4_Expand
+				(viewType SCHEMATIC)
+				(interface
+					(port B)
+					(port D)
+					(port G
+						(direction INPUT)
+					)
+					(port S)
+					(property AD
+						(string "${W}*1.25u*${M}")
+						(property Type
+							(string "Double")
+						)
+						(comment "Area of the Drain.")
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Bulk "ANNOTATE.Bulk")
+						(string "[ annotate port B ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Drain "ANNOTATE.Drain")
+						(string "[ annotate port D ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Gate "ANNOTATE.Gate")
+						(string "[ annotate port G ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Source "ANNOTATE.Source")
+						(string "[ annotate port S ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property AS
+						(string "${W}*1.25u*${M}")
+						(property Type
+							(string "Double")
+						)
+						(comment "Area of the Source.")
+					)
+					(property L
+						(string "0.25u")
+						(property Type
+							(string "Double")
+						)
+						(comment "Channel length of the MOSFET.")
+					)
+					(property M
+						(integer 1)
+						(comment "Number of Fingers. Multiplicity%8212%the number of devices to be placed in parallel.")
+					)
+					(property Model
+						(string "NMOS")
+						(comment "MOSFET model name.")
+					)
+					(property NRD
+						(number (e 0000000 -6))
+						(comment "Number of squares of diffusion%8212%drain.")
+					)
+					(property NRS
+						(number (e 0000000 -6))
+						(comment "Number of squares of diffusion%8212%source.")
+					)
+					(property PD
+						(string "2*(${W}+1.25u)*${M}")
+						(property Type
+							(string "Double")
+						)
+						(comment "Perimeter of the Drain.")
+					)
+					(property PS
+						(string "2*(${W}+1.25u)*${M}")
+						(property Type
+							(string "Double")
+						)
+						(comment "Perimeter of the Source.")
+					)
+					(property RDC
+						(number (e 0000000 -6))
+						(comment "Additional contact resistance, which overrides the rdc model parameter value%8212%drain.")
+					)
+					(property RSC
+						(number (e 0000000 -6))
+						(comment "Additional contact resistance, which overrides the rsc model parameter value%8212%source.")
+					)
+					(property RSH
+						(number (e 0000000 -6))
+						(comment "Source-Drain sheet resistance, which overrides the rsh model parameter.")
+					)
+					(property
+						(rename SPICE_PERIOD_MODEL "SPICE.MODEL")
+						(string "$Model")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_PARAMETERS "SPICE.PARAMETERS")
+						(string "W= L= M~ AS= PS= AD= PD= NRD~ NRS~ RDC~ RSC~ RSH~")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_PINORDER "SPICE.PINORDER")
+						(string "D G S B")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_PREFIX "SPICE.PREFIX")
+						(string "M")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename SPICE_PERIOD_PRIMITIVE "SPICE.PRIMITIVE")
+						(boolean (true))
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property W
+						(string "2.50u")
+						(property Type
+							(string "Double")
+						)
+						(comment "Channel width of each finger of the MOSFET.")
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1970 1 1 0 0 0")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol
+						(property TannerStandard
+							(boolean
+								(true)
+							)
+							(property Timestamp
+								(string "2008 01 24 22 04 06")
+							)
+							(property RevisionCount
+								(string "17")
+							)
+						)
+						(boundingBox
+							(rectangle
+								(pt -200 -300)
+								(pt 200 300)
+							)
+						)
+						(keywordDisplay cell
+							(display
+								(figureGroupOverride cellname
+									(textHeight 69)
+								)
+								(justify LOWERRIGHT)
+								(origin
+									(pt 125 -400)
+								)
+							)
+						)
+						(keywordDisplay instance
+							(display
+								(figureGroupOverride instance
+									(visible
+										(true)
+									)
+									(textHeight 97)
+								)
+								(justify CENTERRIGHT)
+								(origin
+									(pt -25 160)
+								)
+							)
+						)
+						(property
+							(rename ANNOTATE_PERIOD_Drain "ANNOTATE.Drain")
+							(string)
+							(property VisibilityWhenNotEvaluated
+								(string "Hidden")
+							)
+						)
+						(property
+							(rename ANNOTATE_PERIOD_Gate "ANNOTATE.Gate")
+							(string)
+							(property VisibilityWhenNotEvaluated
+								(string "Hidden")
+							)
+						)
+						(property
+							(rename ANNOTATE_PERIOD_Source "ANNOTATE.Source")
+							(string)
+							(property VisibilityWhenNotEvaluated
+								(string "Hidden")
+							)
+						)
+						(propertyDisplay
+							(name AD
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 -800)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 -800)
+								)
+							)
+						)
+						(propertyDisplay
+							(name ANNOTATE_PERIOD_Bulk
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify UPPERLEFT)
+									(origin
+										(pt 200 -25)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(justify UPPERLEFT)
+								(origin
+									(pt 200 -25)
+								)
+							)
+						)
+						(propertyDisplay
+							(name ANNOTATE_PERIOD_Drain
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify UPPERRIGHT)
+									(origin
+										(pt 175 300)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(textHeight 97)
+								)
+								(justify UPPERRIGHT)
+								(origin
+									(pt 175 300)
+								)
+							)
+						)
+						(propertyDisplay
+							(name ANNOTATE_PERIOD_Gate
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify LOWERRIGHT)
+									(origin
+										(pt -200 25)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(textHeight 97)
+								)
+								(justify LOWERRIGHT)
+								(origin
+									(pt -200 25)
+								)
+							)
+						)
+						(propertyDisplay
+							(name ANNOTATE_PERIOD_Source
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify LOWERRIGHT)
+									(origin
+										(pt 175 -300)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(textHeight 97)
+								)
+								(justify LOWERRIGHT)
+								(origin
+									(pt 175 -300)
+								)
+							)
+						)
+						(propertyDisplay
+							(name AS
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 -600)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 -600)
+								)
+							)
+						)
+						(propertyDisplay
+							(name L
+								(display
+									(figureGroupOverride property
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 0)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 0)
+								)
+							)
+						)
+						(propertyDisplay
+							(name M
+								(display
+									(figureGroupOverride property
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 200)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 200)
+								)
+							)
+						)
+						(propertyDisplay
+							(name Model
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 -400)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 -400)
+								)
+							)
+						)
+						(propertyDisplay
+							(name NRD
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 -900)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 -900)
+								)
+							)
+						)
+						(propertyDisplay
+							(name NRS
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 -1000)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 -1000)
+								)
+							)
+						)
+						(propertyDisplay
+							(name PD
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 -700)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 -700)
+								)
+							)
+						)
+						(propertyDisplay
+							(name PS
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 -500)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 -500)
+								)
+							)
+						)
+						(propertyDisplay
+							(name RDC
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 -1100)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 -1100)
+								)
+							)
+						)
+						(propertyDisplay
+							(name RSC
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 -1200)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 -1200)
+								)
+							)
+						)
+						(propertyDisplay
+							(name RSH
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 -1300)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 -1300)
+								)
+							)
+						)
+						(propertyDisplay
+							(name SPICE_PERIOD_MODEL
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 69)
+									)
+									(justify LOWERRIGHT)
+									(origin
+										(pt 125 -1000)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 69)
+								)
+								(justify LOWERRIGHT)
+								(origin
+									(pt 125 -1000)
+								)
+							)
+						)
+						(propertyDisplay
+							(name SPICE_PERIOD_PARAMETERS
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 69)
+									)
+									(justify LOWERRIGHT)
+									(origin
+										(pt 125 -1150)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 69)
+								)
+								(justify LOWERRIGHT)
+								(origin
+									(pt 125 -1150)
+								)
+							)
+						)
+						(propertyDisplay
+							(name SPICE_PERIOD_PINORDER
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 69)
+									)
+									(justify LOWERRIGHT)
+									(origin
+										(pt 125 -850)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 69)
+								)
+								(justify LOWERRIGHT)
+								(origin
+									(pt 125 -850)
+								)
+							)
+						)
+						(propertyDisplay
+							(name SPICE_PERIOD_PREFIX
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 69)
+									)
+									(justify LOWERRIGHT)
+									(origin
+										(pt 125 -700)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 69)
+								)
+								(justify LOWERRIGHT)
+								(origin
+									(pt 125 -700)
+								)
+							)
+						)
+						(propertyDisplay
+							(name SPICE_PERIOD_PRIMITIVE
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 69)
+									)
+									(justify LOWERRIGHT)
+									(origin
+										(pt 125 -550)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 69)
+								)
+								(justify LOWERRIGHT)
+								(origin
+									(pt 125 -550)
+								)
+							)
+						)
+						(propertyDisplay
+							(name W
+								(display
+									(figureGroupOverride property
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 100)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 100)
+								)
+							)
+						)
+						(portImplementation
+							(name S
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(orientation R270)
+									(origin
+										(pt 200 -300)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 200 -300)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 196 -304)
+									(pt 204 -296)
+								)
+							)
+						)
+						(portImplementation
+							(name G
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt -200 0)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt -200 0)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -204 -4)
+									(pt -196 4)
+								)
+							)
+						)
+						(portImplementation
+							(name D
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(orientation R270)
+									(origin
+										(pt 200 300)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 200 300)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 196 296)
+									(pt 204 304)
+								)
+							)
+						)
+						(portImplementation
+							(name B
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 200 0)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 200 0)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 196 -4)
+									(pt 204 4)
+								)
+							)
+						)
+						(figure device
+							(polygon
+								(pointList
+									(pt 165 -150)
+									(pt 75 -120)
+									(pt 75 -180)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 200 -300)
+									(pt 200 -150)
+									(pt 165 -150)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 200 0)
+									(pt 40 0)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt -200 0)
+									(pt -5 0)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 200 300)
+									(pt 200 150)
+									(pt 40 150)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 40 -150)
+									(pt 40 150)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt -5 -150)
+									(pt -5 150)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 75 -150)
+									(pt 40 -150)
+								)
+							)
+						)
+					)
+				)
+			)
+			(view NMOS4
+				(viewType SCHEMATIC)
+				(interface
+					(port B)
+					(port D)
+					(port G
+						(direction INPUT)
+					)
+					(port S)
+					(property AD
+						(string "${W}*1.25u*${M}")
+						(property Type
+							(string "Double")
+						)
+						(comment "Area of the Drain.")
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Bulk "ANNOTATE.Bulk")
+						(string "[ annotate port B ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Drain "ANNOTATE.Drain")
+						(string "[ annotate port D ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Gate "ANNOTATE.Gate")
+						(string "[ annotate port G ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename ANNOTATE_PERIOD_Source "ANNOTATE.Source")
+						(string "[ annotate port S ]")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property AS
+						(string "${W}*1.25u*${M}")
+						(property Type
+							(string "Double")
+						)
+						(comment "Area of the Source.")
+					)
+					(property L
+						(string "0.25u")
+						(property Type
+							(string "Double")
+						)
+						(comment "Channel length of the MOSFET.")
+					)
+					(property M
+						(integer 1)
+						(comment "Number of Fingers. Multiplicity%8212%the number of devices to be placed in parallel.")
+					)
+					(property Model
+						(string "NMOS")
+						(comment "MOSFET model name.")
+					)
+					(property NRD
+						(number (e 0000000 -6))
+						(comment "Number of squares of diffusion%8212%drain.")
+					)
+					(property NRS
+						(number (e 0000000 -6))
+						(comment "Number of squares of diffusion%8212%source.")
+					)
+					(property PD
+						(string "2*(${W}+1.25u)*${M}")
+						(property Type
+							(string "Double")
+						)
+						(comment "Perimeter of the Drain.")
+					)
+					(property PS
+						(string "2*(${W}+1.25u)*${M}")
+						(property Type
+							(string "Double")
+						)
+						(comment "Perimeter of the Source.")
+					)
+					(property RDC
+						(number (e 0000000 -6))
+						(comment "Additional contact resistance, which overrides the rdc model parameter value%8212%drain.")
+					)
+					(property RSC
+						(number (e 0000000 -6))
+						(comment "Additional contact resistance, which overrides the rsc model parameter value%8212%source.")
+					)
+					(property RSH
+						(number (e 0000000 -6))
+						(comment "Source-Drain sheet resistance, which overrides the rsh model parameter.")
+					)
+					(property
+						(rename SPICE_PERIOD_OUTPUT "SPICE.OUTPUT")
+						(string "M${Name} %37%{D} %37%{G} %37%{S} %37%{B} ${Model} W=${W} L=${L} M=${M} AS=${AS} PS=${PS} AD=${AD} PD=${PD}")
+					)
+					(property
+						(rename SPICE_PERIOD_PRIMITIVE "SPICE.PRIMITIVE")
+						(boolean (true))
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property W
+						(string "2.50u")
+						(property Type
+							(string "Double")
+						)
+						(comment "Channel width of each finger of the MOSFET.")
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1970 1 1 0 0 0")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol
+						(property TannerStandard
+							(boolean
+								(true)
+							)
+							(property Timestamp
+								(string "2008 01 24 22 04 06")
+							)
+							(property RevisionCount
+								(string "248")
+							)
+						)
+						(boundingBox
+							(rectangle
+								(pt -200 -300)
+								(pt 200 300)
+							)
+						)
+						(keywordDisplay cell
+							(display
+								(figureGroupOverride cellname
+									(textHeight 69)
+								)
+								(justify LOWERRIGHT)
+								(origin
+									(pt 125 -400)
+								)
+							)
+						)
+						(keywordDisplay instance
+							(display
+								(figureGroupOverride instance
+									(visible
+										(true)
+									)
+									(textHeight 97)
+								)
+								(justify CENTERRIGHT)
+								(origin
+									(pt -25 160)
+								)
+							)
+						)
+						(property
+							(rename ANNOTATE_PERIOD_Drain "ANNOTATE.Drain")
+							(string)
+							(property VisibilityWhenNotEvaluated
+								(string "Hidden")
+							)
+						)
+						(property
+							(rename ANNOTATE_PERIOD_Gate "ANNOTATE.Gate")
+							(string)
+							(property VisibilityWhenNotEvaluated
+								(string "Hidden")
+							)
+						)
+						(property
+							(rename ANNOTATE_PERIOD_Source "ANNOTATE.Source")
+							(string)
+							(property VisibilityWhenNotEvaluated
+								(string "Hidden")
+							)
+						)
+						(propertyDisplay
+							(name AD
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 -800)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 -800)
+								)
+							)
+						)
+						(propertyDisplay
+							(name ANNOTATE_PERIOD_Bulk
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify UPPERLEFT)
+									(origin
+										(pt 200 -25)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(justify UPPERLEFT)
+								(origin
+									(pt 200 -25)
+								)
+							)
+						)
+						(propertyDisplay
+							(name ANNOTATE_PERIOD_Drain
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify UPPERRIGHT)
+									(origin
+										(pt 175 300)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(textHeight 97)
+								)
+								(justify UPPERRIGHT)
+								(origin
+									(pt 175 300)
+								)
+							)
+						)
+						(propertyDisplay
+							(name ANNOTATE_PERIOD_Gate
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify LOWERRIGHT)
+									(origin
+										(pt -200 25)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(textHeight 97)
+								)
+								(justify LOWERRIGHT)
+								(origin
+									(pt -200 25)
+								)
+							)
+						)
+						(propertyDisplay
+							(name ANNOTATE_PERIOD_Source
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify LOWERRIGHT)
+									(origin
+										(pt 175 -300)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(textHeight 97)
+								)
+								(justify LOWERRIGHT)
+								(origin
+									(pt 175 -300)
+								)
+							)
+						)
+						(propertyDisplay
+							(name AS
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 -600)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 -600)
+								)
+							)
+						)
+						(propertyDisplay
+							(name L
+								(display
+									(figureGroupOverride property
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 0)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 0)
+								)
+							)
+						)
+						(propertyDisplay
+							(name M
+								(display
+									(figureGroupOverride property
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 200)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 200)
+								)
+							)
+						)
+						(propertyDisplay
+							(name Model
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 -400)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 -400)
+								)
+							)
+						)
+						(propertyDisplay
+							(name NRD
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 -900)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 -900)
+								)
+							)
+						)
+						(propertyDisplay
+							(name NRS
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 -1000)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 -1000)
+								)
+							)
+						)
+						(propertyDisplay
+							(name PD
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 -700)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 -700)
+								)
+							)
+						)
+						(propertyDisplay
+							(name PS
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 -500)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 -500)
+								)
+							)
+						)
+						(propertyDisplay
+							(name RDC
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 -1100)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 -1100)
+								)
+							)
+						)
+						(propertyDisplay
+							(name RSC
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 -1200)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 -1200)
+								)
+							)
+						)
+						(propertyDisplay
+							(name RSH
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 -1300)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 -1300)
+								)
+							)
+						)
+						(propertyDisplay
+							(name SPICE_PERIOD_OUTPUT
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 69)
+									)
+									(justify LOWERRIGHT)
+									(origin
+										(pt 125 -750)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 69)
+								)
+								(justify LOWERRIGHT)
+								(origin
+									(pt 125 -750)
+								)
+							)
+						)
+						(propertyDisplay
+							(name SPICE_PERIOD_PRIMITIVE
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 69)
+									)
+									(justify LOWERRIGHT)
+									(origin
+										(pt 125 -550)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 69)
+								)
+								(justify LOWERRIGHT)
+								(origin
+									(pt 125 -550)
+								)
+							)
+						)
+						(propertyDisplay
+							(name W
+								(display
+									(figureGroupOverride property
+										(textHeight 97)
+									)
+									(origin
+										(pt 250 100)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(textHeight 97)
+								)
+								(origin
+									(pt 250 100)
+								)
+							)
+						)
+						(portImplementation
+							(name S
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(orientation R270)
+									(origin
+										(pt 200 -300)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 200 -300)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 196 -304)
+									(pt 204 -296)
+								)
+							)
+						)
+						(portImplementation
+							(name G
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt -200 0)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt -200 0)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -204 -4)
+									(pt -196 4)
+								)
+							)
+						)
+						(portImplementation
+							(name D
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(orientation R270)
+									(origin
+										(pt 200 300)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 200 300)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 196 296)
+									(pt 204 304)
+								)
+							)
+						)
+						(portImplementation
+							(name B
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 200 0)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 200 0)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 196 -4)
+									(pt 204 4)
+								)
+							)
+						)
+						(figure device
+							(polygon
+								(pointList
+									(pt 165 -150)
+									(pt 75 -120)
+									(pt 75 -180)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 200 -300)
+									(pt 200 -150)
+									(pt 165 -150)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 200 0)
+									(pt 40 0)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt -200 0)
+									(pt -5 0)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 200 300)
+									(pt 200 150)
+									(pt 40 150)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 40 -150)
+									(pt 40 150)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt -5 -150)
+									(pt -5 150)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 75 -150)
+									(pt 40 -150)
+								)
+							)
+						)
+					)
+				)
+			)
+		)
+		(cell INV
+			(cellType GENERIC)
+			(view Main
+				(viewType SCHEMATIC)
+				(interface
+					(port A
+						(direction INPUT)
+					)
+					(port Out
+						(direction OUTPUT)
+					)
+					(property
+						(rename EDIF_PERIOD_PRIMITIVE "EDIF.PRIMITIVE")
+						(boolean (true))
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename TPR_PERIOD_OUTPUT "TPR.OUTPUT")
+						(string "C")
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename VERILOG_PERIOD_PRIMITIVE "VERILOG.PRIMITIVE")
+						(boolean (true))
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property
+						(rename VHDL_PERIOD_PRIMITIVE "VHDL.PRIMITIVE")
+						(boolean (true))
+						(property InterfaceParameter
+							(boolean
+								(false)
+							)
+						)
+					)
+					(property match
+						(string "0")
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1998 07 23 19 51 34")
+						)
+						(property Author
+							(string "Consulting & Engineering Services")
+						)
+						(property Organization
+							(string "Tanner Research, Pasadena")
+						)
+						(property Info
+							(string "Bargraph Shift Register Example")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol
+						(property TannerStandard
+							(boolean
+								(true)
+							)
+							(property Timestamp
+								(string "2008 01 24 22 04 06")
+							)
+							(property RevisionCount
+								(string "8")
+							)
+						)
+						(boundingBox
+							(rectangle
+								(pt 0 -300)
+								(pt 900 300)
+							)
+						)
+						(keywordDisplay cell
+							(display
+								(figureGroupOverride cellname
+									(textHeight 42)
+								)
+								(origin
+									(pt 150 -450)
+								)
+							)
+						)
+						(keywordDisplay instance
+							(display
+								(figureGroupOverride instance
+									(visible
+										(true)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 450 -225)
+								)
+							)
+						)
+						(propertyDisplay
+							(name EDIF_PERIOD_PRIMITIVE
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 42)
+									)
+									(origin
+										(pt 150 -500)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 42)
+								)
+								(origin
+									(pt 150 -500)
+								)
+							)
+						)
+						(propertyDisplay
+							(name TPR_PERIOD_OUTPUT
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 42)
+									)
+									(origin
+										(pt 150 -550)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 42)
+								)
+								(origin
+									(pt 150 -550)
+								)
+							)
+						)
+						(propertyDisplay
+							(name VERILOG_PERIOD_PRIMITIVE
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 42)
+									)
+									(origin
+										(pt 150 -600)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 42)
+								)
+								(origin
+									(pt 150 -600)
+								)
+							)
+						)
+						(propertyDisplay
+							(name VHDL_PERIOD_PRIMITIVE
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 42)
+									)
+									(origin
+										(pt 150 -650)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 42)
+								)
+								(origin
+									(pt 150 -650)
+								)
+							)
+						)
+						(propertyDisplay
+							(name match
+								(display
+									(figureGroupOverride property
+										(textHeight 97)
+									)
+									(origin
+										(pt 150 -400)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(textHeight 97)
+								)
+								(origin
+									(pt 150 -400)
+								)
+							)
+						)
+						(portImplementation
+							(name A
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 0 0)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -4 -4)
+									(pt 4 4)
+								)
+							)
+						)
+						(portImplementation
+							(name Out
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 900 0)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 900 0)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 896 -4)
+									(pt 904 4)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 150 -300)
+									(pt 150 300)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 645 0)
+									(pt 150 300)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 645 0)
+									(pt 150 -300)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 150 0)
+									(pt 0 0)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 750 0)
+									(pt 900 0)
+								)
+							)
+						)
+						(figure device
+							(circle
+								(pt 645 0)
+								(pt 751 0)
+							)
+						)
+					)
+				)
+				(status
+					(written
+						(timeStamp 2008 01 24 23 56 36)
+						(author "Tanner EDA Library Development Team")
+						(dataOrigin "Tanner EDA - Tanner Research, Inc.")
+					)
+				)
+				(property TannerStandard
+					(boolean
+						(true)
+					)
+					(property Info
+						(string "Inverter")
+					)
+					(property RevisionCount
+						(string "34")
+					)
+				)
+				(property Created
+					(string "1993 5 6 4 36 41")
+				)
+				(property
+					(rename Spice_PERIOD_NetlistOption_PERIOD_ControlProperty "Spice.NetlistOption.ControlProperty")
+					(string "SPICE")
+				)
+				(contents
+					(page Page0
+						(commentGraphics
+							(annotate
+								(stringDisplay "Inv"
+									(display
+										(figureGroupOverride text
+											(textHeight 500)
+										)
+										(justify CENTERLEFT)
+										(origin
+											(pt 4350 4725)
+										)
+									)
+								)
+							)
+						)
+						(portImplementation
+							(name A
+								(display
+									(figureGroupOverride pin
+										(textHeight 100)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt 4200 3100)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 4200 3100)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 4196 3096)
+									(pt 4204 3104)
+								)
+							)
+						)
+						(portImplementation
+							(name Out
+								(display
+									(figureGroupOverride pin
+										(textHeight 100)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 5000 3100)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 5000 3100)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 4996 3096)
+									(pt 5004 3104)
+								)
+							)
+						)
+						(instance Gnd1
+							(viewRef Main
+								(cellRef Gnd
+									(libraryRef Misc)
+								)
+							)
+							(transform
+								(origin
+									(pt 4800 2125)
+								)
+							)
+						)
+						(instance N1
+							(viewRef NMOS4
+								(cellRef NMOS4)
+							)
+							(transform
+								(origin
+									(pt 4600 2600)
+								)
+							)
+							(property L
+								(string "'0.25u-(10n*?{match})'")
+							)
+							(property
+								(rename SPICE_PERIOD_OUTPUT "SPICE.OUTPUT")
+								(string)
+								(property Type
+									(string "String")
+								)
+							)
+							(property
+								(rename SPICE_PERIOD_PRIMITIVE "SPICE.PRIMITIVE")
+								(string)
+								(property Type
+									(string "Boolean")
+								)
+							)
+						)
+						(instance P1
+							(viewRef PMOS4
+								(cellRef PMOS4)
+							)
+							(transform
+								(origin
+									(pt 4600 3600)
+								)
+							)
+							(property L
+								(string "'0.25u-(10n*?{match})'")
+							)
+							(property M
+								(string)
+								(property Type
+									(string "Integer")
+								)
+							)
+							(property
+								(rename SPICE_PERIOD_OUTPUT "SPICE.OUTPUT")
+								(string)
+								(property Type
+									(string "String")
+								)
+							)
+							(property
+								(rename SPICE_PERIOD_PRIMITIVE "SPICE.PRIMITIVE")
+								(string)
+								(property Type
+									(string "Boolean")
+								)
+							)
+						)
+						(instance Vdd1
+							(viewRef Main
+								(cellRef Vdd
+									(libraryRef Misc)
+								)
+							)
+							(transform
+								(origin
+									(pt 4800 4100)
+								)
+							)
+						)
+						(net A
+							(joined
+								(portRef A)
+								(portRef G
+									(instanceRef N1)
+								)
+								(portRef G
+									(instanceRef P1)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4400 3100)
+										(pt 4200 3100)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4400 3600)
+										(pt 4400 3100)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4400 3100)
+										(pt 4400 2600)
+									)
+								)
+							)
+						)
+						(net Gnd
+							(joined
+								(portRef B
+									(instanceRef N1)
+								)
+								(portRef Gnd
+									(instanceRef Gnd1)
+								)
+								(portRef S
+									(instanceRef N1)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4800 2200)
+										(pt 5000 2200)
+										(pt 5000 2600)
+										(pt 4800 2600)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4800 2200)
+										(pt 4800 2125)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4800 2300)
+										(pt 4800 2200)
+									)
+								)
+							)
+						)
+						(net Out
+							(joined
+								(portRef Out)
+								(portRef D
+									(instanceRef N1)
+								)
+								(portRef D
+									(instanceRef P1)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4800 3100)
+										(pt 4800 2900)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5000 3100)
+										(pt 4800 3100)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4800 3100)
+										(pt 4800 3300)
+									)
+								)
+							)
+						)
+						(net Vdd
+							(joined
+								(portRef B
+									(instanceRef P1)
+								)
+								(portRef S
+									(instanceRef P1)
+								)
+								(portRef Vdd
+									(instanceRef Vdd1)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4800 4100)
+										(pt 4800 4000)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4800 3600)
+										(pt 5000 3600)
+										(pt 5000 4000)
+										(pt 4800 4000)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4800 4000)
+										(pt 4800 3900)
+									)
+								)
+							)
+						)
+						(commentGraphics)
+					)
+				)
+			)
+		)
+		(cell Dig2
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port Clk
+						(direction INPUT)
+					)
+					(port
+						(array
+							(rename Data_LESS_0_COLON_3_GREATER_ "Data<0:3>")
+						4
+						)
+						(direction INPUT)
+					)
+					(port
+						(array
+							(rename Out_LESS_0_COLON_3_GREATER_ "Out<0:3>")
+						4
+						)
+						(direction OUTPUT)
+					)
+					(port Vdd
+						(direction INPUT)
+					)
+					(property
+						(rename SPICE_PERIOD_DEFINITION "SPICE.DEFINITION")
+						(string ".subckt $Cell (%37%{Data<3:0>}) %37%{Vdd} %37%{Clk} (%37%{Out<0:3>}) ")
+					)
+					(property
+						(rename SPICE_PERIOD_OUTPUT "SPICE.OUTPUT")
+						(string "X${Name} (%37%{Data<3:0>}) %37%{Vdd} %37%{Clk} (%37%{Out<0:3>}) $MasterCell")
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1970 1 1 0 0 0")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol
+						(property TannerStandard
+							(boolean
+								(true)
+							)
+							(property Timestamp
+								(string "2008 01 25 23 22 05")
+							)
+							(property RevisionCount
+								(string "55")
+							)
+						)
+						(boundingBox
+							(rectangle
+								(pt -200 0)
+								(pt 1300 800)
+							)
+						)
+						(keywordDisplay cell
+							(display
+								(figureGroupOverride cellname
+									(visible
+										(true)
+									)
+									(textHeight 97)
+								)
+								(justify CENTERCENTER)
+								(origin
+									(pt 600 400)
+								)
+							)
+						)
+						(keywordDisplay instance
+							(display
+								(figureGroupOverride instance
+									(visible
+										(true)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 0 -100)
+								)
+							)
+						)
+						(propertyDisplay
+							(name SPICE_PERIOD_DEFINITION
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 69)
+									)
+									(origin
+										(pt -900 -300)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 69)
+								)
+								(origin
+									(pt -900 -300)
+								)
+							)
+						)
+						(propertyDisplay
+							(name SPICE_PERIOD_OUTPUT
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 69)
+									)
+									(origin
+										(pt -900 -400)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 69)
+								)
+								(origin
+									(pt -900 -400)
+								)
+							)
+						)
+						(annotate
+							(stringDisplay "Data<0:3>"
+								(display
+									(figureGroupOverride text
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 0 100)
+									)
+								)
+							)
+						)
+						(annotate
+							(stringDisplay "Out<0:3>"
+								(display
+									(figureGroupOverride text
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt 1100 100)
+									)
+								)
+							)
+						)
+						(annotate
+							(stringDisplay "Vdd"
+								(display
+									(figureGroupOverride text
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 0 700)
+									)
+								)
+							)
+						)
+						(annotate
+							(stringDisplay "Clk"
+								(display
+									(figureGroupOverride text
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 0 400)
+									)
+								)
+							)
+						)
+						(portImplementation
+							(name Clk
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt -200 400)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt -200 400)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -204 396)
+									(pt -196 404)
+								)
+							)
+						)
+						(portImplementation
+							(name Data_LESS_0_COLON_3_GREATER_
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt -200 100)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt -200 100)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -204 96)
+									(pt -196 104)
+								)
+							)
+						)
+						(portImplementation
+							(name Out_LESS_0_COLON_3_GREATER_
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 1300 100)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 1300 100)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 1296 96)
+									(pt 1304 104)
+								)
+							)
+						)
+						(portImplementation
+							(name Vdd
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt -200 700)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt -200 700)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -204 696)
+									(pt -196 704)
+								)
+							)
+						)
+						(figure device
+							(rectangle
+								(pt 0 0)
+								(pt 1100 800)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt -200 400)
+									(pt 0 400)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt -200 100)
+									(pt 0 100)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 1300 100)
+									(pt 1100 100)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt -200 700)
+									(pt 0 700)
+								)
+							)
+						)
+					)
+				)
+				(status
+					(written
+						(timeStamp 2008 01 24 22 30 15)
+					)
+				)
+				(property TannerStandard
+					(boolean
+						(true)
+					)
+					(property RevisionCount
+						(string "40")
+					)
+				)
+				(contents
+					(page Page0
+						(portImplementation
+							(name Clk
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt 1952 1728)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 1952 1728)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 1948 1724)
+									(pt 1956 1732)
+								)
+							)
+						)
+						(portImplementation
+							(name Vdd
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt 1952 1824)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 1952 1824)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 1948 1820)
+									(pt 1956 1828)
+								)
+							)
+						)
+						(portImplementation
+							(name Out_LESS_0_COLON_3_GREATER_
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 2688 1632)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 2688 1632)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 2684 1628)
+									(pt 2692 1636)
+								)
+							)
+						)
+						(portImplementation
+							(name Data_LESS_0_COLON_3_GREATER_
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt 1952 1632)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 1952 1632)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 1948 1628)
+									(pt 1956 1636)
+								)
+							)
+						)
+						(net Clk
+							(joined
+								(portRef Clk)
+							)
+						)
+						(netBundle
+							(rename Data_LESS_0_COLON_3_GREATER_ "Data<0:3>")
+							(listOfNets
+								(net
+									(rename Data_LESS_0_GREATER_ "Data<0>")
+									(joined
+										(portRef (member Data_LESS_0_COLON_3_GREATER_ 0))
+									)
+								)
+								(net
+									(rename Data_LESS_1_GREATER_ "Data<1>")
+									(joined
+										(portRef (member Data_LESS_0_COLON_3_GREATER_ 1))
+									)
+								)
+								(net
+									(rename Data_LESS_2_GREATER_ "Data<2>")
+									(joined
+										(portRef (member Data_LESS_0_COLON_3_GREATER_ 2))
+									)
+								)
+								(net
+									(rename Data_LESS_3_GREATER_ "Data<3>")
+									(joined
+										(portRef (member Data_LESS_0_COLON_3_GREATER_ 3))
+									)
+								)
+							)
+						)
+						(netBundle
+							(rename Out_LESS_0_COLON_3_GREATER_ "Out<0:3>")
+							(listOfNets
+								(net
+									(rename Out_LESS_0_GREATER_ "Out<0>")
+									(joined
+										(portRef (member Out_LESS_0_COLON_3_GREATER_ 0))
+									)
+								)
+								(net
+									(rename Out_LESS_1_GREATER_ "Out<1>")
+									(joined
+										(portRef (member Out_LESS_0_COLON_3_GREATER_ 1))
+									)
+								)
+								(net
+									(rename Out_LESS_2_GREATER_ "Out<2>")
+									(joined
+										(portRef (member Out_LESS_0_COLON_3_GREATER_ 2))
+									)
+								)
+								(net
+									(rename Out_LESS_3_GREATER_ "Out<3>")
+									(joined
+										(portRef (member Out_LESS_0_COLON_3_GREATER_ 3))
+									)
+								)
+							)
+						)
+						(net Vdd
+							(joined
+								(portRef Vdd)
+							)
+						)
+						(commentGraphics)
+					)
+				)
+			)
+		)
+		(cell Dig1
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port Clk
+						(direction INPUT)
+					)
+					(port
+						(array
+							(rename Data_LESS_0_COLON_3_GREATER_ "Data<0:3>")
+						4
+						)
+						(direction INPUT)
+					)
+					(port
+						(array
+							(rename Out_LESS_0_COLON_3_GREATER_ "Out<0:3>")
+						4
+						)
+						(direction OUTPUT)
+					)
+					(port Vdd
+						(direction INPUT)
+					)
+					(property P1
+						(string "10")
+					)
+					(property P2
+						(string "20")
+					)
+					(property
+						(rename SPICE_PERIOD_DEFINITION "SPICE.DEFINITION")
+						(string ".subckt $Cell %37  37% $$ Level = 5")
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1970 1 1 0 0 0")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol
+						(property TannerStandard
+							(boolean
+								(true)
+							)
+							(property Timestamp
+								(string "2008 01 25 23 22 05")
+							)
+							(property RevisionCount
+								(string "59")
+							)
+						)
+						(boundingBox
+							(rectangle
+								(pt -200 0)
+								(pt 1300 800)
+							)
+						)
+						(keywordDisplay cell
+							(display
+								(figureGroupOverride cellname
+									(visible
+										(true)
+									)
+									(textHeight 97)
+								)
+								(justify CENTERCENTER)
+								(origin
+									(pt 600 400)
+								)
+							)
+						)
+						(keywordDisplay instance
+							(display
+								(figureGroupOverride instance
+									(visible
+										(true)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 0 -100)
+								)
+							)
+						)
+						(propertyDisplay
+							(name P1
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(origin
+										(pt 1200 700)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 1200 700)
+								)
+							)
+						)
+						(propertyDisplay
+							(name P2
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(origin
+										(pt 1200 600)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 1200 600)
+								)
+							)
+						)
+						(propertyDisplay
+							(name SPICE_PERIOD_DEFINITION
+								(display
+									(figureGroupOverride property
+										(visible
+											(false)
+										)
+										(textHeight 69)
+									)
+									(origin
+										(pt -400 -300)
+									)
+								)
+							)
+							(display
+								(figureGroupOverride property
+									(visible
+										(false)
+									)
+									(textHeight 69)
+								)
+								(origin
+									(pt -400 -300)
+								)
+							)
+						)
+						(annotate
+							(stringDisplay "Data<0:3>"
+								(display
+									(figureGroupOverride text
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 0 100)
+									)
+								)
+							)
+						)
+						(annotate
+							(stringDisplay "Out<0:3>"
+								(display
+									(figureGroupOverride text
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt 1100 100)
+									)
+								)
+							)
+						)
+						(annotate
+							(stringDisplay "Vdd"
+								(display
+									(figureGroupOverride text
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 0 700)
+									)
+								)
+							)
+						)
+						(annotate
+							(stringDisplay "Clk"
+								(display
+									(figureGroupOverride text
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 0 400)
+									)
+								)
+							)
+						)
+						(portImplementation
+							(name Clk
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt -200 400)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt -200 400)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -204 396)
+									(pt -196 404)
+								)
+							)
+						)
+						(portImplementation
+							(name Data_LESS_0_COLON_3_GREATER_
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt -200 100)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt -200 100)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -204 96)
+									(pt -196 104)
+								)
+							)
+						)
+						(portImplementation
+							(name Out_LESS_0_COLON_3_GREATER_
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 1300 100)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 1300 100)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 1296 96)
+									(pt 1304 104)
+								)
+							)
+						)
+						(portImplementation
+							(name Vdd
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt -200 700)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt -200 700)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -204 696)
+									(pt -196 704)
+								)
+							)
+						)
+						(figure device
+							(rectangle
+								(pt 0 0)
+								(pt 1100 800)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt -200 400)
+									(pt 0 400)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt -200 100)
+									(pt 0 100)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 1300 100)
+									(pt 1100 100)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt -200 700)
+									(pt 0 700)
+								)
+							)
+						)
+					)
+				)
+				(status
+					(written
+						(timeStamp 2008 01 24 22 30 15)
+					)
+				)
+				(property TannerStandard
+					(boolean
+						(true)
+					)
+					(property RevisionCount
+						(string "63")
+					)
+				)
+				(contents
+					(page Page0
+						(portImplementation
+							(name Clk
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt 1952 1728)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 1952 1728)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 1948 1724)
+									(pt 1956 1732)
+								)
+							)
+						)
+						(portImplementation
+							(name Vdd
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt 1952 1824)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 1952 1824)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 1948 1820)
+									(pt 1956 1828)
+								)
+							)
+						)
+						(portImplementation
+							(name Out_LESS_0_COLON_3_GREATER_
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 2688 1632)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 2688 1632)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 2684 1628)
+									(pt 2692 1636)
+								)
+							)
+						)
+						(portImplementation
+							(name Data_LESS_0_COLON_3_GREATER_
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt 1952 1632)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 1952 1632)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 1948 1628)
+									(pt 1956 1636)
+								)
+							)
+						)
+						(net Clk
+							(joined
+								(portRef Clk)
+							)
+						)
+						(netBundle
+							(rename Data_LESS_0_COLON_3_GREATER_ "Data<0:3>")
+							(listOfNets
+								(net
+									(rename Data_LESS_0_GREATER_ "Data<0>")
+									(joined
+										(portRef (member Data_LESS_0_COLON_3_GREATER_ 0))
+									)
+								)
+								(net
+									(rename Data_LESS_1_GREATER_ "Data<1>")
+									(joined
+										(portRef (member Data_LESS_0_COLON_3_GREATER_ 1))
+									)
+								)
+								(net
+									(rename Data_LESS_2_GREATER_ "Data<2>")
+									(joined
+										(portRef (member Data_LESS_0_COLON_3_GREATER_ 2))
+									)
+								)
+								(net
+									(rename Data_LESS_3_GREATER_ "Data<3>")
+									(joined
+										(portRef (member Data_LESS_0_COLON_3_GREATER_ 3))
+									)
+								)
+							)
+						)
+						(netBundle
+							(rename Out_LESS_0_COLON_3_GREATER_ "Out<0:3>")
+							(listOfNets
+								(net
+									(rename Out_LESS_0_GREATER_ "Out<0>")
+									(joined
+										(portRef (member Out_LESS_0_COLON_3_GREATER_ 0))
+									)
+								)
+								(net
+									(rename Out_LESS_1_GREATER_ "Out<1>")
+									(joined
+										(portRef (member Out_LESS_0_COLON_3_GREATER_ 1))
+									)
+								)
+								(net
+									(rename Out_LESS_2_GREATER_ "Out<2>")
+									(joined
+										(portRef (member Out_LESS_0_COLON_3_GREATER_ 2))
+									)
+								)
+								(net
+									(rename Out_LESS_3_GREATER_ "Out<3>")
+									(joined
+										(portRef (member Out_LESS_0_COLON_3_GREATER_ 3))
+									)
+								)
+							)
+						)
+						(net Vdd
+							(joined
+								(portRef Vdd)
+							)
+						)
+						(commentGraphics)
+					)
+				)
+			)
+		)
+		(cell Dig0
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port Clk
+						(direction INPUT)
+					)
+					(port
+						(array
+							(rename Data_LESS_0_COLON_3_GREATER_ "Data<0:3>")
+						4
+						)
+						(direction INPUT)
+					)
+					(port
+						(array
+							(rename Out_LESS_0_COLON_3_GREATER_ "Out<0:3>")
+						4
+						)
+						(direction OUTPUT)
+					)
+					(port Vdd
+						(direction INPUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1970 1 1 0 0 0")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol
+						(property TannerStandard
+							(boolean
+								(true)
+							)
+							(property Timestamp
+								(string "2008 01 25 23 22 05")
+							)
+							(property RevisionCount
+								(string "51")
+							)
+						)
+						(boundingBox
+							(rectangle
+								(pt -200 0)
+								(pt 1300 800)
+							)
+						)
+						(keywordDisplay cell
+							(display
+								(figureGroupOverride cellname
+									(visible
+										(true)
+									)
+									(textHeight 97)
+								)
+								(justify CENTERCENTER)
+								(origin
+									(pt 600 400)
+								)
+							)
+						)
+						(keywordDisplay instance
+							(display
+								(figureGroupOverride instance
+									(visible
+										(true)
+									)
+									(textHeight 97)
+								)
+								(origin
+									(pt 0 -100)
+								)
+							)
+						)
+						(annotate
+							(stringDisplay "Clk"
+								(display
+									(figureGroupOverride text
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 0 400)
+									)
+								)
+							)
+						)
+						(annotate
+							(stringDisplay "Vdd"
+								(display
+									(figureGroupOverride text
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 0 700)
+									)
+								)
+							)
+						)
+						(annotate
+							(stringDisplay "Out<0:3>"
+								(display
+									(figureGroupOverride text
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt 1100 100)
+									)
+								)
+							)
+						)
+						(annotate
+							(stringDisplay "Data<0:3>"
+								(display
+									(figureGroupOverride text
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 0 100)
+									)
+								)
+							)
+						)
+						(portImplementation
+							(name Clk
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt -200 400)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt -200 400)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -204 396)
+									(pt -196 404)
+								)
+							)
+						)
+						(portImplementation
+							(name Vdd
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt -200 700)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt -200 700)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -204 696)
+									(pt -196 704)
+								)
+							)
+						)
+						(portImplementation
+							(name Out_LESS_0_COLON_3_GREATER_
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 1300 100)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 1300 100)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 1296 96)
+									(pt 1304 104)
+								)
+							)
+						)
+						(portImplementation
+							(name Data_LESS_0_COLON_3_GREATER_
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt -200 100)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt -200 100)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -204 96)
+									(pt -196 104)
+								)
+							)
+						)
+						(figure device
+							(rectangle
+								(pt 0 0)
+								(pt 1100 800)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt -200 400)
+									(pt 0 400)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt -200 700)
+									(pt 0 700)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 1300 100)
+									(pt 1100 100)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt -200 100)
+									(pt 0 100)
+								)
+							)
+						)
+					)
+				)
+				(status
+					(written
+						(timeStamp 2008 01 24 22 30 15)
+					)
+				)
+				(property TannerStandard
+					(boolean
+						(true)
+					)
+					(property RevisionCount
+						(string "38")
+					)
+				)
+				(contents
+					(page Page0
+						(portImplementation
+							(name Clk
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt 1952 1728)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 1952 1728)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 1948 1724)
+									(pt 1956 1732)
+								)
+							)
+						)
+						(portImplementation
+							(name Vdd
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt 1952 1824)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 1952 1824)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 1948 1820)
+									(pt 1956 1828)
+								)
+							)
+						)
+						(portImplementation
+							(name Out_LESS_0_COLON_3_GREATER_
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 2688 1632)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 2688 1632)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 2684 1628)
+									(pt 2692 1636)
+								)
+							)
+						)
+						(portImplementation
+							(name Data_LESS_0_COLON_3_GREATER_
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt 1952 1632)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 1952 1632)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 1948 1628)
+									(pt 1956 1636)
+								)
+							)
+						)
+						(net Clk
+							(joined
+								(portRef Clk)
+							)
+						)
+						(netBundle
+							(rename Data_LESS_0_COLON_3_GREATER_ "Data<0:3>")
+							(listOfNets
+								(net
+									(rename Data_LESS_0_GREATER_ "Data<0>")
+									(joined
+										(portRef (member Data_LESS_0_COLON_3_GREATER_ 0))
+									)
+								)
+								(net
+									(rename Data_LESS_1_GREATER_ "Data<1>")
+									(joined
+										(portRef (member Data_LESS_0_COLON_3_GREATER_ 1))
+									)
+								)
+								(net
+									(rename Data_LESS_2_GREATER_ "Data<2>")
+									(joined
+										(portRef (member Data_LESS_0_COLON_3_GREATER_ 2))
+									)
+								)
+								(net
+									(rename Data_LESS_3_GREATER_ "Data<3>")
+									(joined
+										(portRef (member Data_LESS_0_COLON_3_GREATER_ 3))
+									)
+								)
+							)
+						)
+						(netBundle
+							(rename Out_LESS_0_COLON_3_GREATER_ "Out<0:3>")
+							(listOfNets
+								(net
+									(rename Out_LESS_0_GREATER_ "Out<0>")
+									(joined
+										(portRef (member Out_LESS_0_COLON_3_GREATER_ 0))
+									)
+								)
+								(net
+									(rename Out_LESS_1_GREATER_ "Out<1>")
+									(joined
+										(portRef (member Out_LESS_0_COLON_3_GREATER_ 1))
+									)
+								)
+								(net
+									(rename Out_LESS_2_GREATER_ "Out<2>")
+									(joined
+										(portRef (member Out_LESS_0_COLON_3_GREATER_ 2))
+									)
+								)
+								(net
+									(rename Out_LESS_3_GREATER_ "Out<3>")
+									(joined
+										(portRef (member Out_LESS_0_COLON_3_GREATER_ 3))
+									)
+								)
+							)
+						)
+						(net Vdd
+							(joined
+								(portRef Vdd)
+							)
+						)
+						(commentGraphics)
+					)
+				)
+			)
+		)
+		(cell Subcircuits
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port
+						(array
+							(rename A_LESS_0_COLON_3_GREATER_ "A<0:3>")
+						4
+						)
+						(direction INPUT)
+					)
+					(port
+						(array
+							(rename BA_LESS_0_COLON_3_GREATER_ "BA<0:3>")
+						4
+						)
+						(direction OUTPUT)
+					)
+					(port
+						(array
+							(rename BB_LESS_0_COLON_3_GREATER_ "BB<0:3>")
+						4
+						)
+						(direction OUTPUT)
+					)
+					(port
+						(array
+							(rename BC_LESS_0_COLON_3_GREATER_ "BC<0:3>")
+						4
+						)
+						(direction OUTPUT)
+					)
+					(port Clock
+						(direction INPUT)
+					)
+					(port PWR
+						(direction INPUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1970 1 1 0 0 0")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+				)
+				(status
+					(written
+						(timeStamp 2008 02 15 22 56 22)
+					)
+				)
+				(property TannerStandard
+					(boolean
+						(true)
+					)
+					(property RevisionCount
+						(string "66")
+					)
+				)
+				(contents
+					(page Page0
+						(commentGraphics
+							(annotate
+								(stringDisplay "No SPICE.OUTPUT or SPICE.DEFINITION properties"
+									(display
+										(figureGroupOverride text
+											(textHeight 97)
+										)
+										(justify CENTERLEFT)
+										(origin
+											(pt 3300 4200)
+										)
+									)
+								)
+							)
+						)
+						(commentGraphics
+							(annotate
+								(stringDisplay "SPICE.OUTPUT used to control output of parameters"
+									(display
+										(figureGroupOverride text
+											(textHeight 97)
+										)
+										(justify CENTERLEFT)
+										(origin
+											(pt 3300 2800)
+										)
+									)
+								)
+							)
+						)
+						(commentGraphics
+							(annotate
+								(stringDisplay "SPICE.OUTPUT and SPICE.DEFINITION used to control pin order and special syntax"
+									(display
+										(figureGroupOverride text
+											(textHeight 97)
+										)
+										(justify CENTERLEFT)
+										(origin
+											(pt 3300 1400)
+										)
+									)
+								)
+							)
+						)
+						(portImplementation
+							(name Clock
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt 3500 4900)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 3500 4900)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 3496 4896)
+									(pt 3504 4904)
+								)
+							)
+						)
+						(portImplementation
+							(name PWR
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt 3500 5200)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 3500 5200)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 3496 5196)
+									(pt 3504 5204)
+								)
+							)
+						)
+						(portImplementation
+							(name A_LESS_0_COLON_3_GREATER_
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt 3500 4600)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 3500 4600)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 3496 4596)
+									(pt 3504 4604)
+								)
+							)
+						)
+						(portImplementation
+							(name BA_LESS_0_COLON_3_GREATER_
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 5400 4600)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 5400 4600)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 5396 4596)
+									(pt 5404 4604)
+								)
+							)
+						)
+						(portImplementation
+							(name A_LESS_0_COLON_3_GREATER_
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt 3500 3200)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 3500 3200)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 3496 3196)
+									(pt 3504 3204)
+								)
+							)
+						)
+						(portImplementation
+							(name PWR
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt 3500 3800)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 3500 3800)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 3496 3796)
+									(pt 3504 3804)
+								)
+							)
+						)
+						(portImplementation
+							(name Clock
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt 3500 3500)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 3500 3500)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 3496 3496)
+									(pt 3504 3504)
+								)
+							)
+						)
+						(portImplementation
+							(name BB_LESS_0_COLON_3_GREATER_
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 5400 3200)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 5400 3200)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 5396 3196)
+									(pt 5404 3204)
+								)
+							)
+						)
+						(portImplementation
+							(name PWR
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt 3500 2400)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 3500 2400)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 3496 2396)
+									(pt 3504 2404)
+								)
+							)
+						)
+						(portImplementation
+							(name A_LESS_0_COLON_3_GREATER_
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt 3500 1800)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 3500 1800)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 3496 1796)
+									(pt 3504 1804)
+								)
+							)
+						)
+						(portImplementation
+							(name Clock
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt 3500 2100)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 3500 2100)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 3496 2096)
+									(pt 3504 2104)
+								)
+							)
+						)
+						(portImplementation
+							(name BC_LESS_0_COLON_3_GREATER_
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 5400 1800)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 5400 1800)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 5396 1796)
+									(pt 5404 1804)
+								)
+							)
+						)
+						(instance Dig0_1
+							(viewRef view_1
+								(cellRef Dig0)
+							)
+							(transform
+								(origin
+									(pt 3900 4500)
+								)
+							)
+						)
+						(instance Dig1_1
+							(viewRef view_1
+								(cellRef Dig1)
+							)
+							(transform
+								(origin
+									(pt 3900 3100)
+								)
+							)
+						)
+						(instance Dig2_1
+							(viewRef view_1
+								(cellRef Dig2)
+							)
+							(transform
+								(origin
+									(pt 3900 1700)
+								)
+							)
+						)
+						(netBundle
+							(rename A_LESS_0_COLON_3_GREATER_ "A<0:3>")
+							(listOfNets
+								(net
+									(rename A_LESS_0_GREATER_ "A<0>")
+									(joined
+										(portRef (member A_LESS_0_COLON_3_GREATER_ 0))
+										(portRef (member Data_LESS_0_COLON_3_GREATER_ 0)
+											(instanceRef Dig0_1)
+										)
+										(portRef (member Data_LESS_0_COLON_3_GREATER_ 0)
+											(instanceRef Dig1_1)
+										)
+										(portRef (member Data_LESS_0_COLON_3_GREATER_ 0)
+											(instanceRef Dig2_1)
+										)
+									)
+								)
+								(net
+									(rename A_LESS_1_GREATER_ "A<1>")
+									(joined
+										(portRef (member A_LESS_0_COLON_3_GREATER_ 1))
+										(portRef (member Data_LESS_0_COLON_3_GREATER_ 1)
+											(instanceRef Dig0_1)
+										)
+										(portRef (member Data_LESS_0_COLON_3_GREATER_ 1)
+											(instanceRef Dig1_1)
+										)
+										(portRef (member Data_LESS_0_COLON_3_GREATER_ 1)
+											(instanceRef Dig2_1)
+										)
+									)
+								)
+								(net
+									(rename A_LESS_2_GREATER_ "A<2>")
+									(joined
+										(portRef (member A_LESS_0_COLON_3_GREATER_ 2))
+										(portRef (member Data_LESS_0_COLON_3_GREATER_ 2)
+											(instanceRef Dig0_1)
+										)
+										(portRef (member Data_LESS_0_COLON_3_GREATER_ 2)
+											(instanceRef Dig1_1)
+										)
+										(portRef (member Data_LESS_0_COLON_3_GREATER_ 2)
+											(instanceRef Dig2_1)
+										)
+									)
+								)
+								(net
+									(rename A_LESS_3_GREATER_ "A<3>")
+									(joined
+										(portRef (member A_LESS_0_COLON_3_GREATER_ 3))
+										(portRef (member Data_LESS_0_COLON_3_GREATER_ 3)
+											(instanceRef Dig0_1)
+										)
+										(portRef (member Data_LESS_0_COLON_3_GREATER_ 3)
+											(instanceRef Dig1_1)
+										)
+										(portRef (member Data_LESS_0_COLON_3_GREATER_ 3)
+											(instanceRef Dig2_1)
+										)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 3500 4600)
+										(pt 3700 4600)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 3500 3200)
+										(pt 3700 3200)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 3500 1800)
+										(pt 3700 1800)
+									)
+								)
+							)
+						)
+						(netBundle
+							(rename BA_LESS_0_COLON_3_GREATER_ "BA<0:3>")
+							(listOfNets
+								(net
+									(rename BA_LESS_0_GREATER_ "BA<0>")
+									(joined
+										(portRef (member BA_LESS_0_COLON_3_GREATER_ 0))
+										(portRef (member Out_LESS_0_COLON_3_GREATER_ 0)
+											(instanceRef Dig0_1)
+										)
+									)
+								)
+								(net
+									(rename BA_LESS_1_GREATER_ "BA<1>")
+									(joined
+										(portRef (member BA_LESS_0_COLON_3_GREATER_ 1))
+										(portRef (member Out_LESS_0_COLON_3_GREATER_ 1)
+											(instanceRef Dig0_1)
+										)
+									)
+								)
+								(net
+									(rename BA_LESS_2_GREATER_ "BA<2>")
+									(joined
+										(portRef (member BA_LESS_0_COLON_3_GREATER_ 2))
+										(portRef (member Out_LESS_0_COLON_3_GREATER_ 2)
+											(instanceRef Dig0_1)
+										)
+									)
+								)
+								(net
+									(rename BA_LESS_3_GREATER_ "BA<3>")
+									(joined
+										(portRef (member BA_LESS_0_COLON_3_GREATER_ 3))
+										(portRef (member Out_LESS_0_COLON_3_GREATER_ 3)
+											(instanceRef Dig0_1)
+										)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5400 4600)
+										(pt 5200 4600)
+									)
+								)
+							)
+						)
+						(netBundle
+							(rename BB_LESS_0_COLON_3_GREATER_ "BB<0:3>")
+							(listOfNets
+								(net
+									(rename BB_LESS_0_GREATER_ "BB<0>")
+									(joined
+										(portRef (member BB_LESS_0_COLON_3_GREATER_ 0))
+										(portRef (member Out_LESS_0_COLON_3_GREATER_ 0)
+											(instanceRef Dig1_1)
+										)
+									)
+								)
+								(net
+									(rename BB_LESS_1_GREATER_ "BB<1>")
+									(joined
+										(portRef (member BB_LESS_0_COLON_3_GREATER_ 1))
+										(portRef (member Out_LESS_0_COLON_3_GREATER_ 1)
+											(instanceRef Dig1_1)
+										)
+									)
+								)
+								(net
+									(rename BB_LESS_2_GREATER_ "BB<2>")
+									(joined
+										(portRef (member BB_LESS_0_COLON_3_GREATER_ 2))
+										(portRef (member Out_LESS_0_COLON_3_GREATER_ 2)
+											(instanceRef Dig1_1)
+										)
+									)
+								)
+								(net
+									(rename BB_LESS_3_GREATER_ "BB<3>")
+									(joined
+										(portRef (member BB_LESS_0_COLON_3_GREATER_ 3))
+										(portRef (member Out_LESS_0_COLON_3_GREATER_ 3)
+											(instanceRef Dig1_1)
+										)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5400 3200)
+										(pt 5200 3200)
+									)
+								)
+							)
+						)
+						(netBundle
+							(rename BC_LESS_0_COLON_3_GREATER_ "BC<0:3>")
+							(listOfNets
+								(net
+									(rename BC_LESS_0_GREATER_ "BC<0>")
+									(joined
+										(portRef (member BC_LESS_0_COLON_3_GREATER_ 0))
+										(portRef (member Out_LESS_0_COLON_3_GREATER_ 0)
+											(instanceRef Dig2_1)
+										)
+									)
+								)
+								(net
+									(rename BC_LESS_1_GREATER_ "BC<1>")
+									(joined
+										(portRef (member BC_LESS_0_COLON_3_GREATER_ 1))
+										(portRef (member Out_LESS_0_COLON_3_GREATER_ 1)
+											(instanceRef Dig2_1)
+										)
+									)
+								)
+								(net
+									(rename BC_LESS_2_GREATER_ "BC<2>")
+									(joined
+										(portRef (member BC_LESS_0_COLON_3_GREATER_ 2))
+										(portRef (member Out_LESS_0_COLON_3_GREATER_ 2)
+											(instanceRef Dig2_1)
+										)
+									)
+								)
+								(net
+									(rename BC_LESS_3_GREATER_ "BC<3>")
+									(joined
+										(portRef (member BC_LESS_0_COLON_3_GREATER_ 3))
+										(portRef (member Out_LESS_0_COLON_3_GREATER_ 3)
+											(instanceRef Dig2_1)
+										)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5400 1800)
+										(pt 5200 1800)
+									)
+								)
+							)
+						)
+						(net Clock
+							(joined
+								(portRef Clock)
+								(portRef Clk
+									(instanceRef Dig0_1)
+								)
+								(portRef Clk
+									(instanceRef Dig1_1)
+								)
+								(portRef Clk
+									(instanceRef Dig2_1)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 3500 4900)
+										(pt 3700 4900)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 3500 3500)
+										(pt 3700 3500)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 3500 2100)
+										(pt 3700 2100)
+									)
+								)
+							)
+						)
+						(net PWR
+							(joined
+								(portRef PWR)
+								(portRef Vdd
+									(instanceRef Dig0_1)
+								)
+								(portRef Vdd
+									(instanceRef Dig1_1)
+								)
+								(portRef Vdd
+									(instanceRef Dig2_1)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 3500 5200)
+										(pt 3700 5200)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 3500 3800)
+										(pt 3700 3800)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 3500 2400)
+										(pt 3700 2400)
+									)
+								)
+							)
+						)
+						(commentGraphics)
+					)
+				)
+			)
+		)
+		(cell Inverters
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port In
+						(direction INPUT)
+					)
+					(port Out1
+						(direction OUTPUT)
+					)
+					(port Out2
+						(direction OUTPUT)
+					)
+					(port Out3
+						(direction OUTPUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1970 1 1 0 0 0")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+				)
+				(status
+					(written
+						(timeStamp 2008 02 15 22 56 22)
+					)
+				)
+				(property TannerStandard
+					(boolean
+						(true)
+					)
+					(property RevisionCount
+						(string "44")
+					)
+				)
+				(contents
+					(page Page0
+						(commentGraphics
+							(annotate
+								(stringDisplay "match = 0 is default value on symbol of INV"
+									(display
+										(figureGroupOverride text
+											(textHeight 97)
+										)
+										(justify CENTERLEFT)
+										(origin
+											(pt 3650 4100)
+										)
+									)
+								)
+							)
+						)
+						(commentGraphics
+							(annotate
+								(stringDisplay "match = 1 is local override on instance INV2"
+									(display
+										(figureGroupOverride text
+											(textHeight 97)
+										)
+										(justify CENTERLEFT)
+										(origin
+											(pt 3650 3000)
+										)
+									)
+								)
+							)
+						)
+						(commentGraphics
+							(annotate
+								(stringDisplay "match = 2 is local override on instance INV3"
+									(display
+										(figureGroupOverride text
+											(textHeight 97)
+										)
+										(justify CENTERLEFT)
+										(origin
+											(pt 3650 1900)
+										)
+									)
+								)
+							)
+						)
+						(portImplementation
+							(name In
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt 4200 4700)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 4200 4700)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 4196 4696)
+									(pt 4204 4704)
+								)
+							)
+						)
+						(portImplementation
+							(name Out1
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 5300 4700)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 5300 4700)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 5296 4696)
+									(pt 5304 4704)
+								)
+							)
+						)
+						(portImplementation
+							(name Out2
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 5300 3600)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 5300 3600)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 5296 3596)
+									(pt 5304 3604)
+								)
+							)
+						)
+						(portImplementation
+							(name In
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt 4200 3600)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 4200 3600)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 4196 3596)
+									(pt 4204 3604)
+								)
+							)
+						)
+						(portImplementation
+							(name Out3
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 5300 2500)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 5300 2500)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 5296 2496)
+									(pt 5304 2504)
+								)
+							)
+						)
+						(portImplementation
+							(name In
+								(display
+									(figureGroupOverride pin
+										(textHeight 97)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt 4200 2500)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 4200 2500)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 4196 2496)
+									(pt 4204 2504)
+								)
+							)
+						)
+						(instance INV1
+							(viewRef Main
+								(cellRef INV)
+							)
+							(transform
+								(origin
+									(pt 4300 4700)
+								)
+							)
+						)
+						(instance INV2
+							(viewRef Main
+								(cellRef INV)
+							)
+							(transform
+								(origin
+									(pt 4300 3600)
+								)
+							)
+							(property match
+								(string "1")
+							)
+						)
+						(instance INV3
+							(viewRef Main
+								(cellRef INV)
+							)
+							(transform
+								(origin
+									(pt 4300 2500)
+								)
+							)
+							(property match
+								(string "2")
+							)
+						)
+						(net In
+							(joined
+								(portRef In)
+								(portRef A
+									(instanceRef INV1)
+								)
+								(portRef A
+									(instanceRef INV2)
+								)
+								(portRef A
+									(instanceRef INV3)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4200 4700)
+										(pt 4300 4700)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4200 3600)
+										(pt 4300 3600)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 4200 2500)
+										(pt 4300 2500)
+									)
+								)
+							)
+						)
+						(net Out1
+							(joined
+								(portRef Out1)
+								(portRef Out
+									(instanceRef INV1)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5300 4700)
+										(pt 5200 4700)
+									)
+								)
+							)
+						)
+						(net Out2
+							(joined
+								(portRef Out2)
+								(portRef Out
+									(instanceRef INV2)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5300 3600)
+										(pt 5200 3600)
+									)
+								)
+							)
+						)
+						(net Out3
+							(joined
+								(portRef Out3)
+								(portRef Out
+									(instanceRef INV3)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5300 2500)
+										(pt 5200 2500)
+									)
+								)
+							)
+						)
+						(commentGraphics)
+					)
+				)
+			)
+		)
+	)
+)

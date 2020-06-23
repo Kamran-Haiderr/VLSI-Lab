@@ -1,0 +1,6 @@
+workspace loadfrom -path .
+cell open -design Lights -cell Lights -type schematic -newwindow
+window move -left 108 -top 140 -width 1700 -height 601 -undock -max 
+window fit -x0 -4545 -y0 -675 -x1 13970 -y1 7594 -units iu
+source open.design -relativeto user
+source open.design -relativeto design

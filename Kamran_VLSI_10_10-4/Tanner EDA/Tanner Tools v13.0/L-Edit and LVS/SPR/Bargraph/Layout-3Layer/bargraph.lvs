@@ -1,0 +1,110 @@
+File written by LVS 12.60 as a result of: "L-Edit and LVS\SPR\Bargraph\Layout-3Layer\bargraph.vdb" on Fri Jul 20 16:05:24 2007
+
+Command line:
+lvs L-Edit and LVS\SPR\Bargraph\Layout-3Layer\Bargraph.spc L-Edit and LVS\SPR\Bargraph\Layout-3Layer\Bargraph.sp -o L-Edit and LVS\SPR\Bargraph\Layout-3Layer\Bargraph.lvs -l L-Edit and LVS\SPR\Bargraph\Layout-3Layer\Bargraph.lst -mr ALL -mc ALL -mm ALL -x -TTSPICE -nrcl -y2 -ff 
+
+Engine configuration report:
+Layout netlist file.............................................. L-Edit and LVS\SPR\Bargraph\Layout-3Layer\Bargraph.spc
+Layout netlist file format....................................... T-Spice
+Schematic netlist file........................................... L-Edit and LVS\SPR\Bargraph\Layout-3Layer\Bargraph.sp
+Schematic netlist file format.................................... T-Spice
+Consider Bulk nodes.............................................. ON
+Consider Resistors as polarized elements......................... OFF
+Consider Capacitors as polarized elements........................ OFF
+Consider Inductors as polarized elements......................... OFF
+Merge series and parallel R...................................... ALL
+Merge series and parallel C...................................... ALL
+Merge series and parallel L...................................... OFF
+Merge parallel M................................................. ALL
+Merge stacked M.................................................. OFF
+Merge parallel D................................................. OFF
+Merge parallel B................................................. OFF
+Merge parallel J................................................. OFF
+Merge parallel Z................................................. OFF
+Merge parallel Q................................................. OFF
+Merge series MOSFETs............................................. OFF
+Find series MOSFETs that differ in order or parameter value...... OFF
+Remove shorted devices........................................... ON
+Remove disconnected devices...................................... OFF
+Fast Iteration................................................... OFF
+
+
+Parsing file L-Edit and LVS\SPR\Bargraph\Layout-3Layer\Bargraph.spc...
+Including file L-Edit and LVS\SPR\Bargraph\Layout-3Layer\ext_devc.md
+Flattening netlist...
+
+Parsing file L-Edit and LVS\SPR\Bargraph\Layout-3Layer\Bargraph.sp...
+Warning: Bargraph.sp(37) Implicit .model definition PMOS
+Warning: Bargraph.sp(39) Node Gnd aliased to GROUND
+Warning: Bargraph.sp(39) Implicit .model definition NMOS
+Warning: Bargraph.sp(61) Node 0 aliased to GROUND
+Flattening netlist...
+
+Device                    Bargraph.spc       Bargraph.sp   Status            
+---------------        ---------------   ---------------   ---------------     
+M_PMOS                            8618              7526   MISMATCH (1092)
+R                                   42                42
+M_NMOS                            8362              7270   MISMATCH (1092)
+C                                   44                44
+                          ------------      ------------
+Total elements                   17066             14882   MISMATCH (2184)
+Total nodes                       8264              8264
+
+
+Merging devices...
+Eliminated from Bargraph.spc:
+     1 shorted capacitor(s)
+  2194 parallel MOSFET(s)
+Eliminated from Bargraph.sp:
+     1 shorted capacitor(s)
+    10 parallel MOSFET(s)
+
+Device                    Bargraph.spc       Bargraph.sp   Status            
+---------------        ---------------   ---------------   ---------------     
+M_PMOS                            7516              7516
+R                                   42                42
+M_NMOS                            7270              7270
+C                                   43                43
+                          ------------      ------------
+Total elements                   14871             14871
+Total nodes                       8264              8264
+
+
+Iterating...
+  5% done.
+ 10% done.
+ 15% done.
+ 20% done.
+ 25% done.
+ 30% done.
+ 35% done.
+ 40% done.
+ 45% done.
+ 50% done.
+121 perfectly matched element classes (out of a possible 14871).
+7375 automorphic element classes.
+58 perfectly matched node classes (out of a possible 8264).
+4103 automorphic node classes.
+
+
+Doing detailed trial matching... Step 1 (Match by parameters)
+Doing detailed trial matching... Step 2 (Random matches)
+ 55% done.
+ 60% done.
+ 65% done.
+ 70% done.
+ 75% done.
+ 80% done.
+ 85% done.
+ 90% done.
+ 95% done.
+100% done.
+
+************************** FINAL RESULT *****************************
+
+Note: Devices have been merged.
+Circuits are equal.
+Run time: 0:07 (min:sec)
+
+0 errors, 4 warnings
+

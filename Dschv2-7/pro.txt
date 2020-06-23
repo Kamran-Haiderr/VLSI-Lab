@@ -1,0 +1,24 @@
+// DSCH 2.7a
+// 4/20/2008 1:28:36 AM
+// H:\Electronics II\Chip Designing (E II)\Dschv2-7\pro.sch
+
+module pro( in1,clk1,clk1,out1);
+ input in1,clk1,clk1;
+ output out1;
+ nmos #(17) nmos(w3,out1,w2); // 1.0u 0.12u
+ nmos #(17) nmos(w3,in1,clk1); // 1.0u 0.12u
+ not #(10) inv(w6,w3);
+ not #(17) inv(out1,w6);
+ not #(10) inv(w2,clk1);
+endmodule
+
+// Simulation parameters in Verilog Format
+always
+#1000 in1=~in1;
+#1000 clk1=~clk1;
+#1000 clk1=~clk1;
+
+// Simulation parameters
+// in1 CLK 10 10
+// clk1 CLK 10.00 10.00
+// clk1 CLK 10.00 10.00

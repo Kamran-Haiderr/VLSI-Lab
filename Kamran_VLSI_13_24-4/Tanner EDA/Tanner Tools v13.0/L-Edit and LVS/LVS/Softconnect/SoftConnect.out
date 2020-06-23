@@ -1,0 +1,102 @@
+File written by LVS 11.20 as a result of: "samples\lvs\softconnect\SoftConnect.vdb" on Wed Sep 21 10:12:04 2005
+
+Command line:
+lvs samples\lvs\softconnect\Buffer-Soft.spc samples\lvs\softconnect\Buffer.sp -o samples\lvs\softconnect\SoftConnect.out -mm ALL -TTSPICE -nrcl -w /R_WELLCONTACT/R_SUBSCONTACT/ -c2 -dg5.000 
+
+Engine configuration report:
+Layout netlist file.............................................. samples\lvs\softconnect\Buffer-Soft.spc
+Layout netlist file format....................................... T-Spice
+Schematic netlist file........................................... samples\lvs\softconnect\Buffer.sp
+Schematic netlist file format.................................... T-Spice
+Consider Bulk nodes.............................................. ON
+Consider Resistors as polarized elements......................... OFF
+Consider Capacitors as polarized elements........................ OFF
+Consider Inductors as polarized elements......................... OFF
+Merge series and parallel R...................................... OFF
+Merge series and parallel C...................................... OFF
+Merge series and parallel L...................................... OFF
+Merge parallel M................................................. ALL
+Merge stacked M.................................................. OFF
+Merge parallel D................................................. OFF
+Merge parallel B................................................. OFF
+Merge parallel J................................................. OFF
+Merge parallel Z................................................. OFF
+Merge parallel Q................................................. OFF
+Merge series MOSFETs............................................. OFF
+Find series MOSFETs that differ in order or parameter value...... OFF
+Remove shorted devices........................................... OFF
+Remove disconnected devices...................................... OFF
+Fast Iteration................................................... OFF
+Look for soft connections using models named..................... /R_WELLCONTACT/R_SUBSCONTACT/
+Parameter comparison threshold for MOSFET GATE LENGTHS........... 5%
+Parameter comparison threshold for MOSFET GATE WIDTHS............ 5%
+
+
+Parsing file samples\lvs\softconnect\Buffer-Soft.spc...
+Warning: Buffer-Soft.spc(22) Implicit .model definition PMOS
+Warning: Buffer-Soft.spc(24) Node Gnd aliased to GROUND
+Warning: Buffer-Soft.spc(24) Implicit .model definition NMOS
+Flattening netlist...
+
+Parsing file samples\lvs\softconnect\Buffer.sp...
+Warning: Buffer.sp(5) Node Gnd aliased to GROUND
+Warning: Buffer.sp(5) Implicit .model definition NMOS
+Warning: Buffer.sp(6) Implicit .model definition PMOS
+Flattening netlist...
+
+Device                 Buffer-Soft.spc         Buffer.sp   Status            
+---------------        ---------------   ---------------   ---------------     
+R_WELLCONTACT                        2                 0   MISMATCH (2)
+R_SUBSCONTACT                        2                 0   MISMATCH (2)
+M_NMOS                               2                 2
+M_PMOS                               2                 2
+                          ------------      ------------
+Total elements                       8                 4   MISMATCH (4)
+Total nodes                          8                 5   MISMATCH (3)
+
+Warning: Buffer-Soft.spc: soft connection between: Vdd and Vdd_1
+
+Shorting and removing soft connect devices (/R_WELLCONTACT/R_SUBSCONTACT/):
+   Buffer-Soft.spc:    4
+
+Merging devices...
+Eliminated nothing.
+
+Device                 Buffer-Soft.spc         Buffer.sp   Status            
+---------------        ---------------   ---------------   ---------------     
+M_NMOS                               2                 2
+M_PMOS                               2                 2
+                          ------------      ------------
+Total elements                       4                 4
+Total nodes                          5                 5
+
+
+Iterating...
+  5% done.
+ 10% done.
+ 15% done.
+ 20% done.
+ 25% done.
+ 30% done.
+ 35% done.
+ 40% done.
+ 45% done.
+ 50% done.
+ 55% done.
+ 60% done.
+ 65% done.
+ 70% done.
+ 75% done.
+ 80% done.
+ 85% done.
+ 90% done.
+ 95% done.
+100% done.
+
+************************** FINAL RESULT *****************************
+
+Circuits are equal.
+Run time: 0:00 (min:sec)
+
+0 errors, 7 warnings
+

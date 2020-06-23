@@ -1,0 +1,9 @@
+
+.INCLUDE SpecialDevices.md
+.lib "C:\Users\i140420\Desktop\Kamran_VLSI_9_3-4\Generic_025.lib" TT
+.tran 10n 100n
+
+v1 A Gnd PULSE (0 5 0 1n 1n 10n 100n)
+v2 B Gnd PULSE (0 5 0 1n 1n 10n 100n)
+v4 Vdd Gnd 5
+.print tran v(A,Gnd) v(B,Gnd) v(Y,Gnd)

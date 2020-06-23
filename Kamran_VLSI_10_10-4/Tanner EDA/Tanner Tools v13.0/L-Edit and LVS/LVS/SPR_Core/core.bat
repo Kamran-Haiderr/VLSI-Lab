@@ -1,0 +1,1 @@
+start /w ..\..\..\lvs core.sp core.spc -o core.lvs -nrcl -O -c12 -dv5.000 -dg5.000 -y2 -faf

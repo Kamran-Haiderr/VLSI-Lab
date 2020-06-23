@@ -1,0 +1,130 @@
+File written by LVS 11.20 as a result of: "samples\lvs\ex2\ex2.vdb" on Wed Sep 21 10:08:27 2005
+
+Command line:
+lvs samples\lvs\ex2\ex1_2.spc samples\lvs\ex2\ex2_1.spc -o samples\lvs\ex2\ex2.lvs -mm ALL -TTSPICE -nrcl -c12 -dv5.000 -dg5.000 -y2 -vfa -faf 
+
+Engine configuration report:
+Layout netlist file.............................................. samples\lvs\ex2\ex1_2.spc
+Layout netlist file format....................................... T-Spice
+Schematic netlist file........................................... samples\lvs\ex2\ex2_1.spc
+Schematic netlist file format.................................... T-Spice
+Consider Bulk nodes.............................................. ON
+Consider Resistors as polarized elements......................... OFF
+Consider Capacitors as polarized elements........................ OFF
+Consider Inductors as polarized elements......................... OFF
+Merge series and parallel R...................................... OFF
+Merge series and parallel C...................................... OFF
+Merge series and parallel L...................................... OFF
+Merge parallel M................................................. ALL
+Merge stacked M.................................................. OFF
+Merge parallel D................................................. OFF
+Merge parallel B................................................. OFF
+Merge parallel J................................................. OFF
+Merge parallel Z................................................. OFF
+Merge parallel Q................................................. OFF
+Merge series MOSFETs............................................. OFF
+Find series MOSFETs that differ in order or parameter value...... OFF
+Remove shorted devices........................................... OFF
+Remove disconnected devices...................................... OFF
+Fast Iteration................................................... OFF
+Parameter comparison threshold for CAPACITORS.................... 5%
+Parameter comparison threshold for INDUCTORS..................... 5%
+Parameter comparison threshold for RESISTORS..................... 5%
+Parameter comparison threshold for MOSFET GATE LENGTHS........... 5%
+Parameter comparison threshold for MOSFET GATE WIDTHS............ 5%
+
+
+Parsing file samples\lvs\ex2\ex1_2.spc...
+Including file samples\lvs\ex2\MODELS.SPC
+Warning: ex1_2.spc(9) Node 0 aliased to GROUND
+Flattening netlist...
+
+Parsing file samples\lvs\ex2\ex2_1.spc...
+Including file samples\lvs\ex2\MODELS.SPC
+Warning: ex2_1.spc(18) Node GND aliased to GROUND
+Flattening netlist...
+
+Device                       ex1_2.spc         ex2_1.spc   Status            
+---------------        ---------------   ---------------   ---------------     
+C                                    4                 4
+M_NSS                               20                18   MISMATCH (2)
+M_PSS                               24                20   MISMATCH (4)
+                          ------------      ------------
+Total elements                      48                42   MISMATCH (6)
+Total nodes                         20                20
+
+
+Merging devices...
+Eliminated from ex1_2.spc:
+     6 parallel MOSFET(s)
+
+Device                       ex1_2.spc         ex2_1.spc   Status            
+---------------        ---------------   ---------------   ---------------     
+C                                    4                 4
+M_NSS                               18                18
+M_PSS                               20                20
+                          ------------      ------------
+Total elements                      42                42
+Total nodes                         20                20
+
+
+Iterating...
+  5% done.
+ 10% done.
+ 15% done.
+ 20% done.
+ 25% done.
+Warning: Parametric mismatch between M_PSS elements
+         ex1_2.spc: M346: W=5 
+         ex2_1.spc: M6(XSUBA/X34): W=6 
+Warning: Parametric mismatch between M_PSS elements
+         ex1_2.spc: M6: W=5 
+         ex2_1.spc: M6(XSUBA/X33): W=6 
+ 30% done.
+ 35% done.
+ 40% done.
+ 45% done.
+ 50% done.
+ 55% done.
+ 60% done.
+ 65% done.
+ 70% done.
+ 75% done.
+ 80% done.
+ 85% done.
+ 90% done.
+ 95% done.
+********************* REPORTING  AUTOMORPHISM ***********************
+
+Report of elements:
+*******************
+
+1: Automorph class of elements
+ex1_2.spc: 4 element(s)
+ex2_1.spc: 4 element(s)
+1.1:    ex1_2.spc     C1_4                 fanout: POS/NEG ( 31,  35)   
+1.2:    ex1_2.spc     C1_3                 fanout: POS/NEG ( 31,  35)   
+1.3:    ex1_2.spc     C1_2                 fanout: POS/NEG ( 31,  35)   
+1.4:    ex1_2.spc     C1_1                 fanout: POS/NEG ( 31,  35)   
+1.1:    ex2_1.spc     C1(XSUBA/X34)_2      fanout: POS/NEG ( 31,  35)   
+1.2:    ex2_1.spc     C1(XSUBA/X34)_1      fanout: POS/NEG ( 31,  35)   
+1.3:    ex2_1.spc     C1(XSUBA/X33)_2      fanout: POS/NEG ( 31,  35)   
+1.4:    ex2_1.spc     C1(XSUBA/X33)_1      fanout: POS/NEG ( 31,  35)   
+---------------------------------------------------
+38 perfectly matched element classes (out of a possible 42).
+1 automorphic element class.
+20 perfectly matched node classes (out of a possible 20).
+
+
+Doing detailed trial matching... Step 1 (Match by parameters)
+Doing detailed trial matching... Step 2 (Random matches)
+100% done.
+
+************************** FINAL RESULT *****************************
+
+Note: Devices have been merged.
+Circuits are only topologically equal.
+Run time: 0:00 (min:sec)
+
+0 errors, 4 warnings
+

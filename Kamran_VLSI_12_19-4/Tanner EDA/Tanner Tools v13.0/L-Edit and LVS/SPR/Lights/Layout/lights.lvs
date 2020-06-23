@@ -1,0 +1,212 @@
+File written by LVS 12.60 as a result of: "\L-Edit and LVS\SPR\Lights\Layout\lights.vdb" on Thu Jul 12 15:49:37 2007
+
+Command line:
+lvs \L-Edit and LVS\SPR\Lights\Layout\lights.spc \L-Edit and LVS\SPR\Lights\Layout\lights.sp -o \L-Edit and LVS\SPR\Lights\Layout\lights.lvs -l \L-Edit and LVS\SPR\Lights\Layout\lights.lst -mm ALL -x -TTSPICE -nrcl -fafpr 
+
+Engine configuration report:
+Layout netlist file.............................................. \L-Edit and LVS\SPR\Lights\Layout\lights.spc
+Layout netlist file format....................................... T-Spice
+Schematic netlist file........................................... \L-Edit and LVS\SPR\Lights\Layout\lights.sp
+Schematic netlist file format.................................... T-Spice
+Consider Bulk nodes.............................................. ON
+Consider Resistors as polarized elements......................... OFF
+Consider Capacitors as polarized elements........................ OFF
+Consider Inductors as polarized elements......................... OFF
+Merge series and parallel R...................................... OFF
+Merge series and parallel C...................................... OFF
+Merge series and parallel L...................................... OFF
+Merge parallel M................................................. ALL
+Merge stacked M.................................................. OFF
+Merge parallel D................................................. OFF
+Merge parallel B................................................. OFF
+Merge parallel J................................................. OFF
+Merge parallel Z................................................. OFF
+Merge parallel Q................................................. OFF
+Merge series MOSFETs............................................. OFF
+Find series MOSFETs that differ in order or parameter value...... OFF
+Remove shorted devices........................................... ON
+Remove disconnected devices...................................... OFF
+Fast Iteration................................................... OFF
+
+
+Parsing file \L-Edit and LVS\SPR\Lights\Layout\lights.spc...
+Including file \L-Edit and LVS\SPR\Lights\Layout\ext_devc.md
+Flattening netlist...
+
+Parsing file \L-Edit and LVS\SPR\Lights\Layout\lights.sp...
+Warning: lights.sp(44) Implicit .model definition PMOS
+Warning: lights.sp(45) Node Gnd aliased to GROUND
+Warning: lights.sp(45) Node 0 aliased to GROUND
+Warning: lights.sp(45) Implicit .model definition NMOS
+Flattening netlist...
+
+Device                      lights.spc         lights.sp   Status            
+---------------        ---------------   ---------------   ---------------     
+M_PMOS                             398               218   MISMATCH (180)
+C                                   14                14
+R                                   12                12
+M_NMOS                             367               211   MISMATCH (156)
+                          ------------      ------------
+Total elements                     791               455   MISMATCH (336)
+Total nodes                        227               227
+
+
+Merging devices...
+Shorted element removed: CC1(XXL3) (lights.sp)
+Shorted element removed: C9 (lights.spc)
+Eliminated from lights.spc:
+     1 shorted capacitor(s)
+   338 parallel MOSFET(s)
+Eliminated from lights.sp:
+     1 shorted capacitor(s)
+     2 parallel MOSFET(s)
+
+Device                      lights.spc         lights.sp   Status            
+---------------        ---------------   ---------------   ---------------     
+M_PMOS                             216               216
+C                                   13                13
+R                                   12                12
+M_NMOS                             211               211
+                          ------------      ------------
+Total elements                     452               452
+Total nodes                        227               227
+
+**************************** MERGED DEVICES *************************
+
+Merged devices in: lights.spc
+    M11_Merged_Elements = M11, M12
+    M628_Merged_Elements = M628, M627
+    M354_Merged_Elements = M354, M353
+    M86_Merged_Elements = M86, M67
+    M352_Merged_Elements = M352, M350, M267
+    M84_Merged_Elements = M84, M83, M85, M82
+    M23_Merged_Elements = M23, M24, M22, M26, M27, M28, M25, M29, M30, M31
+    M498_Merged_Elements = M498, M499
+    M699_Merged_Elements = M699, M618, M620, M617, M616, M619, M701, M700, M698, M697
+    M622_Merged_Elements = M622, M621
+    M435_Merged_Elements = M435, M436
+    M96_Merged_Elements = M96, M95
+    M494_Merged_Elements = M494, M495
+    M35_Merged_Elements = M35, M36
+    M433_Merged_Elements = M433, M434, M490, M491
+    M695_Merged_Elements = M695, M684, M683, M696
+    M291_Merged_Elements = M291, M208, M209, M207
+    M579_Merged_Elements = M579, M580
+    M175_Merged_Elements = M175, M176
+    M360_Merged_Elements = M360, M359
+    M376_Merged_Elements = M376, M377, M378, M379
+    M577_Merged_Elements = M577, M578
+    M173_Merged_Elements = M173, M174
+    M189_Merged_Elements = M189, M190
+    M90_Merged_Elements = M90, M89
+    M630_Merged_Elements = M630, M631, M632, M629
+    M370_Merged_Elements = M370, M371
+    M124_Merged_Elements = M124, M123
+    M587_Merged_Elements = M587, M588
+    M199_Merged_Elements = M199, M200
+    M384_Merged_Elements = M384, M385
+    M640_Merged_Elements = M640, M639, M638, M637
+    M268_Merged_Elements = M268, M269
+    M120_Merged_Elements = M120, M119, M118, M117
+    M136_Merged_Elements = M136, M137, M138, M135
+    M69_Merged_Elements = M69, M68
+    M380_Merged_Elements = M380, M381
+    M609_Merged_Elements = M609, M608
+    M130_Merged_Elements = M130, M110, M131, M113, M112, M111, M127, M132, M129, M128
+    M593_Merged_Elements = M593, M594, M596, M595
+    M63_Merged_Elements = M63, M64, M65, M66
+    M532_Merged_Elements = M532, M533
+    M591_Merged_Elements = M591, M592
+    M530_Merged_Elements = M530, M531
+    M274_Merged_Elements = M274, M273, M272, M271, M277, M278, M279, M270, M280, M276
+    M77_Merged_Elements = M77, M70, M75, M71, M79, M76, M78, M74, M73, M72
+    M660_Merged_Elements = M660, M659
+    M288_Merged_Elements = M288, M286, M284, M283, M282, M363, M285, M287, M289, M290
+    M156_Merged_Elements = M156, M210, M157, M158, M159, M182, M181, M180, M212, M179
+    M613_Merged_Elements = M613, M612
+    M558_Merged_Elements = M558, M557, M556, M555, M565, M554, M566, M569, M567, M568
+    M487_Merged_Elements = M487, M485, M488, M559, M560, M561, M562, M564, M486, M563
+    M355_Merged_Elements = M355, M356, M358, M357
+    M109_Merged_Elements = M109, M108, M107, M106, M105, M104, M103, M102, M101, M100
+    M424_Merged_Elements = M424, M425, M426, M427, M428, M429, M430, M431, M432, M374
+    M686_Merged_Elements = M686, M687
+    M166_Merged_Elements = M166, M169, M168, M163, M167, M165, M164, M171, M211, M170
+    M367_Merged_Elements = M367, M368, M366, M365
+    M623_Merged_Elements = M623, M624, M625, M626
+    M481_Merged_Elements = M481, M482
+    M81_Merged_Elements = M81, M80
+    M97_Merged_Elements = M97, M98
+    M493_Merged_Elements = M493, M492
+    M115_Merged_Elements = M115, M116
+    M633_Merged_Elements = M633, M634
+    M3_Merged_Elements = M3, M4, M5, M6, M7, M8, M2, M9, M15, M10
+    M692_Merged_Elements = M692, M693, M702, M703, M691, M704, M705, M706, M707, M690
+    M91_Merged_Elements = M91, M92, M93, M94
+    M576_Merged_Elements = M576, M575, M574, M573
+    M389_Merged_Elements = M389, M388, M387, M386
+    M442_Merged_Elements = M442, M500, M443, M501
+    M643_Merged_Elements = M643, M585, M641, M645, M584, M582, M644, M586, M583, M642
+    M572_Merged_Elements = M572, M571
+    M42_Merged_Elements = M42, M41, M39, M40
+    M56_Merged_Elements = M56, M55
+    M121_Merged_Elements = M121, M122
+    M539_Merged_Elements = M539, M540, M536, M537, M541, M538, M477, M476, M475, M474
+    M653_Merged_Elements = M653, M655, M656, M647, M651, M648, M649, M650, M654, M652
+    M669_Merged_Elements = M669, M670, M671, M672, M601, M673, M603, M602, M599, M600
+    M598_Merged_Elements = M598, M597
+    M194_Merged_Elements = M194, M193
+    M204_Merged_Elements = M204, M149, M152, M205, M150, M151, M203, M153, M155, M154
+    M133_Merged_Elements = M133, M134
+    M50_Merged_Elements = M50, M46, M49, M48, M47, M53, M34, M52, M51, M33
+    M192_Merged_Elements = M192, M188, M187
+    M606_Merged_Elements = M606, M607
+    M665_Merged_Elements = M665, M668, M667, M666
+    M419_Merged_Elements = M419, M421, M441, M422, M440, M439, M438, M437, M423, M420
+    M62_Merged_Elements = M62, M61
+    M275_Merged_Elements = M275, M195, M196, M197
+    M17_Merged_Elements = M17, M20, M19, M18
+    M143_Merged_Elements = M143, M142, M144, M147, M146, M145, M148, M140, M139, M141
+    M60_Merged_Elements = M60, M59, M58, M57
+    M677_Merged_Elements = M677, M678, M679, M680, M675, M676, M681, M674, M682, M663
+    M545_Merged_Elements = M545, M546, M547, M548, M479, M549, M550, M551, M552, M478
+    M614_Merged_Elements = M614, M615, M605, M604
+
+Merged devices in: lights.sp
+    MP2(XXL1/XX1)_Merged_Elements = MP2(XXL1/XX1), MP1(XXL1/XX1)
+    MP1(XXL2/XX1)_Merged_Elements = MP1(XXL2/XX1), MP2(XXL2/XX1)
+
+
+****************** DETAILED PROCESSING INFORMATION ******************
+
+**************************** ITERATING ******************************
+
+Iterating...
+  5% done.
+ 10% done.
+ 15% done.
+ 20% done.
+ 25% done.
+ 30% done.
+ 35% done.
+ 40% done.
+ 45% done.
+ 50% done.
+ 55% done.
+ 60% done.
+ 65% done.
+ 70% done.
+ 75% done.
+ 80% done.
+ 85% done.
+ 90% done.
+ 95% done.
+100% done.
+
+************************** FINAL RESULT *****************************
+
+Note: Devices have been merged.
+Circuits are equal.
+Run time: 0:01 (min:sec)
+
+0 errors, 4 warnings
+

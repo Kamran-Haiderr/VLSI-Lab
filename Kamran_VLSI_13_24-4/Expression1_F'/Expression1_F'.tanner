@@ -1,0 +1,7 @@
+workspace loadfrom -path .
+cell open -design Expression1_F' -cell Cell0 -type schematic -newwindow
+window move -left 130 -top 130 -width 1248 -height 529 -undock -max 
+window fit -x0 -4849 -y0 -3451 -x1 6075 -y1 2083 -units iu
+workspace dockinglayout load -file {.\dockinglayout.xml}
+source open.design -relativeto user
+source open.design -relativeto design

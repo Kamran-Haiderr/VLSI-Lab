@@ -1,0 +1,20 @@
+(edif
+	(rename Inverter_SPACE_Schematic "Inverter Schematic")
+	(edifVersion 2 0 0)
+	(edifLevel 0)
+	(keywordMap
+		(keywordLevel 0)
+	)
+	(status
+		(written
+			(timestamp 2019 04 10 05 03 01)
+			(author "i150524")
+			(program "Tanner S-Edit"
+				(version "13.00 build 3793")
+			)
+			(property TannerEdifVersion
+				(integer 10)
+			)
+		)
+	)
+)

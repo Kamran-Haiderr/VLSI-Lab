@@ -1,0 +1,111 @@
+File written by LVS 8.40 on Wed Nov 28 08:40:00 2001
+
+Command line:
+../../../lvs morb20cc.spc morb20cc.cir -o morb20cc.lvs -e morb20cc.elm -nrcl -y2 -fafpr 
+
+Engine configuration report:
+Consider Bulk nodes..........................................................ON
+Consider Resistors as polarized elements.....................................OFF
+Consider Capacitors as polarized elements....................................OFF
+Consider Inductors as polarized elements.....................................OFF
+Merge series, parallel R and C, parallel MOSFETs. Delete shorted devices.....OFF
+Merge series MOSFETs.........................................................OFF
+Find series MOSFETs that differ in order.....................................OFF
+Fast Iteration...............................................................OFF
+
+Reading element definitions from file morb20cc.elm
+
+Parsing file morb20cc.spc...
+Flattening netlist...
+Not resolving subckt BNP1S0A2
+Not resolving subckt BNP1S2A0
+Not resolving subckt BNP1S2A0
+Not resolving subckt BNP1S2A0
+Not resolving subckt BNP1S2A0
+Not resolving subckt BNP2S1A1
+Not resolving subckt BNP2S1A1
+
+Parsing file morb20cc.cir...
+Flattening netlist...
+Not resolving subckt BNP1S2A0
+Not resolving subckt BNP2S1A1
+Not resolving subckt BNP1S0A2
+Not resolving subckt BNP1S2A0
+Not resolving subckt BNP1S2A0
+Not resolving subckt BNP1S2A0
+Not resolving subckt BNP2S1A1
+
+Device                    morb20cc.spc      morb20cc.cir   Status            
+---------------        ---------------   ---------------   ---------------     
+M_NMOSP2                             1                 1
+M_PMOSP2                             1                 1
+M_NMOS                               1                 1
+BNP2S0A3                             0                 0
+BNP1S0A3                             0                 0
+BNP2S0A2                             0                 0
+BNP1S0A2                             1                 1
+BNP2S1A1                             2                 2
+BNP1S1A1                             0                 0
+BNP2S2A0                             0                 0
+BNP1S2A0                             4                 4
+BNP2S0A1                             0                 0
+BNP1S0A1                             0                 0
+Total elements                      10                10
+Total nodes                         18                18
+Single-pin nodes                     8                 8
+Nodes in file morb20cc.spc connected to only one pin
+*********************
+
+14
+15
+12
+6
+10
+OUT
+Shield
+7
+*********************
+
+Nodes in file morb20cc.cir connected to only one pin
+*********************
+
+31
+RD42
+RG29
+OS43
+6
+5
+SHIELD44
+SRG44
+*********************
+
+******************************* ITERATING *********************************
+
+Iterating...
+5% done
+10% done
+15% done
+20% done
+25% done
+30% done
+35% done
+40% done
+45% done
+50% done
+55% done
+60% done
+65% done
+70% done
+75% done
+80% done
+85% done
+90% done
+95% done
+100% done
+
+***************************** FINAL RESULT ********************************
+
+Note: Networks only compared as far down as specified in the element description file.
+Circuits are equal.
+Run time: 0:07 (min:sec)
+

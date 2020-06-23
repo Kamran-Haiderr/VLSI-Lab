@@ -1,0 +1,83 @@
+File written by LVS 11.20 as a result of: "samples\lvs\resonator\resonator.vdb" on Wed Sep 21 11:51:46 2005
+
+Command line:
+lvs samples\lvs\resonator\layout_resonator.spc samples\lvs\resonator\schematic_resonator.spc -o samples\lvs\resonator\resonator.lvs -l samples\lvs\resonator\resonator.lst -e samples\lvs\resonator\resonator.elm -TTSPICE -nrcl -vfa -faf 
+
+Engine configuration report:
+Layout netlist file.............................................. samples\lvs\resonator\layout_resonator.spc
+Layout netlist file format....................................... T-Spice
+Schematic netlist file........................................... samples\lvs\resonator\schematic_resonator.spc
+Schematic netlist file format.................................... T-Spice
+Consider Bulk nodes.............................................. ON
+Consider Resistors as polarized elements......................... OFF
+Consider Capacitors as polarized elements........................ OFF
+Consider Inductors as polarized elements......................... OFF
+Merge series and parallel R...................................... OFF
+Merge series and parallel C...................................... OFF
+Merge series and parallel L...................................... OFF
+Merge parallel M................................................. OFF
+Merge stacked M.................................................. OFF
+Merge parallel D................................................. OFF
+Merge parallel B................................................. OFF
+Merge parallel J................................................. OFF
+Merge parallel Z................................................. OFF
+Merge parallel Q................................................. OFF
+Merge series MOSFETs............................................. OFF
+Find series MOSFETs that differ in order or parameter value...... OFF
+Remove shorted devices........................................... OFF
+Remove disconnected devices...................................... OFF
+Fast Iteration................................................... OFF
+
+Reading element definitions from file samples\lvs\resonator\resonator.elm
+
+Parsing file samples\lvs\resonator\layout_resonator.spc...
+Flattening netlist...
+Warning: Implicit Subcircuit definition: Xfspring
+Warning: Implicit Subcircuit definition: Xcomb
+Warning: Implicit Subcircuit definition: Xplate4
+
+Parsing file samples\lvs\resonator\schematic_resonator.spc...
+Warning: schematic_resonator.spc(5) Did not recognize and will ignore element: V1 N5 0 5 
+Flattening netlist...
+
+Device               layout_resonator.spc schematic_resonator.spc   Status            
+---------------        ---------------   ---------------   ---------------     
+Xplate4                              1                 1
+Xcomb                                2                 2
+Xfspring                             2                 2
+                          ------------      ------------
+Total elements                       5                 5
+Total nodes                         16                16
+Single-pin nodes                     8                 8
+
+
+Iterating...
+  5% done.
+ 10% done.
+ 15% done.
+ 20% done.
+ 25% done.
+ 30% done.
+ 35% done.
+ 40% done.
+ 45% done.
+ 50% done.
+ 55% done.
+ 60% done.
+ 65% done.
+ 70% done.
+ 75% done.
+ 80% done.
+ 85% done.
+ 90% done.
+ 95% done.
+100% done.
+
+************************** FINAL RESULT *****************************
+
+Note: Netlists only compared as far down as specified in the element description file.
+Circuits are equal.
+Run time: 0:00 (min:sec)
+
+0 errors, 4 warnings
+

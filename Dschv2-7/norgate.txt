@@ -1,0 +1,21 @@
+// DSCH 2.7a
+// 1/1/2000 12:54:15 AM
+// J:\Electronics II\Chip Designing (E II)\Dschv2-7\norgate.sch
+
+module norgate( in1,in2,out1);
+ input in1,in2;
+ output out1;
+ pmos #(24) pmos(out1,w1,in2); // 4.0u 0.25u
+ pmos #(10) pmos(w1,vdd,in1); // 4.0u 0.25u
+ nmos #(24) nmos(out1,vss,in1); // 05u 0.25u
+ nmos #(24) nmos(out1,vss,in2); // 05u 0.25u
+endmodule
+
+// Simulation parameters in Verilog Format
+always
+#1000 in1=~in1;
+#2000 in2=~in2;
+
+// Simulation parameters
+// in1 CLK 10 10
+// in2 CLK 20 20

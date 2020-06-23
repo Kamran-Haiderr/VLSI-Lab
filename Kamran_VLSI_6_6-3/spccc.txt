@@ -1,0 +1,17 @@
+.INCLUDE SpecialDevices.md
+.lib "D:\Kamran\Study\FAST NUCES\Mad Max 19\VLSI Lab\Kamran_i140420_VLSI_A2\Generic_025.lib" TT
+.tran 10n 100n
+
+v1 A Gnd PULSE (0 5 0 1n 1n 10n 20n)
+v2 B Gnd PULSE (0 5 5n 1n 1n 10n 20n)
+v3 C Gnd PULSE (0 5 5n 1n 1n 10n 20n)
+v4 D Gnd PULSE (0 5 5n 1n 1n 10n 20n)
+v5 E Gnd PULSE (0 5 5n 1n 1n 10n 20n)
+v6 F Gnd PULSE (0 5 5n 1n 1n 10n 20n)
+v7 G Gnd PULSE (0 5 5n 1n 1n 10n 20n)
+v8 H Gnd PULSE (0 5 5n 1n 1n 10n 20n)
+v9 I Gnd PULSE (0 5 5n 1n 1n 10n 20n)
+v10 J Gnd PULSE (0 5 5n 1n 1n 10n 20n)
+
+v11 Vdd Gnd 5
+.print tran v(A,Gnd) v(B,Gnd) v(C,Gnd) v(D,Gnd) v(E,Gnd) v(F,Gnd) v(G,Gnd) v(H,Gnd) v(I,Gnd) v(J,Gnd) v(F_out,Gnd)

@@ -1,0 +1,113 @@
+File written by LVS 11.20 as a result of: "samples\lvs\xor\xor2_Open.vdb" on Wed Sep 21 10:31:01 2005
+
+Command line:
+lvs samples\lvs\xor\XOR2_Open.spc samples\lvs\xor\xor2.sp -o samples\lvs\xor\xor2_Open.lvs -l samples\lvs\xor\xor2_Open.lst -mm ALL -TTSPICE -nrcl -c2 -dg5.000 -y12 -vfa -faf 
+
+Engine configuration report:
+Layout netlist file.............................................. samples\lvs\xor\XOR2_Open.spc
+Layout netlist file format....................................... T-Spice
+Schematic netlist file........................................... samples\lvs\xor\xor2.sp
+Schematic netlist file format.................................... T-Spice
+Consider Bulk nodes.............................................. ON
+Consider Resistors as polarized elements......................... OFF
+Consider Capacitors as polarized elements........................ OFF
+Consider Inductors as polarized elements......................... OFF
+Merge series and parallel R...................................... OFF
+Merge series and parallel C...................................... OFF
+Merge series and parallel L...................................... OFF
+Merge parallel M................................................. ALL
+Merge stacked M.................................................. OFF
+Merge parallel D................................................. OFF
+Merge parallel B................................................. OFF
+Merge parallel J................................................. OFF
+Merge parallel Z................................................. OFF
+Merge parallel Q................................................. OFF
+Merge series MOSFETs............................................. OFF
+Find series MOSFETs that differ in order or parameter value...... OFF
+Remove shorted devices........................................... OFF
+Remove disconnected devices...................................... OFF
+Fast Iteration................................................... OFF
+Parameter comparison threshold for MOSFET GATE LENGTHS........... 5%
+Parameter comparison threshold for MOSFET GATE WIDTHS............ 5%
+
+
+Parsing file samples\lvs\xor\XOR2_Open.spc...
+Warning: XOR2_Open.spc(29) Node Gnd aliased to GROUND
+Flattening netlist...
+
+Parsing file samples\lvs\xor\xor2.sp...
+Warning: xor2.sp(8) Node Gnd aliased to GROUND
+Flattening netlist...
+
+Device                   XOR2_Open.spc           xor2.sp   Status            
+---------------        ---------------   ---------------   ---------------     
+M_NMOS                               5                 5
+M_PMOS                               6                 6
+                          ------------      ------------
+Total elements                      11                11
+Total nodes                         11                10   MISMATCH (1)
+
+
+Merging devices...
+Eliminated nothing.
+
+Device                   XOR2_Open.spc           xor2.sp   Status            
+---------------        ---------------   ---------------   ---------------     
+M_NMOS                               5                 5
+M_PMOS                               6                 6
+                          ------------      ------------
+Total elements                      11                11
+Total nodes                         11                10   MISMATCH (1)
+
+
+Iterating...
+  5% done.
+ 10% done.
+ 15% done.
+ 20% done.
+ 25% done.
+ 30% done.
+ 35% done.
+ 40% done.
+ 45% done.
+ 50% done.
+ 55% done.
+ 60% done.
+ 65% done.
+ 70% done.
+ 75% done.
+ 80% done.
+********************* REPORTING FRAGMENTATION ***********************
+
+Report of elements:
+*******************
+
+Report of nodes:
+****************
+
+1: Fragmented class of nodes
+
+1.1.1:  XOR2_Open.spc A                     connected to     2 M_NMOS_G       2 M_PMOS_G   
+1.1.1:  xor2.sp       B                     connected to     2 M_NMOS_G       2 M_PMOS_G   
+1.1.2:  xor2.sp       A                     connected to     2 M_NMOS_G       2 M_PMOS_G   
+---------------------------------------------------
+
+2: Fragmented class of nodes
+
+2.1.1:  XOR2_Open.spc B                     connected to     1 M_NMOS_G       1 M_PMOS_G   
+2.1.2:  XOR2_Open.spc 10                    connected to     1 M_NMOS_G       1 M_PMOS_G   
+---------------------------------------------------
+5 perfectly matched element classes (out of a possible 11).
+6 perfectly matched node classes.
+2 fragmented node classes.
+
+
+100% done.
+
+************************** FINAL RESULT *****************************
+
+Circuits are not equal.
+Run time: 0:01 (min:sec)
+
+0 errors, 2 warnings
+
